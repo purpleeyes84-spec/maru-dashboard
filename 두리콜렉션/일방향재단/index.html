@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>일방향재단</title>
+<style>
+
+:root{
+  --bg:#f0f4f8; --panel:#ffffff; --line:#e2e8f0; --line2:#cbd5e1;
+  --text:#0f172a; --muted:#64748b; --faint:#94a3b8;
+  --gold:#1e3a5f; --cyan:#2563eb; --warn:#d97706; --navy:#1e3a5f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;letter-spacing:-.01em;min-height:100vh}
+a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline;color:var(--navy)}
+.fold-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(15,23,42,.04)}
+.fold-nav a{display:inline-flex;align-items:center;border:1px solid var(--line2);border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--navy);background:#fff}
+.fold-nav a:hover,.fold-nav a.on{border-color:var(--navy);background:#e8eef6;color:var(--navy);text-decoration:none}
+.back{display:inline-block;margin:12px 22px 0;font-size:12px;color:var(--cyan);font-weight:700}
+.top{padding:16px 22px 14px;background:#fff;border-bottom:1px solid var(--line)}
+.top h1{margin:0;font-size:20px;font-weight:800;color:var(--navy)}
+.top p{margin:6px 0 0;color:var(--muted);font-size:12px}
+.src{margin:8px 22px;font-size:11px;color:var(--faint)}
+.wrap{padding:18px 22px 40px;max-width:1100px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 14px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.card:hover{border-color:#b6c4d6;box-shadow:0 4px 12px rgba(30,58,95,.08);text-decoration:none}
+.card b{display:block;font-size:16px;font-weight:800;color:var(--navy)}
+.card span.en{display:block;margin-top:4px;font-size:11px;color:var(--cyan);letter-spacing:.06em;font-weight:700}
+.card p{margin:8px 0 0;font-size:12px;color:var(--muted)}
+.kpi{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}
+.kpi div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:110px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.kpi b{display:block;font-size:22px;color:var(--navy);font-weight:800}
+.kpi span{font-size:11px;color:var(--muted);font-weight:700}
+.banner{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:12px 14px;margin:0 0 16px;font-size:13px;color:#9a3412}
+.banner a{color:var(--cyan);font-weight:700}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.row h3{margin:0 0 6px;font-size:14px;color:var(--navy)}
+.meta{font-size:11px;color:var(--muted);margin:0 0 8px}
+.files{margin:0;padding:0;list-style:none}
+.files li{font-size:12px;padding:3px 0;border-top:1px solid var(--line)}
+.files a{color:var(--cyan)}
+.tag{display:inline-block;font-size:10px;border:1px solid var(--line2);border-radius:999px;padding:2px 8px;margin-right:4px;color:var(--muted);font-weight:700}
+.tag.warn{border-color:#fdba74;color:var(--warn);background:#fff7ed}
+.tag.gold{border-color:#bfdbfe;color:var(--navy);background:#eff6ff}
+h2{font-size:14px;margin:22px 0 10px;color:var(--navy);font-weight:800}
+.note{font-size:12px;color:var(--muted);margin:8px 0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:auto;margin-bottom:14px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--muted);font-size:10px;font-weight:700;background:#f8fafc}
+
+</style>
+<script src="../../../_shared/fold-nav.js" defer></script>
+<link rel="stylesheet" href="../../../_shared/visibility.css">
+</head><body>
+<a class="back" href="../index.html">← 뒤로</a>
+<div class="top"><h1>일방향재단</h1>
+<p>기획티 · 원단 추가발주 이슈</p></div>
+
+<p class="src">소스: <code>../../../생산부/2. 디즈니/27SS/</code></p>
+<div class="wrap">
+  <div class="banner">기획 티셔츠 일부 <b>일방향 재단</b>으로 원단 소요·비용 증가. 파일명에 「일방향」이 있는 스타일 기준.</div>
+  <div class="kpi">
+    <div><b>2</b><span>확정 스타일</span></div>
+    <div><b>3</b><span>일방향 문서</span></div>
+  </div>
+  <h2>일방향 문서</h2>
+  <ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">완사입\기획\DR1LTR080\기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">완사입\기획\DR2LTR091\기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/해외생산/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">해외생산\기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a></li></ul>
+  <h2>대상 스타일</h2>
+  <div class="row"><h3>DR1LTR080 <span class="tag warn">일방향</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR1-LTR-080 마루.ai">완사입\기획\DR1LTR080\DR1-LTR-080 마루.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR1LTR080 BT CFM 260917.jpg">완사입\기획\DR1LTR080\DR1LTR080 BT CFM 260917.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단 발주서.pdf">완사입\기획\DR1LTR080\DR2LTR080 원단 발주서.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단발주서.xlsx">완사입\기획\DR1LTR080\DR2LTR080 원단발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서 원단수정 0813.jpg">완사입\기획\DR1LTR080\DR2LTR080 작업지시서 원단수정 0813.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서.png">완사입\기획\DR1LTR080\DR2LTR080 작업지시서.png</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">완사입\기획\DR1LTR080\기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/디즈니 기획티셔츠 원단대 소탕비용 지급 여부 관련 보고.pdf">완사입\기획\DR1LTR080\디즈니 기획티셔츠 원단대 소탕비용 지급 여부 관련 보고.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR1LTR080.jpg">완사입\디즈니 발주서\DR1LTR080.jpg</a></li></ul></div><div class="row"><h3>DR2LTR091 <span class="tag warn">일방향</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2-LTR-091 마루.ai">완사입\기획\DR2LTR091\DR2-LTR-091 마루.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 BT CFM-1 260917.jpg">완사입\기획\DR2LTR091\DR2LTR091 BT CFM-1 260917.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 BT CFM-2 260917.jpg">완사입\기획\DR2LTR091\DR2LTR091 BT CFM-2 260917.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 원단발주서.xlsx">완사입\기획\DR2LTR091\DR2LTR091 원단발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 작업지시서 원단수정 0813.jpg">완사입\기획\DR2LTR091\DR2LTR091 작업지시서 원단수정 0813.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 작업지시서.png">완사입\기획\DR2LTR091\DR2LTR091 작업지시서.png</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/MARU디즈니반팔긴팔납기및단가26.9.11.xlsx">완사입\기획\DR2LTR091\MARU디즈니반팔긴팔납기및단가26.9.11.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">완사입\기획\DR2LTR091\기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/디즈니 기획티셔츠 원단대 소탕비용 지급 여부 관련 보고.pdf">완사입\기획\DR2LTR091\디즈니 기획티셔츠 원단대 소탕비용 지급 여부 관련 보고.pdf</a></li></ul></div><div class="row"><h3>DR2LTS090 <span class="tag gold">기획 연관</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2-LTS-090 헤리테잎변경 작지(09.11).jpg">완사입\기획\DR2LTS090\DR2-LTS-090 헤리테잎변경 작지(09.11).jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2-LTS-090 마루 나염의뢰서_9.15.ai">완사입\기획\DR2LTS090\DR2-LTS-090 마루 나염의뢰서_9.15.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2-LTS-090 마루.ai">완사입\기획\DR2LTS090\DR2-LTS-090 마루.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 BT CFM 260805-1.jpg">완사입\기획\DR2LTS090\DR2LTS090 BT CFM 260805-1.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 BT CFM 260805-2.jpg">완사입\기획\DR2LTS090\DR2LTS090 BT CFM 260805-2.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 TP-01 발주서 2609014.pdf">완사입\기획\DR2LTS090\DR2LTS090 TP-01 발주서 2609014.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 부자재 발주서.xlsx">완사입\기획\DR2LTS090\DR2LTS090 부자재 발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 원단발주서.pdf">완사입\기획\DR2LTS090\DR2LTS090 원단발주서.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 원단발주서.xlsx">완사입\기획\DR2LTS090\DR2LTS090 원단발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 작업지시서.png">완사입\기획\DR2LTS090\DR2LTS090 작업지시서.png</a></li></ul></div><div class="row"><h3>DR2MTS090 <span class="tag gold">기획 연관</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2-MTS-090 나염위치확인용패턴.ai">완사입\기획\DR2MTS090\DR2-MTS-090 나염위치확인용패턴.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 TP-01 발주서  2609014.pdf">완사입\기획\DR2MTS090\DR2MTS090 TP-01 발주서  2609014.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 메인작업지시서.ai">완사입\기획\DR2MTS090\DR2MTS090 메인작업지시서.ai</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 부자재 발주서.xlsx">완사입\기획\DR2MTS090\DR2MTS090 부자재 발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 원단발주서.pdf">완사입\기획\DR2MTS090\DR2MTS090 원단발주서.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 원단발주서.xlsx">완사입\기획\DR2MTS090\DR2MTS090 원단발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 작업지시서.png">완사입\기획\DR2MTS090\DR2MTS090 작업지시서.png</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/KakaoTalk_20260805_095504872.jpg">완사입\기획\DR2MTS090\KakaoTalk_20260805_095504872.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/KakaoTalk_20260805_095504872_01.jpg">완사입\기획\DR2MTS090\KakaoTalk_20260805_095504872_01.jpg</a></li></ul></div><div class="row"><h3>DR2-LTR-090 <span class="tag gold">기획 연관</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2-LTS-090 헤리테잎변경 작지(09.11).jpg">완사입\기획\DR2LTS090\DR2-LTS-090 헤리테잎변경 작지(09.11).jpg</a></li></ul></div><div class="row"><h3>DR2LTR080 <span class="tag gold">기획 연관</span></h3><ul class="files"><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단 발주서.pdf">완사입\기획\DR1LTR080\DR2LTR080 원단 발주서.pdf</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단발주서.xlsx">완사입\기획\DR1LTR080\DR2LTR080 원단발주서.xlsx</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서 원단수정 0813.jpg">완사입\기획\DR1LTR080\DR2LTR080 작업지시서 원단수정 0813.jpg</a></li><li><a href="../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서.png">완사입\기획\DR1LTR080\DR2LTR080 작업지시서.png</a></li></ul></div>
+  <h2>수동 추가</h2>
+  <p class="note">MAINLIST에 일방향 표기가 더 있으면 여기 스타일 코드를 추가.</p>
+  <div class="row"><h3>빈 칸</h3><p class="note">—</p></div>
+</div>
+
+</body></html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>디즈니 27SS 진행문서 · 7슬롯</title>
+<style>
+:root{
+  --bg:#f0f4f8; --card:#ffffff; --line:#e2e8f0; --line2:#cbd5e1;
+  --text:#0f172a; --muted:#64748b; --faint:#94a3b8;
+  --navy:#1e3a5f; --accent:#2563eb; --ok:#059669; --warn:#d97706;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;letter-spacing:-.01em;min-height:100vh}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.fold-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(15,23,42,.04)}
+.fold-nav a{display:inline-flex;border:1px solid var(--line2);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:700;color:var(--navy);background:#fff}
+.fold-nav a:hover,.fold-nav a.on{border-color:var(--navy);background:#e8eef6;text-decoration:none}
+.back{display:inline-block;margin:14px 22px 0;font-size:12px;color:var(--accent);font-weight:700}
+.top{padding:18px 22px 16px;background:#fff;border-bottom:1px solid var(--line)}
+.top h1{margin:0;font-size:22px;font-weight:800;color:var(--navy)}
+.top p{margin:6px 0 0;color:var(--muted);font-size:13px}
+.wrap{padding:18px 22px 56px;max-width:1480px;margin:0 auto}
+.kpis{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin:0 0 14px}
+@media(max-width:1100px){.kpis{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 12px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.kpi .l{font-size:11px;color:var(--muted);font-weight:700}
+.kpi .v{font-size:22px;font-weight:800;margin-top:4px;color:var(--navy);line-height:1.1}
+.kpi .s{font-size:10px;color:var(--faint);margin-top:2px}
+.note{font-size:12px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px;align-items:center}
+.tools input,.tools select{background:#fff;border:1px solid var(--line2);border-radius:10px;padding:8px 12px;font-size:12px}
+.tools input{min-width:180px}
+.sec{margin:22px 0 8px}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;margin:0 0 10px;padding:0 2px}
+.sec-h h2{margin:0;font-size:15px;font-weight:800;color:var(--navy)}
+.sec-h .cnt{font-size:12px;color:var(--muted);font-weight:700}
+.slist{display:flex;flex-direction:column;gap:10px}
+.srow{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.srow:hover{border-color:#b6c4d6;box-shadow:0 4px 12px rgba(30,58,95,.08)}
+.srow.hidden{display:none}
+.shead{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 4px}
+.style{font-size:16px;font-weight:800;color:var(--navy)}
+.fillpill{margin-left:auto;font-size:11px;font-weight:800;color:var(--navy);background:#e8eef6;border-radius:999px;padding:2px 10px}
+.smeta{font-size:12px;color:var(--muted);line-height:1.45;margin:0 0 4px}
+.colors{font-size:12px;font-weight:700;color:var(--navy);margin:0 0 8px}
+.tag{display:inline-block;padding:1px 7px;border-radius:999px;border:1px solid #fecaca;color:#b91c1c;font-size:10px;font-weight:700;background:#fef2f2}
+.tag.warn{border-color:#fdba74;color:var(--warn);background:#fff7ed}
+.slotgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+@media(max-width:1100px){.slotgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.slotgrid{grid-template-columns:repeat(2,1fr)}}
+.slot{border:1px solid var(--line2);border-radius:10px;padding:8px;min-height:72px;background:#f8fafc;display:flex;flex-direction:column;gap:4px}
+.slot.filled{border-color:#93c5fd;background:#eff6ff}
+.slot.empty{border-style:dashed;border-color:#cbd5e1;background:#fafbfc;position:relative}
+.slot-lab{font-size:10px;font-weight:800;color:var(--muted);letter-spacing:.02em}
+.slot.filled .slot-lab{color:#1d4ed8}
+.slot-lab em{font-style:normal;margin-left:4px;color:var(--ok);font-size:10px}
+.flinks{display:flex;flex-direction:column;gap:2px;overflow:hidden}
+.flink{font-size:11px;font-weight:700;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.flink.missing{opacity:.45;text-decoration:line-through}
+.tooth{display:block;height:28px;margin-top:6px;border-radius:6px;background:
+  repeating-linear-gradient(90deg,#e2e8f0 0 6px,transparent 6px 10px);
+  opacity:.7}
+.foot{margin-top:28px;font-size:11px;color:var(--faint)}
+.empty-sec{color:var(--faint);font-size:12px}
+</style>
+<link rel="stylesheet" href="../../../../_shared/visibility.css">
+<script src="../../../../_shared/fold-nav.js" defer></script>
+</head>
+<body>
+<a class="back" href="../index.html">← 디즈니</a>
+<div class="top">
+  <h1>디즈니 27SS 진행문서 · 고정 7슬롯</h1>
+  <p>스타일당 1행 · 슬롯 비면 점선(이빨) · asOf 2026-09-24 · 원본 이동 없음 · 링크 depth4</p>
+</div>
+<div class="wrap">
+  <div class="kpis"><div class="kpi"><div class="l">작업지시서</div><div class="v">10</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">원단발주서</div><div class="v">22</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">BT컴펌서</div><div class="v">25</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">원단생산량</div><div class="v">0</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">부자재발주서</div><div class="v">2</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">QC서</div><div class="v">0</div><div class="s">/47 스타일</div></div><div class="kpi"><div class="l">패킹리스트</div><div class="v">0</div><div class="s">/47 스타일</div></div></div>
+  <p class="note">슬롯 순서: 1.작업지시서 · 2.원단발주서 · 3.BT컴펌서 · 4.원단생산량 · 5.부자재발주서 · 6.QC서 · 7.패킹리스트. 매핑: wip→1 · fabric_po→2 · bt→3 · 파일명키워드(생산량/입고)→4 · trim_po→5 · (QC/검품)→6 · pack→7.
+  소스 링크 <code>../../../../생산부/2. 디즈니/27SS/</code> · 정본 progress.json 재사용 · PDF 전수 재오픈 없음.</p>
+  <div class="tools">
+    <input id="q" type="search" placeholder="스타일·업체·ART 검색">
+    <select id="fltSec"><option value="all">대분류 전체</option>
+      <option value="완사입 기획">완사입 기획</option>
+      <option value="완사입 정상">완사입 정상</option>
+      <option value="원단">원단</option>
+      <option value="BT미정">BT미정</option>
+    </select>
+    <select id="fltFill"><option value="all">채움 전체</option>
+      <option value="has">1칸 이상</option>
+      <option value="empty">전부 빈칸</option>
+    </select>
+  </div>
+  <section class="sec" data-sec="완사입 기획">
+  <div class="sec-h"><h2>완사입 기획</h2><span class="cnt">11</span></div>
+  <div class="slist">
+<article class="srow" data-style="DR2LTS090" data-section="완사입 기획" data-brand="디즈니" data-filled="4">
+  <div class="shead">
+    <span class="style">DR2LTS090</span>
+    
+    <span class="fillpill">4/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 코라 · ART KRP-1115 · 수량 5,000 · 납기 27.01.20</div>
+  <div class="colors">WH 1700 BK 1300 GR 1100 PU 900</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 2"><span class="slot-lab">작업지시서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2-LTS-090 헤리테잎변경 작지(09.11).jpg" title="DR2-LTS-090 헤리테잎변경 작지(09.11).jpg">DR2-LTS-090 헤리테잎변경 작지(09.11).jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 작업지시서.png" title="DR2LTS090 작업지시서.png">DR2LTS090 작업지시서.png</a></div></div><div class="slot filled" title="원단발주서 · 4"><span class="slot-lab">원단발주서<em>4</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 TP-01 발주서 2609014.pdf" title="DR2LTS090 TP-01 발주서 2609014.pdf">DR2LTS090 TP-01 발주서 2609014.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 원단발주서.pdf" title="DR2LTS090 원단발주서.pdf">DR2LTS090 원단발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 원단발주서.xlsx" title="DR2LTS090 원단발주서.xlsx">DR2LTS090 원단발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR2LTS090.jpg" title="DR2LTS090.jpg">DR2LTS090.jpg</a></div></div><div class="slot filled" title="BT컴펌서 · 2"><span class="slot-lab">BT컴펌서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 BT CFM 260805-1.jpg" title="DR2LTS090 BT CFM 260805-1.jpg">DR2LTS090 BT CFM 260805-1.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 BT CFM 260805-2.jpg" title="DR2LTS090 BT CFM 260805-2.jpg">DR2LTS090 BT CFM 260805-2.jpg</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="부자재발주서 · 1"><span class="slot-lab">부자재발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTS090/DR2LTS090 부자재 발주서.xlsx" title="DR2LTS090 부자재 발주서.xlsx">DR2LTS090 부자재 발주서.xlsx</a></div></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR2MTS090" data-section="완사입 기획" data-brand="디즈니" data-filled="3">
+  <div class="shead">
+    <span class="style">DR2MTS090</span>
+    
+    <span class="fillpill">3/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 코라 · ART KRP-1115 · 수량 3,300 · 납기 27.01.20</div>
+  <div class="colors">CH 1300 GR 900 NV 1100</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 2"><span class="slot-lab">작업지시서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 메인작업지시서.ai" title="DR2MTS090 메인작업지시서.ai">DR2MTS090 메인작업지시서.ai</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 작업지시서.png" title="DR2MTS090 작업지시서.png">DR2MTS090 작업지시서.png</a></div></div><div class="slot filled" title="원단발주서 · 4"><span class="slot-lab">원단발주서<em>4</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 TP-01 발주서  2609014.pdf" title="DR2MTS090 TP-01 발주서  2609014.pdf">DR2MTS090 TP-01 발주서  2609014.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 원단발주서.pdf" title="DR2MTS090 원단발주서.pdf">DR2MTS090 원단발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 원단발주서.xlsx" title="DR2MTS090 원단발주서.xlsx">DR2MTS090 원단발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR2MTS090.jpg" title="DR2MTS090.jpg">DR2MTS090.jpg</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="부자재발주서 · 1"><span class="slot-lab">부자재발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2MTS090/DR2MTS090 부자재 발주서.xlsx" title="DR2MTS090 부자재 발주서.xlsx">DR2MTS090 부자재 발주서.xlsx</a></div></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1MTR081" data-section="완사입 기획" data-brand="스팍스" data-filled="2">
+  <div class="shead">
+    <span class="style">SR1MTR081</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">스팍스 · 업체 TIANHAO · ART CS-04C RMB 6.73 · 수량 2,000 · 납기 26.12.23</div>
+  <div class="colors">WH 500 TB 800 BK 700</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 1"><span class="slot-lab">작업지시서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SM1MTR081 메인작업지시서.pdf" title="SM1MTR081 메인작업지시서.pdf">SM1MTR081 메인작업지시서.pdf</a></div></div><div class="slot filled" title="원단발주서 · 4"><span class="slot-lab">원단발주서<em>4</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTR081 완사입 발주서.pdf" title="SR1MTR081 완사입 발주서.pdf">SR1MTR081 완사입 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTR081 원단 발주서.pdf" title="SR1MTR081 원단 발주서.pdf">SR1MTR081 원단 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTS081 TP-01 발주서 2609014.pdf" title="SR1MTS081 TP-01 발주서 2609014.pdf">SR1MTS081 TP-01 발주서 2609014.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTS081 고주파와펜 발주서 260914.png" title="SR1MTS081 고주파와펜 발주서 260914.png">SR1MTS081 고주파와펜 발주서 260914.png</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LJB080" data-section="완사입 기획" data-brand="디즈니" data-filled="3">
+  <div class="shead">
+    <span class="style">DR1LJB080</span>
+    
+    <span class="fillpill">3/7</span>
+  </div>
+  <div class="smeta">디즈니 · ART CS-3030 · 수량 9,300 · 납기 26.12.23</div>
+  <div class="colors">BK 1300 WH 1000 SB 7000</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 1"><span class="slot-lab">작업지시서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080 작업지시서(디즈니)26.08.05.pdf" title="DR1-LJB-080 작업지시서(디즈니)26.08.05.pdf">DR1-LJB-080 작업지시서(디즈니)26.08.05.pdf</a></div></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR1LJB080.jpg" title="DR1LJB080.jpg">DR1LJB080.jpg</a></div></div><div class="slot filled" title="BT컴펌서 · 2"><span class="slot-lab">BT컴펌서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080 BT컨펌.jpg" title="DR1-LJB-080 BT컨펌.jpg">DR1-LJB-080 BT컨펌.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030) BT.xls" title="DR1-LJB-080(CS3030) BT.xls">DR1-LJB-080(CS3030) BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LPA001" data-section="완사입 기획" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1LPA001</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 JUNTEX · ART MYC-730 · 수량 2,301 · 납기 2026-09-20</div>
+  <div class="colors">BE 1416 BL 885</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 5"><span class="slot-lab">원단발주서<em>5</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf" title="DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf">DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf" title="MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf">MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx</a></div></div><div class="slot filled" title="BT컴펌서 · 3"><span class="slot-lab">BT컴펌서<em>3</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg" title="MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg">MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg" title="MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg">MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls" title="MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls">MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LPA080" data-section="완사입 기획" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1LPA080</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · ART CS260703-2C · 수량 3,100 · 납기 26.12.23</div>
+  <div class="colors">BK 1500 GR 800 BE 800</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR1LPA080.jpg" title="DR1LPA080.jpg">DR1LPA080.jpg</a></div></div><div class="slot filled" title="BT컴펌서 · 2"><span class="slot-lab">BT컴펌서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LPA-080/DR1-LPA-080 BT컨펌.jpg" title="DR1-LPA-080 BT컨펌.jpg">DR1-LPA-080 BT컨펌.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LPA-080/DR1-LPA-080(CS260703-2C)BT.xls" title="DR1-LPA-080(CS260703-2C)BT.xls">DR1-LPA-080(CS260703-2C)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LTR080" data-section="완사입 기획" data-brand="디즈니" data-filled="3">
+  <div class="shead">
+    <span class="style">DR1LTR080</span>
+    <span class="tag">일방향</span>
+    <span class="fillpill">3/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 TIANHAO · ART CS-04C RMB 6.73 · 수량 4,000 · 납기 26.12.23</div>
+  <div class="colors">WH 1800 BK 1400 GR 800</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 2"><span class="slot-lab">작업지시서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서 원단수정 0813.jpg" title="DR2LTR080 작업지시서 원단수정 0813.jpg">DR2LTR080 작업지시서 원단수정 0813.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서.png" title="DR2LTR080 작업지시서.png">DR2LTR080 작업지시서.png</a></div></div><div class="slot filled" title="원단발주서 · 4"><span class="slot-lab">원단발주서<em>4</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단 발주서.pdf" title="DR2LTR080 원단 발주서.pdf">DR2LTR080 원단 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단발주서.xlsx" title="DR2LTR080 원단발주서.xlsx">DR2LTR080 원단발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx" title="기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR1LTR080.jpg" title="DR1LTR080.jpg">DR1LTR080.jpg</a></div></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR1LTR080 BT CFM 260917.jpg" title="DR1LTR080 BT CFM 260917.jpg">DR1LTR080 BT CFM 260917.jpg</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MPA001" data-section="완사입 기획" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1MPA001</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · 수량 2,046</div>
+  <div class="colors">BE 1302 CH 744</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 5"><span class="slot-lab">원단발주서<em>5</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf" title="DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf">DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf" title="MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf">MYC-730(DR1-LPA-001, DR1-MPA-001) 컬러확정 발주서(납기수정).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx" title="MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx">MYC-730(DR1-LPA-001, DR1-MPA-001)발주서.xlsx</a></div></div><div class="slot filled" title="BT컴펌서 · 3"><span class="slot-lab">BT컴펌서<em>3</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg" title="MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg">MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌1.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg" title="MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg">MYC-730(DR1-LPA-002, DR1-MPA-001) BT컨펌2.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls" title="MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls">MYC-730(DR1-MPA-001, DR1-LPA-001)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR2LTR080" data-section="완사입 기획" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR2LTR080</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 2"><span class="slot-lab">작업지시서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서 원단수정 0813.jpg" title="DR2LTR080 작업지시서 원단수정 0813.jpg">DR2LTR080 작업지시서 원단수정 0813.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 작업지시서.png" title="DR2LTR080 작업지시서.png">DR2LTR080 작업지시서.png</a></div></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단 발주서.pdf" title="DR2LTR080 원단 발주서.pdf">DR2LTR080 원단 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1LTR080/DR2LTR080 원단발주서.xlsx" title="DR2LTR080 원단발주서.xlsx">DR2LTR080 원단발주서.xlsx</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR2LTR091" data-section="완사입 기획" data-brand="디즈니" data-filled="3">
+  <div class="shead">
+    <span class="style">DR2LTR091</span>
+    <span class="tag">일방향</span>
+    <span class="fillpill">3/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 TIANHAO · ART CS-038C RMB 6.57 · 수량 12,000 · 납기 27.01.20</div>
+  <div class="colors">WH 3500 BK 2300 SB 1700 VR 1500 RD 1500 LV 1500</div>
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 2"><span class="slot-lab">작업지시서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 작업지시서 원단수정 0813.jpg" title="DR2LTR091 작업지시서 원단수정 0813.jpg">DR2LTR091 작업지시서 원단수정 0813.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 작업지시서.png" title="DR2LTR091 작업지시서.png">DR2LTR091 작업지시서.png</a></div></div><div class="slot filled" title="원단발주서 · 3"><span class="slot-lab">원단발주서<em>3</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 원단발주서.xlsx" title="DR2LTR091 원단발주서.xlsx">DR2LTR091 원단발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx" title="기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx">기획티셔츠 일방향 재단으로 인한 원단 추가발주의 건 260915.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/디즈니 발주서/DR2LTS090.jpg" title="DR2LTR090.jpg (개별발주서·품번오기→091)">DR2LTR090.jpg (개별발주서·품번오기→091)</a></div></div><div class="slot filled" title="BT컴펌서 · 2"><span class="slot-lab">BT컴펌서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 BT CFM-1 260917.jpg" title="DR2LTR091 BT CFM-1 260917.jpg">DR2LTR091 BT CFM-1 260917.jpg</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/DR2LTR091/DR2LTR091 BT CFM-2 260917.jpg" title="DR2LTR091 BT CFM-2 260917.jpg">DR2LTR091 BT CFM-2 260917.jpg</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1MTS081" data-section="완사입 기획" data-brand="스팍스" data-filled="2">
+  <div class="shead">
+    <span class="style">SR1MTS081</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 1"><span class="slot-lab">작업지시서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SM1MTR081 메인작업지시서.pdf" title="SM1MTR081 메인작업지시서.pdf">SM1MTR081 메인작업지시서.pdf</a></div></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTS081 TP-01 발주서 2609014.pdf" title="SR1MTS081 TP-01 발주서 2609014.pdf">SR1MTS081 TP-01 발주서 2609014.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1MTR081/SR1MTS081 고주파와펜 발주서 260914.png" title="SR1MTS081 고주파와펜 발주서 260914.png">SR1MTS081 고주파와펜 발주서 260914.png</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+  </div>
+</section>
+  <section class="sec" data-sec="완사입 정상">
+  <div class="sec-h"><h2>완사입 정상</h2><span class="cnt">9</span></div>
+  <div class="slist">
+<article class="srow" data-style="DQ1-MJP-001" data-section="완사입 정상" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DQ1-MJP-001</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DQ3-MJP-001" data-section="완사입 정상" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DQ3-MJP-001</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 1"><span class="slot-lab">작업지시서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/DR1-MJP-001/DQ3-MJP-001 작업지시서(마루).ai" title="DQ3-MJP-001 작업지시서(마루).ai">DQ3-MJP-001 작업지시서(마루).ai</a></div></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DQ3-MJP-002" data-section="완사입 정상" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DQ3-MJP-002</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LJP-003" data-section="완사입 정상" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LJP-003</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/DR1-LJP-003(MYN-2070)/DR1-LJP-003(MYN-2070)BT.xls" title="DR1-LJP-003(MYN-2070)BT.xls">DR1-LJP-003(MYN-2070)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LJP-004" data-section="완사입 정상" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LJP-004</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/DR1-LJP-004(NCS-C1349)/DR1-LJP-004, LJV-010, LCR-010(NCS-C1349)BT.xls" title="DR1-LJP-004, LJV-010, LCR-010(NCS-C1349)BT.xls">DR1-LJP-004, LJV-010, LCR-010(NCS-C1349)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LJV-009" data-section="완사입 정상" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LJV-009</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/DR1-LJV-009(MYP-2261)/DR1-LJV-009(MYP-2261)BT.xls" title="DR1-LJV-009(MYP-2261)BT.xls">DR1-LJV-009(MYP-2261)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-MJP-001" data-section="완사입 정상" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-MJP-001</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot filled" title="작업지시서 · 1"><span class="slot-lab">작업지시서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/DR1-MJP-001/DQ3-MJP-001 작업지시서(마루).ai" title="DQ3-MJP-001 작업지시서(마루).ai">DQ3-MJP-001 작업지시서(마루).ai</a></div></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1-LJB-016" data-section="완사입 정상" data-brand="스팍스" data-filled="1">
+  <div class="shead">
+    <span class="style">SR1-LJB-016</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/SR1-LJB-016(BDS-2708)/SR1-LJB-016(BDS-2708)BT.xls" title="SR1-LJB-016(BDS-2708)BT.xls">SR1-LJB-016(BDS-2708)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR2-MSH-052" data-section="완사입 정상" data-brand="스팍스" data-filled="1">
+  <div class="shead">
+    <span class="style">SR2-MSH-052</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/완사입/정상/SR2-MSH-052/SR2-MSH-052(MR-001)BT.xls" title="SR2-MSH-052(MR-001)BT.xls">SR2-MSH-052(MR-001)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+  </div>
+</section>
+  <section class="sec" data-sec="원단">
+  <div class="sec-h"><h2>원단</h2><span class="cnt">23</span></div>
+  <div class="slist">
+<article class="srow" data-style="DQ3-LJB-005" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DQ3-LJB-005</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/26FW/DQ3-LJB-005(BD-8008)발주서(26.04.01단가수정).pdf" title="DQ3-LJB-005(BD-8008)발주서(26.04.01단가수정).pdf">DQ3-LJB-005(BD-8008)발주서(26.04.01단가수정).pdf</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DQ3-LTS-013" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DQ3-LTS-013</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/26FW/FLI-ST301A(DQ3-LTS-013)발주서.pdf" title="FLI-ST301A(DQ3-LTS-013)발주서.pdf">FLI-ST301A(DQ3-LTS-013)발주서.pdf</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LTJ-015" data-section="원단" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1-LTJ-015</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/KT-7175+DTP(DR1-LTJ-015)/KT-7175(DR1-LTJ-015) 발주서.xlsx" title="KT-7175(DR1-LTJ-015) 발주서.xlsx">KT-7175(DR1-LTJ-015) 발주서.xlsx</a></div></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/KT-7175+DTP(DR1-LTJ-015)/KT-7175(DR1-LTJ-015)BT.xls" title="KT-7175(DR1-LTJ-015)BT.xls">KT-7175(DR1-LTJ-015)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LPA002" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1LPA002</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYC-730(DR1-MPA-001, DR1-LPA-001)/DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf" title="DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf">DR1LPA002,MPA001 (MYC-730) 발주서(두리).pdf</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LPA004" data-section="원단" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1LPA004</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · ART MYN-1731 · 수량 1,596 · 납기 2026-08-31</div>
+  <div class="colors">DB 653 BK 943</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 3"><span class="slot-lab">원단발주서<em>3</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1731(DR1-LPA-004)/MYN-1731 발주서(본사, 마루).pdf" title="MYN-1731 발주서(본사, 마루).pdf">MYN-1731 발주서(본사, 마루).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1731(DR1-LPA-004)/MYN-1731(DR1-LPA-004) 발주서.pdf" title="MYN-1731(DR1-LPA-004) 발주서.pdf">MYN-1731(DR1-LPA-004) 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1731(DR1-LPA-004)/MYN-1731(DR1-LPA-004) 발주서.xlsx" title="MYN-1731(DR1-LPA-004) 발주서.xlsx">MYN-1731(DR1-LPA-004) 발주서.xlsx</a></div></div><div class="slot filled" title="BT컴펌서 · 2"><span class="slot-lab">BT컴펌서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1731(DR1-LPA-004)/MYN-1731(DR1-LPA-004)BT.xls" title="MYN-1731(DR1-LPA-004)BT.xls">MYN-1731(DR1-LPA-004)BT.xls</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYP-393-1(DR1-LJP-005)/MYN-1731(DR1-LPA-004)BT.xls" title="MYN-1731(DR1-LPA-004)BT.xls">MYN-1731(DR1-LPA-004)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LPA006" data-section="원단" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DR1LPA006</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니 · 수량 1,656</div>
+  <div class="colors">KH 690 BK 966</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LTP002" data-section="원단" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1LTP002</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · 수량 1,911</div>
+  <div class="colors">BK 1176 DG 735</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx" title="JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx">JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDT-T8845 발주서(본사, 마루).pdf" title="JDT-T8845 발주서(본사, 마루).pdf">JDT-T8845 발주서(본사, 마루).pdf</a></div></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls" title="JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls">JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LTS010" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1LTS010</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 에르원 · ART JERA-2070 · 수량 1,648 · 납기 2026-10-30</div>
+  <div class="colors">WH 721 BK 927</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/DR1-LTS-010(JREA-2070)/JREA-2070(DR1-LTS-010) 발주서.xlsx" title="JREA-2070(DR1-LTS-010) 발주서.xlsx">JREA-2070(DR1-LTS-010) 발주서.xlsx</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1LTW002" data-section="원단" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1LTW002</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 JD니트 · ART JDK-T8845 · 수량 1,300 · 납기 2026-10-16</div>
+  <div class="colors">BK 800 DG 500</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx" title="JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx">JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDT-T8845 발주서(본사, 마루).pdf" title="JDT-T8845 발주서(본사, 마루).pdf">JDT-T8845 발주서(본사, 마루).pdf</a></div></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls" title="JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls">JDK-T8845 (DR1-LTW-002, DR1-LTP-002) BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MJV002" data-section="원단" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DR1MJV002</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니 · 수량 909</div>
+  <div class="colors">KH 404 BK 505</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MPA003" data-section="원단" data-brand="디즈니" data-filled="2">
+  <div class="shead">
+    <span class="style">DR1MPA003</span>
+    
+    <span class="fillpill">2/7</span>
+  </div>
+  <div class="smeta">디즈니 · 업체 JUNTEX · ART MT27-105 · 수량 1,560 · 납기 2026-10-20</div>
+  <div class="colors">KH 650 BK 910</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 3"><span class="slot-lab">원단발주서<em>3</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/AB-6098(DR1-MPA-003, MJV-002, LPA-006)/AB-6098 발주서(본사, 마루).pdf" title="AB-6098 발주서(본사, 마루).pdf">AB-6098 발주서(본사, 마루).pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/AB-6098(DR1-MPA-003, MJV-002, LPA-006)/AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.pdf" title="AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.pdf">AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/AB-6098(DR1-MPA-003, MJV-002, LPA-006)/AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.xlsx" title="AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.xlsx">AB-6098(DR1-MPA-003, MJV-002, LPA-006) 발주서.xlsx</a></div></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/AB-6098(DR1-MPA-003, MJV-002, LPA-006)/AB-6098(DR1-MPA-003, MJV-002, LPA-006)BT.xls" title="AB-6098(DR1-MPA-003, MJV-002, LPA-006)BT.xls">AB-6098(DR1-MPA-003, MJV-002, LPA-006)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MTR010" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1MTR010</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니 · 수량 1,096</div>
+  <div class="colors">BK 548 DG 548</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 1"><span class="slot-lab">원단발주서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845(DR1-LTW-002, DR1-LTP-002)/JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx" title="JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx">JDK-T8845 (DR1-LTW-002, DR1-LTP-002, DR1-MTR-010) 발주서.xlsx</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MTS007" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1MTS007</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니 · ART JDK-T8845P · 수량 1,010 · 납기 2026-10-26</div>
+  <div class="colors">GY 1010</div>
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="원단발주서 · 2"><span class="slot-lab">원단발주서<em>2</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845P+DTP(DR1-MTS-007)/JDK-T8845P(DR1-MTS-007)발주서.pdf" title="JDK-T8845P(DR1-MTS-007)발주서.pdf">JDK-T8845P(DR1-MTS-007)발주서.pdf</a><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-T8845P+DTP(DR1-MTS-007)/JDK-T8845P+DTP(DR1-MTS-007) 발주서.xlsx" title="JDK-T8845P+DTP(DR1-MTS-007) 발주서.xlsx">JDK-T8845P+DTP(DR1-MTS-007) 발주서.xlsx</a></div></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LJP-005" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LJP-005</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYP-393-1(DR1-LJP-005)/MYN-1731(DR1-LPA-004)BT.xls" title="MYN-1731(DR1-LPA-004)BT.xls">MYN-1731(DR1-LPA-004)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LTS-003" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LTS-003</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/NX-1353 + DTP(DR1-LTS-003)/NX-1353(DR1-LTS-003)BT.xls" title="NX-1353(DR1-LTS-003)BT.xls">NX-1353(DR1-LTS-003)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LTS-008" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-LTS-008</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/LS-N364(DR1-LTS-008, LTS-001)/LS-N364(DR1-LTS-008, LTS-001) BT 컨펌.jpg" title="LS-N364(DR1-LTS-008, LTS-001) BT 컨펌.jpg">LS-N364(DR1-LTS-008, LTS-001) BT 컨펌.jpg</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-MJB-005" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-MJB-005</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/BD-6994+DTP(DR1-MJB-005)/BD-6994+DTP(DR1-MJB-005) BT.xls" title="BD-6994+DTP(DR1-MJB-005) BT.xls">BD-6994+DTP(DR1-MJB-005) BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-MJP-003" data-section="원단" data-brand="디즈니" data-filled="1">
+  <div class="shead">
+    <span class="style">DR1-MJP-003</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1416(DR1-MJP-003)/MYN-1416(DR1-MJP-003)BT.xls" title="MYN-1416(DR1-MJP-003)BT.xls">MYN-1416(DR1-MJP-003)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1-LTR-017" data-section="원단" data-brand="스팍스" data-filled="0">
+  <div class="shead">
+    <span class="style">SR1-LTR-017</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1-MPA-001" data-section="원단" data-brand="스팍스" data-filled="1">
+  <div class="shead">
+    <span class="style">SR1-MPA-001</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1335-2(SR1-MPA-015)/MYN-1335-2(SR1-MPA-0015)BT.xls" title="MYN-1335-2(SR1-MPA-0015)BT.xls">MYN-1335-2(SR1-MPA-0015)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR1-MPA-015" data-section="원단" data-brand="스팍스" data-filled="1">
+  <div class="shead">
+    <span class="style">SR1-MPA-015</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/MYN-1335-2(SR1-MPA-015)/MYN-1335-2(SR1-MPA-0015)BT.xls" title="MYN-1335-2(SR1-MPA-0015)BT.xls">MYN-1335-2(SR1-MPA-0015)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR2-LPA-047" data-section="원단" data-brand="스팍스" data-filled="0">
+  <div class="shead">
+    <span class="style">SR2-LPA-047</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="SR2-MTR-049" data-section="원단" data-brand="스팍스" data-filled="1">
+  <div class="shead">
+    <span class="style">SR2-MTR-049</span>
+    
+    <span class="fillpill">1/7</span>
+  </div>
+  <div class="smeta">스팍스</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot filled" title="BT컴펌서 · 1"><span class="slot-lab">BT컴펌서<em>1</em></span><div class="flinks"><a class="flink" href="../../../../생산부/2. 디즈니/27SS/원단/27SS/JDK-G9125(SR2-MTR-049)/JDK-G9125(SR2-MTR-049)BT.xls" title="JDK-G9125(SR2-MTR-049)BT.xls">JDK-G9125(SR2-MTR-049)BT.xls</a></div></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+  </div>
+</section>
+  <section class="sec" data-sec="BT미정">
+  <div class="sec-h"><h2>BT미정</h2><span class="cnt">4</span></div>
+  <div class="slist">
+<article class="srow" data-style="DQ2-LTS-034" data-section="BT미정" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DQ2-LTS-034</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1-LTS-080" data-section="BT미정" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DR1-LTS-080</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR1MAP080" data-section="BT미정" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DR1MAP080</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니 · 납기 미정</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+<article class="srow" data-style="DR2-LTS-091" data-section="BT미정" data-brand="디즈니" data-filled="0">
+  <div class="shead">
+    <span class="style">DR2-LTS-091</span>
+    
+    <span class="fillpill">0/7</span>
+  </div>
+  <div class="smeta">디즈니</div>
+  
+  <div class="slotgrid"><div class="slot empty" title="작업지시서 없음"><span class="slot-lab">작업지시서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단발주서 없음"><span class="slot-lab">원단발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="BT컴펌서 없음"><span class="slot-lab">BT컴펌서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="원단생산량 없음"><span class="slot-lab">원단생산량</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="부자재발주서 없음"><span class="slot-lab">부자재발주서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="QC서 없음"><span class="slot-lab">QC서</span><span class="tooth" aria-hidden="true"></span></div><div class="slot empty" title="패킹리스트 없음"><span class="slot-lab">패킹리스트</span><span class="tooth" aria-hidden="true"></span></div></div>
+</article>
+  </div>
+</section>
+  <p class="foot">산출: dashboard/두리콜렉션/디즈니/진행문서/ · 스타일 47 · 원본이동=False</p>
+</div>
+<script>
+(function(){
+  const q=document.getElementById('q');
+  const fltSec=document.getElementById('fltSec');
+  const fltFill=document.getElementById('fltFill');
+  function apply(){
+    const qq=(q.value||'').trim().toLowerCase();
+    const sec=fltSec.value;
+    const fill=fltFill.value;
+    document.querySelectorAll('.srow').forEach(el=>{
+      const st=(el.dataset.style||'').toLowerCase();
+      const brand=(el.dataset.brand||'').toLowerCase();
+      const ssec=el.dataset.section||'';
+      const filled=+el.dataset.filled||0;
+      const text=el.textContent.toLowerCase();
+      let ok=true;
+      if(qq && !(st.includes(qq)||brand.includes(qq)||text.includes(qq))) ok=false;
+      if(sec!=='all' && ssec!==sec) ok=false;
+      if(fill==='has' && filled<1) ok=false;
+      if(fill==='empty' && filled>0) ok=false;
+      el.classList.toggle('hidden', !ok);
+    });
+  }
+  q.addEventListener('input', apply);
+  fltSec.addEventListener('change', apply);
+  fltFill.addEventListener('change', apply);
+})();
+</script>
+</body></html>

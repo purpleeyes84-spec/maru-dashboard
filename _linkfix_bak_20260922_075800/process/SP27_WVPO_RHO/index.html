@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SP27_WVPO_RHO 1인 단위 세분 · MARU2011</title>
+<style>
+:root{
+  --ink:#14171c; --muted:#5c6570; --faint:#8a93a0;
+  --paper:#f4f0e8; --panel:#fffcf7; --line:#e4dccd;
+  --heat:#c45c26; --teal:#0e6e68; --navy:#1c3558;
+  --chip:#efe6d6; --amber:#b87a30; --ok:#1f7a4d;
+  --radius:17px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:#f4f0e8 !important;color:#14171c !important;
+  font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  line-height:1.6;font-size:15.5px}
+a{color:var(--teal)}
+.dash-nav{position:sticky;top:0;z-index:90;display:flex;flex-wrap:wrap;gap:6px;align-items:center;
+  padding:8px 16px;background:#0b1220;border-bottom:1px solid #243049;
+  font-family:"Malgun Gothic","Noto Sans KR",sans-serif}
+.dash-nav a{color:#d7efe9;text-decoration:none;font-size:13px;padding:4px 10px;border-radius:999px}
+.dash-nav a:hover{background:#1c3558;color:#fff}
+.dash-nav a.here{background:#00a896;color:#04221e;font-weight:700}
+.sec-nav{position:sticky;top:40px;z-index:80;background:rgba(244,240,232,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.sec-nav .in{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px;padding:8px 20px}
+.sec-nav a{color:var(--muted);text-decoration:none;font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid transparent}
+.sec-nav a:hover{background:var(--chip);color:var(--ink);border-color:var(--line)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px 80px}
+.kicker{font-size:12px;letter-spacing:.16em;color:var(--heat);font-weight:700;margin-top:28px}
+h1{font-size:clamp(26px,4vw,40px);margin:6px 0 10px;letter-spacing:-.03em;color:#14171c !important}
+.lede{color:var(--muted);font-size:17px;max-width:48em}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 8px}
+.pill{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:999px;
+  padding:3px 11px;font-size:12px;color:var(--navy)}
+.note{background:#fff6ea;border-left:3px solid var(--heat);padding:12px 14px;border-radius:0 12px 12px 0;
+  font-size:14px;margin:14px 0 22px;color:#14171c !important}
+.flow-wrap{margin:18px 0 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:14px 12px}
+.flow{display:flex;gap:6px;align-items:center;min-width:max-content;padding:0 4px}
+.flow a{text-decoration:none;background:var(--navy);color:#fff;border-radius:999px;padding:7px 13px;
+  font-size:12.5px;font-weight:700;white-space:nowrap}
+.flow a:hover{background:var(--heat)}
+.flow .arr{color:var(--faint);font-size:14px;padding:0 2px}
+.sec{margin-top:36px}
+.sec-head{position:sticky;top:78px;z-index:50;display:flex;align-items:stretch;gap:0;
+  background:rgba(255,252,247,.96);backdrop-filter:blur(8px);border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;margin-bottom:12px;box-shadow:0 1px 0 rgba(20,23,28,.04)}
+.sec-bar{width:6px;background:var(--heat);flex-shrink:0}
+.sec-title{padding:12px 16px}
+.sec-kicker{margin:0;font-size:11px;letter-spacing:.14em;color:var(--heat);font-weight:700}
+.sec-title h2{margin:2px 0 0;font-size:20px;letter-spacing:-.02em;color:#14171c !important}
+.sec-fig{margin:0 0 14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel)}
+.sec-fig img{display:block;width:100%;height:auto;background:#f4f0e8}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;min-height:128px;
+  transition:border-color .15s, box-shadow .15s}
+.card:hover{border-color:#d2c6b0;box-shadow:0 4px 14px rgba(28,53,88,.06)}
+.card.start{border-color:var(--heat);box-shadow:inset 0 0 0 1px var(--heat)}
+.card.last{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.card.mat-in{border-color:var(--ok);box-shadow:inset 0 0 0 1px var(--ok)}
+.card.mat-in .num{background:var(--ok)}
+.mat-gate{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 22px}
+@media(max-width:720px){.mat-gate{grid-template-columns:1fr}}
+.mat-box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.mat-box h4{margin:0 0 8px;font-size:13px;letter-spacing:.04em}
+.mat-box.ok h4{color:var(--ok)}
+.mat-box.hold h4{color:var(--heat)}
+.mat-box ul{margin:0;padding-left:1.1em;font-size:13px;color:var(--muted)}
+.mat-box li{margin:3px 0}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.num{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;
+  padding:0 8px;border-radius:12px;background:var(--navy);color:#fff;font-weight:800;font-size:14px;
+  letter-spacing:.02em}
+.card.start .num{background:var(--heat)}
+.card.last .num{background:var(--teal)}
+h3{margin:0;font-size:15.5px;letter-spacing:-.01em;color:#14171c !important;line-height:1.35}
+.memo{margin:0;font-size:13px;color:var(--muted);line-height:1.45}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;flex-wrap:wrap}
+.mach{display:inline-block;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:700;
+  white-space:nowrap;border:1px solid transparent;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.m-cut{background:#e8eef6;color:var(--navy);border-color:#c5d0e0}
+.m-fuse{background:#f8e8de;color:var(--heat);border-color:#e8c4ae}
+.m-lock{background:#e4f3f1;color:var(--teal);border-color:#b7d9d5}
+.m-inter{background:#1c3558;color:#fff;border-color:#1c3558}
+.m-cover{background:#f5ead8;color:var(--amber);border-color:#e2c89a}
+.m-kyung{background:#f8e8de;color:var(--heat);border-color:#e8c4ae}
+.m-out{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.m-finish{background:#eceff3;color:var(--muted);border-color:#d5dae2}
+.m-emb{background:#efe6f5;color:#5a3d7a;border-color:#d4c0e4}
+.inwon{display:inline-block;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:800;
+  background:#e8f5ef;color:var(--ok);border:1px solid #b7d9c8}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:12px}
+</style>
+<script src="../../_shared/fold-nav.js" defer></script>
+<link rel="stylesheet" href="../../_shared/visibility.css">
+</head>
+<body>
+<nav class="dash-nav" aria-label="대시보드">
+  <a href="../../index.html">폴더홈</a>
+  <a href="../../status/">생산현황</a>
+  <a href="../../delivery/">납기</a>
+  <a href="../index.html" class="here">공정</a>
+  <a href="../../education/">교육자료</a>
+</nav>
+<nav class="sec-nav" aria-label="섹션"><div class="in">
+<a href="#cut">해단·재단</a><a href="#fuse">심지</a><a href="#mai">마이</a><a href="#join">합봉</a><a href="#collar">에리</a><a href="#finish">완성</a>
+</div></nav>
+
+<div class="wrap">
+<p class="kicker">MARU2011 · 로백 · SP27_WVPO_RHO · 작지 캐시</p>
+<h1>SP27_WVPO_RHO 여성 요꼬에리 민소매 · 1인 단위 세분</h1>
+<p class="lede">목적=인력 배분. 1공정=1인. 요꼬에리 민소매 폴로. 소매 공정 없음 → 암홀 제천 페이싱·삼봉. 웰트포켓 없음. 스냅·단추 없음. 임봉 마루 · 납기 2026-10-09.</p>
+<div class="meta">
+  <span class="pill">updated 2026-09-21</span>
+  <span class="pill">44공정 · 1인 단위</span>
+  <span class="pill">START 원단 롤 세팅</span>
+  <span class="pill">LAST 패킹(폴리백·흡수지·스티커)</span>
+  <span class="pill">임봉 마루 · 납기 2026-10-09</span>
+  <span class="pill">작지 TXT 캐시</span>
+  <span class="pill">요꼬 기입고 OK</span>
+</div>
+<p class="note"><b>거친 묶음공정 폐기. 손동작마다 1카드=1인. 마이 배색 O/X는 컬러별. 투명 어깨테이프. 시접없는 성인 릿지(MPOL 릿지 혼용 금지). 마이심지 흰색 트리코트.</b></p>
+
+<div class="flow-wrap" aria-label="공정 타임라인">
+  <div class="flow">
+    <a href="#cut">01–08 해단·재단</a><span class="arr">→</span><a href="#fuse">09–12 심지</a><span class="arr">→</span><a href="#mai">13–21 마이</a><span class="arr">→</span><a href="#join">22–32 합봉</a><span class="arr">→</span><a href="#collar">33–39 에리</a><span class="arr">→</span><a href="#finish">40–44 완성</a>
+  </div>
+</div>
+
+<section class="sec" id="cut">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">해단·재단 · 01–08</p>
+      <h2>해단·재단</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-cut.png" alt="해단·재단 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card start" id="op-01">
+  <div class="card-top"><span class="num">01</span><span class="mach m-cut">해단/스프레더</span></div>
+  <h3>원단 롤 세팅</h3>
+  <p class="memo">원단 롤 장착·방향 확인.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-02">
+  <div class="card-top"><span class="num">02</span><span class="mach m-cut">해단/스프레더</span></div>
+  <h3>해단(스프레딩)</h3>
+  <p class="memo">스프레딩. 솔리드는 한방향 X, DTP는 몸판 한방향.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-03">
+  <div class="card-top"><span class="num">03</span><span class="mach m-finish">수동</span></div>
+  <h3>겹수·결방향 검수</h3>
+  <p class="memo">겹수·결방향 육안 검수.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-04">
+  <div class="card-top"><span class="num">04</span><span class="mach m-cut">마킹</span></div>
+  <h3>마킹·요척</h3>
+  <p class="memo">요척·마킹. 사이즈 마진.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-05">
+  <div class="card-top"><span class="num">05</span><span class="mach m-cut">재단기/직칼</span></div>
+  <h3>몸판 재단</h3>
+  <p class="memo">몸판 재단.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-06">
+  <div class="card-top"><span class="num">06</span><span class="mach m-cut">재단기/직칼</span></div>
+  <h3>배색 재단(해당시)</h3>
+  <p class="memo">마이 배색 O 컬러만. 배색 X면 스킵.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card mat-in" id="op-07">
+  <div class="card-top"><span class="num">07</span><span class="mach m-finish">수동</span></div>
+  <h3>요꼬에리 기입고 수령·검수</h3>
+  <p class="memo">자재리스트 요꼬=OK. 재단 금지. 수량·스트라이프·결점 검수 후 에리 구간 대기열.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-08">
+  <div class="card-top"><span class="num">08</span><span class="mach m-finish">수동</span></div>
+  <h3>재단 수량·결점 검수</h3>
+  <p class="memo">수량·결점 검수 후 이관.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section><section class="sec" id="fuse">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">심지 · 09–12</p>
+      <h2>심지</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-fuse.png" alt="심지 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card" id="op-09">
+  <div class="card-top"><span class="num">09</span><span class="mach m-finish">수동</span></div>
+  <h3>마이심지 준비</h3>
+  <p class="memo">흰색 트리코트 심지 재단·준비(뚜껑마이).</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-10">
+  <div class="card-top"><span class="num">10</span><span class="mach m-fuse">퓨징프레스</span></div>
+  <h3>마이심지 데끼</h3>
+  <p class="memo">마이 심지 데끼.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-11">
+  <div class="card-top"><span class="num">11</span><span class="mach m-finish">수동</span></div>
+  <h3>에리 릿지 관련 심지 준비</h3>
+  <p class="memo">릿지·에리 심지. 요꼬 기입고면 심지 유무 작지 확인 후 해당만.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-12">
+  <div class="card-top"><span class="num">12</span><span class="mach m-fuse">퓨징프레스</span></div>
+  <h3>에리 심지 데끼</h3>
+  <p class="memo">에리 심지 데끼(해당시). 기입고 완성에리면 스킵.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section><section class="sec" id="mai">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">마이 · 13–21</p>
+      <h2>마이</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-mai.png" alt="마이 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card" id="op-13">
+  <div class="card-top"><span class="num">13</span><span class="mach m-finish">수동</span></div>
+  <h3>마이 시접 접기</h3>
+  <p class="memo">뚜껑마이 시접 접기. 단추X.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-14">
+  <div class="card-top"><span class="num">14</span><span class="mach m-lock">본봉(바스)</span></div>
+  <h3>마이 시접 바스</h3>
+  <p class="memo">접은 시접 바스.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-15">
+  <div class="card-top"><span class="num">15</span><span class="mach m-finish">수동</span></div>
+  <h3>마이 시·우 맞춤</h3>
+  <p class="memo">시·우 맞춤·핀.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-16">
+  <div class="card-top"><span class="num">16</span><span class="mach m-lock">본봉</span></div>
+  <h3>마이 시·우 결합</h3>
+  <p class="memo">시·우 결합. 끝 주름 주의.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-17">
+  <div class="card-top"><span class="num">17</span><span class="mach m-finish">수동</span></div>
+  <h3>마이단 접기</h3>
+  <p class="memo">플라켓 끝 접기. 우측이 위로.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-18">
+  <div class="card-top"><span class="num">18</span><span class="mach m-lock">본봉</span></div>
+  <h3>마이단 봉제</h3>
+  <p class="memo">마이단 봉제.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-19">
+  <div class="card-top"><span class="num">19</span><span class="mach m-lock">본봉</span></div>
+  <h3>마이 사각도매 스티치</h3>
+  <p class="memo">사각도매·본봉 스티치. 스티치 빠짐 주의.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-20">
+  <div class="card-top"><span class="num">20</span><span class="mach m-lock">본봉</span></div>
+  <h3>마이 양끝·도매 스티치</h3>
+  <p class="memo">양끝·도매 스티치.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-21">
+  <div class="card-top"><span class="num">21</span><span class="mach m-finish">수동</span></div>
+  <h3>마이 시접·형태 검수</h3>
+  <p class="memo">시접폭·형태 검수.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section><section class="sec" id="join">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">합봉 · 22–32</p>
+      <h2>합봉</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-armhole.png" alt="민소매 암홀 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card" id="op-22">
+  <div class="card-top"><span class="num">22</span><span class="mach m-finish">수동</span></div>
+  <h3>어깨 맞춤</h3>
+  <p class="memo">어깨 맞춤·핀.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-23">
+  <div class="card-top"><span class="num">23</span><span class="mach m-inter">인타록</span></div>
+  <h3>어깨 합봉</h3>
+  <p class="memo">어깨 인타록 합봉.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-24">
+  <div class="card-top"><span class="num">24</span><span class="mach m-finish">수동</span></div>
+  <h3>투명 어깨테이프 준비</h3>
+  <p class="memo">투명 어깨테이프 준비.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-25">
+  <div class="card-top"><span class="num">25</span><span class="mach m-lock">본봉</span></div>
+  <h3>투명 어깨테이프 부착</h3>
+  <p class="memo">투명 어깨테이프 부착. 헤리테이프 땀·조시 주의.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-26">
+  <div class="card-top"><span class="num">26</span><span class="mach m-finish">수동</span></div>
+  <h3>암홀 제천 페이싱 준비</h3>
+  <p class="memo">제천 페이싱(제천 밑가시) 준비. 민소매 암홀.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-27">
+  <div class="card-top"><span class="num">27</span><span class="mach m-lock">본봉</span></div>
+  <h3>암홀 제천 페이싱</h3>
+  <p class="memo">암홀 안 제천 페이싱. 어깨 후·사이드 전.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-28">
+  <div class="card-top"><span class="num">28</span><span class="mach m-cover">삼봉</span></div>
+  <h3>암홀 삼봉 마감</h3>
+  <p class="memo">암홀 페이싱 후 삼봉. 늘어남 주의.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-29">
+  <div class="card-top"><span class="num">29</span><span class="mach m-finish">수동</span></div>
+  <h3>와끼 맞춤</h3>
+  <p class="memo">와끼 맞춤.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-30">
+  <div class="card-top"><span class="num">30</span><span class="mach m-finish">수동</span></div>
+  <h3>케어라벨 준비·위치</h3>
+  <p class="memo">왼쪽 옆선 아래 위치. 혼용률·아이템코드 확인.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-31">
+  <div class="card-top"><span class="num">31</span><span class="mach m-inter">인타록</span></div>
+  <h3>와끼 합봉+케어라벨</h3>
+  <p class="memo">와끼 합봉·케어라벨 동시.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-32">
+  <div class="card-top"><span class="num">32</span><span class="mach m-cover">삼봉</span></div>
+  <h3>밑단 삼봉</h3>
+  <p class="memo">밑단 삼봉.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section><section class="sec" id="collar">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">에리 · 33–39</p>
+      <h2>에리</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-collar.png" alt="에리 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card" id="op-33">
+  <div class="card-top"><span class="num">33</span><span class="mach m-kyung">경림프레스</span></div>
+  <h3>릿지프레스 세팅</h3>
+  <p class="memo">시접없는 성인 릿지. MPOL 릿지와 혼용 금지.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-34">
+  <div class="card-top"><span class="num">34</span><span class="mach m-kyung">경림프레스</span></div>
+  <h3>릿지 프레스 조립</h3>
+  <p class="memo">릿지 프레스 조립.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-35">
+  <div class="card-top"><span class="num">35</span><span class="mach m-finish">수동</span></div>
+  <h3>요꼬에리 몸판 맞춤</h3>
+  <p class="memo">기입고 요꼬에리·몸판 맞춤. 07 검수 통과분 투입.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-36">
+  <div class="card-top"><span class="num">36</span><span class="mach m-lock">지누이기/본봉</span></div>
+  <h3>요꼬에리 지누이</h3>
+  <p class="memo">기입고 요꼬에리 지누이.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-37">
+  <div class="card-top"><span class="num">37</span><span class="mach m-lock">후세기</span></div>
+  <h3>요꼬에리 후세</h3>
+  <p class="memo">요꼬에리 후세.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-38">
+  <div class="card-top"><span class="num">38</span><span class="mach m-lock">본봉</span></div>
+  <h3>요꼬에리 스테이</h3>
+  <p class="memo">양끝 스테이.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-39">
+  <div class="card-top"><span class="num">39</span><span class="mach m-lock">본봉</span></div>
+  <h3>사이즈라벨 부착</h3>
+  <p class="memo">헤리테이프 밑에서 떨어져 부착. 뒷판 릿지 중심.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section><section class="sec" id="finish">
+  <header class="sec-head">
+    <div class="sec-bar"></div>
+    <div class="sec-title">
+      <p class="sec-kicker">완성 · 40–44</p>
+      <h2>완성</h2>
+    </div>
+  </header>
+  <figure class="sec-fig"><img src="img/sec-finish.png" alt="완성 도식" width="720" height="180" loading="lazy"></figure>
+  <div class="cards">
+<article class="card" id="op-40">
+  <div class="card-top"><span class="num">40</span><span class="mach m-finish">수동/사절</span></div>
+  <h3>실밥제거</h3>
+  <p class="memo">실밥 제거.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-41">
+  <div class="card-top"><span class="num">41</span><span class="mach m-kyung">아이롱</span></div>
+  <h3>아이롱</h3>
+  <p class="memo">완성 아이롱. 마이 우는 현상 주의.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-42">
+  <div class="card-top"><span class="num">42</span><span class="mach m-lock">본봉</span></div>
+  <h3>행택고리 부착</h3>
+  <p class="memo">왼쪽 어깨심. 행택고리 작업.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card" id="op-43">
+  <div class="card-top"><span class="num">43</span><span class="mach m-finish">완성</span></div>
+  <h3>완성홀딩</h3>
+  <p class="memo">행택·폴딩·홀딩.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+<article class="card last" id="op-44">
+  <div class="card-top"><span class="num">44</span><span class="mach m-finish">완성</span></div>
+  <h3>패킹(폴리백·흡수지·스티커)</h3>
+  <p class="memo">폴리백·흡수지·사이즈스티커.</p>
+  <div class="card-foot"><span class="inwon">인원 1</span></div>
+</article>
+  </div>
+</section>
+
+<footer>MARU2011 공정 · SP27_WVPO_RHO · 1공정=1인 · PDF 재오픈 없음 · 크림 #f4f0e8 / 잉크 #14171c</footer>
+</div>
+</body>
+</html>

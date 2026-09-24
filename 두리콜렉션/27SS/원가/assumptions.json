@@ -1,0 +1,188 @@
+{
+  "project": "마루2011 두리콜렉션 27SS 기획티셔츠 원가",
+  "fx": {
+    "USD_KRW": 1366.0,
+    "CNY_KRW": 202.6,
+    "as_of": "2026-09-24 09:20 Asia/Seoul",
+    "source": "한국은행 ECOS 개장가(원·달러 1,366.0) + 동일 원·위안 202.60 — TokenPost/연합인포맥스 인용(2026-09-24 09:20 KST). 전일(9/23) 종가 USD1358.4·CNY202.47에서 갱신.",
+    "note_file_used_CNY": "overseas_fabric_labor 금액정리 시트는 9/10기준 CNY=230 으로 환산되어 있음. 본 산출은 202.60로 재환산.",
+    "previous_lock_9_23": {
+      "USD_KRW": 1358.4,
+      "CNY_KRW": 202.47
+    }
+  },
+  "roll_yd": 80,
+  "roll_note": "사용자 규칙 roll=80YD (원단발주서 ROLLING란은 100YDS로 표기되나 물류 환산은 80YD 적용)",
+  "routes": {
+    "CN_fabric_to_VN": {
+      "mode": "land",
+      "supplier": "TIANHAO",
+      "styles": [
+        "DR1LTR080",
+        "DR2LTR091"
+      ]
+    },
+    "KR_fabric_to_VN": {
+      "mode": "sea",
+      "supplier": "코라인터내셔널(KORA)",
+      "styles": [
+        "DR2LTS090",
+        "DR2MTS090"
+      ]
+    },
+    "VN_FG_to_KR": {
+      "mode": "sea",
+      "note": "베트남 봉제 완제품 한국 반입"
+    }
+  },
+  "freight_estimates": {
+    "inland_CN_to_VN_KRW_per_YD": {
+      "value": 120.7,
+      "estimate": true,
+      "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청). | FX refresh 9/24: 120→120.7 (×1366.0/1358.4)"
+    },
+    "sea_KR_to_VN_KRW_per_YD": {
+      "value": 95.5,
+      "estimate": true,
+      "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재. | FX refresh 9/24: 95→95.5 (×1366.0/1358.4)"
+    },
+    "sea_VN_to_KR_finished_KRW_per_pc": {
+      "W": {
+        "value": 191.1,
+        "estimate": true,
+        "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW | FX refresh 9/24: 190→191.1"
+      },
+      "M": {
+        "value": 230,
+        "estimate": true,
+        "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+      }
+    },
+    "customs_duty_KRW_per_pc": {
+      "W": {
+        "value": 120,
+        "estimate": true,
+        "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+      },
+      "M": {
+        "value": 140,
+        "estimate": true,
+        "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+      }
+    }
+  },
+  "print_mapping": {
+    "method_preferred": "기은 (USD quote → KRW)",
+    "baseline": "gieun",
+    "source_gieun": "기은 나염단가비교.pdf",
+    "source_geumsan": "금산 디즈니 4가지 기획 티셔츠 나염 단가확인용 파일.pdf",
+    "artwork_verify": "완사입/기획/*/작업지시서.png",
+    "fx_used": {
+      "USD_KRW": 1366.0,
+      "as_of": "2026-09-24 09:20 Asia/Seoul"
+    },
+    "styles": {
+      "DR1LTR080": {
+        "designs": [
+          "기은#2 / 금산도안2 Mickey heart"
+        ],
+        "gieun_usd": 0.7,
+        "gieun_KRW": 956.2,
+        "geumsan_silicone_KRW": 1700,
+        "geumsan_urethane_KRW": 1100,
+        "baseline_KRW": 956.2,
+        "mapping_estimate": false,
+        "mapping_tag": "file",
+        "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)"
+      },
+      "DR2LTR091": {
+        "designs": [
+          "기은#1 / 금산도안1 Daisy+DAISY"
+        ],
+        "gieun_usd": 0.55,
+        "gieun_KRW": 751.3,
+        "geumsan_silicone_KRW": 1400,
+        "geumsan_urethane_KRW": 1000,
+        "baseline_KRW": 751.3,
+        "mapping_estimate": false,
+        "mapping_tag": "file",
+        "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)"
+      },
+      "DR2LTS090": {
+        "designs": [
+          "기은#5+#6 / 금산도안3+4 Daisy+D"
+        ],
+        "gieun_usd": 0.75,
+        "gieun_KRW": 1024.5,
+        "geumsan_silicone_KRW": 2100,
+        "geumsan_urethane_KRW": 1400,
+        "baseline_KRW": 1024.5,
+        "mapping_estimate": false,
+        "mapping_tag": "file",
+        "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100"
+      },
+      "DR2MTS090": {
+        "designs": [
+          "기은#3+#4 / 금산도안5+6 Mickey+MM"
+        ],
+        "gieun_usd": 0.9,
+        "gieun_KRW": 1229.4,
+        "geumsan_silicone_KRW": 1600,
+        "geumsan_urethane_KRW": 1200,
+        "baseline_KRW": 1229.4,
+        "mapping_estimate": false,
+        "mapping_tag": "file",
+        "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600"
+      }
+    }
+  },
+  "style_codes": {
+    "DR1LTR080": {
+      "aka": [
+        "DR2LTR080"
+      ],
+      "gender": "W",
+      "sleeve": "long",
+      "item": "LTR 라운드티",
+      "brand": "디즈니(D)",
+      "year_season": "27SS(R=2027,2=여름)",
+      "collar": "라운드"
+    },
+    "DR2LTR091": {
+      "aka": [
+        "DR1LTR090"
+      ],
+      "gender": "W",
+      "sleeve": "short",
+      "item": "LTR 라운드티",
+      "brand": "디즈니(D)",
+      "year_season": "27SS",
+      "collar": "라운드"
+    },
+    "DR2LTS090": {
+      "aka": [],
+      "gender": "W",
+      "sleeve": "short",
+      "item": "LTS 요꼬에리티",
+      "brand": "디즈니(D)",
+      "year_season": "27SS",
+      "collar": "요꼬"
+    },
+    "DR2MTS090": {
+      "aka": [],
+      "gender": "M",
+      "sleeve": "short",
+      "item": "MTS 요꼬에리티",
+      "brand": "디즈니(D)",
+      "year_season": "27SS",
+      "collar": "요꼬"
+    }
+  },
+  "gaps": [
+    "LTR080/LTR091 부자재 발주서 없음 — 케어라벨만 확인, 라운드티 부자재(라벨 등) 단가 미확보 → extras에 estimate 또는 0",
+    "물류비·박스비 파일 미확정(확인요청/물류비 미포함)",
+    "원단발주서 GREEN 등 BT후결정 컬러명 vs 금액정리 컬러명 상이 — 금액정리 COL 우선",
+    "나염 매핑은 작업지시서 아트+기은 qty로 file 확정(이전 estimate 폐기). 기은 시트 STYLE NO. 공란→본 xlsx에서 채움.",
+    "기은 원본 PDF는 스캔본이라 스타일·KRW열은 시블링 xlsx `기은 나염단가비교_스타일매핑.xlsx`에 기록(원본 PDF 바이너리 수정 대신)."
+  ]
+}

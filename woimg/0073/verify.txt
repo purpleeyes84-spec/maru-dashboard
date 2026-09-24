@@ -1,0 +1,16 @@
+po=0073
+cover_exists=1
+body_style_images=8
+trim_style_images=8
+expected_body=8
+body_ok=1
+cover_ok=1
+Winston: body=31930 trim=31795
+Marston: body=63580 trim=80224
+Rockford: body=71897 trim=86516
+Smokey: body=78957 trim=90074
+Barron: body=61165 trim=84154
+BRADFORD: body=8040 trim=86054
+RAMBLER: body=67680 trim=83135
+Thatcher: body=64297 trim=76519
+cover_bytes=553508

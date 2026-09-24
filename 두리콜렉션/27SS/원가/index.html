@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>27SS 기획티셔츠 원가 — 두리콜렉션</title>
+<link rel="stylesheet" href="../../../_shared/visibility.css"/>
+<style>
+.kpi-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:16px 0 8px; }
+.kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+.kpi .label { color:var(--muted); font-size:0.85rem; margin:0 0 4px; }
+.kpi .value { font-size:1.35rem; font-weight:700; color:var(--accent); margin:0; font-variant-numeric:tabular-nums; }
+.kpi .sub { color:var(--muted); font-size:0.8rem; margin:4px 0 0; }
+:root { --bg:#0f1419; --card:#1a222c; --line:#2c3a48; --txt:#e7eef5; --muted:#9aafc0; --accent:#3dbb9a; --est:#e0a24a; --file:#5dade2; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Pretendard","Noto Sans KR",system-ui,sans-serif; background:var(--bg); color:var(--txt); line-height:1.45; }
+header { padding:28px 24px 12px; border-bottom:1px solid var(--line); }
+header h1 { margin:0 0 6px; font-size:1.45rem; }
+header p { margin:2px 0; color:var(--muted); font-size:0.92rem; }
+.wrap { padding:16px 24px 48px; max-width:1280px; margin:0 auto; }
+.badge { font-size:0.72rem; padding:2px 6px; border-radius:4px; }
+.badge.file { background:#1e3a4f; color:var(--file); }
+.badge.estimate { background:#3a2e16; color:var(--est); }
+table.master, table.cmp, table.detail { width:100%; border-collapse:collapse; font-size:14px; margin:16px 0 28px; }
+table.master th, table.master td, table.cmp th, table.cmp td, table.detail th, table.detail td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; }
+td.merged { vertical-align:middle; font-weight:600; }
+table.master th, table.cmp th { position:sticky; top:0; background:#15202b; color:var(--muted); font-weight:600; }
+td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+td.est { color:var(--est); } td.file { color:#cfe6f5; } td.total { font-weight:700; color:var(--accent); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:14px 0; }
+.card h2 { margin:0 0 4px; font-size:1.15rem; }
+.card h2 small { color:var(--muted); font-weight:400; margin-left:8px; }
+.card h3 { margin:14px 0 6px; font-size:1rem; display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; }
+.card .qty { color:var(--muted); font-weight:400; font-size:0.85rem; }
+.card .tot { color:var(--accent); }
+.meta { color:var(--muted); font-size:0.9rem; margin:0 0 8px; }
+.filters { margin:12px 0; display:flex; gap:8px; flex-wrap:wrap; }
+.filters button { background:#243140; color:var(--txt); border:1px solid var(--line); border-radius:6px; padding:6px 10px; cursor:pointer; font-size:13px; }
+.filters button.active { background:var(--accent); color:#062018; border-color:var(--accent); font-weight:600; }
+.note { font-size:0.85rem; color:var(--muted); }
+h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent); padding-left:10px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>27SS 기획티셔츠 원가 · 나염비교</h1>
+  <p>두리콜렉션 · 디즈니 4기획티 · 나염 베이스라인 = <b>기은</b> (금산 실리콘 대비)</p>
+  <p>FX 2026-09-24 09:20 Asia/Seoul: USD/KRW <b>1366.0</b> · CNY/KRW <b>202.6</b> — 한국은행 ECOS 개장가(원·달러 1,366.0) + 동일 원·위안 202.60 — TokenPost/연합인포맥스 인용(2026-09-24 09…</p>
+</header>
+<div class="wrap">
+  <div class="kpi-row">
+    <div class="kpi"><p class="label">전체 수량가중 평균원가</p><p class="value">5,450.3</p><p class="sub">KRW/장 · 24,300 pcs</p></div>
+    <div class="kpi"><p class="label">나염 베이스라인</p><p class="value">기은</p><p class="sub">USD quote → KRW @ 1366.0</p></div>
+    <div class="kpi"><p class="label">스타일평균 나염절감</p><p class="value">709.6</p><p class="sub">금산실리콘 − 기은 (KRW/장)</p></div>
+    <div class="kpi"><p class="label">매핑</p><p class="value">file</p><p class="sub">작업지시서 아트 + 기은 qty</p></div>
+  </div>
+
+  <div class="kpi-row" id="po-profit-kpi">
+    <div class="kpi"><p class="label">완사입 발주합</p><p class="value">191,500,000</p><p class="sub">KRW · 24,300 pcs · 확정단가</p></div>
+    <div class="kpi"><p class="label">원가합</p><p class="value">132,442,100</p><p class="sub">KRW · styles_cost.json</p></div>
+    <div class="kpi"><p class="label">예상수익</p><p class="value">59,057,900</p><p class="sub">마진 30.84% · 발주−원가</p></div>
+    <div class="kpi"><p class="label">nego_ref 일치</p><p class="value">4/4</p><p class="sub">확정단가 = board nego_ref</p></div>
+  </div>
+
+  <h2 class="sec" id="print-cmp">기은 vs 금산 나염 단가비교 (스타일 합산)</h2>
+  <p class="note">기획티 나염은 <b>기은 KRW</b>를 원가 보드에 반영. 금산은 실리콘/우레탄 참고. 매핑 태그 file = 작업지시서·수량 확정.</p>
+  <table class="cmp">
+    <thead><tr>
+      <th>STYLE</th><th>디자인</th><th class="num">Qty</th><th class="num">기은 USD</th><th class="num">기은 KRW</th>
+      <th class="num">금산 실리콘</th><th class="num">금산 우레탄</th><th class="num">절감</th><th>태그</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+<td>DR1LTR080</td>
+<td>기은#2 / 금산도안2 Mickey heart</td>
+<td class="num">4,000</td>
+<td class="num">$0.70</td>
+<td class="num total">956.2</td>
+<td class="num">1,700</td>
+<td class="num">1,100</td>
+<td class="num">743.8</td>
+<td><span class="badge file">file</span></td>
+</tr><tr>
+<td>DR2LTR091</td>
+<td>기은#1 / 금산도안1 Daisy+DAISY</td>
+<td class="num">12,000</td>
+<td class="num">$0.55</td>
+<td class="num total">751.3</td>
+<td class="num">1,400</td>
+<td class="num">1,000</td>
+<td class="num">648.7</td>
+<td><span class="badge file">file</span></td>
+</tr><tr>
+<td>DR2LTS090</td>
+<td>기은#5+#6 / 금산도안3+4 Daisy+D</td>
+<td class="num">5,000</td>
+<td class="num">$0.75</td>
+<td class="num total">1,024.5</td>
+<td class="num">2,100</td>
+<td class="num">1,400</td>
+<td class="num">1,075.5</td>
+<td><span class="badge file">file</span></td>
+</tr><tr>
+<td>DR2MTS090</td>
+<td>기은#3+#4 / 금산도안5+6 Mickey+MM</td>
+<td class="num">3,300</td>
+<td class="num">$0.90</td>
+<td class="num total">1,229.4</td>
+<td class="num">1,600</td>
+<td class="num">1,200</td>
+<td class="num">370.6</td>
+<td><span class="badge file">file</span></td>
+</tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">기은 도안별 (STYLE NO. 채움)</h2>
+  <table class="cmp">
+    <thead><tr>
+      <th class="num">NO</th><th>STYLE</th><th>기은 디자인</th><th>SIZE</th><th class="num">Qty</th>
+      <th class="num">USD</th><th class="num">KRW</th><th>금산도안</th><th class="num">금산실리콘</th><th>태그</th>
+    </tr></thead>
+    <tbody><tr><td class="num">1</td><td class="merged">DR2LTR091</td><td>Daisy+DAISY 대형</td><td>162.5x182.1mm</td><td class="num">12,000</td><td class="num">$0.55</td><td class="num">751.3</td><td>도안1</td><td class="num">1,400</td><td><span class="badge file">file</span></td></tr><tr><td class="num">2</td><td class="merged">DR1LTR080</td><td>Mickey heart MICKEY MOUSE</td><td>220.1x140.4mm</td><td class="num">4,000</td><td class="num">$0.70</td><td class="num">956.2</td><td>도안2</td><td class="num">1,700</td><td><span class="badge file">file</span></td></tr><tr><td class="num">3</td><td class="merged" rowspan="2">DR2MTS090</td><td>MICKEY MOUSE 소형</td><td>80x41mm</td><td class="num">3,500</td><td class="num">$0.50</td><td class="num">683</td><td>도안5</td><td class="num">950</td><td><span class="badge file">file</span></td></tr><tr><td class="num">4</td><td>MM EST.1928</td><td>45x30mm</td><td class="num">3,500</td><td class="num">$0.40</td><td class="num">546.4</td><td>도안6</td><td class="num">650</td><td><span class="badge file">file</span></td></tr><tr><td class="num">5</td><td class="merged" rowspan="2">DR2LTS090</td><td>Daisy head+script</td><td>121.1x154.1mm</td><td class="num">5,000</td><td class="num">$0.50</td><td class="num">683</td><td>도안3</td><td class="num">1,500</td><td><span class="badge file">file</span></td></tr><tr><td class="num">6</td><td>Letter D striped</td><td>51x49mm</td><td class="num">5,000</td><td class="num">$0.25</td><td class="num">341.5</td><td>도안4</td><td class="num">600</td><td><span class="badge file">file</span></td></tr></tbody>
+  </table>
+
+  
+  <h2 class="sec" id="style-totals">스타일별 원가 총액</h2>
+  <p class="note">칼라별(단가×수량) 합 · 나염 기은 · FX 9/24.</p>
+  <table class="cmp" id="style-sum">
+    <thead><tr>
+      <th>STYLE</th><th>품명</th><th class="num">수량</th><th class="num">가중단가</th><th class="num">원가 총액</th>
+    </tr></thead>
+    <tbody>
+<tr><td class="merged">DR1LTR080</td><td>여자 라운드 긴팔 기획티셔츠</td><td class="num">4,000</td><td class="num">4,133.1</td><td class="num total">16,532,320</td></tr>
+<tr><td class="merged">DR2LTR091</td><td>여자 라운드 반팔 기획티셔츠</td><td class="num">12,000</td><td class="num">3,502.8</td><td class="num total">42,033,890</td></tr>
+<tr><td class="merged">DR2LTS090</td><td>여자 요꼬에리 반팔 기획티셔츠</td><td class="num">5,000</td><td class="num">8,529.4</td><td class="num total">42,647,000</td></tr>
+<tr><td class="merged">DR2MTS090</td><td>남자 요꼬에리 반팔 기획티셔츠</td><td class="num">3,300</td><td class="num">9,463.3</td><td class="num total">31,228,890</td></tr>
+<tr><td class="merged" colspan="2"><b>합계</b></td><td class="num"><b>24,300</b></td><td class="num"><b>5,450.3</b></td><td class="num total"><b>132,442,100</b></td></tr>
+    </tbody>
+  </table>
+
+
+  <h2 class="sec" id="po-profit">완사입 발주·예상수익</h2>
+  <p class="note">발주서 JPG <b>확정단가</b>×수량 − 원가보드 총액. DR2LTR090.jpg → 보드 품번 DR2LTR091. 태그 file = 발주서 스캔 추출. LTS/MTS는 인쇄 NEGO단가(10,100/11,100)와 수기 확정단가(10,000/11,000) 상이 → 확정단가·nego_ref 사용.</p>
+  <table class="cmp" id="po-profit-tbl">
+    <thead><tr>
+      <th>STYLE</th><th class="num">Qty</th><th class="num">발주단가</th><th class="num">발주금액</th>
+      <th class="num">원가총액</th><th class="num">예상수익</th><th class="num">마진%</th><th>태그</th>
+    </tr></thead>
+    <tbody>
+<tr>
+<td class="merged">DR1LTR080</td>
+<td class="num">4,000</td>
+<td class="num">7,400</td>
+<td class="num">29,600,000</td>
+<td class="num">16,532,320</td>
+<td class="num total">13,067,680</td>
+<td class="num">44.15%</td>
+<td><span class="badge file">file</span></td>
+</tr>
+<tr>
+<td class="merged">DR2LTR091</td>
+<td class="num">12,000</td>
+<td class="num">6,300</td>
+<td class="num">75,600,000</td>
+<td class="num">42,033,890</td>
+<td class="num total">33,566,110</td>
+<td class="num">44.40%</td>
+<td><span class="badge file">file</span></td>
+</tr>
+<tr>
+<td class="merged">DR2LTS090</td>
+<td class="num">5,000</td>
+<td class="num">10,000</td>
+<td class="num">50,000,000</td>
+<td class="num">42,647,000</td>
+<td class="num total">7,353,000</td>
+<td class="num">14.71%</td>
+<td><span class="badge file">file</span></td>
+</tr>
+<tr>
+<td class="merged">DR2MTS090</td>
+<td class="num">3,300</td>
+<td class="num">11,000</td>
+<td class="num">36,300,000</td>
+<td class="num">31,228,890</td>
+<td class="num total">5,071,110</td>
+<td class="num">13.97%</td>
+<td><span class="badge file">file</span></td>
+</tr>
+<tr>
+<td class="merged" colspan="1"><b>합계</b></td>
+<td class="num"><b>24,300</b></td>
+<td class="num">—</td>
+<td class="num"><b>191,500,000</b></td>
+<td class="num"><b>132,442,100</b></td>
+<td class="num total"><b>59,057,900</b></td>
+<td class="num"><b>30.84%</b></td>
+<td></td>
+</tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">원가 마스터</h2>
+  <div class="filters" id="style-filters">
+    <button type="button" class="active" data-style="ALL">ALL</button>
+    <button type="button" data-style="DR1LTR080">DR1LTR080</button><button type="button" data-style="DR2LTR091">DR2LTR091</button><button type="button" data-style="DR2LTS090">DR2LTS090</button><button type="button" data-style="DR2MTS090">DR2MTS090</button>
+  </div>
+  <table class="master" id="master">
+    <thead><tr>
+      <th>품번</th><th>컬러</th><th class="num">수량</th>
+      <th class="num">원단</th><th class="num">소탕</th><th class="num">부자재</th><th class="num">나염(기은)</th><th class="num">공임</th>
+      <th class="num">원단운송</th><th class="num">완제품해상</th><th class="num">통관</th><th class="num">합계</th>
+    </tr></thead>
+    <tbody><tr data-style='DR1LTR080'><td class='style-col'>DR1LTR080</td><td class='color-col'>WHITE</td><td class='num'>1,800</td><td class='num'>1,030.8</td><td class='num'>0</td><td class='num'>150</td><td class='num file'>956.2</td><td class='num'>1,502.6</td><td class='num'>91.2</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>4,041.9</td></tr><tr data-style='DR1LTR080'><td class='style-col'>DR1LTR080</td><td class='color-col'>BLACK</td><td class='num'>1,400</td><td class='num'>1,030.8</td><td class='num'>0</td><td class='num'>150</td><td class='num file'>956.2</td><td class='num'>1,502.6</td><td class='num'>91.2</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>4,041.9</td></tr><tr data-style='DR1LTR080'><td class='style-col'>DR1LTR080</td><td class='color-col'>GREEN</td><td class='num'>800</td><td class='num'>1,030.8</td><td class='num'>455.9</td><td class='num'>150</td><td class='num file'>956.2</td><td class='num'>1,502.6</td><td class='num'>91.2</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>4,497.8</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>WHITE</td><td class='num'>3,500</td><td class='num'>845.2</td><td class='num'>0</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,431.9</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>BLACK</td><td class='num'>2,300</td><td class='num'>845.2</td><td class='num'>0</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,431.9</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>S/BLUE</td><td class='num'>1,700</td><td class='num'>845.2</td><td class='num'>119.2</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,551.1</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>VIRIDIAN</td><td class='num'>1,500</td><td class='num'>845.2</td><td class='num'>135.1</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,567</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>RED</td><td class='num'>1,500</td><td class='num'>845.2</td><td class='num'>162.1</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,594</td></tr><tr data-style='DR2LTR091'><td class='style-col'>DR2LTR091</td><td class='color-col'>LAVENDER</td><td class='num'>1,500</td><td class='num'>845.2</td><td class='num'>135.1</td><td class='num'>150</td><td class='num file'>751.3</td><td class='num'>1,297.7</td><td class='num'>76.6</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>3,567</td></tr><tr data-style='DR2LTS090'><td class='style-col'>DR2LTS090</td><td class='color-col'>WHITE</td><td class='num'>1,700</td><td class='num'>1,896</td><td class='num'>0</td><td class='num'>1,670.7</td><td class='num file'>1,024.5</td><td class='num'>3,551.6</td><td class='num'>75.5</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>8,529.4</td></tr><tr data-style='DR2LTS090'><td class='style-col'>DR2LTS090</td><td class='color-col'>BLACK</td><td class='num'>1,300</td><td class='num'>1,896</td><td class='num'>0</td><td class='num'>1,670.7</td><td class='num file'>1,024.5</td><td class='num'>3,551.6</td><td class='num'>75.5</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>8,529.4</td></tr><tr data-style='DR2LTS090'><td class='style-col'>DR2LTS090</td><td class='color-col'>GREEN</td><td class='num'>1,100</td><td class='num'>1,896</td><td class='num'>0</td><td class='num'>1,670.7</td><td class='num file'>1,024.5</td><td class='num'>3,551.6</td><td class='num'>75.5</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>8,529.4</td></tr><tr data-style='DR2LTS090'><td class='style-col'>DR2LTS090</td><td class='color-col'>PURPLE</td><td class='num'>900</td><td class='num'>1,896</td><td class='num'>0</td><td class='num'>1,670.7</td><td class='num file'>1,024.5</td><td class='num'>3,551.6</td><td class='num'>75.5</td><td class='num'>191.1</td><td class='num'>120</td><td class='num total'>8,529.4</td></tr><tr data-style='DR2MTS090'><td class='style-col'>DR2MTS090</td><td class='color-col'>CHARCOAL</td><td class='num'>1,300</td><td class='num'>2,520</td><td class='num'>0</td><td class='num'>1,692.0</td><td class='num file'>1,229.4</td><td class='num'>3,551.6</td><td class='num'>100.3</td><td class='num'>230</td><td class='num'>140</td><td class='num total'>9,463.3</td></tr><tr data-style='DR2MTS090'><td class='style-col'>DR2MTS090</td><td class='color-col'>GREEN</td><td class='num'>900</td><td class='num'>2,520</td><td class='num'>0</td><td class='num'>1,692.0</td><td class='num file'>1,229.4</td><td class='num'>3,551.6</td><td class='num'>100.3</td><td class='num'>230</td><td class='num'>140</td><td class='num total'>9,463.3</td></tr><tr data-style='DR2MTS090'><td class='style-col'>DR2MTS090</td><td class='color-col'>NAVY</td><td class='num'>1,100</td><td class='num'>2,520</td><td class='num'>0</td><td class='num'>1,692.0</td><td class='num file'>1,229.4</td><td class='num'>3,551.6</td><td class='num'>100.3</td><td class='num'>230</td><td class='num'>140</td><td class='num total'>9,463.3</td></tr></tbody>
+  </table>
+
+  <section class='card' id='DR1LTR080'><h2>DR1LTR080 <small>여자 라운드 긴팔 기획티셔츠</small></h2><p class='meta'>평균 <b>4,133.1</b> KRW · 수량 4,000 · 나염(기은) <b>956.2</b> <span class='badge file'>file</span> (금산실리콘 1,700)</p><h3>WHITE <span class='qty'>1,800 pcs</span> <span class='tot'>4,041.9 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,030.8</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>956.2</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,502.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>91.2</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>BLACK <span class='qty'>1,400 pcs</span> <span class='tot'>4,041.9 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,030.8</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>956.2</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,502.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>91.2</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>GREEN <span class='qty'>800 pcs</span> <span class='tot'>4,497.8 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,030.8</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>455.9</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>956.2</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,502.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>91.2</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table></section><section class='card' id='DR2LTR091'><h2>DR2LTR091 <small>여자 라운드 반팔 기획티셔츠</small></h2><p class='meta'>평균 <b>3,502.8</b> KRW · 수량 12,000 · 나염(기은) <b>751.3</b> <span class='badge file'>file</span> (금산실리콘 1,400)</p><h3>WHITE <span class='qty'>3,500 pcs</span> <span class='tot'>3,431.9 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>BLACK <span class='qty'>2,300 pcs</span> <span class='tot'>3,431.9 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>S/BLUE <span class='qty'>1,700 pcs</span> <span class='tot'>3,551.1 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>119.2</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>VIRIDIAN <span class='qty'>1,500 pcs</span> <span class='tot'>3,567 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>135.1</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>RED <span class='qty'>1,500 pcs</span> <span class='tot'>3,594 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>162.1</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>LAVENDER <span class='qty'>1,500 pcs</span> <span class='tot'>3,567 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>845.2</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>135.1</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>150</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>나염(기은)</td><td class='num'>751.3</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>1,297.7</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(inland_CN_to_VN)</td><td class='num'>76.6</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table></section><section class='card' id='DR2LTS090'><h2>DR2LTS090 <small>여자 요꼬에리 반팔 기획티셔츠</small></h2><p class='meta'>평균 <b>8,529.4</b> KRW · 수량 5,000 · 나염(기은) <b>1,024.5</b> <span class='badge file'>file</span> (금산실리콘 2,100)</p><h3>WHITE <span class='qty'>1,700 pcs</span> <span class='tot'>8,529.4 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,896</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,670.7</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,024.5</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>75.5</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>BLACK <span class='qty'>1,300 pcs</span> <span class='tot'>8,529.4 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,896</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,670.7</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,024.5</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>75.5</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>GREEN <span class='qty'>1,100 pcs</span> <span class='tot'>8,529.4 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,896</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,670.7</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,024.5</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>75.5</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>PURPLE <span class='qty'>900 pcs</span> <span class='tot'>8,529.4 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>1,896</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,670.7</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,024.5</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>75.5</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>191.1</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>120</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table></section><section class='card' id='DR2MTS090'><h2>DR2MTS090 <small>남자 요꼬에리 반팔 기획티셔츠</small></h2><p class='meta'>평균 <b>9,463.3</b> KRW · 수량 3,300 · 나염(기은) <b>1,229.4</b> <span class='badge file'>file</span> (금산실리콘 1,600)</p><h3>CHARCOAL <span class='qty'>1,300 pcs</span> <span class='tot'>9,463.3 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>2,520</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,692</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,229.4</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>100.3</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>230</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>140</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>GREEN <span class='qty'>900 pcs</span> <span class='tot'>9,463.3 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>2,520</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,692</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,229.4</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>100.3</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>230</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>140</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table><h3>NAVY <span class='qty'>1,100 pcs</span> <span class='tot'>9,463.3 KRW/장</span></h3><table class='detail'><thead><tr><th>항목</th><th>KRW</th><th>구분</th></tr></thead><tbody><tr><td>원단</td><td class='num'>2,520</td><td><span class='badge file'>file</span></td></tr><tr><td>소탕(염색차지)</td><td class='num'>0</td><td><span class='badge file'>file</span></td></tr><tr><td>부자재</td><td class='num'>1,692</td><td><span class='badge file'>file</span></td></tr><tr><td>나염(기은)</td><td class='num'>1,229.4</td><td><span class='badge file'>file</span></td></tr><tr><td>공임(CM/labor)</td><td class='num'>3,551.6</td><td><span class='badge file'>file</span></td></tr><tr><td>원단운송(sea_KR_to_VN)</td><td class='num'>100.3</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>완제품해상(VN→KR)</td><td class='num'>230</td><td><span class='badge estimate'>estimate</span></td></tr><tr><td>통관/관세추정</td><td class='num'>140</td><td><span class='badge estimate'>estimate</span></td></tr></tbody></table></section>
+
+  <section class="card">
+    <h2>가정 · 링크</h2>
+    <p class="meta">상세: <a href="report.md">report.md</a> · <a href="assumptions.json">assumptions.json</a> · <a href="styles_cost.json">styles_cost.json</a> · <a href="print_mapping.json">print_mapping.json</a> · <a href="po_profit.json">po_profit.json</a></p>
+    <p class="note">원본 기은 PDF는 스캔본 → 수정본 시블링 xlsx: 생산부/해외생산/기은 나염단가비교_스타일매핑.xlsx</p>
+  </section>
+</div>
+<script>
+function resetMasterStyleCells(){
+  document.querySelectorAll('#master tbody tr').forEach(tr=>{
+    const st=tr.dataset.style||'';
+    let sc=tr.querySelector('td.style-col');
+    const color=tr.querySelector('td.color-col');
+    if(!sc){
+      sc=document.createElement('td');
+      sc.className='style-col';
+      tr.insertBefore(sc, color||tr.firstChild);
+    }
+    sc.removeAttribute('rowspan');
+    sc.classList.add('merged');
+    sc.textContent=st;
+    sc.hidden=false;
+  });
+}
+function mergeMasterStyleCol(){
+  resetMasterStyleCells();
+  const visible=[...document.querySelectorAll('#master tbody tr')].filter(tr=>tr.style.display!=='none');
+  let i=0;
+  while(i<visible.length){
+    const st=visible[i].dataset.style;
+    let j=i+1;
+    while(j<visible.length && visible[j].dataset.style===st) j++;
+    const span=j-i;
+    const first=visible[i].querySelector('td.style-col');
+    if(first && span>1) first.rowSpan=span;
+    for(let k=i+1;k<j;k++){
+      const sc=visible[k].querySelector('td.style-col');
+      if(sc) sc.remove();
+    }
+    i=j;
+  }
+}
+document.querySelectorAll('#style-filters button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('#style-filters button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const st=btn.dataset.style;
+    document.querySelectorAll('#master tbody tr').forEach(tr=>{
+      tr.style.display=(st==='ALL'||tr.dataset.style===st)?'':'none';
+    });
+    mergeMasterStyleCol();
+  });
+});
+mergeMasterStyleCol();
+</script>
+<script src="../../../_shared/fold-nav.js"></script>
+</body>
+</html>

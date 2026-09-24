@@ -1,0 +1,698 @@
+{
+  "style": "IO-VPL004",
+  "purpose": "인력 배분 · 1공정=1인",
+  "count": 69,
+  "updated": "2026-09-08",
+  "ops": [
+    {
+      "n": 1,
+      "sec": "cut",
+      "name": "원단 롤 세팅",
+      "mach": "해단/스프레더",
+      "memo": "원단 롤 장착·방향 확인.",
+      "cls": "start",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 2,
+      "sec": "cut",
+      "name": "해단(스프레딩)",
+      "mach": "해단/스프레더",
+      "memo": "한방향 스프레딩.",
+      "cls": "",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 3,
+      "sec": "cut",
+      "name": "겹수·결방향 검수",
+      "mach": "수동",
+      "memo": "겹수·결방향 육안 검수.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 4,
+      "sec": "cut",
+      "name": "마킹·요척",
+      "mach": "마킹",
+      "memo": "요척·마킹. 사이즈 마진.",
+      "cls": "",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 5,
+      "sec": "cut",
+      "name": "몸판 재단",
+      "mach": "재단기/직칼",
+      "memo": "몸판 한방향 재단.",
+      "cls": "",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 6,
+      "sec": "cut",
+      "name": "배색 재단",
+      "mach": "재단기/직칼",
+      "memo": "배색 원단 재단.",
+      "cls": "",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 7,
+      "sec": "cut",
+      "name": "에리·아시 요꼬 재단",
+      "mach": "재단",
+      "memo": "에리·아시 요꼬방향.",
+      "cls": "",
+      "mclass": "m-cut",
+      "inwon": 1
+    },
+    {
+      "n": 8,
+      "sec": "cut",
+      "name": "재단 수량·결점 검수",
+      "mach": "수동",
+      "memo": "수량·결점 검수 후 이관.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 9,
+      "sec": "fuse",
+      "name": "마이 PA45 심지 준비",
+      "mach": "수동",
+      "memo": "PA45 심지 재단·준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 10,
+      "sec": "fuse",
+      "name": "마이 PA45 데끼",
+      "mach": "퓨징프레스",
+      "memo": "PA45 79mm 데끼.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 11,
+      "sec": "fuse",
+      "name": "포켓 후다 PA45 준비",
+      "mach": "수동",
+      "memo": "후다 PA45 준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 12,
+      "sec": "fuse",
+      "name": "포켓 후다 데끼",
+      "mach": "퓨징프레스",
+      "memo": "후다 바깥 한쪽, 시접 X.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 13,
+      "sec": "fuse",
+      "name": "에리 오무데 6020 준비",
+      "mach": "수동",
+      "memo": "오무데 6020 준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 14,
+      "sec": "fuse",
+      "name": "에리 오무데 데끼",
+      "mach": "퓨징프레스",
+      "memo": "오무데 6020 데끼.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 15,
+      "sec": "fuse",
+      "name": "에리 우라 실크심지 준비",
+      "mach": "수동",
+      "memo": "우라 실크심지 준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 16,
+      "sec": "fuse",
+      "name": "에리 우라 데끼",
+      "mach": "퓨징프레스",
+      "memo": "우라 실크심지 데끼.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 17,
+      "sec": "fuse",
+      "name": "아시 심지 데끼",
+      "mach": "퓨징프레스",
+      "memo": "아시 심지 데끼.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 18,
+      "sec": "mai",
+      "name": "마이 시접 접기",
+      "mach": "수동",
+      "memo": "시접 0.8~1cm 접기.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 19,
+      "sec": "mai",
+      "name": "마이 시접 바스",
+      "mach": "본봉(바스)",
+      "memo": "접은 시접 바스.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 20,
+      "sec": "mai",
+      "name": "마이 시·우 맞춤",
+      "mach": "수동",
+      "memo": "시·우 맞춤·핀.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 21,
+      "sec": "mai",
+      "name": "마이 시·우 결합",
+      "mach": "본봉",
+      "memo": "시·우 결합. 끝 주름 주의.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 22,
+      "sec": "mai",
+      "name": "마이단 삼각 접기",
+      "mach": "수동",
+      "memo": "삼각 끝 접기.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 23,
+      "sec": "mai",
+      "name": "마이단 삼각 봉제",
+      "mach": "본봉",
+      "memo": "삼각 8.5\"×1.25\" 봉제.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 24,
+      "sec": "mai",
+      "name": "마이 양끝 스티치",
+      "mach": "본봉",
+      "memo": "양끝 스티치. 시접 안 나오게.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 25,
+      "sec": "mai",
+      "name": "마이 도매 스티치 1줄",
+      "mach": "본봉",
+      "memo": "도매 1줄 스티치.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 26,
+      "sec": "mai",
+      "name": "마이 시접폭 검수(0.8~1cm)",
+      "mach": "수동",
+      "memo": "시접폭 0.8~1cm 검수.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 27,
+      "sec": "yoke",
+      "name": "앞판 절개선 맞춤",
+      "mach": "수동",
+      "memo": "앞판 절개선 맞춤.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 28,
+      "sec": "yoke",
+      "name": "앞판 절개선 요크 결합",
+      "mach": "본봉/인타",
+      "memo": "앞 절개선·요크 결합.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 29,
+      "sec": "yoke",
+      "name": "등판 요크 2겹 맞춤",
+      "mach": "수동",
+      "memo": "등판 요크 2겹 맞춤.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 30,
+      "sec": "yoke",
+      "name": "등판 요크 결합",
+      "mach": "본봉/인타",
+      "memo": "등판 요크 결합.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 31,
+      "sec": "yoke",
+      "name": "요크 위 스티치",
+      "mach": "본봉",
+      "memo": "요크 위 스티치.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 32,
+      "sec": "yoke",
+      "name": "어깨테이프 준비",
+      "mach": "수동",
+      "memo": "어깨테이프 재단·준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 33,
+      "sec": "yoke",
+      "name": "어깨테이프 부착",
+      "mach": "본봉",
+      "memo": "어깨테이프 부착.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 34,
+      "sec": "yoke",
+      "name": "포켓 트리코트 심지 준비",
+      "mach": "수동",
+      "memo": "트리코트 심지 준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 35,
+      "sec": "yoke",
+      "name": "포켓 트리코트 부착(구찌~스냅)",
+      "mach": "퓨징/본봉",
+      "memo": "구찌~스냅 구간 부착.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 36,
+      "sec": "yoke",
+      "name": "구찌입술 접기",
+      "mach": "수동",
+      "memo": "구찌입술 접기.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 37,
+      "sec": "yoke",
+      "name": "구찌입술 웰트 1/2\"",
+      "mach": "본봉(웰트)",
+      "memo": "웰트 1/2\" 봉제.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 38,
+      "sec": "yoke",
+      "name": "포켓 몸판 2겹 덧댐",
+      "mach": "수동",
+      "memo": "포켓 몸판 2겹 덧댐.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 39,
+      "sec": "yoke",
+      "name": "포켓 바깥 2줄 스티치",
+      "mach": "본봉",
+      "memo": "바깥 2줄 스티치.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 40,
+      "sec": "yoke",
+      "name": "포켓 우븐라벨 끼움",
+      "mach": "수동",
+      "memo": "우븐라벨 끼움.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 41,
+      "sec": "yoke",
+      "name": "포켓 우븐라벨 3면 봉제",
+      "mach": "본봉",
+      "memo": "우븐라벨 3면 봉제.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 42,
+      "sec": "join",
+      "name": "어깨 맞춤",
+      "mach": "수동",
+      "memo": "어깨 맞춤·핀.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 43,
+      "sec": "join",
+      "name": "어깨 합봉",
+      "mach": "인타록",
+      "memo": "어깨 인타록 합봉.",
+      "cls": "",
+      "mclass": "m-inter",
+      "inwon": 1
+    },
+    {
+      "n": 44,
+      "sec": "join",
+      "name": "와끼 맞춤",
+      "mach": "수동",
+      "memo": "와끼 맞춤.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 45,
+      "sec": "join",
+      "name": "케어라벨 준비·위치",
+      "mach": "수동",
+      "memo": "케어라벨 준비·위치.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 46,
+      "sec": "join",
+      "name": "와끼 합봉+케어라벨",
+      "mach": "인타록",
+      "memo": "와끼 합봉·케어라벨 동시.",
+      "cls": "",
+      "mclass": "m-inter",
+      "inwon": 1
+    },
+    {
+      "n": 47,
+      "sec": "join",
+      "name": "소매 맞춤",
+      "mach": "수동",
+      "memo": "소매 맞춤.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 48,
+      "sec": "join",
+      "name": "소매 달기",
+      "mach": "인타록",
+      "memo": "소매 인타록 달기.",
+      "cls": "",
+      "mclass": "m-inter",
+      "inwon": 1
+    },
+    {
+      "n": 49,
+      "sec": "join",
+      "name": "소매 우븐라벨 끼움",
+      "mach": "수동",
+      "memo": "소매 우븐라벨 끼움.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 50,
+      "sec": "join",
+      "name": "소매밑단 삼봉",
+      "mach": "삼봉",
+      "memo": "소매밑단 삼봉.",
+      "cls": "",
+      "mclass": "m-cover",
+      "inwon": 1
+    },
+    {
+      "n": 51,
+      "sec": "join",
+      "name": "밑단 삼봉",
+      "mach": "삼봉",
+      "memo": "밑단 삼봉.",
+      "cls": "",
+      "mclass": "m-cover",
+      "inwon": 1
+    },
+    {
+      "n": 52,
+      "sec": "join",
+      "name": "암홀 가다리 준비",
+      "mach": "수동",
+      "memo": "암홀 가다리 준비.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 53,
+      "sec": "join",
+      "name": "암홀 스티치 1/4\"+가다리",
+      "mach": "본봉",
+      "memo": "암홀 1/4\"+가다리.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 54,
+      "sec": "collar",
+      "name": "에리 릿지프레스 세팅",
+      "mach": "경림프레스",
+      "memo": "릿지프레스 세팅.",
+      "cls": "",
+      "mclass": "m-kyung",
+      "inwon": 1
+    },
+    {
+      "n": 55,
+      "sec": "collar",
+      "name": "에리 프레스 조립",
+      "mach": "경림프레스",
+      "memo": "에리 프레스 조립.",
+      "cls": "",
+      "mclass": "m-kyung",
+      "inwon": 1
+    },
+    {
+      "n": 56,
+      "sec": "collar",
+      "name": "에리 몸판 맞춤",
+      "mach": "수동",
+      "memo": "에리·몸판 맞춤.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 57,
+      "sec": "collar",
+      "name": "에리 지누이",
+      "mach": "지누이기/본봉",
+      "memo": "에리 지누이.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 58,
+      "sec": "collar",
+      "name": "에리 후세",
+      "mach": "후세기",
+      "memo": "에리 후세.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 59,
+      "sec": "collar",
+      "name": "에리 양끝 스테이",
+      "mach": "본봉",
+      "memo": "양끝 스테이.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 60,
+      "sec": "collar",
+      "name": "등판요크 전사라벨 부착",
+      "mach": "본봉/다리미",
+      "memo": "전사라벨 부착.",
+      "cls": "",
+      "mclass": "m-lock",
+      "inwon": 1
+    },
+    {
+      "n": 61,
+      "sec": "finish",
+      "name": "옆트임 외주 출고",
+      "mach": "외주 LAST",
+      "memo": "봉제 LAST. 옆트임 외주 출고.",
+      "cls": "last",
+      "mclass": "m-out",
+      "inwon": 1
+    },
+    {
+      "n": 62,
+      "sec": "finish",
+      "name": "옆트임 외주 입고 검수",
+      "mach": "입고",
+      "memo": "외주 입고·검수.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 63,
+      "sec": "finish",
+      "name": "실밥제거",
+      "mach": "수동/사절",
+      "memo": "실밥 제거.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 64,
+      "sec": "finish",
+      "name": "스냅 위치 마킹",
+      "mach": "수동",
+      "memo": "스냅 위치 마킹.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 65,
+      "sec": "finish",
+      "name": "스냅 5EA 부착",
+      "mach": "스냅프레스",
+      "memo": "스냅 5EA 부착.",
+      "cls": "",
+      "mclass": "m-fuse",
+      "inwon": 1
+    },
+    {
+      "n": 66,
+      "sec": "finish",
+      "name": "스냅 고착 검수",
+      "mach": "수동",
+      "memo": "스냅 고착 검수.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 67,
+      "sec": "finish",
+      "name": "아이롱",
+      "mach": "아이롱",
+      "memo": "완성 아이롱.",
+      "cls": "",
+      "mclass": "m-kyung",
+      "inwon": 1
+    },
+    {
+      "n": 68,
+      "sec": "finish",
+      "name": "완성홀딩",
+      "mach": "완성",
+      "memo": "행택 없이 폴딩·홀딩.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    },
+    {
+      "n": 69,
+      "sec": "finish",
+      "name": "패킹(폴리백·흡수지·사이즈스티커)",
+      "mach": "완성",
+      "memo": "폴리백·흡수지·사이즈스티커.",
+      "cls": "",
+      "mclass": "m-finish",
+      "inwon": 1
+    }
+  ]
+}

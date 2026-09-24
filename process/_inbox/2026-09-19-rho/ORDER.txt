@@ -1,0 +1,7 @@
+목표: IO-VPL004처럼 세분 공정표(ops.json+index.html). 산출=Z:\HDD1\MARU\dashboard\process\<스타일>\
+스타일:
+1) SP27_WVPO_RHO — 여성용 요꼬에리 민소매(슬리브리스 폴로) — SP27_WVPO_RHO.pdf
+2) SP27_MPOL_RHO — 성인용 반팔 폴로 — SP27_MPOL_TPOL_RHO.pdf
+3) SP27_TPOL_RHO — 아동용 반팔 폴로 — 동 PDF
+규칙: 공정 최대한 세분(1공정=1인). 겹치는 구간 이미지는 IO-VPL004 img 재사용 OK. PDF 재오픈 금지(이 폴더 캐시만). 온도·초·bar 숫자 금지. 배포 HTML은 공정, 구간 배너 세분 목록은 공정도식에 경로만.
+참조: /workspace/maru/dashboard/process/IO-VPL004/ 및 /workspace/maru/공정/IO-VPL004/

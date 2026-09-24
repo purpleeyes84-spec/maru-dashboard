@@ -1,0 +1,98 @@
+{
+  "updated": "2026-09-24 14:50",
+  "source_folder": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황",
+  "processed": [
+    {
+      "name": "봉제생산현황_묶음.pdf",
+      "sha256": "6f9c528db4283d9ad09133d9cedfddbbdec8e3db12227cae6ddcef8a2b6c40cc",
+      "size": 31949702,
+      "pages": 45,
+      "images": 45,
+      "name_old": "봉제생산현황.pdf",
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\봉제생산현황_묶음.pdf"
+    },
+    {
+      "name": "2026-09-18_일지.pdf",
+      "sha256": "00d62fe9474515d039df1502eea6605aa96a4335b241939573e8cac7f0d1fc74",
+      "size": 727872,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-18",
+      "note": "사용자확정9/18금·OCR7/18오독",
+      "name_old": "260918 봉제생산현황.pdf",
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-18_일지.pdf"
+    },
+    {
+      "name": "2026-09-19_일지.pdf",
+      "sha256": "437413a57d80158b12348d2b17f0e7acd8105d31bf34eaf342c58707e3ecc151",
+      "size": 739200,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-19",
+      "note": "파일명·본문9/19일치 애리후세560",
+      "name_old": null,
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-19_일지.pdf"
+    },
+    {
+      "name": "2026-09-20_일지.pdf",
+      "sha256": "ac8a61776f7df7983363568f936d05041baefdea35d533c2c5d142d62c7d7959",
+      "size": 621351,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-20",
+      "note": "파일명9/20·OCR날짜칸공란 애리후세640",
+      "name_old": null,
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-20_일지.pdf"
+    },
+    {
+      "name": "2026-09-21_일지.pdf",
+      "sha256": "ac8a61776f7df7983363568f936d05041baefdea35d533c2c5d142d62c7d7959",
+      "size": 621351,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-21",
+      "note": "파일명우선9/21 processed·본문날짜칸공란·SHA=9/20동일·애리후세640",
+      "name_old": null,
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-21_일지.pdf"
+    },
+    {
+      "name": "2026-09-22_일지.pdf",
+      "sha256": "90f7e37071e6af9cc9e483ab3c41e4196dd854a729931b687288e9b269f14fdb",
+      "size": 622463,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-22",
+      "note": "파일명우선9/22·undated해제·애리후세586",
+      "name_old": null,
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-22_일지.pdf"
+    },
+    {
+      "name": "2026-09-23_일지.pdf",
+      "sha256": "43839be44e90f898ec6cd1f5db792dc643e0550b4fe8e3506cc7669768299130",
+      "size": 621655,
+      "pages": 1,
+      "images": 1,
+      "date_guess": "2026-09-23",
+      "note": "본문9월23일(수) 애리후세300",
+      "name_old": null,
+      "path": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF\\2026-09-23_일지.pdf"
+    }
+  ],
+  "output": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\일별",
+  "rule": "신규 PDF→페이지PNG→일자폴더. 파일명 YYYY-MM-DD_일지.pdf 우선(본문날짜칸공란이어도 파일명일자·KPI포함). SHA동일해도 파일명다르면 해당일자 처리. 날짜완전미상=_undated",
+  "routine": {
+    "id": "pdf",
+    "folder": "pdf",
+    "name": "봉제 PDF 일별이미지 아침",
+    "cron": "0 8 * * 1-5",
+    "tz": "Asia/Seoul",
+    "enabled": true,
+    "note": "평일 08:00 · 신규 PDF만 · 생산현황 일일보드와 별개"
+  },
+  "image_count": 52,
+  "source_pdf": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\PDF",
+  "source_daily": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\봉제생산현황\\일별",
+  "dashboard_mirror": "Z:\\HDD1\\MARU\\dashboard\\봉제현황\\일별이미지",
+  "rename_note": "260918→PDF/2026-09-18_일지.pdf (사용자확정9/18금·OCR7/18오독). 묶음=PDF/봉제생산현황_묶음.pdf",
+  "date_rule": "blank_body_date → filename YYYY-MM-DD (user-labeled)"
+}

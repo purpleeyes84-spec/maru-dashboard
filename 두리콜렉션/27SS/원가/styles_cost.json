@@ -1,0 +1,3995 @@
+{
+  "generated": "2026-09-24 Asia/Seoul",
+  "fx": {
+    "USD_KRW": 1366.0,
+    "CNY_KRW": 202.6,
+    "as_of": "2026-09-24 09:20 Asia/Seoul",
+    "source": "한국은행 ECOS 개장가(원·달러 1,366.0) + 동일 원·위안 202.60 — TokenPost/연합인포맥스 인용(2026-09-24 09:20 KST). 전일(9/23) 종가 USD1358.4·CNY202.47에서 갱신.",
+    "note_file_used_CNY": "overseas_fabric_labor 금액정리 시트는 9/10기준 CNY=230 으로 환산되어 있음. 본 산출은 202.60로 재환산.",
+    "previous_lock_9_23": {
+      "USD_KRW": 1358.4,
+      "CNY_KRW": 202.47
+    }
+  },
+  "print_baseline": "gieun",
+  "styles": [
+    "DR1LTR080",
+    "DR2LTR091",
+    "DR2LTS090",
+    "DR2MTS090"
+  ],
+  "rows": [
+    {
+      "style": "DR1LTR080",
+      "color": "WHITE",
+      "qty_pcs": 1800,
+      "gender": "W",
+      "sleeve": "long",
+      "name": "여자 라운드 긴팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1030.8,
+          "estimate": false,
+          "detail": {
+            "art": "CS-04C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.756,
+            "unit": 6.73,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 1360,
+            "rolls_80yd": 17,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.756×6.73×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 956.2,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.7,
+            "gieun_krw": 956.2,
+            "geumsan_silicone_krw": 1700,
+            "geumsan_urethane_krw": 1100,
+            "designs": [
+              "기은#2 / 금산도안2 Mickey heart"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1502.6,
+          "estimate": false,
+          "detail": {
+            "usd": 1.1,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 91.2,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 4041.9,
+      "total_krw_color": 7275420.0,
+      "nego_ref_krw": 7400,
+      "vs_nego": 3358.1
+    },
+    {
+      "style": "DR1LTR080",
+      "color": "BLACK",
+      "qty_pcs": 1400,
+      "gender": "W",
+      "sleeve": "long",
+      "name": "여자 라운드 긴팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1030.8,
+          "estimate": false,
+          "detail": {
+            "art": "CS-04C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.756,
+            "unit": 6.73,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 1060,
+            "rolls_80yd": 14,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.756×6.73×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 956.2,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.7,
+            "gieun_krw": 956.2,
+            "geumsan_silicone_krw": 1700,
+            "geumsan_urethane_krw": 1100,
+            "designs": [
+              "기은#2 / 금산도안2 Mickey heart"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1502.6,
+          "estimate": false,
+          "detail": {
+            "usd": 1.1,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 91.2,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 4041.9,
+      "total_krw_color": 5658660.0,
+      "nego_ref_krw": 7400,
+      "vs_nego": 3358.1
+    },
+    {
+      "style": "DR1LTR080",
+      "color": "GREEN",
+      "qty_pcs": 800,
+      "gender": "W",
+      "sleeve": "long",
+      "name": "여자 라운드 긴팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1030.8,
+          "estimate": false,
+          "detail": {
+            "art": "CS-04C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.756,
+            "unit": 6.73,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 605,
+            "rolls_80yd": 8,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.756×6.73×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 455.9,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 1800,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+            "fx_applied": 202.6
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 956.2,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.7,
+            "gieun_krw": 956.2,
+            "geumsan_silicone_krw": 1700,
+            "geumsan_urethane_krw": 1100,
+            "designs": [
+              "기은#2 / 금산도안2 Mickey heart"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1502.6,
+          "estimate": false,
+          "detail": {
+            "usd": 1.1,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 91.2,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 4497.8,
+      "total_krw_color": 3598240.0,
+      "nego_ref_krw": 7400,
+      "vs_nego": 2902.2
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "WHITE",
+      "qty_pcs": 3500,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 2222,
+            "rolls_80yd": 28,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3431.9,
+      "total_krw_color": 12011650.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2868.1
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "BLACK",
+      "qty_pcs": 2300,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 1460,
+            "rolls_80yd": 19,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3431.9,
+      "total_krw_color": 7893370.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2868.1
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "S/BLUE",
+      "qty_pcs": 1700,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 1080,
+            "rolls_80yd": 14,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 119.2,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 1000,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+            "fx_applied": 202.6
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3551.1,
+      "total_krw_color": 6036870.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2748.9
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "VIRIDIAN",
+      "qty_pcs": 1500,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 953,
+            "rolls_80yd": 12,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 135.1,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 1000,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+            "fx_applied": 202.6
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3567.0,
+      "total_krw_color": 5350500.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2733.0
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "RED",
+      "qty_pcs": 1500,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 953,
+            "rolls_80yd": 12,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 162.1,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 1200,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+            "fx_applied": 202.6
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3594.0,
+      "total_krw_color": 5391000.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2706.0
+    },
+    {
+      "style": "DR2LTR091",
+      "color": "LAVENDER",
+      "qty_pcs": 1500,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 845.2,
+          "estimate": false,
+          "detail": {
+            "art": "CS-038C",
+            "supplier": "TIANHAO",
+            "yield_yd": 0.635,
+            "unit": 6.57,
+            "currency": "RMB",
+            "fx_applied": 202.6,
+            "fabric_yd_color": 953,
+            "rolls_80yd": 12,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+            "formula": "0.635×6.57×202.6"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 135.1,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 1000,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+            "fx_applied": 202.6
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 150,
+          "estimate": true,
+          "detail": {
+            "items": [
+              {
+                "item": "carelabel_etc",
+                "per_pc": 150,
+                "estimate": true,
+                "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 751.3,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.55,
+            "gieun_krw": 751.3,
+            "geumsan_silicone_krw": 1400,
+            "geumsan_urethane_krw": 1000,
+            "designs": [
+              "기은#1 / 금산도안1 Daisy+DAISY"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 1297.7,
+          "estimate": false,
+          "detail": {
+            "usd": 0.95,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(inland_CN_to_VN)",
+          "krw_per_pc": 76.6,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 3567.0,
+      "total_krw_color": 5350500.0,
+      "nego_ref_krw": 6300,
+      "vs_nego": 2733.0
+    },
+    {
+      "style": "DR2LTS090",
+      "color": "WHITE",
+      "qty_pcs": 1700,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1896.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 0.79,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 1343,
+            "rolls_80yd": 17,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1670.65,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 22,
+                "usage": 4,
+                "per_pc": 88,
+                "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.495,
+                "per_pc": 232.65,
+                "source": "DR2LTS090_trim_po TAPE TP-01"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1024.5,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.75,
+            "gieun_krw": 1024.5,
+            "geumsan_silicone_krw": 2100,
+            "geumsan_urethane_krw": 1400,
+            "designs": [
+              "기은#5+#6 / 금산도안3+4 Daisy+D"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 75.5,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 8529.4,
+      "total_krw_color": 14499980.0,
+      "nego_ref_krw": 10000,
+      "vs_nego": 1470.6
+    },
+    {
+      "style": "DR2LTS090",
+      "color": "BLACK",
+      "qty_pcs": 1300,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1896.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 0.79,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 1027,
+            "rolls_80yd": 13,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1670.65,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 22,
+                "usage": 4,
+                "per_pc": 88,
+                "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.495,
+                "per_pc": 232.65,
+                "source": "DR2LTS090_trim_po TAPE TP-01"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1024.5,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.75,
+            "gieun_krw": 1024.5,
+            "geumsan_silicone_krw": 2100,
+            "geumsan_urethane_krw": 1400,
+            "designs": [
+              "기은#5+#6 / 금산도안3+4 Daisy+D"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 75.5,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 8529.4,
+      "total_krw_color": 11088220.0,
+      "nego_ref_krw": 10000,
+      "vs_nego": 1470.6
+    },
+    {
+      "style": "DR2LTS090",
+      "color": "GREEN",
+      "qty_pcs": 1100,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1896.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 0.79,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 869,
+            "rolls_80yd": 11,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1670.65,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 22,
+                "usage": 4,
+                "per_pc": 88,
+                "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.495,
+                "per_pc": 232.65,
+                "source": "DR2LTS090_trim_po TAPE TP-01"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1024.5,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.75,
+            "gieun_krw": 1024.5,
+            "geumsan_silicone_krw": 2100,
+            "geumsan_urethane_krw": 1400,
+            "designs": [
+              "기은#5+#6 / 금산도안3+4 Daisy+D"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 75.5,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 8529.4,
+      "total_krw_color": 9382340.0,
+      "nego_ref_krw": 10000,
+      "vs_nego": 1470.6
+    },
+    {
+      "style": "DR2LTS090",
+      "color": "PURPLE",
+      "qty_pcs": 900,
+      "gender": "W",
+      "sleeve": "short",
+      "name": "여자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 1896.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 0.79,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 711,
+            "rolls_80yd": 9,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1670.65,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 22,
+                "usage": 4,
+                "per_pc": 88,
+                "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.495,
+                "per_pc": 232.65,
+                "source": "DR2LTS090_trim_po TAPE TP-01"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1024.5,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.75,
+            "gieun_krw": 1024.5,
+            "geumsan_silicone_krw": 2100,
+            "geumsan_urethane_krw": 1400,
+            "designs": [
+              "기은#5+#6 / 금산도안3+4 Daisy+D"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 75.5,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 191.1,
+          "estimate": true,
+          "detail": {
+            "value": 190,
+            "estimate": true,
+            "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 120,
+          "estimate": true,
+          "detail": {
+            "value": 120,
+            "estimate": true,
+            "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+          }
+        }
+      ],
+      "total_krw_per_pc": 8529.4,
+      "total_krw_color": 7676460.0,
+      "nego_ref_krw": 10000,
+      "vs_nego": 1470.6
+    },
+    {
+      "style": "DR2MTS090",
+      "color": "CHARCOAL",
+      "qty_pcs": 1300,
+      "gender": "M",
+      "sleeve": "short",
+      "name": "남자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 2520.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 1.05,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 1365,
+            "rolls_80yd": 18,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1691.96,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 25,
+                "usage": 4,
+                "per_pc": 100,
+                "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.5148,
+                "per_pc": 241.96,
+                "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2MTS090_trim_po color sheets"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1229.4,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.9,
+            "gieun_krw": 1229.4,
+            "geumsan_silicone_krw": 1600,
+            "geumsan_urethane_krw": 1200,
+            "designs": [
+              "기은#3+#4 / 금산도안5+6 Mickey+MM"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 100.3,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 230,
+          "estimate": true,
+          "detail": {
+            "value": 230,
+            "estimate": true,
+            "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 140,
+          "estimate": true,
+          "detail": {
+            "value": 140,
+            "estimate": true,
+            "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+          }
+        }
+      ],
+      "total_krw_per_pc": 9463.3,
+      "total_krw_color": 12302290.0,
+      "nego_ref_krw": 11000,
+      "vs_nego": 1536.7
+    },
+    {
+      "style": "DR2MTS090",
+      "color": "GREEN",
+      "qty_pcs": 900,
+      "gender": "M",
+      "sleeve": "short",
+      "name": "남자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 2520.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 1.05,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 945,
+            "rolls_80yd": 12,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1691.96,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 25,
+                "usage": 4,
+                "per_pc": 100,
+                "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.5148,
+                "per_pc": 241.96,
+                "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2MTS090_trim_po color sheets"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1229.4,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.9,
+            "gieun_krw": 1229.4,
+            "geumsan_silicone_krw": 1600,
+            "geumsan_urethane_krw": 1200,
+            "designs": [
+              "기은#3+#4 / 금산도안5+6 Mickey+MM"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 100.3,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 230,
+          "estimate": true,
+          "detail": {
+            "value": 230,
+            "estimate": true,
+            "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 140,
+          "estimate": true,
+          "detail": {
+            "value": 140,
+            "estimate": true,
+            "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+          }
+        }
+      ],
+      "total_krw_per_pc": 9463.3,
+      "total_krw_color": 8516970.0,
+      "nego_ref_krw": 11000,
+      "vs_nego": 1536.7
+    },
+    {
+      "style": "DR2MTS090",
+      "color": "NAVY",
+      "qty_pcs": 1100,
+      "gender": "M",
+      "sleeve": "short",
+      "name": "남자 요꼬에리 반팔 기획티셔츠",
+      "brand": "디즈니(D)",
+      "lines": [
+        {
+          "name": "원단",
+          "krw_per_pc": 2520.0,
+          "estimate": false,
+          "detail": {
+            "art": "KRP-1115",
+            "supplier": "코라인터내셔널",
+            "yield_yd": 1.05,
+            "unit": 2400,
+            "currency": "KRW",
+            "fx_applied": "KRW_native",
+            "fabric_yd_color": 1155,
+            "rolls_80yd": 15,
+            "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+          }
+        },
+        {
+          "name": "소탕(염색차지)",
+          "krw_per_pc": 0.0,
+          "estimate": false,
+          "detail": {
+            "sotang_cny_total": 0,
+            "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+          }
+        },
+        {
+          "name": "부자재",
+          "krw_per_pc": 1691.96,
+          "estimate": false,
+          "detail": {
+            "items": [
+              {
+                "item": "button",
+                "unit": 25,
+                "usage": 4,
+                "per_pc": 100,
+                "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+              },
+              {
+                "item": "tape",
+                "unit": 470,
+                "usage": 0.5148,
+                "per_pc": 241.96,
+                "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+              },
+              {
+                "item": "yoko",
+                "unit": 1350,
+                "usage": 1,
+                "per_pc": 1350,
+                "source": "DR2MTS090_trim_po color sheets"
+              }
+            ]
+          }
+        },
+        {
+          "name": "나염(기은)",
+          "krw_per_pc": 1229.4,
+          "estimate": false,
+          "detail": {
+            "baseline": "gieun",
+            "gieun_usd": 0.9,
+            "gieun_krw": 1229.4,
+            "geumsan_silicone_krw": 1600,
+            "geumsan_urethane_krw": 1200,
+            "designs": [
+              "기은#3+#4 / 금산도안5+6 Mickey+MM"
+            ],
+            "mapping_tag": "file",
+            "fx_usd_krw": 1366.0,
+            "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+            "source": "기은 나염단가비교.pdf + 작업지시서"
+          }
+        },
+        {
+          "name": "공임(CM/labor)",
+          "krw_per_pc": 3551.6,
+          "estimate": false,
+          "detail": {
+            "usd": 2.6,
+            "fx": 1358.4,
+            "source": "overseas_fabric_labor 금액정리·1차확정수량",
+            "fx_applied": 1366.0
+          }
+        },
+        {
+          "name": "원단운송(sea_KR_to_VN)",
+          "krw_per_pc": 100.3,
+          "estimate": true,
+          "detail": {
+            "value": 95,
+            "estimate": true,
+            "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+          }
+        },
+        {
+          "name": "완제품해상(VN→KR)",
+          "krw_per_pc": 230,
+          "estimate": true,
+          "detail": {
+            "value": 230,
+            "estimate": true,
+            "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+          }
+        },
+        {
+          "name": "통관/관세추정",
+          "krw_per_pc": 140,
+          "estimate": true,
+          "detail": {
+            "value": 140,
+            "estimate": true,
+            "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+          }
+        }
+      ],
+      "total_krw_per_pc": 9463.3,
+      "total_krw_color": 10409630.0,
+      "nego_ref_krw": 11000,
+      "vs_nego": 1536.7
+    }
+  ],
+  "by_style": {
+    "DR1LTR080": {
+      "name": "여자 라운드 긴팔 기획티셔츠",
+      "colors": [
+        "WHITE",
+        "BLACK",
+        "GREEN"
+      ],
+      "qty_total": 4000,
+      "rows": [
+        {
+          "style": "DR1LTR080",
+          "color": "WHITE",
+          "qty_pcs": 1800,
+          "gender": "W",
+          "sleeve": "long",
+          "name": "여자 라운드 긴팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1030.8,
+              "estimate": false,
+              "detail": {
+                "art": "CS-04C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.756,
+                "unit": 6.73,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 1360,
+                "rolls_80yd": 17,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.756×6.73×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 956.2,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.7,
+                "gieun_krw": 956.2,
+                "geumsan_silicone_krw": 1700,
+                "geumsan_urethane_krw": 1100,
+                "designs": [
+                  "기은#2 / 금산도안2 Mickey heart"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1502.6,
+              "estimate": false,
+              "detail": {
+                "usd": 1.1,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 91.2,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 4041.9,
+          "total_krw_color": 7275420.0,
+          "nego_ref_krw": 7400,
+          "vs_nego": 3358.1
+        },
+        {
+          "style": "DR1LTR080",
+          "color": "BLACK",
+          "qty_pcs": 1400,
+          "gender": "W",
+          "sleeve": "long",
+          "name": "여자 라운드 긴팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1030.8,
+              "estimate": false,
+              "detail": {
+                "art": "CS-04C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.756,
+                "unit": 6.73,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 1060,
+                "rolls_80yd": 14,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.756×6.73×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 956.2,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.7,
+                "gieun_krw": 956.2,
+                "geumsan_silicone_krw": 1700,
+                "geumsan_urethane_krw": 1100,
+                "designs": [
+                  "기은#2 / 금산도안2 Mickey heart"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1502.6,
+              "estimate": false,
+              "detail": {
+                "usd": 1.1,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 91.2,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 4041.9,
+          "total_krw_color": 5658660.0,
+          "nego_ref_krw": 7400,
+          "vs_nego": 3358.1
+        },
+        {
+          "style": "DR1LTR080",
+          "color": "GREEN",
+          "qty_pcs": 800,
+          "gender": "W",
+          "sleeve": "long",
+          "name": "여자 라운드 긴팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1030.8,
+              "estimate": false,
+              "detail": {
+                "art": "CS-04C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.756,
+                "unit": 6.73,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 605,
+                "rolls_80yd": 8,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.756×6.73×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 455.9,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 1800,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+                "fx_applied": 202.6
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 956.2,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.7,
+                "gieun_krw": 956.2,
+                "geumsan_silicone_krw": 1700,
+                "geumsan_urethane_krw": 1100,
+                "designs": [
+                  "기은#2 / 금산도안2 Mickey heart"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1502.6,
+              "estimate": false,
+              "detail": {
+                "usd": 1.1,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 91.2,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 4497.8,
+          "total_krw_color": 3598240.0,
+          "nego_ref_krw": 7400,
+          "vs_nego": 2902.2
+        }
+      ],
+      "avg_unit_krw": 4133.1
+    },
+    "DR2LTR091": {
+      "name": "여자 라운드 반팔 기획티셔츠",
+      "colors": [
+        "WHITE",
+        "BLACK",
+        "S/BLUE",
+        "VIRIDIAN",
+        "RED",
+        "LAVENDER"
+      ],
+      "qty_total": 12000,
+      "rows": [
+        {
+          "style": "DR2LTR091",
+          "color": "WHITE",
+          "qty_pcs": 3500,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 2222,
+                "rolls_80yd": 28,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3431.9,
+          "total_krw_color": 12011650.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2868.1
+        },
+        {
+          "style": "DR2LTR091",
+          "color": "BLACK",
+          "qty_pcs": 2300,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 1460,
+                "rolls_80yd": 19,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3431.9,
+          "total_krw_color": 7893370.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2868.1
+        },
+        {
+          "style": "DR2LTR091",
+          "color": "S/BLUE",
+          "qty_pcs": 1700,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 1080,
+                "rolls_80yd": 14,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 119.2,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 1000,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+                "fx_applied": 202.6
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3551.1,
+          "total_krw_color": 6036870.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2748.9
+        },
+        {
+          "style": "DR2LTR091",
+          "color": "VIRIDIAN",
+          "qty_pcs": 1500,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 953,
+                "rolls_80yd": 12,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 135.1,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 1000,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+                "fx_applied": 202.6
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3567.0,
+          "total_krw_color": 5350500.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2733.0
+        },
+        {
+          "style": "DR2LTR091",
+          "color": "RED",
+          "qty_pcs": 1500,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 953,
+                "rolls_80yd": 12,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 162.1,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 1200,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+                "fx_applied": 202.6
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3594.0,
+          "total_krw_color": 5391000.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2706.0
+        },
+        {
+          "style": "DR2LTR091",
+          "color": "LAVENDER",
+          "qty_pcs": 1500,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 라운드 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 845.2,
+              "estimate": false,
+              "detail": {
+                "art": "CS-038C",
+                "supplier": "TIANHAO",
+                "yield_yd": 0.635,
+                "unit": 6.57,
+                "currency": "RMB",
+                "fx_applied": 202.6,
+                "fabric_yd_color": 953,
+                "rolls_80yd": 12,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po",
+                "formula": "0.635×6.57×202.6"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 135.1,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 1000,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price",
+                "fx_applied": 202.6
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 150,
+              "estimate": true,
+              "detail": {
+                "items": [
+                  {
+                    "item": "carelabel_etc",
+                    "per_pc": 150,
+                    "estimate": true,
+                    "source": "케어라벨 PO만 존재, 단가 미기재 → 라벨류 150KRW/장 estimate"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 751.3,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.55,
+                "gieun_krw": 751.3,
+                "geumsan_silicone_krw": 1400,
+                "geumsan_urethane_krw": 1000,
+                "designs": [
+                  "기은#1 / 금산도안1 Daisy+DAISY"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 1297.7,
+              "estimate": false,
+              "detail": {
+                "usd": 0.95,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(inland_CN_to_VN)",
+              "krw_per_pc": 76.6,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "폴리 160g/㎡·65\"≈0.26kg/YD × 육로 CN→VN 약 USD0.35/kg × USD/KRW1358 ≈120KRW/YD. 파일에 물류비 미포함(확인요청)."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 3567.0,
+          "total_krw_color": 5350500.0,
+          "nego_ref_krw": 6300,
+          "vs_nego": 2733.0
+        }
+      ],
+      "avg_unit_krw": 3502.8
+    },
+    "DR2LTS090": {
+      "name": "여자 요꼬에리 반팔 기획티셔츠",
+      "colors": [
+        "WHITE",
+        "BLACK",
+        "GREEN",
+        "PURPLE"
+      ],
+      "qty_total": 5000,
+      "rows": [
+        {
+          "style": "DR2LTS090",
+          "color": "WHITE",
+          "qty_pcs": 1700,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1896.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 0.79,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 1343,
+                "rolls_80yd": 17,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1670.65,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 22,
+                    "usage": 4,
+                    "per_pc": 88,
+                    "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.495,
+                    "per_pc": 232.65,
+                    "source": "DR2LTS090_trim_po TAPE TP-01"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1024.5,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.75,
+                "gieun_krw": 1024.5,
+                "geumsan_silicone_krw": 2100,
+                "geumsan_urethane_krw": 1400,
+                "designs": [
+                  "기은#5+#6 / 금산도안3+4 Daisy+D"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 75.5,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 8529.4,
+          "total_krw_color": 14499980.0,
+          "nego_ref_krw": 10000,
+          "vs_nego": 1470.6
+        },
+        {
+          "style": "DR2LTS090",
+          "color": "BLACK",
+          "qty_pcs": 1300,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1896.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 0.79,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 1027,
+                "rolls_80yd": 13,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1670.65,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 22,
+                    "usage": 4,
+                    "per_pc": 88,
+                    "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.495,
+                    "per_pc": 232.65,
+                    "source": "DR2LTS090_trim_po TAPE TP-01"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1024.5,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.75,
+                "gieun_krw": 1024.5,
+                "geumsan_silicone_krw": 2100,
+                "geumsan_urethane_krw": 1400,
+                "designs": [
+                  "기은#5+#6 / 금산도안3+4 Daisy+D"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 75.5,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 8529.4,
+          "total_krw_color": 11088220.0,
+          "nego_ref_krw": 10000,
+          "vs_nego": 1470.6
+        },
+        {
+          "style": "DR2LTS090",
+          "color": "GREEN",
+          "qty_pcs": 1100,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1896.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 0.79,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 869,
+                "rolls_80yd": 11,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1670.65,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 22,
+                    "usage": 4,
+                    "per_pc": 88,
+                    "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.495,
+                    "per_pc": 232.65,
+                    "source": "DR2LTS090_trim_po TAPE TP-01"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1024.5,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.75,
+                "gieun_krw": 1024.5,
+                "geumsan_silicone_krw": 2100,
+                "geumsan_urethane_krw": 1400,
+                "designs": [
+                  "기은#5+#6 / 금산도안3+4 Daisy+D"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 75.5,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 8529.4,
+          "total_krw_color": 9382340.0,
+          "nego_ref_krw": 10000,
+          "vs_nego": 1470.6
+        },
+        {
+          "style": "DR2LTS090",
+          "color": "PURPLE",
+          "qty_pcs": 900,
+          "gender": "W",
+          "sleeve": "short",
+          "name": "여자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 1896.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 0.79,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 711,
+                "rolls_80yd": 9,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1670.65,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 22,
+                    "usage": 4,
+                    "per_pc": 88,
+                    "source": "DR2LTS090_trim_po 단추 BT-12 11MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.495,
+                    "per_pc": 232.65,
+                    "source": "DR2LTS090_trim_po TAPE TP-01"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2LTS090_trim_po color sheets (태흥 YOKO)"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1024.5,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.75,
+                "gieun_krw": 1024.5,
+                "geumsan_silicone_krw": 2100,
+                "geumsan_urethane_krw": 1400,
+                "designs": [
+                  "기은#5+#6 / 금산도안3+4 Daisy+D"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 75.5,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 191.1,
+              "estimate": true,
+              "detail": {
+                "value": 190,
+                "estimate": true,
+                "basis": "여티 약 0.35kg/장 × 해상 VN→KR≈USD0.40/kg ×1358 + 터미널 배분 ≈190KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 120,
+              "estimate": true,
+              "detail": {
+                "value": 120,
+                "estimate": true,
+                "basis": "한-베 FTA(VKFTA) 편직티 관세 0% 가정 + 통관/검사/취급 수수료 배분 여티 120KRW. 실제 C/O·HS확인 필요."
+              }
+            }
+          ],
+          "total_krw_per_pc": 8529.4,
+          "total_krw_color": 7676460.0,
+          "nego_ref_krw": 10000,
+          "vs_nego": 1470.6
+        }
+      ],
+      "avg_unit_krw": 8529.4
+    },
+    "DR2MTS090": {
+      "name": "남자 요꼬에리 반팔 기획티셔츠",
+      "colors": [
+        "CHARCOAL",
+        "GREEN",
+        "NAVY"
+      ],
+      "qty_total": 3300,
+      "rows": [
+        {
+          "style": "DR2MTS090",
+          "color": "CHARCOAL",
+          "qty_pcs": 1300,
+          "gender": "M",
+          "sleeve": "short",
+          "name": "남자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 2520.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 1.05,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 1365,
+                "rolls_80yd": 18,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1691.96,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 25,
+                    "usage": 4,
+                    "per_pc": 100,
+                    "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.5148,
+                    "per_pc": 241.96,
+                    "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2MTS090_trim_po color sheets"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1229.4,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.9,
+                "gieun_krw": 1229.4,
+                "geumsan_silicone_krw": 1600,
+                "geumsan_urethane_krw": 1200,
+                "designs": [
+                  "기은#3+#4 / 금산도안5+6 Mickey+MM"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 100.3,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 230,
+              "estimate": true,
+              "detail": {
+                "value": 230,
+                "estimate": true,
+                "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 140,
+              "estimate": true,
+              "detail": {
+                "value": 140,
+                "estimate": true,
+                "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+              }
+            }
+          ],
+          "total_krw_per_pc": 9463.3,
+          "total_krw_color": 12302290.0,
+          "nego_ref_krw": 11000,
+          "vs_nego": 1536.7
+        },
+        {
+          "style": "DR2MTS090",
+          "color": "GREEN",
+          "qty_pcs": 900,
+          "gender": "M",
+          "sleeve": "short",
+          "name": "남자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 2520.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 1.05,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 945,
+                "rolls_80yd": 12,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1691.96,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 25,
+                    "usage": 4,
+                    "per_pc": 100,
+                    "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.5148,
+                    "per_pc": 241.96,
+                    "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2MTS090_trim_po color sheets"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1229.4,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.9,
+                "gieun_krw": 1229.4,
+                "geumsan_silicone_krw": 1600,
+                "geumsan_urethane_krw": 1200,
+                "designs": [
+                  "기은#3+#4 / 금산도안5+6 Mickey+MM"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 100.3,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 230,
+              "estimate": true,
+              "detail": {
+                "value": 230,
+                "estimate": true,
+                "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 140,
+              "estimate": true,
+              "detail": {
+                "value": 140,
+                "estimate": true,
+                "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+              }
+            }
+          ],
+          "total_krw_per_pc": 9463.3,
+          "total_krw_color": 8516970.0,
+          "nego_ref_krw": 11000,
+          "vs_nego": 1536.7
+        },
+        {
+          "style": "DR2MTS090",
+          "color": "NAVY",
+          "qty_pcs": 1100,
+          "gender": "M",
+          "sleeve": "short",
+          "name": "남자 요꼬에리 반팔 기획티셔츠",
+          "brand": "디즈니(D)",
+          "lines": [
+            {
+              "name": "원단",
+              "krw_per_pc": 2520.0,
+              "estimate": false,
+              "detail": {
+                "art": "KRP-1115",
+                "supplier": "코라인터내셔널",
+                "yield_yd": 1.05,
+                "unit": 2400,
+                "currency": "KRW",
+                "fx_applied": "KRW_native",
+                "fabric_yd_color": 1155,
+                "rolls_80yd": 15,
+                "source": "overseas_fabric_labor.xlsx / 금액정리 + fabric_po"
+              }
+            },
+            {
+              "name": "소탕(염색차지)",
+              "krw_per_pc": 0.0,
+              "estimate": false,
+              "detail": {
+                "sotang_cny_total": 0,
+                "source": "overseas_fabric_labor 소탕_차지비 / tianhao_deadline_price"
+              }
+            },
+            {
+              "name": "부자재",
+              "krw_per_pc": 1691.96,
+              "estimate": false,
+              "detail": {
+                "items": [
+                  {
+                    "item": "button",
+                    "unit": 25,
+                    "usage": 4,
+                    "per_pc": 100,
+                    "source": "DR2MTS090_trim_po 단추 BT-12 13MM"
+                  },
+                  {
+                    "item": "tape",
+                    "unit": 470,
+                    "usage": 0.5148,
+                    "per_pc": 241.96,
+                    "source": "DR2MTS090_trim_po TAPE TP-01 10MM"
+                  },
+                  {
+                    "item": "yoko",
+                    "unit": 1350,
+                    "usage": 1,
+                    "per_pc": 1350,
+                    "source": "DR2MTS090_trim_po color sheets"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "나염(기은)",
+              "krw_per_pc": 1229.4,
+              "estimate": false,
+              "detail": {
+                "baseline": "gieun",
+                "gieun_usd": 0.9,
+                "gieun_krw": 1229.4,
+                "geumsan_silicone_krw": 1600,
+                "geumsan_urethane_krw": 1200,
+                "designs": [
+                  "기은#3+#4 / 금산도안5+6 Mickey+MM"
+                ],
+                "mapping_tag": "file",
+                "fx_usd_krw": 1366.0,
+                "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600",
+                "source": "기은 나염단가비교.pdf + 작업지시서"
+              }
+            },
+            {
+              "name": "공임(CM/labor)",
+              "krw_per_pc": 3551.6,
+              "estimate": false,
+              "detail": {
+                "usd": 2.6,
+                "fx": 1358.4,
+                "source": "overseas_fabric_labor 금액정리·1차확정수량",
+                "fx_applied": 1366.0
+              }
+            },
+            {
+              "name": "원단운송(sea_KR_to_VN)",
+              "krw_per_pc": 100.3,
+              "estimate": true,
+              "detail": {
+                "value": 95,
+                "estimate": true,
+                "basis": "부산→하이퐁/호치민 해상 원단롤 기준 약 USD0.07/YD ×1358≈95KRW/YD. 파일 미기재."
+              }
+            },
+            {
+              "name": "완제품해상(VN→KR)",
+              "krw_per_pc": 230,
+              "estimate": true,
+              "detail": {
+                "value": 230,
+                "estimate": true,
+                "basis": "남티 약 0.42kg/장 × 동일 단가 + 체적 보정 ≈230KRW"
+              }
+            },
+            {
+              "name": "통관/관세추정",
+              "krw_per_pc": 140,
+              "estimate": true,
+              "detail": {
+                "value": 140,
+                "estimate": true,
+                "basis": "동일 FTA 0% + 통관수수료 남티 140KRW(체적·중량 보정)."
+              }
+            }
+          ],
+          "total_krw_per_pc": 9463.3,
+          "total_krw_color": 10409630.0,
+          "nego_ref_krw": 11000,
+          "vs_nego": 1536.7
+        }
+      ],
+      "avg_unit_krw": 9463.3
+    }
+  }
+}

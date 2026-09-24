@@ -1,0 +1,80 @@
+{
+  "generated": "2026-09-24T16:31:08+09:00",
+  "title": "완사입 발주·예상수익",
+  "method": "PO JPG 확정단가 × qty vs styles_cost.json cost totals",
+  "cross_check": {
+    "nego_xlsx": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\정상\\견적서\\네고\\마루완사입 본사 회신 1차 0902  원가포함.xlsx",
+    "nego_xlsx_has_4styles": false,
+    "note": "네고 xlsx는 타 품번만 수록; 4기획티 단가는 발주서 JPG 확정단가 기준"
+  },
+  "styles": [
+    {
+      "style": "DR1LTR080",
+      "po_file_style": "DR1LTR080",
+      "qty": 4000,
+      "po_unit_krw": 7400,
+      "po_amount_krw": 29600000,
+      "cost_total_krw": 16532320,
+      "nego_ref_krw": 7400,
+      "nego_match": true,
+      "source_path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\디즈니 발주서\\DR1LTR080.jpg",
+      "tag": "file",
+      "notes": "확정단가 7400 = NEGO단가 7400 = nego_ref",
+      "profit_krw": 13067680,
+      "margin_pct": 44.15
+    },
+    {
+      "style": "DR2LTR091",
+      "po_file_style": "DR2LTR090",
+      "qty": 12000,
+      "po_unit_krw": 6300,
+      "po_amount_krw": 75600000,
+      "cost_total_krw": 42033890,
+      "nego_ref_krw": 6300,
+      "nego_match": true,
+      "source_path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\디즈니 발주서\\DR2LTR090.jpg",
+      "tag": "file",
+      "notes": "PO품번 DR2LTR090 → board DR2LTR091; 확정단가 6300 = nego_ref",
+      "profit_krw": 33566110,
+      "margin_pct": 44.4
+    },
+    {
+      "style": "DR2LTS090",
+      "po_file_style": "DR2LTS090",
+      "qty": 5000,
+      "po_unit_krw": 10000,
+      "po_amount_krw": 50000000,
+      "cost_total_krw": 42647000,
+      "nego_ref_krw": 10000,
+      "nego_match": true,
+      "source_path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\디즈니 발주서\\DR2LTS090.jpg",
+      "tag": "file",
+      "notes": "인쇄 NEGO단가 10100 → 수기 확정단가 10000 = nego_ref",
+      "profit_krw": 7353000,
+      "margin_pct": 14.71
+    },
+    {
+      "style": "DR2MTS090",
+      "po_file_style": "DR2MTS090",
+      "qty": 3300,
+      "po_unit_krw": 11000,
+      "po_amount_krw": 36300000,
+      "cost_total_krw": 31228890,
+      "nego_ref_krw": 11000,
+      "nego_match": true,
+      "source_path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\디즈니 발주서\\DR2MTS090.jpg",
+      "tag": "file",
+      "notes": "인쇄 NEGO단가 11100 → 수기 확정단가 11000 = nego_ref",
+      "profit_krw": 5071110,
+      "margin_pct": 13.97
+    }
+  ],
+  "grand": {
+    "qty": 24300,
+    "po_amount_krw": 191500000,
+    "cost_total_krw": 132442100,
+    "profit_krw": 59057900,
+    "margin_pct": 30.84
+  },
+  "nego_mismatch": []
+}

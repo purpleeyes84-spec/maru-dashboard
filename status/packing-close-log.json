@@ -1,0 +1,661 @@
+{
+  "kind": "packing-close-summary",
+  "runAt": "2026-09-24T04:19:39.147Z",
+  "packingRoot": "Z:/HDD1/MARU/생산부/정산서",
+  "scannedFileCount": 10,
+  "packingRecordCount": 30,
+  "shipChangedCount": 0,
+  "shipChanges": [],
+  "unmatchedPacking": [
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 18차",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0068",
+      "style": "SP26",
+      "total": 713,
+      "reason": "no-order"
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 16차",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0066",
+      "style": "SP26",
+      "total": 251,
+      "reason": "no-order"
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 16차 (2)",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0066",
+      "style": "SP26",
+      "total": 249,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "FLEET 2.0 FIRE TEAM",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010249",
+      "style": "",
+      "total": 213,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "MERLOT HAWAIAN",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010304",
+      "style": "",
+      "total": 442,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12 아동",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010515",
+      "style": "",
+      "total": 279,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12 초등",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010513",
+      "style": "",
+      "total": 405,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "NO",
+      "style": "",
+      "total": 401,
+      "reason": "no-order"
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.5",
+      "inboundDate": "2026-08-05",
+      "buyer": "",
+      "po": "0010644",
+      "style": "",
+      "total": 2485,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK  GREY  8.3 (4)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010184",
+      "style": "",
+      "total": 239,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK 바레트 8.3 (3)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010323",
+      "style": "",
+      "total": 963,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK 긴팔 8.3 (2)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010435",
+      "style": "",
+      "total": 462,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NVVY 긴팔 8.3",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010436",
+      "style": "",
+      "total": 419,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NVVY 바레트",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010324",
+      "style": "",
+      "total": 1346,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 벙커",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "10109",
+      "style": "",
+      "total": null,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 초등",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010350",
+      "style": "",
+      "total": null,
+      "reason": "no-order"
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 아동",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010644",
+      "style": "",
+      "total": null,
+      "reason": "no-order"
+    },
+    {
+      "file": "PINK PINS SP25 15차 PACKINGLIST 260911.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\PINK PINS SP25 15차 PACKINGLIST 260911.xlsx",
+      "sheet": "PINK PINS SP25 15차",
+      "inboundDate": "2026-09-11",
+      "buyer": "",
+      "po": "LO",
+      "style": "",
+      "total": 129,
+      "reason": "no-order"
+    },
+    {
+      "file": "MORNING PEOPLE 2026 PO#0002 260921.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\MORNING PEOPLE 2026 PO#0002 260921.xlsx",
+      "sheet": "PINK PINS SP25 15차",
+      "inboundDate": "2026-09-11",
+      "buyer": "",
+      "po": "LO",
+      "style": "",
+      "total": 54,
+      "reason": "no-order"
+    }
+  ],
+  "matchedPacking": [
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013276 9.21",
+      "style": "SP27",
+      "nos": [
+        "RH-6"
+      ]
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013245 9.21",
+      "style": "SP27",
+      "nos": [
+        "RH-21"
+      ]
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013202 9.21",
+      "style": "SP27",
+      "nos": [
+        "RH-12"
+      ]
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013220 9.21",
+      "style": "SP27",
+      "nos": [
+        "RH-16"
+      ]
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013234 9.21",
+      "style": "SP27",
+      "nos": [
+        "RH-15"
+      ]
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx",
+      "sheet": "IRON OAK SP26 23차",
+      "style": "SP26",
+      "nos": [
+        "IO-08",
+        "IO-09",
+        "IO-10",
+        "IO-11",
+        "IO-12",
+        "IO-13",
+        "IO-14",
+        "IO-15"
+      ]
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.22.xlsx",
+      "sheet": "IRON OAK SP26 23차",
+      "style": "SP26",
+      "nos": [
+        "IO-08",
+        "IO-09",
+        "IO-10",
+        "IO-11",
+        "IO-12",
+        "IO-13",
+        "IO-14",
+        "IO-15"
+      ]
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK1002",
+      "style": "MTK1002",
+      "nos": [
+        "SM-01",
+        "SM-02",
+        "SM-03",
+        "SM-04",
+        "SM-05",
+        "SM-06",
+        "SM-07",
+        "SM-08",
+        "SM-09",
+        "SM-10"
+      ]
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK1003",
+      "style": "MTK1003",
+      "nos": [
+        "SM-01",
+        "SM-02",
+        "SM-03",
+        "SM-04",
+        "SM-05",
+        "SM-06",
+        "SM-07",
+        "SM-08",
+        "SM-09",
+        "SM-10"
+      ]
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK0992",
+      "style": "MTK00992",
+      "nos": [
+        "SM-01",
+        "SM-02",
+        "SM-03",
+        "SM-04",
+        "SM-05",
+        "SM-06",
+        "SM-07",
+        "SM-08",
+        "SM-09",
+        "SM-10"
+      ]
+    },
+    {
+      "file": "DQ4LTS030 PACKING LIST.xlsx",
+      "sheet": "SP(두리)",
+      "style": "DQ4LTS030",
+      "nos": [
+        "DS-01",
+        "DS-02"
+      ]
+    }
+  ],
+  "force": false,
+  "byPoPatches": {
+    "canon": 0,
+    "status": 0
+  },
+  "embedPatches": 0,
+  "note": "기존 ship 보존(force 없음). 사용자 확정 납품일 우선.",
+  "records": [
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 18차",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0068",
+      "style": "SP26",
+      "total": 713
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 16차",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0066",
+      "style": "SP26",
+      "total": 251
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx",
+      "sheet": "IRON OAK SP26 16차 (2)",
+      "inboundDate": "2026-08-20",
+      "buyer": "",
+      "po": "0066",
+      "style": "SP26",
+      "total": 249
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "FLEET 2.0 FIRE TEAM",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010249",
+      "style": "",
+      "total": 213
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "MERLOT HAWAIAN",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010304",
+      "style": "",
+      "total": 442
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12 아동",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010515",
+      "style": "",
+      "total": 279
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12 초등",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "0010513",
+      "style": "",
+      "total": 405
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.12",
+      "inboundDate": "2026-08-12",
+      "buyer": "",
+      "po": "NO",
+      "style": "",
+      "total": 401
+    },
+    {
+      "file": "26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx",
+      "sheet": "THE MULLIGAN 8.5",
+      "inboundDate": "2026-08-05",
+      "buyer": "",
+      "po": "0010644",
+      "style": "",
+      "total": 2485
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK  GREY  8.3 (4)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010184",
+      "style": "",
+      "total": 239
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK 바레트 8.3 (3)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010323",
+      "style": "",
+      "total": 963
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "BLACK 긴팔 8.3 (2)",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010435",
+      "style": "",
+      "total": 462
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NVVY 긴팔 8.3",
+      "inboundDate": "2026-08-03",
+      "buyer": "",
+      "po": "0010436",
+      "style": "",
+      "total": 419
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NVVY 바레트",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010324",
+      "style": "",
+      "total": 1346
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 벙커",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "10109",
+      "style": "",
+      "total": null
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 초등",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010350",
+      "style": "",
+      "total": null
+    },
+    {
+      "file": "260716 로백 WI26 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\7월\\7월 PACKINGLIST\\260716 로백 WI26 MPOL.xls",
+      "sheet": "NAVY 아동",
+      "inboundDate": "2026-07-16",
+      "buyer": "",
+      "po": "0010644",
+      "style": "",
+      "total": null
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013276 9.21",
+      "inboundDate": "2026-09-21",
+      "buyer": "",
+      "po": "0013276",
+      "style": "SP27",
+      "total": 722
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013245 9.21",
+      "inboundDate": "2026-09-21",
+      "buyer": "",
+      "po": "0013245",
+      "style": "SP27",
+      "total": 208
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013202 9.21",
+      "inboundDate": "2026-09-21",
+      "buyer": "",
+      "po": "0013202",
+      "style": "SP27",
+      "total": 203
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013220 9.21",
+      "inboundDate": "2026-09-21",
+      "buyer": "",
+      "po": "0013220",
+      "style": "SP27",
+      "total": 208
+    },
+    {
+      "file": "260921 로백 SP27 MPOL.xls",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\260921 로백 SP27 MPOL.xls",
+      "sheet": "PO #0013234 9.21",
+      "inboundDate": "2026-09-21",
+      "buyer": "",
+      "po": "0013234",
+      "style": "SP27",
+      "total": 210
+    },
+    {
+      "file": "PINK PINS SP25 15차 PACKINGLIST 260911.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\PINK PINS SP25 15차 PACKINGLIST 260911.xlsx",
+      "sheet": "PINK PINS SP25 15차",
+      "inboundDate": "2026-09-11",
+      "buyer": "",
+      "po": "LO",
+      "style": "",
+      "total": 129
+    },
+    {
+      "file": "MORNING PEOPLE 2026 PO#0002 260921.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\MORNING PEOPLE 2026 PO#0002 260921.xlsx",
+      "sheet": "PINK PINS SP25 15차",
+      "inboundDate": "2026-09-11",
+      "buyer": "",
+      "po": "LO",
+      "style": "",
+      "total": 54
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx",
+      "sheet": "IRON OAK SP26 23차",
+      "inboundDate": "2026-09-18",
+      "buyer": "",
+      "po": "0073",
+      "style": "SP26",
+      "total": 288
+    },
+    {
+      "file": "아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.22.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.22.xlsx",
+      "sheet": "IRON OAK SP26 23차",
+      "inboundDate": "2026-09-22",
+      "buyer": "",
+      "po": "0073",
+      "style": "SP26",
+      "total": 830
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\시머트리\\9월\\SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK1002",
+      "inboundDate": "2026-08-24",
+      "buyer": "TURTLESON",
+      "po": "5458",
+      "style": "MTK1002",
+      "total": 929
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\시머트리\\9월\\SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK1003",
+      "inboundDate": "2026-08-24",
+      "buyer": "TURTLESON",
+      "po": "5458",
+      "style": "MTK1003",
+      "total": 942
+    },
+    {
+      "file": "SYMMETRY  PACKING LIST 260827.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\시머트리\\9월\\SYMMETRY  PACKING LIST 260827.xlsx",
+      "sheet": "MTK0992",
+      "inboundDate": "2026-08-24",
+      "buyer": "TURTLESON",
+      "po": "5458",
+      "style": "MTK00992",
+      "total": null
+    },
+    {
+      "file": "DQ4LTS030 PACKING LIST.xlsx",
+      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\디즈니\\8월\\DQ4LTS030 PACKING LIST.xlsx",
+      "sheet": "SP(두리)",
+      "inboundDate": "2026-08-31",
+      "buyer": "",
+      "po": "",
+      "style": "DQ4LTS030",
+      "total": null
+    }
+  ]
+}

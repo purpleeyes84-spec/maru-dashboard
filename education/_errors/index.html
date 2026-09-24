@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오답노트 · 교육자료</title>
+<style>
+/* 교육자료 공통 2026-09-03. 모든 칸 동일 껍데기. */
+:root{
+  --ink:#14171c; --muted:#5c6570; --faint:#8a93a0;
+  --paper:#f4f0e8; --panel:#fffcf7; --line:#e4dccd;
+  --heat:#c45c26; --teal:#0e6e68; --navy:#1c3558;
+  --ok:#1f7a4d; --bad:#b42318; --chip:#efe6d6;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  line-height:1.65;font-size:16px}
+a{color:var(--teal)}
+.sec-nav{position:sticky;top:40px;z-index:70;background:rgba(244,240,232,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.sec-nav .in,.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.sec-nav .in{display:flex;flex-wrap:wrap;gap:6px;padding:8px 20px}
+.sec-nav a{color:var(--muted);text-decoration:none;font-size:12.5px;padding:4px 10px;border-radius:999px}
+.sec-nav a:hover{background:var(--chip);color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.kicker{font-size:12px;letter-spacing:.16em;color:var(--heat);font-weight:700;margin-top:28px}
+h1{font-size:clamp(26px,4vw,40px);margin:6px 0 10px;letter-spacing:-.03em}
+.lede{color:var(--muted);font-size:17px;max-width:46em}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}
+.pill{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--navy)}
+h2{font-size:22px;margin:40px 0 12px;letter-spacing:-.02em}
+h2 span{color:var(--heat);font-size:12px;margin-left:8px;letter-spacing:.08em;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.card .en{display:block;color:var(--faint);font-size:11px;font-weight:500;letter-spacing:.04em;margin:2px 0 6px} /* KO title first; EN secondary */
+.note{background:#fff6ea;border-left:3px solid var(--heat);padding:10px 12px;border-radius:0 10px 10px 0;font-size:14px;margin:12px 0}
+.fix{background:#fdecea;border-left:3px solid var(--bad);padding:10px 12px;border-radius:0 10px 10px 0;font-size:14px;margin:12px 0}
+figure.hero,figure.pic{margin:16px 0;background:#0d1118;border-radius:18px;overflow:hidden}
+figure.hero img,figure.pic img{width:100%;display:block;height:auto;background:#0d1118}
+figure.hero img{min-height:220px;object-fit:contain}
+figure.pic{background:var(--panel);border:1px solid var(--line)}
+figure.pic img{background:#ddd;max-height:640px;min-height:320px;object-fit:contain}
+/* 사진 그리드: 칸 좁아서 작아지던 문제 → 한·두 열 */
+.grid:has(> figure.pic){grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:16px}
+figcaption{padding:10px 14px;color:#c9d2de;font-size:14px;line-height:1.5}
+figure.pic figcaption{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff}
+.old{color:var(--bad);text-decoration:line-through}
+.new{color:var(--ok);font-weight:650}
+.vid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 10px}
+.q button{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:#fff;font:inherit;cursor:pointer}
+.q button.ok{background:#e8f6ee;border-color:var(--ok)}
+.q button.no{background:#fdecea;border-color:var(--bad)}
+.why{display:none;font-size:13px;color:var(--muted);margin-top:8px}
+.why.show{display:block}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:12px}
+.src{font-size:12px;color:var(--faint)}
+
+.st{font-weight:700;font-size:12px}
+.st.ok{color:var(--ok)}
+.st.bad,.status-bad{color:var(--bad)}
+.st.warn{color:var(--heat)}
+.pill.status-bad{background:#fdecea;border-color:#f0c4c0;color:var(--bad)}
+.freq{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.freq li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
+</style>
+<link rel="stylesheet" href="../../../_shared/visibility.css" />
+</head>
+<body>
+
+<nav class="sec-nav"><div class="in">
+  <a href="#open">미반영</a><a href="#rules">자주 나온 것</a><a href="#recent">최근</a>
+</div></nav>
+<div class="wrap">
+
+<p class="kicker">교육자료 · 오답노트</p>
+<h1>오답노트</h1>
+<p class="lede">같은 실수 반복 금지. 진실은 <code>log.md</code>.</p>
+<p class="note caution">작성·검증용 기록이다. 신입 본선 챕터가 아니다. 이 페이지 숫자로 공장 규격을 정하지 않는다. 작지·바이어 스펙을 본다.</p>
+
+<h2 id="open">미반영 <span>열린 건 · 1</span></h2>
+<ul><li><span class="pill status-bad">미반영</span> 2026-09-24 · 봉제현황 · <code>봉제조업일=일요일제외(근무없음)</code> <span class="pill">논리</span></li></ul>
+
+<h2 id="rules">자주 나온 재발방지 <span>상위 12</span></h2>
+<ul class="freq"><li><span class="src">(16)</span> 소스↔UI 건수·집합 스캔 <span class="pill">논리</span></li><li><span class="src">(10)</span> 정의문서↔수치공식 일치 스캔 <span class="pill">논리</span></li><li><span class="src">(7)</span> 전 칸 공통 주의문 <span class="pill">주의문</span></li><li><span class="src">(5)</span> 허브 href exists 스캔 <span class="pill">href</span></li><li><span class="src">(5)</span> 가타카나·TENCEL·퀴즈분포 재스캔 <span class="pill">퀴즈</span></li><li><span class="src">(4)</span> 표·차트·data.json 키 동기 <span class="pill">논리</span></li><li><span class="src">(4)</span> 검수=전용봇만·셀프검증금지 <span class="pill">기타</span></li><li><span class="src">(4)</span> 영상란=문구만 스캔 <span class="pill">메타문</span></li><li><span class="src">(4)</span> 게이트 승인 전 게시 금지 <span class="pill">기타</span></li><li><span class="src">(3)</span> 시인성=참고대시보드급·전칸공통 <span class="pill">CSS</span></li><li><span class="src">(3)</span> 맞춤법 표 고정 / 이중ㅅ 스캔 <span class="pill">문체</span></li><li><span class="src">(3)</span> 캡션·표·주의 동시 스캔 <span class="pill">캡션·alt</span></li></ul>
+
+<h2 id="recent">최근 기록 <span>최신 12</span></h2>
+<p class="src">상세·스캔은 <code>log.md</code> / <code>scans.md</code>. 이 페이지는 요약.</p>
+<div style="overflow:auto">
+<table>
+<thead><tr><th>날짜</th><th>칸</th><th>상태</th><th>증상요약</th><th>재발방지</th><th>태그</th></tr></thead>
+<tbody>
+<tr><td>2026-09-24</td><td>봉제현황</td><td><span class="st bad">미반영</span></td><td>9/20(일) 애리후세640 등 일요일을 조업일로 반영. 모든 일요일 근무 없음</td><td>봉제조업일=일요일제외(근무없음)</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-24</td><td>봉제현황</td><td><span class="st ok">반영</span></td><td>스캔 날짜칸 공란인데 파일명 일자 무시하고 _undated/스킵</td><td>봉제PDF-날짜칸공란→파일명재확인</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-24</td><td>봉제현황</td><td><span class="st ok">반영</span></td><td>승인: 9/23 catchup 재게이트 · href·source xlsx 20260923 · fix_923/undated_922…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-24</td><td>봉제현황</td><td><span class="st ok">반영</span></td><td>조건부: 9/23 catchup data·xlsx·묶음·undated분리 OK · index/source xlsx href 여전…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-24</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>승인: stage재게이트 · embed≡data shipN27·asOf9/24 · teamKpis 6/9/10/2 · fold-…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-24</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>조건부: stage/납품일/D-day/R10 KPI·status↔canon orders shipN=27 복구 OK · canon…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-22</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>조건부: due동기 RH-1=9/18·IO-07=9/21 OK · 정본 shipN=1≠status27(Δ26) · by-po 불…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-22</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>모닝피플 패킹 있는데 미반영(unmatched)</td><td>패킹매칭=파일명·본문바이어·PO우선(시트탭명 단독금지)</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-22</td><td>공정·생산현황</td><td><span class="st ok">반영</span></td><td>승인: 링크복구 재게이트 · status·사후정산 fold-nav.js · dash-nav CSS0/14</td><td>내비-fold-nav전용</td><td><span class="pill">CSS</span></td></tr><tr><td>2026-09-22</td><td>공정·생산현황</td><td><span class="st ok">반영</span></td><td>링크복구 재검증: delivery/fileZ/끝슬래시0·dash-nav HTML0 · process+education+proc*…</td><td>내비-fold-nav전용</td><td><span class="pill">CSS</span></td></tr><tr><td>2026-09-22</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>승인: packing-close 재게이트 · R10 KPI26·RH/IO13 납품일·packingCloseAt 정합</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr><tr><td>2026-09-22</td><td>생산현황</td><td><span class="st ok">반영</span></td><td>재발: packing-close data/by-po shipN=26·RH/IO13 ship OK · R10 HTML KPI납품완…</td><td>소스↔UI 건수·집합 스캔</td><td><span class="pill">논리</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<footer>교육자료 · 오답노트 · 갱신 2026-09-16</footer>
+
+</div>
+<script src="../../../_shared/fold-nav.js"></script>
+</body>
+</html>

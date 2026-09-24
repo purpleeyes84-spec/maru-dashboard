@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark"><title>패킹리스트 · 종결</title>
+<style>
+:root{--bg:#07090e;--bg2:#0b1018;--panel:#101722;--line:#263244;--line2:#35465c;--text:#eef3f9;--muted:#8b9cb3;--faint:#5c6d84;--gold:#e4b44c;--cyan:#3ecfc4;--amber:#f5b942}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;min-height:100vh}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 18px 48px}
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px;position:relative}
+.top::before{content:"";position:absolute;left:0;right:0;top:-22px;height:2px;background:linear-gradient(90deg,var(--gold),#7a5a18 40%,var(--cyan) 100%)}
+.top h1{margin:0;font-size:20px;font-weight:800}.top p{margin:6px 0 0;color:var(--muted);font-size:12px}
+.kpis{display:flex;gap:8px;flex-wrap:wrap}.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 12px;min-width:72px}
+.kpi b{display:block;font-size:18px;color:var(--gold);font-variant-numeric:tabular-nums}.kpi span{font-size:11px;color:var(--muted)}
+.kpi.warn b{color:var(--amber)}.kpi.ok b{color:var(--cyan)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 10px}
+.filters select,.filters input{background:var(--bg2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;font-size:13px}
+.filters input{min-width:180px;flex:1}
+.sec{margin:18px 0 8px;font-size:13px;color:var(--gold);font-weight:700}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}
+th{color:var(--muted);font-weight:600;background:#0d141e;font-size:12px}tr:last-child td{border-bottom:none}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+.num{font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;border:1px solid var(--line2)}
+.tag.pack{border-color:#2a6a64;color:var(--cyan);background:rgba(62,207,196,.08)}
+.tag.settle{border-color:#5a4718;color:var(--gold);background:rgba(228,180,76,.06)}
+.note{margin-top:14px;color:var(--faint);font-size:12px}.hide{display:none}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:900px){.grid2{grid-template-columns:1.4fr .9fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.panel h2{margin:0 0 8px;font-size:13px;color:var(--gold)}
+.panel p{margin:0;font-size:12px;color:var(--muted);line-height:1.55}
+</style><link rel="stylesheet" href="../../_shared/visibility.css">
+<script src="../../_shared/fold-nav.js" defer></script>
+</head><body>
+<div class="wrap">
+  <div class="top"><div>
+    <h1>패킹리스트 · 종결</h1>
+    <p>원천: 생산부\정산서 · GOODTRUST\정산서 · 누락작지·관리부·ETC 제외 · 종결은 생산현황 meta</p>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><b id="nAll">32</b><span>정산서</span></div>
+    <div class="kpi ok"><b>9</b><span>패킹관련</span></div>
+    <div class="kpi"><b>20</b><span>완성</span></div>
+    <div class="kpi"><b>13</b><span>입고</span></div>
+    <div class="kpi"><b>27</b><span>출고</span></div>
+    <div class="kpi warn"><b>0</b><span>미출고지연</span></div>
+    <div class="kpi"><b>16</b><span>굿트러스트</span></div><div class="kpi"><b>12</b><span>디즈니</span></div><div class="kpi"><b>4</b><span>시머트리</span></div>
+  </div></div>
+  <div class="grid2"><div>
+    <div class="filters">
+      <select id="fBrand"><option value="">브랜드 전체</option><option value="굿트러스트">굿트러스트</option><option value="디즈니">디즈니</option><option value="시머트리">시머트리</option></select>
+      <select id="fMonth"><option value="">월 전체</option><option value="4월">4월</option><option value="5월">5월</option><option value="6월">6월</option><option value="7월">7월</option><option value="8월">8월</option><option value="9월">9월</option></select>
+      <select id="fPack"><option value="">유형 전체</option><option value="1">패킹관련</option><option value="0">정산만</option></select>
+      <input id="fQ" type="search" placeholder="파일명 검색">
+    </div>
+    <div class="sec">정산서 · 패킹리스트</div>
+    <table><thead><tr><th>월</th><th>브랜드</th><th>출처</th><th>유형</th><th>파일</th><th>크기</th><th>수정</th></tr></thead>
+    <tbody id="tb"><tr data-brand="굿트러스트" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/260921 로백 SP27 MPOL.xls">260921 로백 SP27 MPOL.xls</a></td><td class="num">108KB</td><td class="num">2026-09-21</td></tr>
+<tr data-brand="굿트러스트" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/MORNING PEOPLE 2026 PO#0002 260921.xlsx">MORNING PEOPLE 2026 PO#0002 260921.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-21</td></tr>
+<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.pdf">PINK PINS SP25 15차 PACKINGLIST 260911.pdf</a></td><td class="num">509KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.xlsx">PINK PINS SP25 15차 PACKINGLIST 260911.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx">아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx</a></td><td class="num">18KB</td><td class="num">2026-09-18</td></tr>
+<tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/9월 거래명세표.pdf">9월 거래명세표.pdf</a></td><td class="num">139KB</td><td class="num">2026-09-12</td></tr>
+<tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/MTK1003 원단 CLAIM.pdf">MTK1003 원단 CLAIM.pdf</a></td><td class="num">211KB</td><td class="num">2026-09-12</td></tr>
+<tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/OFFER SHEET 시머트리 2026.09.10.xlsx">OFFER SHEET 시머트리 2026.09.10.xlsx</a></td><td class="num">13KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="시머트리" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/SYMMETRY  PACKING LIST 260827.xlsx">SYMMETRY  PACKING LIST 260827.xlsx</a></td><td class="num">33KB</td><td class="num">2026-09-05</td></tr>
+<tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/8월말 완사입 결제리스트 (두리건).pdf">8월말 완사입 결제리스트 (두리건).pdf</a></td><td class="num">67KB</td><td class="num">2026-09-07</td></tr>
+<tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/8월말 완사입 결제리스트 (승우건).pdf">8월말 완사입 결제리스트 (승우건).pdf</a></td><td class="num">62KB</td><td class="num">2026-09-07</td></tr>
+<tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/DQ4LTS030 PACKING LIST.xlsx">DQ4LTS030 PACKING LIST.xlsx</a></td><td class="num">21KB</td><td class="num">2026-09-02</td></tr>
+<tr data-brand="디즈니" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/TmpBill(마루201108월 정산서).xls">TmpBill(마루201108월 정산서).xls</a></td><td class="num">61KB</td><td class="num">2026-09-10</td></tr>
+<tr data-brand="디즈니" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/가공임정산 8월/가공임 2026 SS 8월분 가공임 정산.xlsx">가공임 2026 SS 8월분 가공임 정산.xlsx</a></td><td class="num">59KB</td><td class="num">2026-09-10</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/2026 굿트러스트 정산서 7월 정산서 패턴 정산서 2025.08.07.xls">2026 굿트러스트 정산서 7월 정산서 패턴 정산서 2025.08.07.xls</a></td><td class="num">45KB</td><td class="num">2026-09-18</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="1" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/7월 PACKINGLIST/26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx">26.08.12 MULLIGAN 외 3칼라 PACKINGLIST.xlsx</a></td><td class="num">54KB</td><td class="num">2026-08-22</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/7월 PACKINGLIST/260716 로백 WI26 MPOL.xls">260716 로백 WI26 MPOL.xls</a></td><td class="num">171KB</td><td class="num">2026-09-21</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/가마감/7월 가마감.xlsx">7월 가마감.xlsx</a></td><td class="num">24KB</td><td class="num">2026-08-12</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/굿트 7월 샘플 정산서.xlsx">굿트 7월 샘플 정산서.xlsx</a></td><td class="num">55KB</td><td class="num">2026-08-28</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/마루 7월 생산3팀 정산서 08.20.xlsx">마루 7월 생산3팀 정산서 08.20.xlsx</a></td><td class="num">45KB</td><td class="num">2026-08-28</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/마루 7월 생산5팀 정산서26.08.20.xlsx">마루 7월 생산5팀 정산서26.08.20.xlsx</a></td><td class="num">42KB</td><td class="num">2026-09-10</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/마루 샘플  7월 생산3팀 정산서26.08.20.xlsx">마루 샘플  7월 생산3팀 정산서26.08.20.xlsx</a></td><td class="num">43KB</td><td class="num">2026-08-28</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/마루 샘플  7월 생산5팀 정산서26.08.20.xlsx">마루 샘플  7월 생산5팀 정산서26.08.20.xlsx</a></td><td class="num">41KB</td><td class="num">2026-08-28</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="1" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/7월 PACKINGLIST/아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx">아이언호크 SP26 MAIN 16차 18차 패킹리스트  2026.08.20.xlsx</a></td><td class="num">31KB</td><td class="num">2026-09-18</td></tr>
+<tr data-brand="굿트러스트" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/7월/유영 7월 임가공정산서 2026.08.06.xlsx">유영 7월 임가공정산서 2026.08.06.xlsx</a></td><td class="num">42KB</td><td class="num">2026-08-28</td></tr>
+<tr data-brand="디즈니" data-month="7월" data-pack="0" data-src="PROD"><td>7월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/7월/(주)두리컬렉션 마감내역서 2026 7월분.xlsx">(주)두리컬렉션 마감내역서 2026 7월분.xlsx</a></td><td class="num">23KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="디즈니" data-month="6월" data-pack="0" data-src="PROD"><td>6월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/6월/(주)두리컬렉션 마감내역서 2026 6월분_.xlsx">(주)두리컬렉션 마감내역서 2026 6월분_.xlsx</a></td><td class="num">33KB</td><td class="num">2026-08-08</td></tr>
+<tr data-brand="디즈니" data-month="6월" data-pack="0" data-src="PROD"><td>6월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/6월/마루 6월 마감.xlsx">마루 6월 마감.xlsx</a></td><td class="num">18KB</td><td class="num">2026-08-08</td></tr>
+<tr data-brand="디즈니" data-month="5월" data-pack="0" data-src="PROD"><td>5월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/5월/(주)두리컬렉션 마감내역서 2026 5월분.xlsx">(주)두리컬렉션 마감내역서 2026 5월분.xlsx</a></td><td class="num">23KB</td><td class="num">2026-08-08</td></tr>
+<tr data-brand="디즈니" data-month="5월" data-pack="0" data-src="PROD"><td>5월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/5월/마루 5월 마감.xlsx">마루 5월 마감.xlsx</a></td><td class="num">17KB</td><td class="num">2026-08-08</td></tr>
+<tr data-brand="디즈니" data-month="4월" data-pack="0" data-src="PROD"><td>4월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/4월/(주)두리컬렉션 마감내역서 2026 4월분.xlsx">(주)두리컬렉션 마감내역서 2026 4월분.xlsx</a></td><td class="num">22KB</td><td class="num">2026-08-08</td></tr>
+<tr data-brand="디즈니" data-month="4월" data-pack="0" data-src="PROD"><td>4월</td><td>디즈니</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/디즈니/4월/마루 4월 마감.xlsx">마루 4월 마감.xlsx</a></td><td class="num">18KB</td><td class="num">2026-08-08</td></tr></tbody></table>
+  </div><div>
+    <div class="sec">종결 · 출고 요약 (생산현황)</div>
+    <div class="panel" style="margin-bottom:12px">
+      <h2>요약 · asOf 2026-09-22</h2>
+      <p>오더 92 · 완성 20 · 입고 13 · 출고 27 · 미출고지연 0<br>
+      정산서↔오더 강제조인 없음. 아침 갱신 Air 08:00.</p>
+    </div>
+    <div class="panel"><h2>원천 경로</h2>
+      <p>Z:\HDD1\MARU\생산부\정산서<br>Z:\HDD1\MARU\생산부\GOODTRUST\정산서<br>Z:\HDD1\MARU\dashboard\status\data.json</p>
+    </div>
+  </div></div>
+  <p class="note">생성 2026-09-22 08:12 · 상대경로 원본 연결 · data.json 동봉</p>
+</div>
+<script>
+(function(){
+  var rows=[].slice.call(document.getElementById("tb").querySelectorAll("tr"));
+  var brand=document.getElementById("fBrand"), month=document.getElementById("fMonth"), pack=document.getElementById("fPack"), q=document.getElementById("fQ"), nAll=document.getElementById("nAll");
+  function apply(){
+    var b=brand.value,m=month.value,p=pack.value,qq=(q.value||"").trim().toLowerCase(),n=0;
+    rows.forEach(function(r){
+      var show=(!b||r.dataset.brand===b)&&(!m||r.dataset.month===m)&&(!p||r.dataset.pack===p)&&(!qq||(r.textContent||"").toLowerCase().indexOf(qq)>=0);
+      r.classList.toggle("hide",!show); if(show) n++;
+    });
+    nAll.textContent=String(n);
+  }
+  brand.onchange=month.onchange=pack.onchange=q.oninput=apply;
+})();
+</script></body></html>

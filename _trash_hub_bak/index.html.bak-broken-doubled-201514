@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>운영 대시보드</title>
+<style>
+:root {
+  --bg:#07090e; --panel:#101722; --line:#263244; --line2:#35465c;
+  --text:#eef3f9; --muted:#8b9cb3; --faint:#5c6d84;
+  --gold:#e4b44c; --cyan:#3ecfc4;
+}
+* { box-sizing:border-box }
+html,body { margin:0; padding:0; background:var(--bg); color:var(--text) }
+body {
+  font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;
+  letter-spacing:-0.01em; min-height:100vh;
+}
+a { color:inherit; text-decoration:none }
+.fold-nav {
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+  padding:10px 20px; background:#0c121b; border-bottom:1px solid var(--line);
+}
+.fold-nav a {
+  display:inline-flex; align-items:center;
+  border:1px solid var(--line2); border-radius:999px; padding:5px 12px;
+  font-size:12px; font-weight:700;
+}
+.fold-nav a:hover, .fold-nav a.on { border-color:var(--gold); color<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>운영 대시보드</title>
+<style>
+:root {
+  --bg:#07090e; --panel:#101722; --line:#263244; --line2:#35465c;
+  --text:#eef3f9; --muted:#8b9cb3; --faint:#5c6d84;
+  --gold:#e4b44c; --cyan:#3ecfc4;
+}
+* { box-sizing:border-box }
+html,body { margin:0; padding:0; background:var(--bg); color:var(--text) }
+body {
+  font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;
+  letter-spacing:-0.01em; min-height:100vh;
+}
+a { color:inherit; text-decoration:none }
+.fold-nav {
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+  padding:10px 20px; background:#0c121b; border-bottom:1px solid var(--line);
+}
+.fold-nav a {
+  display:inline-flex; align-items:center;
+  border:1px solid var(--line2); border-radius:999px; padding:5px 12px;
+  font-size:12px; font-weight:700;
+}
+.fold-nav a:hover, .fold-nav a.on { border-color:var(--gold); color:var(--gold) }
+.top {
+  padding:16px 22px 14px;
+  background:linear-gradient(180deg,#121a26 0%,#0d141e 100%);
+  border-bottom:1px solid var(--line); position:relative;
+}
+.top::before {
+  content:""; position:absolute; left:0; right:0; top:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),#7a5a18 40%,var(--cyan) 100%);
+}
+.top h1 { margin:0; font-size:18px; font-weight:800 }
+.top p { margin:6px 0 0; color:var(--muted); font-size:12px }
+.tree { padding:18px 22px 40px; max-width:720px }
+.branch { margin:0 0 8px }
+.branch a {
+  display:flex; align-items:center; gap:10px;
+  background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+}
+.branch a:hover { border-color:#5a4718 }
+.k { font-size:10px; color:var(--gold); letter-spacing:.08em; width:52px; flex:none }
+.nm { font-weight:800; font-size:15px }
+.d { color:var(--muted); font-size:12px; margin-left:auto }
+.kids { margin:6px 0 12px 28px; border-left:1px solid var(--line); padding-left:12px; font-size:12px }
+.kids a { display:block; padding:4px 0; color:var(--muted) }
+.kids a:hover { color:var(--gold) }
+</style>
+</head><body>
+<nav class="fold-nav" aria-label="바로가기">
+  <a href="index.html" class="on">폴더홈</a>
+  <a href="status/index.html">생산현황</a>
+  <a href="delivery/index.html">납기</a>
+  <a href="woimg/index.html">작지이미지</a>
+  <a href="process/index.html">공정</a>
+  <a href="봉제현황/index.html">봉제현황</a>
+  <a href="sales/index.html">매출</a>
+  <a href="education/index.html">교육자료</a>
+  <a href="education/_errors/index.html">오답노트</a>
+  <a href="goodtrust/index.html">GOODTRUST</a>
+  <a href="mail/index.html">메일</a>
+</nav>
+<div class="top">
+  <h1>운영 대시보드</h1>
+  <p>북마크는 이 파일만. 다른 폴더 입구는 쓰지 마세요.</p>
+</div>
+<div class="tree">
+  <div class="branch"><a href="goodtrust/index.html"><span class="k">01</span><span class="nm">GOODTRUST</span><span class="d">납기순 아트웍</span></a></div>
+  <div class="branch"><a href="status/index.html"><span class="k">02</span><span class="nm">생산현황</span><span class="d">팀 · 납기 · 수량</span></a></div>
+  <div class="branch"><a href="delivery/index.html"><span class="k">03</span><span class="nm">납기</span><span class="d">지각 · 패킹 · 출고</span></a></div>
+  <div class="branch"><a href="process/index.html"><span class="k">04</span><span class="nm">공정</span><span class="d">공수 · 진행표</span></a></div>
+  <div class="branch"><a href="봉제현황/index.html"><span class="k">SEW</span><span class="nm">봉제현황</span><span class="d">일평균 제품 · 병목</span></a></div>
+  <div class="branch"><a href="sales/index.html"><span class="k">05</span><span class="nm">매출</span><span class="d">건수 · 거래처</span></a></div>
+  <div class="branch"><a href="education/index.html"><span class="k">06</span><span class="nm">교육자료</span><span class="d">원단 · 생산공정</span></a></div>
+  <div class="kids">
+    <a href="education/tshirt-process/index.html">전체공정</a>
+    <a href="education/fiber/index.html">섬유</a>
+    <a href="education/count/index.html">번수</a>
+    <a href="education/care-label/index.html">케어라벨</a>
+    <a href="education/spinning/index.html">방적</a>
+    <a href="education/knitting/index.html">편직</a>
+    <a href="education/fabric-spec/index.html">원단스펙</a>
+    <a href="education/fabric-inspect/index.html">원단검사</a>
+    <a href="education/shrink/index.html">수축</a>
+    <a href="education/colorfastness/index.html">견뢰도</a>
+    <a href="education/dyeing/index.html">염색</a>
+    <a href="education/dyestuff/index.html">염료</a>
+    <a href="education/finishing/index.html">후가공</a>
+    <a href="education/print/index.html">프린트</a>
+    <a href="education/cut/index.html">재단</a>
+    <a href="education/sewing/index.html">봉제</a>
+    <a href="education/sew-machines/index.html">봉제기기</a>
+    <a href="education/final-qc/index.html">완성검사</a>
+  </div>
+  <div class="branch"><a href="education/_errors/index.html"><span class="k">07</span><span class="nm">오답노트</span><span class="d">미반영 · 스캔</span></a></div>
+  <div class="branch"><a href="woimg/index.html"><span class="k">08</span><span class="nm">작지이미지</span><span class="d">작지 이미지 · PO별</span></a></div>
+  <div class="branch"><a href="mail/index.html"><span class="k">09</span><span class="nm">메일</span><span class="d">분류 · 요약 · 할일</span></a></div>
+</div>
+</body></html>

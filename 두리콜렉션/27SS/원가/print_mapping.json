@@ -1,0 +1,171 @@
+{
+  "generated": "2026-09-24 Asia/Seoul",
+  "fx": {
+    "USD_KRW": 1366.0,
+    "CNY_KRW": 202.6,
+    "as_of": "2026-09-24 09:20 Asia/Seoul",
+    "source": "한국은행 ECOS 개장가(원·달러 1,366.0) + 동일 원·위안 202.60 — TokenPost/연합인포맥스 인용(2026-09-24 09:20 KST). 전일(9/23) 종가 USD1358.4·CNY202.47에서 갱신.",
+    "previous_lock": {
+      "USD_KRW": 1358.4,
+      "CNY_KRW": 202.47,
+      "as_of": "2026-09-23 15:30"
+    },
+    "alt_check": {
+      "open_er_api_USD_KRW": 1364.77,
+      "open_er_api_CNY_KRW": 201.57,
+      "note": "UTC 00:02 참고치; 본 산출은 서울시장 BoK 개장가 우선"
+    }
+  },
+  "baseline": "gieun",
+  "gieun_source": "Z:/HDD1/MARU/생산부/2. 디즈니/27SS/해외생산/기은 나염단가비교.pdf",
+  "geumsan_source": "Z:/HDD1/MARU/생산부/2. 디즈니/27SS/해외생산/금산 디즈니 4가지 기획 티셔츠 나염 단가확인용 파일.pdf",
+  "artwork_verify": "완사입/기획/*/작업지시서.png",
+  "rows": [
+    {
+      "no": 1,
+      "design": "Daisy+DAISY 대형",
+      "size": "162.5x182.1mm",
+      "colors": 2,
+      "qty": 12000,
+      "usd": 0.55,
+      "geumsan_design": "도안1",
+      "geumsan_silicone": 1400,
+      "geumsan_urethane": 1000,
+      "style": "DR2LTR091",
+      "tag": "file",
+      "note": "작업지시서 데이지 앞판 + 기은 qty12000",
+      "gieun_krw": 751.3,
+      "delta_vs_geumsan_silicone": -648.7
+    },
+    {
+      "no": 2,
+      "design": "Mickey heart MICKEY MOUSE",
+      "size": "220.1x140.4mm",
+      "colors": 2,
+      "qty": 4000,
+      "usd": 0.7,
+      "geumsan_design": "도안2",
+      "geumsan_silicone": 1700,
+      "geumsan_urethane": 1100,
+      "style": "DR1LTR080",
+      "tag": "file",
+      "note": "작업지시서 MICKEY/MINNIE 앞판 + 기은 qty4000",
+      "gieun_krw": 956.2,
+      "delta_vs_geumsan_silicone": -743.8
+    },
+    {
+      "no": 3,
+      "design": "MICKEY MOUSE 소형",
+      "size": "80x41mm",
+      "colors": 2,
+      "qty": 3500,
+      "usd": 0.5,
+      "geumsan_design": "도안5",
+      "geumsan_silicone": 950,
+      "geumsan_urethane": null,
+      "style": "DR2MTS090",
+      "tag": "file",
+      "note": "남요꼬 가슴/세트 구성(도안5); 기은 qty3500≈기획3300",
+      "gieun_krw": 683.0,
+      "delta_vs_geumsan_silicone": -267.0
+    },
+    {
+      "no": 4,
+      "design": "MM EST.1928",
+      "size": "45x30mm",
+      "colors": 2,
+      "qty": 3500,
+      "usd": 0.4,
+      "geumsan_design": "도안6",
+      "geumsan_silicone": 650,
+      "geumsan_urethane": null,
+      "style": "DR2MTS090",
+      "tag": "file",
+      "note": "남요꼬 등/세트 구성(도안6); 금산합 1600=550+400+400+250",
+      "gieun_krw": 546.4,
+      "delta_vs_geumsan_silicone": -103.6
+    },
+    {
+      "no": 5,
+      "design": "Daisy head+script",
+      "size": "121.1x154.1mm",
+      "colors": 2,
+      "qty": 5000,
+      "usd": 0.5,
+      "geumsan_design": "도안3",
+      "geumsan_silicone": 1500,
+      "geumsan_urethane": null,
+      "style": "DR2LTS090",
+      "tag": "file",
+      "note": "여요꼬 데이지 가슴; 금산 도안3=700+800",
+      "gieun_krw": 683.0,
+      "delta_vs_geumsan_silicone": -817.0
+    },
+    {
+      "no": 6,
+      "design": "Letter D striped",
+      "size": "51x49mm",
+      "colors": 1,
+      "qty": 5000,
+      "usd": 0.25,
+      "geumsan_design": "도안4",
+      "geumsan_silicone": 600,
+      "geumsan_urethane": null,
+      "style": "DR2LTS090",
+      "tag": "file",
+      "note": "여요꼬 보조도안 D; 금산 도안4=600 → 합2100",
+      "gieun_krw": 341.5,
+      "delta_vs_geumsan_silicone": -258.5
+    }
+  ],
+  "by_style": {
+    "DR1LTR080": {
+      "designs": [
+        "기은#2 / 금산도안2 Mickey heart"
+      ],
+      "gieun_usd": 0.7,
+      "gieun_krw": 956.2,
+      "geumsan_silicone_krw": 1700,
+      "geumsan_urethane_krw": 1100,
+      "qty": 4000,
+      "mapping_tag": "file",
+      "note": "작업지시서 MICKEY MOUSE+미니헤드 앞판 ↔ 기은#2 qty4000 ↔ 금산도안2(22×14)"
+    },
+    "DR2LTR091": {
+      "designs": [
+        "기은#1 / 금산도안1 Daisy+DAISY"
+      ],
+      "gieun_usd": 0.55,
+      "gieun_krw": 751.3,
+      "geumsan_silicone_krw": 1400,
+      "geumsan_urethane_krw": 1000,
+      "qty": 12000,
+      "mapping_tag": "file",
+      "note": "작업지시서 데이지 앞판 ↔ 기은#1 qty12000 ↔ 금산도안1(16.2×18.2)"
+    },
+    "DR2LTS090": {
+      "designs": [
+        "기은#5+#6 / 금산도안3+4 Daisy+D"
+      ],
+      "gieun_usd": 0.75,
+      "gieun_krw": 1024.5,
+      "geumsan_silicone_krw": 2100,
+      "geumsan_urethane_krw": 1400,
+      "qty": 5000,
+      "mapping_tag": "file",
+      "note": "작업지시서 데이지 요꼬 가슴 ↔ 기은#5+6 qty5000 ↔ 금산도안3+4 합2100"
+    },
+    "DR2MTS090": {
+      "designs": [
+        "기은#3+#4 / 금산도안5+6 Mickey+MM"
+      ],
+      "gieun_usd": 0.9,
+      "gieun_krw": 1229.4,
+      "geumsan_silicone_krw": 1600,
+      "geumsan_urethane_krw": 1200,
+      "qty": 3300,
+      "mapping_tag": "file",
+      "note": "작업지시서 미키 가슴+등 나염 ↔ 기은#3+4 qty3500≈3300 ↔ 금산도안5+6 합1600"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GOODTRUST</title>
+<style>
+:root {
+  --bg:#07090e; --panel:#101722; --line:#263244; --line2:#35465c;
+  --text:#eef3f9; --muted:#8b9cb3; --gold:#e4b44c; --cyan:#3ecfc4;
+}
+* { box-sizing:border-box }
+html,body { margin:0; padding:0; background:var(--bg); color:var(--text) }
+body {
+  font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;
+  letter-spacing:-0.01em; min-height:100vh;
+}
+a { color:inherit; text-decoration:none }
+.fold-nav {
+  display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+  padding:10px 20px; background:#0c121b; border-bottom:1px solid var(--line);
+}
+.fold-nav a {
+  display:inline-flex; align-items:center;
+  border:1px solid var(--line2); border-radius:999px; padding:5px 12px;
+  font-size:12px; font-weight:700;
+}
+.fold-nav a:hover, .fold-nav a.on { border-color:var(--gold); color:var(--gold) }
+.top {
+  padding:16px 22px 14px;
+  background:linear-gradient(180deg,#121a26 0%,#0d141e 100%);
+  border-bottom:1px solid var(--line); position:relative;
+}
+.top::before {
+  content:""; position:absolute; left:0; right:0; top:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),#7a5a18 40%,var(--cyan) 100%);
+}
+.top h1 { margin:0; font-size:18px; font-weight:800 }
+.top p { margin:6px 0 0; color:var(--muted); font-size:12px }
+.box {
+  margin:22px; max-width:560px; background:var(--panel);
+  border:1px solid var(--line); border-radius:12px; padding:18px 20px;
+}
+.box a.btn {
+  display:inline-flex; margin-top:12px; padding:8px 14px;
+  border:1px solid var(--line2); border-radius:999px; font-weight:700; font-size:13px;
+}
+.box a.btn:hover { border-color:var(--gold); color:var(--gold) }
+.note { margin-top:14px; color:var(--muted); font-size:12px; line-height:1.5 }
+code { color:var(--gold); font-size:11px }
+</style>
+</head><body>
+<nav class="fold-nav" aria-label="바로가기">
+  <a href="../index.html">폴더홈</a>
+  <a href="../process/index.html">공정</a>
+  <a href="../sales/index.html">매출</a>
+  <a href="../education/index.html">교육자료</a>
+  <a href="index.html" class="on">GOODTRUST</a>
+</nav>
+<div class="top">
+  <h1>GOODTRUST</h1>
+  <p>영문 허브 stub · 실제 카탈로그는 생산부 폴더</p>
+</div>
+<div class="box">
+  <p>납기순 아트웍 카탈로그로 이동합니다.</p>
+  <a class="btn" href="../../생산부/1. GOODTRUST/catalog/index.html">카탈로그 열기</a>
+  <p class="note">
+    Explorer 경로:<br>
+    <code>Z:\HDD1\MARU\생산부\1. GOODTRUST\catalog\index.html</code><br>
+    상대경로(이 stub 기준): <code>../../생산부/1. GOODTRUST/catalog/index.html</code><br>
+    (dashboard/goodtrust → MARU 루트는 <code>../../</code>. Hangul 폴더명은 상대 href에 한 번 허용.)
+  </p>
+</div>
+</body></html>

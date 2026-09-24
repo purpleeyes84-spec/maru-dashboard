@@ -1,0 +1,956 @@
+{
+  "meta": {
+    "asOf": "2026-09-14",
+    "year": 2026,
+    "source": "Z:\\HDD1\\MARU\\관리부",
+    "note": "작지 파일 건수 기준. 매출금액(원) 없음.",
+    "monthsPresent": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "totalN": 115
+  },
+  "byMonth": [
+    {
+      "m": 1,
+      "n": 4
+    },
+    {
+      "m": 2,
+      "n": 13
+    },
+    {
+      "m": 3,
+      "n": 10
+    },
+    {
+      "m": 4,
+      "n": 17
+    },
+    {
+      "m": 5,
+      "n": 18
+    },
+    {
+      "m": 6,
+      "n": 26
+    },
+    {
+      "m": 7,
+      "n": 4
+    },
+    {
+      "m": 8,
+      "n": 23
+    }
+  ],
+  "byBuyer": [
+    {
+      "name": "로백",
+      "n": 61
+    },
+    {
+      "name": "아이언오크",
+      "n": 15
+    },
+    {
+      "name": "기타",
+      "n": 12
+    },
+    {
+      "name": "미젠앤메인",
+      "n": 5
+    },
+    {
+      "name": "이다카",
+      "n": 5
+    },
+    {
+      "name": "플라이팅 골프",
+      "n": 3
+    },
+    {
+      "name": "35x70",
+      "n": 2
+    },
+    {
+      "name": "아비드",
+      "n": 2
+    },
+    {
+      "name": "릴리해머",
+      "n": 2
+    },
+    {
+      "name": "애셔골프",
+      "n": 1
+    },
+    {
+      "name": "버드독베이",
+      "n": 1
+    },
+    {
+      "name": "링크소울",
+      "n": 1
+    },
+    {
+      "name": "조지아 골프",
+      "n": 1
+    },
+    {
+      "name": "버드독스",
+      "n": 1
+    },
+    {
+      "name": "하우디 호",
+      "n": 1
+    },
+    {
+      "name": "배드버디",
+      "n": 1
+    },
+    {
+      "name": "굿굿골프",
+      "n": 1
+    }
+  ],
+  "byTeam": [
+    {
+      "name": "생산3팀",
+      "n": 61
+    },
+    {
+      "name": "미지정",
+      "n": 25
+    },
+    {
+      "name": "생산5팀",
+      "n": 24
+    },
+    {
+      "name": "생산1팀",
+      "n": 2
+    },
+    {
+      "name": "생산2팀",
+      "n": 2
+    },
+    {
+      "name": "생산4팀",
+      "n": 1
+    }
+  ],
+  "files": [
+    {
+      "month": 1,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP25_IO-VPL004_RED_#0044_생5 지동희.pdf",
+      "path": "아이언오크_SP25_IO-VPL004_RED_#0044_생5 지동희.pdf"
+    },
+    {
+      "month": 1,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_MBXR_THE TEQUILA 외 7_#3881 외 15_생3 김경창.pdf",
+      "path": "로백_SP26_MBXR_THE TEQUILA 외 7_#3881 외 15_생3 김경창.pdf"
+    },
+    {
+      "month": 1,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP25_IO-VPL004_FUZZY,ORION,RAMBLER,COOPER_#0041_생5 지동희.pdf",
+      "path": "아이언오크_SP25_IO-VPL004_FUZZY,ORION,RAMBLER,COOPER_#0041_생5 지동희.pdf"
+    },
+    {
+      "month": 1,
+      "buyer": "플라이팅 골프",
+      "team": "생산3팀",
+      "name": "플라이팅 골프_CAF41003_SOLID,HEATHER_#2025-008_생3 최예지.pdf",
+      "path": "플라이팅 골프_CAF41003_SOLID,HEATHER_#2025-008_생3 최예지.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MLPO_SOLID-WHITE_#5793_생3 남주연.pdf",
+      "path": "로백_SU26_MLPO_SOLID-WHITE_#5793_생3 남주연.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_THE MULLIGAN_#5850_생3 남주연.pdf",
+      "path": "로백_SU26_MPOL_THE MULLIGAN_#5850_생3 남주연.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_TPOL_THE LOBSTER_#6189_생3 남주연.pdf",
+      "path": "로백_SP26_TPOL_THE LOBSTER_#6189_생3 남주연.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "애셔골프",
+      "team": "생산2팀",
+      "name": "애셔골프_AG-300025_ONYX_#1272,1312_생2 김민석.pdf",
+      "path": "애셔골프_AG-300025_ONYX_#1272,1312_생2 김민석.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_TPOL_SOLID-WHITE_#6157_생3 남주연.pdf",
+      "path": "로백_SU26_TPOL_SOLID-WHITE_#6157_생3 남주연.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "미젠앤메인",
+      "team": "생산5팀",
+      "name": "미젠앤메인_SS26_Q1-5_STRIPE_#4143,4144_생5 조성훈.pdf",
+      "path": "미젠앤메인_SS26_Q1-5_STRIPE_#4143,4144_생5 조성훈.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_SOLID-WHITE,NO DOG_#5804,6043_생3 남주연.pdf",
+      "path": "로백_SU26_MPOL_SOLID-WHITE,NO DOG_#5804,6043_생3 남주연.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "미젠앤메인",
+      "team": "생산5팀",
+      "name": "미젠앤메인_SS26_Q1-6_DTP_#4118,4122_생5 조성훈.pdf",
+      "path": "미젠앤메인_SS26_Q1-6_DTP_#4118,4122_생5 조성훈.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_MBXR_SOLID,STRIPE_#3876,3877_생3 김경창.pdf",
+      "path": "로백_SP26_MBXR_SOLID,STRIPE_#3876,3877_생3 김경창.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SS26_MBXR_SHAMROCK FLORAL,TEXTAN_#3880,4160_생3 김경창.pdf",
+      "path": "로백_SS26_MBXR_SHAMROCK FLORAL,TEXTAN_#3880,4160_생3 김경창.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "버드독베이",
+      "team": "생산4팀",
+      "name": "버드독베이_DTP,STRIPE_#SD-GoodTrust-10-16-25_생4 이수열.pdf",
+      "path": "버드독베이_DTP,STRIPE_#SD-GoodTrust-10-16-25_생4 이수열.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "미젠앤메인",
+      "team": "생산5팀",
+      "name": "미젠앤메인_SS26_Q1-5_Silver First Down_#4141_생5 조성훈.pdf",
+      "path": "미젠앤메인_SS26_Q1-5_Silver First Down_#4141_생5 조성훈.pdf"
+    },
+    {
+      "month": 2,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_MPOL_THE LOBSTER_#5956_생3 남주연.pdf",
+      "path": "로백_SP26_MPOL_THE LOBSTER_#5956_생3 남주연.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_TPOL_ THE MULLIGAN_#6165_생3 남주연.pdf",
+      "path": "로백_SU26_TPOL_ THE MULLIGAN_#6165_생3 남주연.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_THE MULLIGAN_#5850_생3 남주연.pdf",
+      "path": "로백_SU26_MPOL_THE MULLIGAN_#5850_생3 남주연.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "35x70",
+      "team": "생산5팀",
+      "name": "35x70_SP26_POLO_CULLIGAN_#1026_생5 조성훈.pdf",
+      "path": "35x70_SP26_POLO_CULLIGAN_#1026_생5 조성훈.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_STRIPE-LAVENDER,WHITE_#5821,5821-1_생3 김가은.pdf",
+      "path": "로백_SU26_MPOL_STRIPE-LAVENDER,WHITE_#5821,5821-1_생3 김가은.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "미젠앤메인",
+      "team": "생산5팀",
+      "name": "미젠앤메인_SS26_Q1-11_STRIPE_#4378 외 8_생5 조성훈.pdf",
+      "path": "미젠앤메인_SS26_Q1-11_STRIPE_#4378 외 8_생5 조성훈.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_STRIPE-LAVENDER,WHITE_#5822,5822-1_생3 김가은.pdf",
+      "path": "로백_SU26_MPOL_STRIPE-LAVENDER,WHITE_#5822,5822-1_생3 김가은.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MLPO_STRIPE-LAVENDER,WHITE_#5795_생3 김가은.pdf",
+      "path": "로백_SU26_MLPO_STRIPE-LAVENDER,WHITE_#5795_생3 김가은.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_TPOL_STRIPE_BLUE,WHITE_#6158_생3 김가은.pdf",
+      "path": "로백_SU26_TPOL_STRIPE_BLUE,WHITE_#6158_생3 김가은.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MLPO_ STRIPE-BLUE,WHITE_#5794_생3 김가은.pdf",
+      "path": "로백_SU26_MLPO_ STRIPE-BLUE,WHITE_#5794_생3 김가은.pdf"
+    },
+    {
+      "month": 3,
+      "buyer": "링크소울",
+      "team": "생산5팀",
+      "name": "링크소울_SS26_LS1433_STRIPE_#4070_생5 조성훈.xlsx",
+      "path": "링크소울_SS26_LS1433_STRIPE_#4070_생5 조성훈.xlsx"
+    },
+    {
+      "month": 4,
+      "buyer": "조지아 골프",
+      "team": "생산1팀",
+      "name": "조지아 골프_THIN STRIPE POLO_RED_#5_생1 김바다.pdf",
+      "path": "조지아 골프_THIN STRIPE POLO_RED_#5_생1 김바다.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_WPOL_ERIN HILLS_#6854_생3 박소현.pdf",
+      "path": "로백_SP26_WPOL_ERIN HILLS_#6854_생3 박소현.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "버드독스",
+      "team": "생산5팀",
+      "name": "버드독스_FA25_C700_VINTAGE INDIGO NAVY_#555_생5 조성훈.pdf",
+      "path": "버드독스_FA25_C700_VINTAGE INDIGO NAVY_#555_생5 조성훈.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "하우디 호",
+      "team": "미지정",
+      "name": "하우디 호_POLO_체크,일반_#100725_신규바이어팀 임우진.pdf",
+      "path": "하우디 호_POLO_체크,일반_#100725_신규바이어팀 임우진.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "플라이팅 골프",
+      "team": "생산3팀",
+      "name": "플라이팅 골프_ FGKT001_#2026-003_생3 최예지.pdf",
+      "path": "플라이팅 골프_ FGKT001_#2026-003_생3 최예지.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_TPOL_PGA TOUR CHAMPS(DTP)_#6851,6852,6853_생3 박소현.pdf",
+      "path": "로백_SP26_TPOL_PGA TOUR CHAMPS(DTP)_#6851,6852,6853_생3 박소현.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아비드",
+      "team": "생산3팀",
+      "name": "아비드_SS26_ MEN'S POLO_#23242_생3 김병민.pdf",
+      "path": "아비드_SS26_ MEN'S POLO_#23242_생3 김병민.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_MPOL_PGA TOUR CHAMPS(DTP)#6847,6848,6849_생3 박소현.pdf",
+      "path": "로백_SP26_MPOL_PGA TOUR CHAMPS(DTP)#6847,6848,6849_생3 박소현.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "미젠앤메인",
+      "team": "생산5팀",
+      "name": "미젠앤메인_SS26_TPO12_Purple Alernation Stripe_생5 조성훈.pdf",
+      "path": "미젠앤메인_SS26_TPO12_Purple Alernation Stripe_생5 조성훈.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_YP001_#0051_생5 지동희.pdf",
+      "path": "아이언오크_SP26_YP001_#0051_생5 지동희.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_MPOL_HEARTEST YARD_#6725,6726_생3 박소현.pdf",
+      "path": "로백_SP26_MPOL_HEARTEST YARD_#6725,6726_생3 박소현.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP25_VPL004_#0049_생5 지동희.pdf",
+      "path": "아이언오크_SP25_VPL004_#0049_생5 지동희.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_YP002_#0051_생5 지동희.pdf",
+      "path": "아이언오크_SP26_YP002_#0051_생5 지동희.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_YP003_#0051_생5 지동희.pdf",
+      "path": "아이언오크_SP26_YP003_#0051_생5 지동희.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_YP004_#0051_생5 지동희.pdf",
+      "path": "아이언오크_SP26_YP004_#0051_생5 지동희.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_WPOL_ERIN HILLS_#6856_생3 박소현.pdf",
+      "path": "로백_SP26_WPOL_ERIN HILLS_#6856_생3 박소현.pdf"
+    },
+    {
+      "month": 4,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SP26_TPOL_ERIN HILLS_#6855_생3 박소현.pdf",
+      "path": "로백_SP26_TPOL_ERIN HILLS_#6855_생3 박소현.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_WSCR_SOLID,HEATHER_#7203,7201,7202,7204_생3 남주연.pdf",
+      "path": "로백_WSCR_SOLID,HEATHER_#7203,7201,7202,7204_생3 남주연.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_WSCR_SOLID-FLEET NAVY 외 3_#7201,7202,7203,7204_생3 남주연.pdf",
+      "path": "로백_WSCR_SOLID-FLEET NAVY 외 3_#7201,7202,7203,7204_생3 남주연.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MLPO_SOLID-BLACK_#7798_생3 임성록.pdf",
+      "path": "로백_FA26_MLPO_SOLID-BLACK_#7798_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MLPO_SOLID-MERLOT_#7800_생3 임성록.pdf",
+      "path": "로백_FA26_MLPO_SOLID-MERLOT_#7800_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_YPOL_SOLID-OXFORD BLUE_#7779_생3 임성록.pdf",
+      "path": "로백_FA26_YPOL_SOLID-OXFORD BLUE_#7779_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_SOLID-BLACK_#7825,7919,8026_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_SOLID-BLACK_#7825,7919,8026_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_SOLID-BLACK_#8003_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_SOLID-BLACK_#8003_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_SOLID-BUNKER BLUE_#7873,7917_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_SOLID-BUNKER BLUE_#7873,7917_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MLPO_SOLID-MIDNIGHT GREEN_#7795_생3 임성록.pdf",
+      "path": "로백_FA26_MLPO_SOLID-MIDNIGHT GREEN_#7795_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26 2차_CPL002_GOLF JAM_#0052_생5 지동희.pdf",
+      "path": "아이언오크_SP26 2차_CPL002_GOLF JAM_#0052_생5 지동희.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "릴리해머",
+      "team": "생산5팀",
+      "name": "릴리해머_SS26 2차_B2-7_MIDNIGHT SOLID_#LH250002_생5 조성훈.pdf",
+      "path": "릴리해머_SS26 2차_B2-7_MIDNIGHT SOLID_#LH250002_생5 조성훈.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "플라이팅 골프",
+      "team": "생산3팀",
+      "name": "플라이팅 골프_LS HOODIE_SOLID-BRIGHT WHITE_#2026-004_생3 최예지.pdf",
+      "path": "플라이팅 골프_LS HOODIE_SOLID-BRIGHT WHITE_#2026-004_생3 최예지.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_911 MEMORIAL_#7529,7530_생3 김가은.pdf",
+      "path": "로백_FA26_MPOL_911 MEMORIAL_#7529,7530_생3 김가은.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "배드버디",
+      "team": "생산2팀",
+      "name": "배드버디_FW26_BBMP053-916A_BLACK_생2 유지원.pdf",
+      "path": "배드버디_FW26_BBMP053-916A_BLACK_생2 유지원.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_SOLID-OXFORD BLUE_#7876,7920_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_SOLID-OXFORD BLUE_#7876,7920_생3 임성록.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26 3차_VPL004_#0053 작업지시서_생5 지동희.pdf",
+      "path": "아이언오크_SP26 3차_VPL004_#0053 작업지시서_생5 지동희.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "35x70",
+      "team": "생산5팀",
+      "name": "35x70 GOLF_SP26 2차_ VEST_NAVY 외 2_#1027_생5 조성훈.pdf",
+      "path": "35x70 GOLF_SP26 2차_ VEST_NAVY 외 2_#1027_생5 조성훈.pdf"
+    },
+    {
+      "month": 5,
+      "buyer": "릴리해머",
+      "team": "생산5팀",
+      "name": "릴리해머_SS26 2차_B2-8_SKY BLUE,MIDNIGHT SOLID_#LH250002_생5 조성훈.pdf",
+      "path": "릴리해머_SS26 2차_B2-8_SKY BLUE,MIDNIGHT SOLID_#LH250002_생5 조성훈.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE APP STATE MOUNTAINEERS™_#8548_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE APP STATE MOUNTAINEERS™_#8548_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WVPO_DORMIE NETWORK-DORMIE_#9417,9427_생3 임성록.pdf",
+      "path": "로백_SU26_WVPO_DORMIE NETWORK-DORMIE_#9417,9427_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26 3차_VPL004_THE LANE_#0053_생5 지동희.pdf",
+      "path": "아이언오크_SP26 3차_VPL004_THE LANE_#0053_생5 지동희.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE KENTUCKY ICON_#8719_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE KENTUCKY ICON_#8719_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE CINCINNATI BEARCATS®_#8710_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE CINCINNATI BEARCATS®_#8710_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE FLORIDA ALBERT™ 2.0_#8698_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE FLORIDA ALBERT™ 2.0_#8698_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WPOL_DORMIE NETWORK-VNATIONAL_#9414_생3 임성록.pdf",
+      "path": "로백_SU26_WPOL_DORMIE NETWORK-VNATIONAL_#9414_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26 3차_DVPL005_ROWDY,BILLY_#0053_생5 지동희.pdf",
+      "path": "아이언오크_SP26 3차_DVPL005_ROWDY,BILLY_#0053_생5 지동희.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "아비드",
+      "team": "생산3팀",
+      "name": "아비드_SS26_MEN'S POLO_ABY,RGA,BMA_#23249_생3 김병민.pdf",
+      "path": "아비드_SS26_MEN'S POLO_ABY,RGA,BMA_#23249_생3 김병민.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE TCU SUPERFROG™_#8701_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE TCU SUPERFROG™_#8701_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_WHCD_TEMPO CARDIGAN_SOLID,HEATHER_#7149 외 4_생3 김병민.pdf",
+      "path": "로백_FA26_WHCD_TEMPO CARDIGAN_SOLID,HEATHER_#7149 외 4_생3 김병민.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE PENN STATE COLLEGE TOWN_#8545_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE PENN STATE COLLEGE TOWN_#8545_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE OKLAHOMA STATE PISTOL PETE_#8718_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE OKLAHOMA STATE PISTOL PETE_#8718_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WVPO_DORMIE NETWORK-GRAYBULL_#9418_생3 임성록.pdf",
+      "path": "로백_SU26_WVPO_DORMIE NETWORK-GRAYBULL_#9418_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE GONZAGA BULLDOGS™_#8704_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE GONZAGA BULLDOGS™_#8704_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE ARIZONA STATE SUN DEVILS®_#8696_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE ARIZONA STATE SUN DEVILS®_#8696_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WVPO_DORMIE NETWORK-ARBORLINKS_#9415_생3 임성록.pdf",
+      "path": "로백_SU26_WVPO_DORMIE NETWORK-ARBORLINKS_#9415_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_LLT_SOLID 2st_#6958,6959_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_LLT_SOLID 2st_#6958,6959_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_TPOL_DORMIE NETWORK_#9409 외 5_생3 임성록.pdf",
+      "path": "로백_SU26_TPOL_DORMIE NETWORK_#9409 외 5_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE SMU MUSTANGS™_#8700_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE SMU MUSTANGS™_#8700_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WVPO_DORMIE NETWORK-BALLYHACK_#9416_생3 임성록.pdf",
+      "path": "로백_SU26_WVPO_DORMIE NETWORK-BALLYHACK_#9416_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_WPOL_DORMIE NETWORK-HCREEK_#9413_생3 임성록.pdf",
+      "path": "로백_SU26_WPOL_DORMIE NETWORK-HCREEK_#9413_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE UNC TAR HEEL™_#8544_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE UNC TAR HEEL™_#8544_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE PENN STATE PAW_#8546_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE PENN STATE PAW_#8546_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_SU26_MPOL_DORMIE NETWORK_#9419 외 8_생3 임성록.pdf",
+      "path": "로백_SU26_MPOL_DORMIE NETWORK_#9419 외 8_생3 임성록.pdf"
+    },
+    {
+      "month": 6,
+      "buyer": "로백",
+      "team": "생산3팀",
+      "name": "로백_FA26_MPOL_CLG_THE GEORGIA TECH STING 'EM™_#8716_생3 임성록.pdf",
+      "path": "로백_FA26_MPOL_CLG_THE GEORGIA TECH STING 'EM™_#8716_생3 임성록.pdf"
+    },
+    {
+      "month": 7,
+      "buyer": "로백",
+      "team": "미지정",
+      "name": "로백_FA26_MFHH_SOLID-BLACK,PONDEROSA GREEN_#7087,7087-1 외 6.pdf",
+      "path": "로백_FA26_MFHH_SOLID-BLACK,PONDEROSA GREEN_#7087,7087-1 외 6.pdf"
+    },
+    {
+      "month": 7,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_IO-VP004_BARRON,RAMBLER,THATCHER_#0057_생5 지동희.pdf",
+      "path": "아이언오크_SP26_IO-VP004_BARRON,RAMBLER,THATCHER_#0057_생5 지동희.pdf"
+    },
+    {
+      "month": 7,
+      "buyer": "굿굿골프",
+      "team": "생산1팀",
+      "name": "굿굿골프_HOL26_GG3032_Black Beauty_#1243_생1 성혜윤.pdf",
+      "path": "굿굿골프_HOL26_GG3032_Black Beauty_#1243_생1 성혜윤.pdf"
+    },
+    {
+      "month": 7,
+      "buyer": "아이언오크",
+      "team": "생산5팀",
+      "name": "아이언오크_SP26_IO-DVPL005_BILLY,ROWDY_#0056_생5 지동희.pdf",
+      "path": "아이언오크_SP26_IO-DVPL005_BILLY,ROWDY_#0056_생5 지동희.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "로백",
+      "team": "미지정",
+      "name": "로백 WI26_MLPO_RHO_SOLID - FLEET NAVY.pdf",
+      "path": "로백 WI26_MLPO_RHO_SOLID - FLEET NAVY.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(WPOL_NODOG)THE AZALEA - WHITE_S.PINK.pdf",
+      "path": "(WPOL_NODOG)THE AZALEA - WHITE_S.PINK.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "로백",
+      "team": "미지정",
+      "name": "로백 SP28 MLGW P1 작업지시서 (1).pdf",
+      "path": "로백 SP28 MLGW P1 작업지시서 (1).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "아이언오크",
+      "team": "미지정",
+      "name": "아이언오크 SP26 메인 16차 #0066 IO-VPL004 작업지시서_마루.pdf",
+      "path": "아이언오크 SP26 메인 16차 #0066 IO-VPL004 작업지시서_마루.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "SOLID-MLVS(SP27 PHOTOSHOOT).pdf",
+      "path": "SOLID-MLVS(SP27 PHOTOSHOOT).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(마루)THE FLEET 2.0(MPOL).pdf",
+      "path": "(마루)THE FLEET 2.0(MPOL).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "아이언오크",
+      "team": "미지정",
+      "name": "아이언오크 SP26 메인 18차 #0068_IO-DVPL005 작업지시서_마루.pdf",
+      "path": "아이언오크 SP26 메인 18차 #0068_IO-DVPL005 작업지시서_마루.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(마루) SOLID - MERLOT,FLEET NAVY((애리배색).pdf",
+      "path": "(마루) SOLID - MERLOT,FLEET NAVY((애리배색).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "이다카",
+      "team": "미지정",
+      "name": "이다카_SP27_Walton Polo.pdf",
+      "path": "이다카_SP27_Walton Polo.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "이다카",
+      "team": "미지정",
+      "name": "이다카_SP27_Childer Camo.pdf",
+      "path": "이다카_SP27_Childer Camo.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "WVTD P1 SAMPLE 작업지시서.pdf",
+      "path": "WVTD P1 SAMPLE 작업지시서.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "로백",
+      "team": "미지정",
+      "name": "로백 WI26_MLPO_RHO_SOLID-BLACK.pdf",
+      "path": "로백 WI26_MLPO_RHO_SOLID-BLACK.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(마루)THE HAWAIIAN SWING(MPOL).pdf",
+      "path": "(마루)THE HAWAIIAN SWING(MPOL).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "이다카",
+      "team": "미지정",
+      "name": "이다카_SP27_Motion Polo.pdf",
+      "path": "이다카_SP27_Motion Polo.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "이다카",
+      "team": "미지정",
+      "name": "이다카_SP27_Palmer Polo.pdf",
+      "path": "이다카_SP27_Palmer Polo.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(WPOL_NODOG)THE AZALEA - R.GREEN_S.PINK.pdf",
+      "path": "(WPOL_NODOG)THE AZALEA - R.GREEN_S.PINK.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(마루)THE FIRE TEAM 2.0(MPOL).pdf",
+      "path": "(마루)THE FIRE TEAM 2.0(MPOL).pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "SP27_MGPW_PHOTO SAMPLE 작업지시서_OPT#A.pdf",
+      "path": "SP27_MGPW_PHOTO SAMPLE 작업지시서_OPT#A.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "이다카",
+      "team": "미지정",
+      "name": "이다카_SP27_Gabby Polo.pdf",
+      "path": "이다카_SP27_Gabby Polo.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "로백",
+      "team": "미지정",
+      "name": "로백 WI26_TPOL_RHO_SOLID - FLEET NAVY.pdf",
+      "path": "로백 WI26_TPOL_RHO_SOLID - FLEET NAVY.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "SP27_MPOL,MPOL_NODOG,DBAN,TPOL_AZALEA SAMPLE.pdf",
+      "path": "SP27_MPOL,MPOL_NODOG,DBAN,TPOL_AZALEA SAMPLE.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(WVPO_NODOG)THE AZALEA - WHITE_S.PINK.pdf",
+      "path": "(WVPO_NODOG)THE AZALEA - WHITE_S.PINK.pdf"
+    },
+    {
+      "month": 8,
+      "buyer": "기타",
+      "team": "미지정",
+      "name": "(WVPO_NODOG)THE AZALEA - R.GREEN_S.PINK.pdf",
+      "path": "(WVPO_NODOG)THE AZALEA - R.GREEN_S.PINK.pdf"
+    }
+  ]
+}

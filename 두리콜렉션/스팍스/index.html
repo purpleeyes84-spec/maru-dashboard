@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>스팍스</title>
+<style>
+
+:root{
+  --bg:#f0f4f8; --panel:#ffffff; --line:#e2e8f0; --line2:#cbd5e1;
+  --text:#0f172a; --muted:#64748b; --faint:#94a3b8;
+  --gold:#1e3a5f; --cyan:#2563eb; --warn:#d97706; --navy:#1e3a5f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;letter-spacing:-.01em;min-height:100vh}
+a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline;color:var(--navy)}
+.fold-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(15,23,42,.04)}
+.fold-nav a{display:inline-flex;align-items:center;border:1px solid var(--line2);border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--navy);background:#fff}
+.fold-nav a:hover,.fold-nav a.on{border-color:var(--navy);background:#e8eef6;color:var(--navy);text-decoration:none}
+.back{display:inline-block;margin:12px 22px 0;font-size:12px;color:var(--cyan);font-weight:700}
+.top{padding:16px 22px 14px;background:#fff;border-bottom:1px solid var(--line)}
+.top h1{margin:0;font-size:20px;font-weight:800;color:var(--navy)}
+.top p{margin:6px 0 0;color:var(--muted);font-size:12px}
+.src{margin:8px 22px;font-size:11px;color:var(--faint)}
+.wrap{padding:18px 22px 40px;max-width:1100px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 14px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.card:hover{border-color:#b6c4d6;box-shadow:0 4px 12px rgba(30,58,95,.08);text-decoration:none}
+.card b{display:block;font-size:16px;font-weight:800;color:var(--navy)}
+.card span.en{display:block;margin-top:4px;font-size:11px;color:var(--cyan);letter-spacing:.06em;font-weight:700}
+.card p{margin:8px 0 0;font-size:12px;color:var(--muted)}
+.kpi{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}
+.kpi div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:110px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.kpi b{display:block;font-size:22px;color:var(--navy);font-weight:800}
+.kpi span{font-size:11px;color:var(--muted);font-weight:700}
+.banner{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:12px 14px;margin:0 0 16px;font-size:13px;color:#9a3412}
+.banner a{color:var(--cyan);font-weight:700}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.row h3{margin:0 0 6px;font-size:14px;color:var(--navy)}
+.meta{font-size:11px;color:var(--muted);margin:0 0 8px}
+.files{margin:0;padding:0;list-style:none}
+.files li{font-size:12px;padding:3px 0;border-top:1px solid var(--line)}
+.files a{color:var(--cyan)}
+.tag{display:inline-block;font-size:10px;border:1px solid var(--line2);border-radius:999px;padding:2px 8px;margin-right:4px;color:var(--muted);font-weight:700}
+.tag.warn{border-color:#fdba74;color:var(--warn);background:#fff7ed}
+.tag.gold{border-color:#bfdbfe;color:var(--navy);background:#eff6ff}
+h2{font-size:14px;margin:22px 0 10px;color:var(--navy);font-weight:800}
+.note{font-size:12px;color:var(--muted);margin:8px 0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:auto;margin-bottom:14px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--muted);font-size:10px;font-weight:700;background:#f8fafc}
+
+</style>
+<script src="../../../_shared/fold-nav.js" defer></script>
+<link rel="stylesheet" href="../../../_shared/visibility.css">
+</head><body>
+<a class="back" href="../index.html">← 뒤로</a>
+<div class="top"><h1>스팍스</h1>
+<p>SPARKS · 시즌/오더 예정</p></div>
+
+<p class="src">소스: <code>../../../생산부/2. 디즈니/</code> (브랜드 전용 폴더 없음)</p>
+<div class="wrap">
+  <div class="banner">소스 동일(2. 디즈니). MAINLIST에 브랜드 칸이 보이면 필터 예정. 지금은 시즌/오더 자리만.</div>
+  <div class="cards">
+    <a class="card" href="../27SS/index.html"><b>27SS</b><span class="en">SHARED</span><p>공용 시즌 보드로 이동</p></a>
+  </div>
+  <p class="note">스팍스·워너 단독 시즌 폴더가 생기면 이 칸에 추가.</p>
+</div>
+
+</body></html>

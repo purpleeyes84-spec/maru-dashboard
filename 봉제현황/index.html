@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>봉제현황 · 마루2011</title>
+<link rel="stylesheet" href="../_shared/visibility.css">
+<script src="../_shared/fold-nav.js" defer></script>
+<style>
+/* R10 chart/tabs extras (칸 전용) */
+.meta{margin-top:6px;font-size:12px;color:var(--muted);line-height:1.4}
+.note{background:#fff8ee;border:1px solid #f0d9b5;border-radius:12px;padding:12px 14px;font-size:13px;color:#5a4630;line-height:1.5;margin-bottom:var(--gap)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.tabs button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;cursor:pointer;font-size:12px;color:var(--ink)}
+.tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chart-wrap{overflow-x:auto}
+.chart{min-height:220px}
+.chart svg{display:block;width:100%;height:220px}
+.chart .vlab{font-size:11px;font-weight:800;fill:var(--navy)}
+.chart .dlab{font-size:10px;font-weight:700;fill:var(--navy)}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .line{fill:none;stroke:var(--blue);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.chart .line.mo{stroke:var(--heat)}
+.chart .line.wk{stroke:var(--navy)}
+.chart .dot{fill:var(--blue);stroke:#fff;stroke-width:1.5}
+.chart .dot.mo{fill:var(--heat)}
+.chart .dot.wk{fill:var(--navy)}
+.chart .dot.w2{fill:#7a8a9a}
+.chart .seg-note{font-size:10px;fill:var(--muted)}
+.bar{height:8px;border-radius:4px;background:#dfe7f2;flex:1;overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--navy))}
+.barwrap{display:flex;align-items:center;gap:8px}
+.nav{position:sticky;top:0;z-index:40;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 16px;background:var(--navy)}
+.nav a{color:#d7e6ff;text-decoration:none;font-size:13px;padding:4px 10px;border-radius:999px}
+.nav a.here{background:var(--blue);color:#fff;font-weight:700}
+.links{margin-top:10px;font-size:13px}
+.sub{color:var(--muted);font-size:13px;line-height:1.5}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+h3{margin:16px 0 8px;font-size:14px;color:var(--navy)}
+</style>
+</head><body>
+<nav class="nav" aria-label="Dashboard">
+  <a href="../index.html">Home</a>
+  <a href="../status/index.html">Status</a>
+  <a href="../process/index.html">Process</a>
+  <a href="index.html" class="here">봉제현황</a>
+  <a href="마이바스_생산지연_영향.html">마이바스영향</a>
+  <a href="../education/index.html">Education</a>
+</nav>
+<div class="wrap">
+  <header class="topbar">
+    <h1>봉제현황</h1>
+    <div class="meta">생산량 = <b>애리후세</b> · 주간 = <b>월~토</b> · 최근 약1달 · R10 시인성</div>
+  </header>
+  <div class="note" id="defs"></div>
+  <div class="kpi-row" id="kpis"></div>
+  <section class="panel">
+    <h2>일별 애리후세 수량</h2>
+    <div class="tabs" id="tabs"></div>
+    <div class="chart-wrap"><div class="chart" id="chart"></div></div>
+    <p class="sub" id="chartMeta" style="margin-top:8px"></p>
+  </section>
+  <section class="panel">
+    <h2>주간 비교 <span class="badge info">월~토 · 최근1달</span></h2>
+    <div id="week"></div>
+  </section>
+  <section class="panel">
+    <h2>공정지연 · 마이바스 기준 <span class="badge warn">초단</span></h2>
+    <div id="delay"></div>
+  </section>
+  <section class="panel">
+    <h2>마이바스 기준 · 애리지누이 <span class="badge info">별도</span></h2>
+    <div class="kpi-row" id="pairKpis"></div>
+    <div id="pair"></div>
+  </section>
+  <section class="panel">
+    <h2>병목 <span class="badge warn">참고</span></h2>
+    <div id="bots"></div>
+  </section>
+  <section class="panel">
+    <h2>공정평균 <span class="badge warn">참고</span></h2>
+    <div id="procs"></div>
+  </section>
+  <!-- canon: 생산평균_마이바스_애리지누이_20260921.xlsx -->
+  <p class="links" id="canon-links">정본:
+    <a href="생산평균_애리후세_20260924.xlsx">애리후세</a> ·
+    <a href="생산평균_주간비교_월토_20260924.xlsx">주간비교</a> ·
+    <a href="생산평균_마이바스_애리지누이_20260921.xlsx">마이바스_애리지누이</a> ·
+    <a href="마이바스_생산지연_영향.html">마이바스영향리포트</a> ·
+    <a href="data.json">data.json</a>
+  </p>
+  <p class="foot" id="foot"></p>
+</div>
+<script type="application/json" id="DATA">{"title":"봉제현황","updated":"2026-09-24","mode":"애리후세 단일 · 주간=월~토 · 삼봉공정평균/2 · 초단기준=마이바스","source":{"pdf":"생산부/생산현황표/봉제생산현황.pdf","xlsx":"생산평균_애리후세_20260924.xlsx","gate":"재게이트-xlsx링크20260924","fix":"파일명우선:9/21·9/22; 일요일KPI제외(9/20·7/26 등); 9/21월640(파일명·SHA=9/20·사용자확인중); 9/22화586(undated해제); 9/23수300(12:00종업·반일); 9/19토560; page1→9/18금601","xlsx_week":"생산평균_주간비교_월토_20260924.xlsx","chart":"꺾은선·수량볼드·탭 recent3w=앞선2주+이번주","week_note":"월~토·요일별·금주진행·완료주평균대비","week_avg":"정수반올림","fix_fri":"page1→2026-09-18 금 애리후세601","fix_sat":"2026-09-19 토 애리후세560","삼봉":"/2 적용","fix_sun":"일요일 조업없음·KPI/주간/월 분모 제외(일별PNG폴더는 보관)","pair":"마이바스·애리지누이 별도항목","기준공정":"마이바스","xlsx_pair":"생산평균_마이바스_애리지누이_20260921.xlsx","report_mybas":"마이바스_생산지연_영향.html","xlsx_report_mybas":"생산평균_마이바스_생산지연영향_20260921.xlsx","fix_923":"2026-09-23 수 애리후세300 · 12:00종업 반일","fix_undated_922":"파일명9/22 날짜칸공란 → 일별/_undated · 애리후세586 KPI제외","fix_mon":"2026-09-21 월 애리후세640 (파일명우선·SHA=9/20동일·사용자확인중)","fix_tue":"2026-09-22 화 애리후세586 (파일명우선·undated해제)","fix_wed":"2026-09-23 수 애리후세300 (12:00종업·반일)"},"defs":{"일평균_제품생산량":"애리후세 하루 수량(같은 달력일에 페이지 여러 장이면 그중 최대값)을, 조업일마다 구한 뒤 산술평균.","조업일":"애리후세 수량이 적히고, 날짜 숫자가 확인된 달력일 수. (요일만 있는 장 제외)","일지장수":"집계에 쓴 PDF 페이지(장) 수. 같은 날 여러 장이면 조업일보다 클 수 있음. 일평균 분모 아님.","주간":"최근 약1달 월~토. PDF=일자역순.","병목_하루평균":"해당 공정 수량이 적힌 날들의 수량 평균(참고). 제품 일평균 계산에는 안 씀.","병목_기록일수":"해당 공정 수량이 적힌 날 수(참고).","날짜규칙":"본문 날짜칸만. PDF페이지=일자역순. 추정·파일명 금지.","삼봉":"공정평균에서 삼봉 수량은 /2 (소매·몸판 등 합산 보정).","마이바스기준":"초단·별도항목·공정지연 분석의 기준점. 마이바스 수량이 낮으면 연동 공정 처짐 여부를 본다."},"overall":{"unique_days":38,"blocks":45,"date_range":"2026-06-18~2026-09-23","line_avg":543.4,"aeri_sum":20651.0,"aeri_min":72.0,"aeri_max":1200.0,"aeri_median":552.0,"bottleneck":"에리지누이후세양보","bottleneck_mean":105.0,"bottleneck_note":"참고. 평균=애리후세만","basis":"애리후세 일별 max→산술평균 (조업 38일·일요일제외)","조업일":38,"일지장수":43,"sunday_excluded":true,"sunday_note":"일요일 조업없음·KPI분모제외(폴더보관). 예:9/20·7/26"},"month":{"label":"2026-09","unique_days":19,"blocks":21,"date_range":"2026-09-01~2026-09-23","line_avg":581.7,"aeri_sum":11052.0,"aeri_min":72.0,"aeri_max":1170.0,"aeri_median":586.0,"bottleneck":"주머니스티치","bottleneck_mean":330.0,"bottleneck_note":"참고. 평균=애리후세만","basis":"애리후세 일별 max→산술평균 (조업 19일·일요일제외)","dates":["2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-21","2026-09-22","2026-09-23"]},"week_compare":{"as_of":"2026-09-23","metric":"애리후세","rule":"최근1달·월~토·일요일제외·파일명 YYYY-MM-DD_일지.pdf 우선·금주는 as_of까지","weeks":[{"주":"5주전","기간약":"8/17~8/22","일평균":712.5,"요일별":{"월":null,"화":500.0,"수":520.0,"목":630.0,"금":1200.0,"토":null},"dates":["2026-08-18","2026-08-19","2026-08-20","2026-08-21"],"금주":false},{"주":"4주전","기간약":"8/24~8/29","일평균":408.0,"요일별":{"월":666.0,"화":null,"수":null,"목":null,"금":null,"토":150.0},"dates":["2026-08-24","2026-08-29"],"금주":false},{"주":"3주전","기간약":"8/31~9/5","일평균":645.4,"요일별":{"월":null,"화":1024.0,"수":735.0,"목":615.0,"금":590.0,"토":263.0},"dates":["2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05"],"금주":false},{"주":"2주전","기간약":"9/7~9/12","일평균":578.4,"요일별":{"월":null,"화":1170.0,"수":670.0,"목":72.0,"금":436.0,"토":544.0},"dates":["2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12"],"금주":false},{"주":"1주전","기간약":"9/14~9/19","일평균":567.8,"요일별":{"월":582.0,"화":535.0,"수":511.0,"목":618.0,"금":601.0,"토":560.0},"dates":["2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19"],"금주":false},{"주":"금주","기간약":"9/21~9/26","일평균":508.7,"요일별":{"월":640.0,"화":586.0,"수":300.0,"목":null,"금":null,"토":null},"dates":["2026-09-21","2026-09-22","2026-09-23"],"금주":true}],"금주_진행":{"기간약":"9/21~9/26","일평균":508.7,"진행":"3/6","days":[{"요일":"월","날짜약":"9/21","상태":"기록","수량":640.0},{"요일":"화","날짜약":"9/22","상태":"기록","수량":586.0},{"요일":"수","날짜약":"9/23","상태":"기록","수량":300.0},{"요일":"목","날짜약":"9/24","상태":"예정","수량":null},{"요일":"금","날짜약":"9/25","상태":"예정","수량":null},{"요일":"토","날짜약":"9/26","상태":"예정","수량":null}],"대비_완료주평균":-73.7,"완료주_평균":582.4},"비교":{"기준":"완료주(금주 제외) 일평균의 산술평균","완료주_평균":582.4,"완료주_수":5,"금주_일평균":508.7,"금주_대비":-73.7,"완료주_최고":712.5,"완료주_최저":408.0},"앞선2주_dates":["2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19"],"이번주_dates":["2026-09-21","2026-09-22","2026-09-23"],"앞선2주_일평균":572.6,"이번주_일평균":508.7,"차이":-63.9,"avg_display":"정수(반올림)","pdf_order":"일자역순","삼봉_보정":"공정평균 삼봉 mean/min/max/median ÷2"},"bottlenecks":[{"rank":1,"공정":"마감","mean":111.5,"n":2},{"rank":2,"공정":"에라지누이후세","mean":119.0,"n":1},{"rank":3,"공정":"안브","mean":153.0,"n":1},{"rank":4,"공정":"예리칼시루시","mean":160.0,"n":1},{"rank":5,"공정":"만보","mean":200.0,"n":1}],"processes":[{"공정":"애리후세","n":60,"mean":522.8,"min":72.0,"max":1200.0,"median":531.0},{"공정":"삼봉","n":57,"mean":515.4,"min":51.5,"max":1095.0,"median":559.0,"note":"원수량/2 (복수부위 합산 보정)","raw_mean":1030.7},{"공정":"마이시","n":38,"mean":521.9,"min":130.0,"max":875.0,"median":552.5},{"공정":"마이우","n":36,"mean":598.9,"min":273.0,"max":1128.0,"median":565.0},{"공정":"마이지누이","n":30,"mean":496.2,"min":217.0,"max":805.0,"median":512.0},{"공정":"암홀스티치","n":30,"mean":547.4,"min":155.0,"max":918.0,"median":558.0},{"공정":"마이바스","n":29,"mean":546.6,"min":50.0,"max":1329.0,"median":590.0},{"공정":"와끼인타","n":29,"mean":513.0,"min":195.0,"max":880.0,"median":530.0},{"공정":"소매인타","n":27,"mean":535.4,"min":210.0,"max":772.0,"median":534.0},{"공정":"마이오바","n":24,"mean":553.2,"min":224.0,"max":931.0,"median":600.5},{"공정":"어깨인타","n":24,"mean":579.1,"min":255.0,"max":1100.0,"median":624.5},{"공정":"견반오바","n":16,"mean":470.4,"min":68.0,"max":1210.0,"median":496.0},{"공정":"애리지누이","n":16,"mean":503.8,"min":68.0,"max":934.0,"median":513.0},{"공정":"에리지누이","n":16,"mean":527.8,"min":100.0,"max":800.0,"median":581.5},{"공정":"에리칼시루시","n":12,"mean":618.9,"min":100.0,"max":820.0,"median":649.0},{"공정":"소매오바","n":9,"mean":533.2,"min":430.0,"max":627.0,"median":522.0},{"공정":"애리달이","n":9,"mean":562.6,"min":500.0,"max":635.0,"median":541.0},{"공정":"와끼오바","n":9,"mean":526.5,"min":420.0,"max":650.0,"median":521.0},{"공정":"후다가다리","n":9,"mean":549.7,"min":394.0,"max":736.0,"median":550.0},{"공정":"마이삼각","n":8,"mean":493.1,"min":210.0,"max":695.0,"median":507.0},{"공정":"등요크지누이","n":6,"mean":609.7,"min":400.0,"max":1218.0,"median":526.0},{"공정":"앞요크","n":6,"mean":445.2,"min":287.0,"max":761.0,"median":385.5},{"공정":"앞판가위","n":6,"mean":533.7,"min":1.0,"max":832.0,"median":563.0},{"공정":"애리칼본봉","n":6,"mean":633.3,"min":530.0,"max":800.0,"median":605.0},{"공정":"어깨스티치","n":6,"mean":562.5,"min":400.0,"max":763.0,"median":533.5},{"공정":"앞요크가다리","n":5,"mean":571.8,"min":185.0,"max":1100.0,"median":356.0},{"공정":"앞요크오바","n":5,"mean":440.2,"min":385.0,"max":526.0,"median":395.0},{"공정":"견반지누이","n":4,"mean":473.0,"min":298.0,"max":700.0,"median":447.0},{"공정":"등요크오바","n":4,"mean":516.3,"min":350.0,"max":640.0,"median":537.5},{"공정":"앞요크지누이","n":4,"mean":324.5,"min":217.0,"max":485.0,"median":276.0},{"공정":"애리칼시루시","n":4,"mean":510.0,"min":500.0,"max":540.0,"median":500.0},{"공정":"후다라벨,와끼라벨","n":4,"mean":684.0,"min":538.0,"max":1055.0,"median":818.0},{"공정":"후다지누이","n":4,"mean":633.0,"min":520.0,"max":918.0,"median":534.0},{"공정":"마이스티치","n":3,"mean":609.0,"min":202.0,"max":1055.0,"median":570.0},{"공정":"어깨가다","n":3,"mean":591.7,"min":511.0,"max":704.0,"median":632.0},{"공정":"등요크가다리","n":2,"mean":637.0,"min":571.0,"max":703.0,"median":571.0},{"공정":"등판반지누이","n":2,"mean":523.0,"min":505.0,"max":541.0,"median":523.0},{"공정":"마감","n":2,"mean":111.5,"min":88.0,"max":135.0,"median":111.5},{"공정":"소매스티치","n":2,"mean":456.5,"min":310.0,"max":603.0,"median":456.5},{"공정":"시다","n":2,"mean":359.0,"min":250.0,"max":468.0,"median":359.0},{"공정":"안보","n":2,"mean":228.0,"min":206.0,"max":250.0,"median":228.0},{"공정":"전반지누이","n":2,"mean":454.5,"min":445.0,"max":464.0,"median":454.5},{"공정":"주머니스티치","n":2,"mean":330.0,"min":318.0,"max":342.0,"median":330.0},{"공정":"견반","n":1,"mean":422.0,"min":422.0,"max":422.0,"median":422.0},{"공정":"견반오바등요크","n":1,"mean":523.0,"min":523.0,"max":523.0,"median":523.0},{"공정":"견보오바등요크","n":1,"mean":515.0,"min":515.0,"max":515.0,"median":515.0},{"공정":"등견반오바요크","n":1,"mean":510.0,"min":510.0,"max":510.0,"median":510.0},{"공정":"등견반지누이","n":1,"mean":538.0,"min":538.0,"max":538.0,"median":538.0},{"공정":"마이비스","n":1,"mean":569.0,"min":569.0,"max":569.0,"median":569.0},{"공정":"마이오바후다치","n":1,"mean":610.0,"min":610.0,"max":610.0,"median":610.0},{"공정":"마이우느스티치","n":1,"mean":300.0,"min":300.0,"max":300.0,"median":300.0},{"공정":"마이우시스티치","n":1,"mean":595.0,"min":595.0,"max":595.0,"median":595.0},{"공정":"마이진누이","n":1,"mean":500.0,"min":500.0,"max":500.0,"median":500.0},{"공정":"만보","n":1,"mean":200.0,"min":200.0,"max":200.0,"median":200.0},{"공정":"매리칼시루시","n":1,"mean":760.0,"min":760.0,"max":760.0,"median":760.0},{"공정":"씨스티치","n":1,"mean":623.0,"min":623.0,"max":623.0,"median":623.0},{"공정":"안브","n":1,"mean":153.0,"min":153.0,"max":153.0,"median":153.0},{"공정":"앞앞선지누이","n":1,"mean":290.0,"min":290.0,"max":290.0,"median":290.0},{"공정":"앞판오바","n":1,"mean":780.0,"min":780.0,"max":780.0,"median":780.0},{"공정":"어깨가다리","n":1,"mean":534.0,"min":534.0,"max":534.0,"median":534.0},{"공정":"어깨안타","n":1,"mean":316.0,"min":316.0,"max":316.0,"median":316.0},{"공정":"에라지누이후세","n":1,"mean":119.0,"min":119.0,"max":119.0,"median":119.0},{"공정":"예리칼시루시","n":1,"mean":160.0,"min":160.0,"max":160.0,"median":160.0},{"공정":"주머니오각스티치","n":1,"mean":725.0,"min":725.0,"max":725.0,"median":725.0},{"공정":"주머니오바","n":1,"mean":390.0,"min":390.0,"max":390.0,"median":390.0},{"공정":"하오바","n":1,"mean":230.0,"min":230.0,"max":230.0,"median":230.0}],"daily_product":[{"date":"2026-06-18","product_proxy":164.0,"label":"6/18·목","공정":"애리후세"},{"date":"2026-07-17","product_proxy":181.0,"label":"7/17·금","공정":"애리후세"},{"date":"2026-07-21","product_proxy":800.0,"label":"7/21·화","공정":"애리후세"},{"date":"2026-07-28","product_proxy":800.0,"label":"7/28·화","공정":"애리후세"},{"date":"2026-07-29","product_proxy":693.0,"label":"7/29·수","공정":"애리후세"},{"date":"2026-08-03","product_proxy":1035.0,"label":"8/3·월","공정":"애리후세"},{"date":"2026-08-04","product_proxy":380.0,"label":"8/4·화","공정":"애리후세"},{"date":"2026-08-05","product_proxy":346.0,"label":"8/5·수","공정":"애리후세"},{"date":"2026-08-06","product_proxy":171.0,"label":"8/6·목","공정":"애리후세"},{"date":"2026-08-11","product_proxy":180.0,"label":"8/11·화","공정":"애리후세"},{"date":"2026-08-12","product_proxy":222.0,"label":"8/12·수","공정":"애리후세"},{"date":"2026-08-13","product_proxy":527.0,"label":"8/13·목","공정":"애리후세"},{"date":"2026-08-14","product_proxy":434.0,"label":"8/14·금","공정":"애리후세"},{"date":"2026-08-18","product_proxy":500.0,"label":"8/18·화","공정":"애리후세"},{"date":"2026-08-19","product_proxy":520.0,"label":"8/19·수","공정":"애리후세"},{"date":"2026-08-20","product_proxy":630.0,"label":"8/20·목","공정":"애리후세"},{"date":"2026-08-21","product_proxy":1200.0,"label":"8/21·금","공정":"애리후세"},{"date":"2026-08-24","product_proxy":666.0,"label":"8/24·월","공정":"애리후세"},{"date":"2026-08-29","product_proxy":150.0,"label":"8/29·토","공정":"애리후세"},{"date":"2026-09-01","product_proxy":1024.0,"label":"9/1·화","공정":"애리후세"},{"date":"2026-09-02","product_proxy":735.0,"label":"9/2·수","공정":"애리후세"},{"date":"2026-09-03","product_proxy":615.0,"label":"9/3·목","공정":"애리후세"},{"date":"2026-09-04","product_proxy":590.0,"label":"9/4·금","공정":"애리후세"},{"date":"2026-09-05","product_proxy":263.0,"label":"9/5·토","공정":"애리후세"},{"date":"2026-09-08","product_proxy":1170.0,"label":"9/8·화","공정":"애리후세"},{"date":"2026-09-09","product_proxy":670.0,"label":"9/9·수","공정":"애리후세"},{"date":"2026-09-10","product_proxy":72.0,"label":"9/10·목","공정":"애리후세"},{"date":"2026-09-11","product_proxy":436.0,"label":"9/11·금","공정":"애리후세"},{"date":"2026-09-12","product_proxy":544.0,"label":"9/12·토","공정":"애리후세"},{"date":"2026-09-14","product_proxy":582.0,"label":"9/14·월","공정":"애리후세"},{"date":"2026-09-15","product_proxy":535.0,"label":"9/15·화","공정":"애리후세"},{"date":"2026-09-16","product_proxy":511.0,"label":"9/16·수","공정":"애리후세"},{"date":"2026-09-17","product_proxy":618.0,"label":"9/17·목","공정":"애리후세"},{"date":"2026-09-18","product_proxy":601.0,"label":"9/18·금","공정":"애리후세"},{"date":"2026-09-19","product_proxy":560.0,"label":"9/19·토","공정":"애리후세"},{"date":"2026-09-21","product_proxy":640.0,"label":"9/21·월","공정":"애리후세"},{"date":"2026-09-22","product_proxy":586.0,"label":"9/22·화","공정":"애리후세"},{"date":"2026-09-23","product_proxy":300.0,"label":"9/23·수","공정":"애리후세"}],"month_bottlenecks":[{"rank":1,"공정":"앞요크지누이","mean":324.5,"n":4},{"rank":2,"공정":"주머니스티치","mean":330.0,"n":2},{"rank":3,"공정":"주머니오바","mean":390.0,"n":1},{"rank":4,"공정":"견반오바","mean":414.1,"n":7},{"rank":5,"공정":"앞요크오바","mean":440.2,"n":5}],"month_processes":[{"공정":"애리후세","n":23,"mean":576.2,"min":72.0,"max":1170.0,"median":590.0},{"공정":"삼봉","n":20,"mean":518.0,"min":73.5,"max":786.5,"median":567.8,"note":"원수량/2 (복수부위 합산 보정)","raw_mean":1036.0},{"공정":"마이시","n":18,"mean":553.2,"min":235.0,"max":747.0,"median":571.0},{"공정":"마이우","n":18,"mean":640.2,"min":340.0,"max":1128.0,"median":551.5},{"공정":"마이바스","n":9,"mean":639.8,"min":324.0,"max":1329.0,"median":639.0},{"공정":"마이오바","n":9,"mean":604.7,"min":347.0,"max":931.0,"median":607.0},{"공정":"애리달이","n":9,"mean":562.6,"min":500.0,"max":635.0,"median":541.0},{"공정":"와끼오바","n":9,"mean":526.5,"min":420.0,"max":650.0,"median":521.0},{"공정":"와끼인타","n":9,"mean":475.4,"min":250.0,"max":680.0,"median":482.0},{"공정":"후다가다리","n":9,"mean":549.7,"min":394.0,"max":736.0,"median":550.0},{"공정":"마이삼각","n":8,"mean":493.1,"min":210.0,"max":695.0,"median":507.0},{"공정":"마이지누이","n":8,"mean":462.8,"min":225.0,"max":800.0,"median":454.5},{"공정":"소매오바","n":8,"mean":546.2,"min":450.0,"max":627.0,"median":527.5},{"공정":"소매인타","n":8,"mean":545.8,"min":371.0,"max":739.0,"median":533.5},{"공정":"암홀스티치","n":8,"mean":590.6,"min":300.0,"max":821.0,"median":587.0},{"공정":"견반오바","n":7,"mean":414.1,"min":117.0,"max":519.0,"median":497.0},{"공정":"어깨인타","n":7,"mean":616.6,"min":302.0,"max":1100.0,"median":573.0},{"공정":"등요크지누이","n":6,"mean":609.7,"min":400.0,"max":1218.0,"median":526.0},{"공정":"애리칼본봉","n":6,"mean":633.3,"min":530.0,"max":800.0,"median":605.0},{"공정":"어깨스티치","n":6,"mean":562.5,"min":400.0,"max":763.0,"median":533.5},{"공정":"에리칼시루시","n":6,"mean":634.5,"min":470.0,"max":820.0,"median":626.5},{"공정":"앞요크가다리","n":5,"mean":571.8,"min":185.0,"max":1100.0,"median":356.0},{"공정":"앞요크오바","n":5,"mean":440.2,"min":385.0,"max":526.0,"median":395.0},{"공정":"애리지누이","n":5,"mean":462.6,"min":68.0,"max":760.0,"median":463.0},{"공정":"등요크오바","n":4,"mean":516.3,"min":350.0,"max":640.0,"median":537.5},{"공정":"앞요크","n":4,"mean":495.8,"min":348.0,"max":761.0,"median":437.0},{"공정":"앞요크지누이","n":4,"mean":324.5,"min":217.0,"max":485.0,"median":276.0},{"공정":"에리지누이","n":4,"mean":557.2,"min":270.0,"max":710.0,"median":624.5},{"공정":"후다라벨,와끼라벨","n":4,"mean":684.0,"min":538.0,"max":1055.0,"median":818.0},{"공정":"후다지누이","n":4,"mean":633.0,"min":520.0,"max":918.0,"median":534.0},{"공정":"앞판가위","n":3,"mean":547.3,"min":516.0,"max":585.0,"median":541.0},{"공정":"어깨가다","n":3,"mean":591.7,"min":511.0,"max":704.0,"median":632.0},{"공정":"등요크가다리","n":2,"mean":637.0,"min":571.0,"max":703.0,"median":571.0},{"공정":"소매스티치","n":2,"mean":456.5,"min":310.0,"max":603.0,"median":456.5},{"공정":"주머니스티치","n":2,"mean":330.0,"min":318.0,"max":342.0,"median":330.0},{"공정":"견반지누이","n":1,"mean":514.0,"min":514.0,"max":514.0,"median":514.0},{"공정":"등견반지누이","n":1,"mean":538.0,"min":538.0,"max":538.0,"median":538.0},{"공정":"등판반지누이","n":1,"mean":505.0,"min":505.0,"max":505.0,"median":505.0},{"공정":"마이스티치","n":1,"mean":1055.0,"min":1055.0,"max":1055.0,"median":1055.0},{"공정":"시다","n":1,"mean":468.0,"min":468.0,"max":468.0,"median":468.0},{"공정":"애리칼시루시","n":1,"mean":500.0,"min":500.0,"max":500.0,"median":500.0},{"공정":"주머니오각스티치","n":1,"mean":725.0,"min":725.0,"max":725.0,"median":725.0},{"공정":"주머니오바","n":1,"mean":390.0,"min":390.0,"max":390.0,"median":390.0}],"month_daily_product":[{"date":"2026-09-01","product_proxy":1024.0,"label":"9/1·화","공정":"애리후세"},{"date":"2026-09-02","product_proxy":735.0,"label":"9/2·수","공정":"애리후세"},{"date":"2026-09-03","product_proxy":615.0,"label":"9/3·목","공정":"애리후세"},{"date":"2026-09-04","product_proxy":590.0,"label":"9/4·금","공정":"애리후세"},{"date":"2026-09-05","product_proxy":263.0,"label":"9/5·토","공정":"애리후세"},{"date":"2026-09-08","product_proxy":1170.0,"label":"9/8·화","공정":"애리후세"},{"date":"2026-09-09","product_proxy":670.0,"label":"9/9·수","공정":"애리후세"},{"date":"2026-09-10","product_proxy":72.0,"label":"9/10·목","공정":"애리후세"},{"date":"2026-09-11","product_proxy":436.0,"label":"9/11·금","공정":"애리후세"},{"date":"2026-09-12","product_proxy":544.0,"label":"9/12·토","공정":"애리후세"},{"date":"2026-09-14","product_proxy":582.0,"label":"9/14·월","공정":"애리후세"},{"date":"2026-09-15","product_proxy":535.0,"label":"9/15·화","공정":"애리후세"},{"date":"2026-09-16","product_proxy":511.0,"label":"9/16·수","공정":"애리후세"},{"date":"2026-09-17","product_proxy":618.0,"label":"9/17·목","공정":"애리후세"},{"date":"2026-09-18","product_proxy":601.0,"label":"9/18·금","공정":"애리후세"},{"date":"2026-09-19","product_proxy":560.0,"label":"9/19·토","공정":"애리후세"},{"date":"2026-09-21","product_proxy":640.0,"label":"9/21·월","공정":"애리후세"},{"date":"2026-09-22","product_proxy":586.0,"label":"9/22·화","공정":"애리후세"},{"date":"2026-09-23","product_proxy":300.0,"label":"9/23·수","공정":"애리후세"}],"recent3w":{"as_of":"2026-09-23","rule":"최근3주·월~토·일요일제외","daily":[{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-07","날짜약":"9/7","요일":"월","애리후세":null,"금주":false},{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-08","날짜약":"9/8","요일":"화","애리후세":1170.0,"금주":false},{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-09","날짜약":"9/9","요일":"수","애리후세":670.0,"금주":false},{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-10","날짜약":"9/10","요일":"목","애리후세":72.0,"금주":false},{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-11","날짜약":"9/11","요일":"금","애리후세":436.0,"금주":false},{"주":"2주전","기간약":"9/7~9/12","날짜":"2026-09-12","날짜약":"9/12","요일":"토","애리후세":544.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-14","날짜약":"9/14","요일":"월","애리후세":582.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-15","날짜약":"9/15","요일":"화","애리후세":535.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-16","날짜약":"9/16","요일":"수","애리후세":511.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-17","날짜약":"9/17","요일":"목","애리후세":618.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-18","날짜약":"9/18","요일":"금","애리후세":601.0,"금주":false},{"주":"1주전","기간약":"9/14~9/19","날짜":"2026-09-19","날짜약":"9/19","요일":"토","애리후세":560.0,"금주":false},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-21","날짜약":"9/21","요일":"월","애리후세":640.0,"금주":true},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-22","날짜약":"9/22","요일":"화","애리후세":586.0,"금주":true},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-23","날짜약":"9/23","요일":"수","애리후세":300.0,"금주":true},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-24","날짜약":"9/24","요일":"목","애리후세":null,"금주":true},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-25","날짜약":"9/25","요일":"금","애리후세":null,"금주":true},{"주":"금주","기간약":"9/21~9/26","날짜":"2026-09-26","날짜약":"9/26","요일":"토","애리후세":null,"금주":true}]},"마이바스_애리지누이":{"title":"마이바스 기준 · 애리지누이","기준공정":"마이바스","rule":"기준=마이바스. 같은날 max. 애리/에리 지누이 통합(후세 제외). 마이비스→마이바스. 차이=애리지누이−마이바스.","overall":{"마이바스":{"n":27,"mean":544.9,"min":50.0,"max":1329.0,"median":595.0},"애리지누이":{"n":28,"mean":505.7,"min":68.0,"max":934.0,"median":543.0},"동시기록일":27,"차이_애리빼기마이바스":{"n":27,"mean":-37.7,"min":-866.0,"max":606.0,"median":-28.0}},"month":{"label":"2026-09","마이바스":{"n":8,"mean":650.9,"min":324.0,"max":1329.0,"median":648.0},"애리지누이":{"n":8,"mean":487.0,"min":68.0,"max":760.0,"median":533.0},"동시기록일":8},"daily":[{"date":"2026-06-18","label":"6/18·목","마이바스":601.0,"애리지누이":300.0,"차이_애리빼기마이바스":-301.0,"대비_마이바스":0.5},{"date":"2026-07-17","label":"7/17·금","마이바스":595.0,"애리지누이":220.0,"차이_애리빼기마이바스":-375.0,"대비_마이바스":0.37},{"date":"2026-07-21","label":"7/21·화","마이바스":641.0,"애리지누이":680.0,"차이_애리빼기마이바스":39.0,"대비_마이바스":1.06},{"date":"2026-07-26","label":"7/26·일","마이바스":790.0,"애리지누이":800.0,"차이_애리빼기마이바스":10.0,"대비_마이바스":1.01},{"date":"2026-07-28","label":"7/28·화","마이바스":513.0,"애리지누이":790.0,"차이_애리빼기마이바스":277.0,"대비_마이바스":1.54},{"date":"2026-07-29","label":"7/29·수","마이바스":429.0,"애리지누이":640.0,"차이_애리빼기마이바스":211.0,"대비_마이바스":1.49},{"date":"2026-08-03","label":"8/3·월","마이바스":598.0,"애리지누이":690.0,"차이_애리빼기마이바스":92.0,"대비_마이바스":1.15},{"date":"2026-08-04","label":"8/4·화","마이바스":368.0,"애리지누이":340.0,"차이_애리빼기마이바스":-28.0,"대비_마이바스":0.92},{"date":"2026-08-05","label":"8/5·수","마이바스":70.0,"애리지누이":325.0,"차이_애리빼기마이바스":255.0,"대비_마이바스":4.64},{"date":"2026-08-06","label":"8/6·목","마이바스":419.0,"애리지누이":177.0,"차이_애리빼기마이바스":-242.0,"대비_마이바스":0.42},{"date":"2026-08-11","label":"8/11·화","마이바스":586.0,"애리지누이":934.0,"차이_애리빼기마이바스":348.0,"대비_마이바스":1.59},{"date":"2026-08-12","label":"8/12·수","마이바스":50.0,"애리지누이":656.0,"차이_애리빼기마이바스":606.0,"대비_마이바스":13.12},{"date":"2026-08-13","label":"8/13·목","마이바스":380.0,"애리지누이":560.0,"차이_애리빼기마이바스":180.0,"대비_마이바스":1.47},{"date":"2026-08-14","label":"8/14·금","마이바스":409.0,"애리지누이":310.0,"차이_애리빼기마이바스":-99.0,"대비_마이바스":0.76},{"date":"2026-08-18","label":"8/18·화","마이바스":null,"애리지누이":465.0,"차이_애리빼기마이바스":null,"대비_마이바스":null},{"date":"2026-08-19","label":"8/19·수","마이바스":232.0,"애리지누이":480.0,"차이_애리빼기마이바스":248.0,"대비_마이바스":2.07},{"date":"2026-08-20","label":"8/20·목","마이바스":714.0,"애리지누이":541.0,"차이_애리빼기마이바스":-173.0,"대비_마이바스":0.76},{"date":"2026-08-21","label":"8/21·금","마이바스":649.0,"애리지누이":710.0,"차이_애리빼기마이바스":61.0,"대비_마이바스":1.09},{"date":"2026-08-24","label":"8/24·월","마이바스":768.0,"애리지누이":545.0,"차이_애리빼기마이바스":-223.0,"대비_마이바스":0.71},{"date":"2026-08-29","label":"8/29·토","마이바스":692.0,"애리지누이":100.0,"차이_애리빼기마이바스":-592.0,"대비_마이바스":0.14},{"date":"2026-09-01","label":"9/1·화","마이바스":657.0,"애리지누이":760.0,"차이_애리빼기마이바스":103.0,"대비_마이바스":1.16},{"date":"2026-09-02","label":"9/2·수","마이바스":639.0,"애리지누이":710.0,"차이_애리빼기마이바스":71.0,"대비_마이바스":1.11},{"date":"2026-09-03","label":"9/3·목","마이바스":700.0,"애리지누이":610.0,"차이_애리빼기마이바스":-90.0,"대비_마이바스":0.87},{"date":"2026-09-04","label":"9/4·금","마이바스":782.0,"애리지누이":603.0,"차이_애리빼기마이바스":-179.0,"대비_마이바스":0.77},{"date":"2026-09-05","label":"9/5·토","마이바스":330.0,"애리지누이":270.0,"차이_애리빼기마이바스":-60.0,"대비_마이바스":0.82},{"date":"2026-09-08","label":"9/8·화","마이바스":1329.0,"애리지누이":463.0,"차이_애리빼기마이바스":-866.0,"대비_마이바스":0.35},{"date":"2026-09-09","label":"9/9·수","마이바스":446.0,"애리지누이":412.0,"차이_애리빼기마이바스":-34.0,"대비_마이바스":0.92},{"date":"2026-09-10","label":"9/10·목","마이바스":324.0,"애리지누이":68.0,"차이_애리빼기마이바스":-256.0,"대비_마이바스":0.21}]},"공정지연_마이바스":{"기준공정":"마이바스","가설":"마이바스 지연 시 초단 공급·연동 공정 처짐 (공용인력·버퍼 없을 때 강하게)","rule":"일별 max · 마이비스→마이바스 · 애리/에리 지누이 통합 · 삼봉/2 · 연동9=리포트동일","마이바스":{"n":27,"mean":544.9,"min":50.0,"max":1329.0,"median":595.0},"연동":[{"공정":"애리지누이","기록일수":28,"하루평균":505.7,"상관_vs_마이바스":0.236,"동시일수":27,"mb_low_other_mean":441.6,"mb_high_other_mean":577.8,"delta":-136.3},{"공정":"마이지누이","기록일수":27,"하루평균":504.6,"상관_vs_마이바스":0.666,"동시일수":26,"mb_low_other_mean":375.4,"mb_high_other_mean":624.8,"delta":-249.5},{"공정":"마이시","기록일수":9,"하루평균":623.2,"상관_vs_마이바스":null,"동시일수":0,"mb_low_other_mean":null,"mb_high_other_mean":null,"delta":null},{"공정":"마이우","기록일수":9,"하루평균":673.8,"상관_vs_마이바스":null,"동시일수":0,"mb_low_other_mean":null,"mb_high_other_mean":null,"delta":null},{"공정":"마이오바","기록일수":22,"하루평균":542.7,"상관_vs_마이바스":0.6,"동시일수":21,"mb_low_other_mean":458.6,"mb_high_other_mean":629.4,"delta":-170.8},{"공정":"견반오바","기록일수":14,"하루평균":524.4,"상관_vs_마이바스":0.101,"동시일수":13,"mb_low_other_mean":441.1,"mb_high_other_mean":661.8,"delta":-220.7},{"공정":"앞요크오바","기록일수":5,"하루평균":440.2,"상관_vs_마이바스":null,"동시일수":0,"mb_low_other_mean":null,"mb_high_other_mean":null,"delta":null},{"공정":"애리후세","기록일수":37,"하루평균":555.8,"상관_vs_마이바스":0.544,"동시일수":27,"mb_low_other_mean":389.9,"mb_high_other_mean":736.8,"delta":-346.9},{"공정":"삼봉","기록일수":36,"하루평균":600.3,"상관_vs_마이바스":0.118,"동시일수":26,"mb_low_other_mean":601.4,"mb_high_other_mean":607.2,"delta":-5.7}]}}</script>
+<script>
+
+const D=JSON.parse(document.getElementById("DATA").textContent);
+const fmt=n=>(n==null||n==="")?"—":Number(n).toLocaleString("ko-KR",{maximumFractionDigits:1});
+const O=D.overall||{}, M=D.month||{}, W=D.week_compare||{};
+function fmtI(n){if(n==null||n==="")return "—";return Math.round(Number(n)).toLocaleString("ko-KR");}
+function dlab(iso){
+  if(!iso) return "";
+  const wd=["월","화","수","목","금","토","일"];
+  const d=new Date(iso+"T00:00:00");
+  if(isNaN(d)) { const p=iso.split("-"); return (p[1]|0)+"/"+ (p[2]|0); }
+  return (d.getMonth()+1)+"/"+d.getDate()+"·"+wd[(d.getDay()+6)%7];
+}
+document.getElementById("defs").innerHTML=
+  `<b>일평균</b> = ${D.defs["일평균_제품생산량"]}<br>`+
+  `<b>조업일</b> = ${D.defs["조업일"]}<br>`+
+  `<b>일지장수</b> = ${D.defs["일지장수"]}<br>`+
+  `<b>주간</b> = ${D.defs["주간"]}<br>`+
+  `<b>삼봉</b> = ${D.defs["삼봉"]||""}`;
+document.getElementById("kpis").innerHTML=`
+  <div class="kpi"><div class="lbl">이번달 일평균</div><div class="val">${fmt(M.line_avg)}</div><div class="meta">${M.label||""} · 조업 ${fmt(M.조업일||M.unique_days)}일</div></div>
+  <div class="kpi"><div class="lbl">전체 일평균</div><div class="val">${fmt(O.line_avg)}</div><div class="meta">조업 ${fmt(O.조업일||O.unique_days)}일 · ${O.date_range||""}</div></div>
+  <div class="kpi"><div class="lbl">금주 vs 완료주평균</div><div class="val">${(W.비교&&W.비교.금주_대비!=null)?((W.비교.금주_대비>=0?"+":"")+fmtI(W.비교.금주_대비)):"—"}</div><div class="meta">금주 ${fmtI(W.이번주_일평균)} · 완료주 ${fmtI((W.비교||{}).완료주_평균)} · ${(W.금주_진행||{}).진행||""}</div></div>
+  <div class="kpi"><div class="lbl">1주전 일평균</div><div class="val">${fmtI((W.weeks||[]).find(w=>w.주==="1주전")?.일평균)}</div><div class="meta">${((W.weeks||[]).find(w=>w.주==="1주전")||{}).기간약||""}</div></div>`;
+
+function cell(v){return v==null||v===""?"—":fmtI(v);}
+const weeks=W.weeks||[];
+const rows=weeks.map(w=>{
+  const y=w.요일별||{};
+  const mark=w.금주?' <span class="badge info">금주</span>':"";
+  return `<tr><td>${w.주||""}${mark}</td><td>${w.기간약||""}</td><td class="num"><b>${cell(w.일평균)}</b></td>`+
+    ["월","화","수","목","금","토"].map(k=>`<td class="num">${cell(y[k])}</td>`).join("")+`</tr>`;
+}).join("");
+const C=W.비교||{}, G=W.금주_진행||{};
+const prog=(G.days||[]).map(d=>{
+  const q=d.수량!=null?`<b>${fmtI(d.수량)}</b>`:"—";
+  const st=d.상태||"";
+  const bc=st==="기록"?"ok":(st==="미기록"?"warn":(st==="예정"?"info":""));
+  const badge=bc?`<span class="badge ${bc}">${st}</span>`:st;
+  return `<tr><td>${d.요일}</td><td>${d.날짜약||""}</td><td>${badge}</td><td class="num">${q}</td></tr>`;
+}).join("");
+const vs=C.금주_대비!=null?((C.금주_대비>=0?"+":"")+fmtI(C.금주_대비)):"—";
+document.getElementById("week").innerHTML=`
+<table class="data"><thead><tr><th>주</th><th>기간</th><th class="num">일평균</th><th class="num">월</th><th class="num">화</th><th class="num">수</th><th class="num">목</th><th class="num">금</th><th class="num">토</th></tr></thead>
+<tbody>${rows}</tbody></table>
+<p class="sub" style="margin:10px 0 6px">비교 · 완료주평균 <b>${cell(C.완료주_평균)}</b> (최고 ${cell(C.완료주_최고)} / 최저 ${cell(C.완료주_최저)}) · 금주 대비 <b>${vs}</b></p>
+<table class="data"><thead><tr><th>대비</th><th class="num">값</th></tr></thead><tbody>
+<tr><td>완료주 평균 (금주 제외 ${C.완료주_수||0}주)</td><td class="num">${cell(C.완료주_평균)}</td></tr>
+<tr><td>금주 일평균</td><td class="num">${cell(C.금주_일평균)}</td></tr>
+<tr><td>금주 − 완료주평균</td><td class="num"><b>${vs}</b></td></tr>
+</tbody></table>
+<h3 style="margin:16px 0 8px;font-size:14px;color:var(--navy)">금주 진행 현황 <span class="badge info">${G.기간약||""} · ${G.진행||""}</span></h3>
+<table class="data"><thead><tr><th>요일</th><th>날짜</th><th>상태</th><th class="num">수량</th></tr></thead><tbody>${prog}</tbody></table>
+<p class="sub" style="margin-top:8px">금주 일평균 <b>${cell(G.일평균)}</b> · 완료주평균 대비 <b>${vs}</b> · 규칙: ${W.rule||""}</p>`;
+
+let mode="recent3w";
+function recent3wSeries(){
+  const set=new Set([...(W.앞선2주_dates||[]),...(W.이번주_dates||[])]);
+  return (D.daily_product||[]).filter(x=>set.has(x.date));
+}
+function series(){
+  if(mode==="month") return D.month_daily_product||[];
+  if(mode==="recent3w") return recent3wSeries();
+  return D.daily_product||[];
+}
+function renderChart(){
+  const s=series();
+  const chart=document.getElementById("chart"); chart.innerHTML="";
+  if(!s.length){ document.getElementById("chartMeta").textContent="데이터 없음"; return; }
+  const n=s.length;
+  const vals=s.map(x=>+x.product_proxy||0);
+  const vmax=Math.max(1,...vals);
+  const padL=36, padR=12, padT=28, padB=36;
+  const Wsvg=Math.max(520, n*48);
+  const H=220;
+  const iw=Wsvg-padL-padR, ih=H-padT-padB;
+  const xAt=i=>padL+(n===1?iw/2:(i/(n-1))*iw);
+  const yAt=v=>padT+ih-(v/vmax)*ih;
+  const lineCls=mode==="month"?"line mo":(mode==="recent3w"?"line wk":"line");
+  const dotBase=mode==="month"?"dot mo":(mode==="recent3w"?"dot wk":"dot");
+  const w2=new Set(W.앞선2주_dates||[]);
+  const tw=new Set(W.이번주_dates||[]);
+  let pts="";
+  vals.forEach((v,i)=>{ pts+=`${xAt(i).toFixed(1)},${yAt(v).toFixed(1)} `; });
+  let grid="";
+  for(let g=0;g<=4;g++){
+    const yy=padT+(ih*g/4);
+    const gv=Math.round(vmax*(1-g/4));
+    grid+=`<line class="grid" x1="${padL}" y1="${yy}" x2="${Wsvg-padR}" y2="${yy}"/>`;
+    grid+=`<text class="seg-note" x="4" y="${yy+3}">${gv}</text>`;
+  }
+  let dots="";
+  s.forEach((x,i)=>{
+    const v=+x.product_proxy||0;
+    const cx=xAt(i), cy=yAt(v);
+    let dc=dotBase;
+    if(mode==="recent3w" && w2.has(x.date)) dc="dot w2";
+    if(mode==="recent3w" && tw.has(x.date)) dc="dot wk";
+    dots+=`<circle class="${dc}" cx="${cx}" cy="${cy}" r="4"><title>${x.date}: ${v}</title></circle>`;
+    dots+=`<text class="vlab" x="${cx}" y="${cy-10}" text-anchor="middle">${fmt(v)}</text>`;
+    dots+=`<text class="dlab" x="${cx}" y="${H-10}" text-anchor="middle">${x.label||dlab(x.date)}</text>`;
+  });
+  chart.innerHTML=`<svg viewBox="0 0 ${Wsvg} ${H}" width="${Wsvg}" height="${H}" role="img" aria-label="일별 애리후세 꺾은선">${grid}<polyline class="${lineCls}" points="${pts.trim()}"/>${dots}</svg>`;
+  let meta=`${s[0].date} ~ ${s[s.length-1].date} · ${s.length}일 · 수량 볼드 · 꺾은선`;
+  if(mode==="recent3w") meta+=` · 앞선2주(${(W.앞선2주_dates||[]).length}일)+이번주(${(W.이번주_dates||[]).length}일)`;
+  document.getElementById("chartMeta").textContent=meta;
+}
+const tabs=document.getElementById("tabs");
+[["recent3w","최근3주(월~토)"],["month","이번달"],["all","전체"]].forEach(([k,lab])=>{
+  const b=document.createElement("button"); b.textContent=lab; b.className=k===mode?"on":"";
+  b.onclick=()=>{mode=k;[...tabs.children].forEach(c=>c.classList.remove("on"));b.classList.add("on");renderChart();renderBots();renderProcs();};
+  tabs.appendChild(b);
+});
+function renderBots(){
+  const list=mode==="month"?(D.month_bottlenecks||[]):(D.bottlenecks||[]);
+  document.getElementById("bots").innerHTML=`<table class="data"><thead><tr><th class="num">순위</th><th>공정</th><th class="num">하루평균</th><th class="num">기록일수</th></tr></thead><tbody>`+
+    list.map(r=>`<tr><td class="num">${r.rank}</td><td>${r["공정"]}</td><td class="num">${fmt(r.mean)}</td><td class="num">${r.n}</td></tr>`).join("")+`</tbody></table>`;
+}
+function renderProcs(){
+  const list=mode==="month"?(D.month_processes||[]):(D.processes||[]);
+  const pmax=Math.max(1,...list.map(x=>x.mean||0));
+  document.getElementById("procs").innerHTML=`<table class="data"><thead><tr><th>공정</th><th class="num">기록일수</th><th class="num">하루평균</th><th>분포</th></tr></thead><tbody>`+
+    list.map(p=>`<tr><td>${p["공정"]}${p["공정"]==="애리후세"?" ★":""}</td><td class="num">${p.n}</td><td class="num">${fmt(p.mean)}</td>
+      <td><div class="barwrap"><div class="bar"><i style="width:${(p.mean/pmax)*100}%"></i></div></div></td></tr>`).join("")+`</tbody></table>`;
+}
+renderChart(); renderBots(); renderProcs();
+
+
+(function(){
+  const P=D["마이바스_애리지누이"]; if(!P) return;
+  const o=P.overall||{}, m=P.month||{};
+  const mb=o["마이바스"]||{}, aj=o["애리지누이"]||{};
+  const mm=m["마이바스"]||{}, am=m["애리지누이"]||{};
+  const elK=document.getElementById("pairKpis"); if(!elK) return;
+  elK.innerHTML=`
+    <div class="kpi"><div class="lbl">기준 마이바스 하루평균</div><div class="val">${fmt(mb.mean)}</div><div class="meta">기록 ${fmt(mb.n)}일 · min ${fmt(mb.min)} · max ${fmt(mb.max)}</div></div>
+    <div class="kpi"><div class="lbl">애리지누이 하루평균</div><div class="val">${fmt(aj.mean)}</div><div class="meta">기록 ${fmt(aj.n)}일 · min ${fmt(aj.min)} · max ${fmt(aj.max)}</div></div>
+    <div class="kpi"><div class="lbl">이번달 마이바스</div><div class="val">${fmt(mm.mean)}</div><div class="meta">${m.label||""} · ${fmt(mm.n)}일</div></div>
+    <div class="kpi"><div class="lbl">이번달 애리지누이</div><div class="val">${fmt(am.mean)}</div><div class="meta">${m.label||""} · ${fmt(am.n)}일</div></div>`;
+  const rows=(P.daily||[]).slice().reverse().map(r=>{
+    const diff=r["차이_애리빼기마이바스"];
+    return `<tr>
+    <td>${r.label||r.date}</td>
+    <td class="num"><b>${r["마이바스"]==null?"—":fmtI(r["마이바스"])}</b></td>
+    <td class="num">${r["애리지누이"]==null?"—":fmtI(r["애리지누이"])}</td>
+    <td class="num">${diff==null?"—":((diff>=0?"+":"")+fmtI(diff))}</td>
+  </tr>`;}).join("");
+  const ds=o["차이_애리빼기마이바스"]||{};
+  document.getElementById("pair").innerHTML=`
+    <p class="sub">${P.rule||""} · 동시기록 ${fmt(o["동시기록일"])}일 · 차이평균(애리−마이바스) ${fmt(ds.mean)}</p>
+    <table class="data"><thead><tr><th>날짜</th><th class="num">마이바스★</th><th class="num">애리지누이</th><th class="num">차이</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+})();
+(function(){
+  const L=D["공정지연_마이바스"]; if(!L) return;
+  const el=document.getElementById("delay"); if(!el) return;
+  const mb=L["마이바스"]||{};
+  const rows=(L["연동"]||[]).map(r=>{
+    const rc=r["상관_vs_마이바스"];
+    const badge=rc==null?"":(rc>=0.5?'<span class="badge ok">연동강</span>':(rc>=0.3?'<span class="badge info">연동중</span>':'<span class="badge warn">약함</span>'));
+    return `<tr>
+      <td>${r["공정"]}${r["공정"]==="마이바스"?" ★":""}</td>
+      <td class="num">${fmt(r["하루평균"])}</td>
+      <td class="num">${fmt(r["기록일수"])}</td>
+      <td class="num">${rc==null?"—":rc} ${badge}</td>
+      <td class="num">${fmt(r["동시일수"])}</td>
+      <td class="num">${r.delta==null?"—":fmt(r.delta)}</td>
+    </tr>`;
+  }).join("");
+  el.innerHTML=`
+    <p class="sub"><b>기준=${L["기준공정"]}</b> · ${L["가설"]||""}<br>${L.rule||""} · 마이바스 하루평균 ${fmt(mb.mean)} (n=${fmt(mb.n)}) · delta=마이바스 낮을 때 상대공정 평균 − 높을 때</p>
+    <table class="data"><thead><tr><th>공정</th><th class="num">하루평균</th><th class="num">기록일수</th><th class="num">상관(vs마이바스)</th><th class="num">동시일</th><th class="num">delta</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+})();
+document.getElementById("foot").textContent=`애리후세 · 초단기준 마이바스 · 주간 월~토 · 갱신 ${D.updated||""}`;
+
+</script>
+</body></html>

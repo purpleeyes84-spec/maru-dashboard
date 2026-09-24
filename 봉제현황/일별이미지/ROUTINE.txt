@@ -1,0 +1,1 @@
+id=pdf · name=봉제 PDF 일별이미지 아침 · cron=0 8 * * 1-5 · tz=Asia/Seoul · 평일08:00

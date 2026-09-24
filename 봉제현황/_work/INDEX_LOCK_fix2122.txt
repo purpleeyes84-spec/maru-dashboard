@@ -1,0 +1,1 @@
+index.html LOCKED. Use index_fix2122.html OR copy /Y index_fix2122.html index.html after unlock. data.json already correct.

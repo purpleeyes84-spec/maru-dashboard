@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>운영 대시보드</title>
+<link rel="stylesheet" href="_shared/visibility.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+/* hub R10 overrides on top of theme */
+body{background:#ffffff !important;color:var(--ink,#1c2a3a)}
+.fold-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line,#d5dee8);position:sticky;top:0;z-index:40}
+.fold-nav a{display:inline-flex;align-items:center;border:1px solid var(--line,#d5dee8);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;color:var(--ink,#1c2a3a);background:#fff}
+.fold-nav a:hover,.fold-nav a.on{border-color:var(--blue,#2f6fed);color:var(--blue,#2f6fed);background:#e8f0fe}
+.nav-cards a.card{display:flex;flex-direction:column;gap:8px;min-height:110px;padding:18px 16px;border:1px solid var(--line,#d5dee8);border-radius:var(--radius,14px);background:#fff;color:inherit;text-decoration:none;box-shadow:0 1px 3px rgba(28,53,88,.08)}
+.nav-cards a.card:hover{border-color:var(--blue,#2f6fed)}
+.nav-cards .k{font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--blue,#2f6fed)}
+.nav-cards .nm{font-size:18px;font-weight:800;color:var(--navy,#1c3558)}
+.nav-cards .d{font-size:13px;color:var(--muted,#5a6b7d)}
+.kids{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+.kids a{font-size:12px;padding:4px 10px;border-radius:999px;background:#f0f4f8;color:var(--muted,#5a6b7d);border:1px solid var(--line,#d5dee8)}
+.kids a:hover{color:var(--blue,#2f6fed);border-color:var(--blue,#2f6fed)}
+</style>
+<script src="./_shared/fold-nav.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <h1>운영 대시보드</h1>
+    <p class="meta">마루2011 · 공통 입구 · R10 시인성 · 북마크는 이 파일만</p>
+  </header>
+
+  <section class="kpi-row" aria-label="요약">
+    <div class="kpi"><div class="lbl">운영 칸</div><div class="val">8</div></div>
+    <div class="kpi"><div class="lbl">교육 챕터</div><div class="val">18</div></div>
+    <div class="kpi"><div class="lbl">브랜드 허브</div><div class="val">2</div></div>
+    <div class="kpi"><div class="lbl">시인성</div><div class="val">R10</div></div>
+  </section>
+
+  <section class="panel" aria-label="상태 범례">
+    <h2>상태 색</h2>
+    <p style="margin:0 0 10px;color:var(--muted,#5a6b7d);font-size:13px">칸·목록에서 쓰는 상태 표시. 텍스트만으로 상태 표현하지 않음.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <span class="badge info">진행</span>
+      <span class="badge warn">주의</span>
+      <span class="badge danger">위험</span>
+      <span class="badge ok">완료</span>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>바로가기</h2>
+    <div class="grid-cards nav-cards">
+      <a class="card" href="봉제현황/index.html"><span class="k">01</span><span class="nm">봉제현황</span><span class="d">일평균 · 병목 <span class="badge danger">위험</span></span></a>
+      <a class="card" href="goodtrust/index.html"><span class="k">02</span><span class="nm">GOODTRUST</span><span class="d">납기순 아트웍</span></a>
+      <a class="card" href="두리콜렉션/index.html"><span class="k">03</span><span class="nm">두리콜렉션</span><span class="d">디즈니 · 스팍스 · 워너</span></a>
+      <a class="card" href="status/index.html"><span class="k">04</span><span class="nm">생산현황</span><span class="d">팀 · 납기 · 수량 <span class="badge info">진행</span></span></a>
+      <a class="card" href="process/index.html"><span class="k">05</span><span class="nm">공정</span><span class="d">공수 · 진행표</span></a>
+      <a class="card" href="sales/index.html"><span class="k">06</span><span class="nm">매출</span><span class="d">건수 · 거래처</span></a>
+      <a class="card" href="education/index.html"><span class="k">07</span><span class="nm">교육자료</span><span class="d">원단 · 생산공정</span></a>
+      <a class="card" href="education/_errors/index.html"><span class="k">08</span><span class="nm">오답노트</span><span class="d">미반영 · 스캔 <span class="badge warn">주의</span></span></a>
+    <a class="card" href="사후정산/index.html"><span class="k">09</span><span class="nm">사후정산</span><span class="d">패킹리스트 · 정산</span></a>
+
+    </div>
+    <div class="kids" style="margin-top:16px">
+      <a href="두리콜렉션/디즈니/index.html">디즈니</a>
+      <a href="두리콜렉션/스팍스/index.html">스팍스</a>
+      <a href="두리콜렉션/워너/index.html">워너</a>
+      <a href="두리콜렉션/27SS/index.html">27SS</a>
+      <a href="두리콜렉션/일방향재단/index.html">일방향재단</a>
+      <a href="education/tshirt-process/index.html">전체공정</a>
+      <a href="education/fiber/index.html">섬유</a>
+      <a href="education/dyeing/index.html">염색</a>
+      <a href="education/sewing/index.html">봉제</a>
+    </div>
+  </section>
+
+  <p class="foot">출처: Z:\HDD1\MARU\dashboard\index.html · 규격 R10 · CSS _shared/visibility.css · 메일 칸 삭제 · 작지이미지(woimg) 봉인</p>
+</div>
+</body>
+</html>

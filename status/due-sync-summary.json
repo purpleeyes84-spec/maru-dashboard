@@ -1,0 +1,13 @@
+{
+  "kind": "due-sync-from-weekly",
+  "runAt": "2026-09-24T04:20:59.352Z",
+  "source": "9월 4주차 주간회의.xlsx",
+  "path": "Z:\\HDD1\\관리자료\\주간회의\\9월 4주차 주간회의.xlsx",
+  "sheet": "보고용",
+  "parsed": 92,
+  "withDue": 6,
+  "changed": 0,
+  "changes": [],
+  "unmatchedCount": 0,
+  "unmatched": []
+}
