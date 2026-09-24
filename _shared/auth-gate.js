@@ -57,17 +57,7 @@
           input.value = '';
           input.focus();
         }
-      }).catch(function () {
-        // fallback plaintext compare if subtle crypto blocked
-        if (val === 'maru11') {
-          try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
-          wrap.remove();
-          lockScroll(false);
-        } else {
-          err.style.display = 'block';
-          input.focus();
-        }
-      });
+      }).catch(function () { err.style.display = 'block'; input.focus(); });
     });
     setTimeout(function () { input && input.focus(); }, 50);
   }
