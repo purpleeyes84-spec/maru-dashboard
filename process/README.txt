@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 공정 가지. 입구는 대시보드 index.html.
 시작=마이, 봉제 마지막=옆트임 외주, 입고 후공정.
 PDF 재오픈 금지.

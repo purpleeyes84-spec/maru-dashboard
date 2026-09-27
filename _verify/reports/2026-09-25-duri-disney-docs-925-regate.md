@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 디즈니 진행문서·진행 · 9/25 조건부 재게이트 (091 alias href · _shared resolve · merged PDF 링크) 2026-09-25
 
 - 오더: 대시보드검증 (read-only) · 선행: `2026-09-25-duri-disney-docs-925.md`(조건부)

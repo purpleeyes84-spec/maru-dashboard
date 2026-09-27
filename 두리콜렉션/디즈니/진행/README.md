@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 디즈니 스타일별 진행
 
 - 정본: `progress.json` (embed+fetch)

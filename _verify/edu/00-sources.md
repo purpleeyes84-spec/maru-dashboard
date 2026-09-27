@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 기초교육 출처 (최상위·팀 관행)
 
 1. Air 총괄 토큰·오케스트레이션 (공유메모리·계획먼저 스킬)

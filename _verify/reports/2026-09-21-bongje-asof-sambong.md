@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 as_of 9/21 · 9/18원천 · 삼봉/2 게이트
 
 - 일시: 2026-09-21

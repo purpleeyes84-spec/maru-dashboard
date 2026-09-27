@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 생산현황 · RH-1 패킹 종결 반영
 
 ## 판결: 승인

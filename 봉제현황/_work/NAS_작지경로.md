@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # NAS/생산부 작업지시서 경로 (2026-09-18)
 
 ## NAS 회신 샘플

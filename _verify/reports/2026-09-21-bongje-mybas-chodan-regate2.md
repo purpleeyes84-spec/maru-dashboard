@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 초단마이바스 링크 재게이트(중복) 2026-09-21
 
 ## 판결: 승인 (기승인 동일본)

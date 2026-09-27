@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 판결 수위
 
 | 판결 | 언제 |

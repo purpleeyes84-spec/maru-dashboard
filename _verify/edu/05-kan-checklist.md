@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 칸별 체크 (샘플 1–3 후 본실행)
 
 공통(전칸): R01 상대경로·파일존재 · R06 허브내비 · 메타문/프롬프트잔재 · theme 대비.

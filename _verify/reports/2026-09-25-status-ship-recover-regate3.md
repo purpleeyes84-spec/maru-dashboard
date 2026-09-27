@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-25 · 생산현황 · ship 복구 3차 재게이트 (링크 재기준화·canon 스크립트·resolver 연도)
 
 ## 판결: 조건부

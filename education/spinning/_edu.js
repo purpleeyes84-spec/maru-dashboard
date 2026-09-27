@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 document.querySelectorAll(".q[data-a]").forEach(function(box){
   var a=+box.getAttribute("data-a");
   box.querySelectorAll("button").forEach(function(b){

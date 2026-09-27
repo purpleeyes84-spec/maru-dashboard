@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R04 칸봇 셀프검증 금지
 - id: R04-no-self-verify
 - when: 칸 산출 후 “검증했다” 자가판정

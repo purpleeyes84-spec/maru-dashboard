@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-24 · 생산현황 · 공정단계 stage 재게이트
 
 ## 판결: 승인

@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R01 상대경로
 - id: R01-relative-links
 - when: 작지PDF·자재·이미지·내비 href

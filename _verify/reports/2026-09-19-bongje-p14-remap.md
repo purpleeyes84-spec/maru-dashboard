@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 p-14 날짜 오매핑 게이트
 
 - 일시: 2026-09-19

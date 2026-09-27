@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-25 · 생산현황 · Air 리빌드 후 ship/납기 복구 게이트
 
 ## 판결: 조건부

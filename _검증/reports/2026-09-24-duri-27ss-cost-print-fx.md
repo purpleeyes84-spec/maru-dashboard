@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 27SS 기획티셔츠 원가 print+FX 재게이트 2026-09-24
 
 - 오더: `Z:\HDD1\MARU\dashboard\두리콜렉션\27SS\원가\` · read-only · data+mapping 갱신 재게이트

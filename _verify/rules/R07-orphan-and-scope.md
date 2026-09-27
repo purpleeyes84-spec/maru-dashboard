@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R07 고아폴더·범위
 - id: R07-orphan-and-scope
 - when: dashboard 하위인데 허브 내비 없음(예: wo-by-style) 또는 봇만 있고 폴더 없음(사후정산)

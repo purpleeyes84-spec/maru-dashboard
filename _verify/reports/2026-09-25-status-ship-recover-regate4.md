@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-25 · 생산현황 · ship 복구 4차 재게이트 (canon imgPath·check_hrefs 범위·resolver 오늘 기준 연도)
 
 ## 판결: 승인

@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 조건부 잔여 재게이트
 
 - 일시: 2026-09-21

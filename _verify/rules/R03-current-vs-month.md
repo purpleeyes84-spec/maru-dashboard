@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R03 현작업분/납기월
 - id: R03-current-vs-month
 - when: by-po · 주간회의 현작업분

@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-17 · status · 일일갱신 게이트
 
 - 오더: `Z:\HDD1\MARU\dashboard\생산현황\` · asOf=2026-09-17 n=92 jikji=89/92 mat=53/92 · index·due-from-sep·by-po

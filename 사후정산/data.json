@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "generated": "2026-09-28 08:14",
   "scope": "정산서만(누락작지·관리부·ETC 제외) · 패킹=파일명 · 종결=status meta(읽기만)",

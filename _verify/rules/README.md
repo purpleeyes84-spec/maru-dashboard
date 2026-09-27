@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 반복규칙
 
 한 파일 = 한 규칙.

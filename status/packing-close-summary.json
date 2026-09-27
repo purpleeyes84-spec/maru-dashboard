@@ -1,7 +1,6 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "kind": "packing-close-summary",
-  "runAt": "2026-09-24T23:19:00.086Z",
+  "runAt": "2026-09-27T23:25:56.201Z",
   "packingRoot": "Z:/HDD1/MARU/생산부/정산서",
   "scannedFileCount": 10,
   "packingRecordCount": 30,

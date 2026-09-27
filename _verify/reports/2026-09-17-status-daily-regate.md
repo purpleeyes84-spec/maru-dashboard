@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-17 · status · 일일갱신 재게이트
 
 - 오더: `Z:\HDD1\MARU\dashboard\생산현황\` · 반려3건 조치 후 재검

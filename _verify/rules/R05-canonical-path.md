@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R05 정본 경로
 - id: R05-canonical-path
 - when: 허브·칸 링크·북마크·README file:// URL

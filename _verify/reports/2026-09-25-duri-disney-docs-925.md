@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 디즈니 진행문서·진행 · 9/25 폴더반영 게이트 (SR1MJB080 신규 · DR1LJB080 BT CS3030 · merged 2건) 2026-09-25
 
 - 오더: 두리콜렉션 bot e90e83bf → 대시보드검증 (read-only)

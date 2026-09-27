@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-17 · full-dashboard · 전칸 재점검
 
 - 오더: `Z:\HDD1\MARU\dashboard\` (+ `OPEN-DASHBOARD.html`) · 전칸 링크·file:///%EC·상대경로·연동

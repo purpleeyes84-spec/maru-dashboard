@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-24 · 대시보드 · Air broken-links 재게이트 (a02481ff)
 
 ## 판결: 승인

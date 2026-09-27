@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # goodtrust 작지PDF 연결 재게이트
 
 - 일시: 2026-09-19

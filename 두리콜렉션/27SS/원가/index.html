@@ -25,6 +25,10 @@ table.master, table.cmp, table.detail { width:100%; border-collapse:collapse; fo
 table.master th, table.master td, table.cmp th, table.cmp td, table.detail th, table.detail td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; }
 td.merged { vertical-align:middle; font-weight:600; }
 td.vmerged { vertical-align:middle; }
+td.art { white-space:nowrap; vertical-align:middle; }
+a.thumb { display:inline-block; margin:2px 4px 2px 0; }
+a.thumb img { height:64px; max-width:110px; object-fit:contain; background:#fff; border-radius:4px; padding:2px; display:block; }
+a.thumb img:hover { outline:2px solid var(--accent); }
 table.master th, table.cmp th { position:sticky; top:0; background:#15202b; color:var(--muted); font-weight:600; }
 td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
 td.est { color:var(--est); } td.file { color:#cfe6f5; } td.total { font-weight:700; color:var(--accent); }
@@ -68,12 +72,13 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
   <p class="note">기획티 나염은 <b>기은 KRW</b>를 원가 보드에 반영. 금산은 실리콘/우레탄 참고. 매핑 태그 file = 작업지시서·수량 확정.</p>
   <table class="cmp">
     <thead><tr>
-      <th>STYLE</th><th>디자인</th><th class="num">Qty</th><th class="num">기은 USD</th><th class="num">기은 KRW</th>
+      <th>STYLE</th><th>도안</th><th>디자인</th><th class="num">Qty</th><th class="num">기은 USD</th><th class="num">기은 KRW</th>
       <th class="num">금산 실리콘</th><th class="num">금산 우레탄</th><th class="num">절감</th><th>태그</th>
     </tr></thead>
     <tbody>
       <tr>
 <td>DR1LTR080</td>
+<td class="art"><a class="thumb" href="print_img/gieun_no2.jpg" target="_blank" rel="noopener" title="기은 도안 NO2 Mickey heart (클릭 시 확대)"><img src="print_img/gieun_no2.jpg" alt="기은 도안 NO2 Mickey heart" loading="lazy"/></a></td>
 <td>기은#2 / 금산도안2 Mickey heart</td>
 <td class="num">4,000</td>
 <td class="num">$0.70</td>
@@ -84,6 +89,7 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
 <td><span class="badge file">file</span></td>
 </tr><tr>
 <td>DR2LTR091</td>
+<td class="art"><a class="thumb" href="print_img/gieun_no1.jpg" target="_blank" rel="noopener" title="기은 도안 NO1 Daisy+DAISY (클릭 시 확대)"><img src="print_img/gieun_no1.jpg" alt="기은 도안 NO1 Daisy+DAISY" loading="lazy"/></a></td>
 <td>기은#1 / 금산도안1 Daisy+DAISY</td>
 <td class="num">12,000</td>
 <td class="num">$0.55</td>
@@ -94,6 +100,7 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
 <td><span class="badge file">file</span></td>
 </tr><tr>
 <td>DR2LTS090</td>
+<td class="art"><a class="thumb" href="print_img/gieun_no5.jpg" target="_blank" rel="noopener" title="기은 도안 NO5 Daisy head+script (클릭 시 확대)"><img src="print_img/gieun_no5.jpg" alt="기은 도안 NO5 Daisy head+script" loading="lazy"/></a><a class="thumb" href="print_img/gieun_no6.jpg" target="_blank" rel="noopener" title="기은 도안 NO6 Letter D (클릭 시 확대)"><img src="print_img/gieun_no6.jpg" alt="기은 도안 NO6 Letter D" loading="lazy"/></a></td>
 <td>기은#5+#6 / 금산도안3+4 Daisy+D</td>
 <td class="num">5,000</td>
 <td class="num">$0.75</td>
@@ -104,6 +111,7 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
 <td><span class="badge file">file</span></td>
 </tr><tr>
 <td>DR2MTS090</td>
+<td class="art"><a class="thumb" href="print_img/gieun_no3.jpg" target="_blank" rel="noopener" title="기은 도안 NO3 MICKEY MOUSE (클릭 시 확대)"><img src="print_img/gieun_no3.jpg" alt="기은 도안 NO3 MICKEY MOUSE" loading="lazy"/></a><a class="thumb" href="print_img/gieun_no4.jpg" target="_blank" rel="noopener" title="기은 도안 NO4 MM EST.1928 (클릭 시 확대)"><img src="print_img/gieun_no4.jpg" alt="기은 도안 NO4 MM EST.1928" loading="lazy"/></a></td>
 <td>기은#3+#4 / 금산도안5+6 Mickey+MM</td>
 <td class="num">3,300</td>
 <td class="num">$0.90</td>
@@ -119,10 +127,10 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
   <h2 class="sec">기은 도안별 (STYLE NO. 채움)</h2>
   <table class="cmp">
     <thead><tr>
-      <th class="num">NO</th><th>STYLE</th><th>기은 디자인</th><th>SIZE</th><th class="num">Qty</th>
+      <th class="num">NO</th><th>도안</th><th>STYLE</th><th>기은 디자인</th><th>SIZE</th><th class="num">Qty</th>
       <th class="num">USD</th><th class="num">KRW</th><th>금산도안</th><th class="num">금산실리콘</th><th>태그</th>
     </tr></thead>
-    <tbody><tr><td class="num">1</td><td class="merged">DR2LTR091</td><td>Daisy+DAISY 대형</td><td>162.5x182.1mm</td><td class="num">12,000</td><td class="num">$0.55</td><td class="num">751.3</td><td>도안1</td><td class="num">1,400</td><td><span class="badge file">file</span></td></tr><tr><td class="num">2</td><td class="merged">DR1LTR080</td><td>Mickey heart MICKEY MOUSE</td><td>220.1x140.4mm</td><td class="num">4,000</td><td class="num">$0.70</td><td class="num">956.2</td><td>도안2</td><td class="num">1,700</td><td><span class="badge file">file</span></td></tr><tr><td class="num">3</td><td class="merged" rowspan="2">DR2MTS090</td><td>MICKEY MOUSE 소형</td><td>80x41mm</td><td class="num">3,500</td><td class="num">$0.50</td><td class="num">683</td><td>도안5</td><td class="num">950</td><td><span class="badge file">file</span></td></tr><tr><td class="num">4</td><td>MM EST.1928</td><td>45x30mm</td><td class="num">3,500</td><td class="num">$0.40</td><td class="num">546.4</td><td>도안6</td><td class="num">650</td><td><span class="badge file">file</span></td></tr><tr><td class="num">5</td><td class="merged" rowspan="2">DR2LTS090</td><td>Daisy head+script</td><td>121.1x154.1mm</td><td class="num">5,000</td><td class="num">$0.50</td><td class="num">683</td><td>도안3</td><td class="num">1,500</td><td><span class="badge file">file</span></td></tr><tr><td class="num">6</td><td>Letter D striped</td><td>51x49mm</td><td class="num">5,000</td><td class="num">$0.25</td><td class="num">341.5</td><td>도안4</td><td class="num">600</td><td><span class="badge file">file</span></td></tr></tbody>
+    <tbody><tr><td class="num">1</td><td class="art"><a class="thumb" href="print_img/gieun_no1.jpg" target="_blank" rel="noopener" title="기은 도안 NO1 Daisy+DAISY 대형 (클릭 시 확대)"><img src="print_img/gieun_no1.jpg" alt="기은 도안 NO1 Daisy+DAISY 대형" loading="lazy"/></a></td><td class="merged">DR2LTR091</td><td>Daisy+DAISY 대형</td><td>162.5x182.1mm</td><td class="num">12,000</td><td class="num">$0.55</td><td class="num">751.3</td><td>도안1</td><td class="num">1,400</td><td><span class="badge file">file</span></td></tr><tr><td class="num">2</td><td class="art"><a class="thumb" href="print_img/gieun_no2.jpg" target="_blank" rel="noopener" title="기은 도안 NO2 Mickey heart MICKEY MOUSE (클릭 시 확대)"><img src="print_img/gieun_no2.jpg" alt="기은 도안 NO2 Mickey heart MICKEY MOUSE" loading="lazy"/></a></td><td class="merged">DR1LTR080</td><td>Mickey heart MICKEY MOUSE</td><td>220.1x140.4mm</td><td class="num">4,000</td><td class="num">$0.70</td><td class="num">956.2</td><td>도안2</td><td class="num">1,700</td><td><span class="badge file">file</span></td></tr><tr><td class="num">3</td><td class="art"><a class="thumb" href="print_img/gieun_no3.jpg" target="_blank" rel="noopener" title="기은 도안 NO3 MICKEY MOUSE 소형 (클릭 시 확대)"><img src="print_img/gieun_no3.jpg" alt="기은 도안 NO3 MICKEY MOUSE 소형" loading="lazy"/></a></td><td class="merged" rowspan="2">DR2MTS090</td><td>MICKEY MOUSE 소형</td><td>80x41mm</td><td class="num">3,500</td><td class="num">$0.50</td><td class="num">683</td><td>도안5</td><td class="num">950</td><td><span class="badge file">file</span></td></tr><tr><td class="num">4</td><td class="art"><a class="thumb" href="print_img/gieun_no4.jpg" target="_blank" rel="noopener" title="기은 도안 NO4 MM EST.1928 (클릭 시 확대)"><img src="print_img/gieun_no4.jpg" alt="기은 도안 NO4 MM EST.1928" loading="lazy"/></a></td><td>MM EST.1928</td><td>45x30mm</td><td class="num">3,500</td><td class="num">$0.40</td><td class="num">546.4</td><td>도안6</td><td class="num">650</td><td><span class="badge file">file</span></td></tr><tr><td class="num">5</td><td class="art"><a class="thumb" href="print_img/gieun_no5.jpg" target="_blank" rel="noopener" title="기은 도안 NO5 Daisy head+script (클릭 시 확대)"><img src="print_img/gieun_no5.jpg" alt="기은 도안 NO5 Daisy head+script" loading="lazy"/></a></td><td class="merged" rowspan="2">DR2LTS090</td><td>Daisy head+script</td><td>121.1x154.1mm</td><td class="num">5,000</td><td class="num">$0.50</td><td class="num">683</td><td>도안3</td><td class="num">1,500</td><td><span class="badge file">file</span></td></tr><tr><td class="num">6</td><td class="art"><a class="thumb" href="print_img/gieun_no6.jpg" target="_blank" rel="noopener" title="기은 도안 NO6 Letter D striped (클릭 시 확대)"><img src="print_img/gieun_no6.jpg" alt="기은 도안 NO6 Letter D striped" loading="lazy"/></a></td><td>Letter D striped</td><td>51x49mm</td><td class="num">5,000</td><td class="num">$0.25</td><td class="num">341.5</td><td>도안4</td><td class="num">600</td><td><span class="badge file">file</span></td></tr></tbody>
   </table>
 
   

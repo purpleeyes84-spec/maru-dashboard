@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-25 · 생산현황 · ship 복구 2차 재게이트 (주차 자동선택·라벨·배지·링크·fold-nav)
 
 ## 판결: 조건부

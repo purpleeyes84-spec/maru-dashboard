@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 27SS 원가 — 원가 마스터 세로 병합(rowspan) 게이트 2026-09-28
 
 - 오더: 두리콜렉션 봇 · `Z:\HDD1\MARU\dashboard\두리콜렉션\27SS\원가\index.html` · read-only(대시보드 파일 수정·Z 배포 없음)

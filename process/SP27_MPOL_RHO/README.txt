@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 SP27_MPOL_RHO
 SP27_MPOL_RHO 성인 반팔 폴로 · 1인 단위 세분
 임봉 마루 · 납기 2026-10-09 · 46공정 · 1공정=1인

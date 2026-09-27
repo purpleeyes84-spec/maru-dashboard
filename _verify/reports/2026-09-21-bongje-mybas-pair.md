@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 마이바스·애리지누이 별도항목 게이트 2026-09-21
 
 ## 판결: 조건부

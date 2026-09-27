@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "source": "current-work-week.xlsx",
   "pos": [

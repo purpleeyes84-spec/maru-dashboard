@@ -1,3 +1,2 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 봉제현황. 일평균=애리후세. 주간=월~금(금주는 PDF있는 날까지). 차트 막대 위 날짜.
 표기: 하루평균=mean, 기록일수=n(해당 공정 수량이 적힌 날 수).

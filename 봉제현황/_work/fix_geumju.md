@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # fix_geumju 핸드오프 (봉제현황)
 
 게이트 잔존 `금주_진행/비교/이번주_*` 를 weeks[]·xlsx(508.7)에 맞춤. **대시보드검증 재게이트 요청.**

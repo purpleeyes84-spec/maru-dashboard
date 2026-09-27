@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "style": "SP27_MPOL_RHO",
   "purpose": "인력 배분 · 1공정=1인",

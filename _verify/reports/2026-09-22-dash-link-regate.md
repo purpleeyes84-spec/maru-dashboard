@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 대시보드 · 링크복구 전칸 재검증 (dash-link-regate)
 
 ## 판결: 조건부

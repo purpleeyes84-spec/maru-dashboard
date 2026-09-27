@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 디즈니 스타일별 진행 게이트
 
 - 일시: 2026-09-21

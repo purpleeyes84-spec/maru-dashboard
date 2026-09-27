@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 일별이미지 누적엑셀 재게이트
 
 - 일시: 2026-09-19

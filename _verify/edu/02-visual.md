@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 시각·UI 검증
 
 캡처·브라우저 file:// 기본 금지. HTML/CSS/경로·에셋 존재로 판정.

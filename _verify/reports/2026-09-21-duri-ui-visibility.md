@@ -1,4 +1,3 @@
-<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 시인성 UI 개편 게이트 2026-09-21
 
 ## 판결: 승인
