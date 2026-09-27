@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 2026-09-23 catchup 재게이트 2026-09-24
 
 ## 판결: 승인

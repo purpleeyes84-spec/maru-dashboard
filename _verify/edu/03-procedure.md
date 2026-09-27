@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 절차
 
 1. 오더 = 경로·목표 1줄 (`templates/order-handoff.md`)

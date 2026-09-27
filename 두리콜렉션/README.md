@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션
 
 - 입구: `dashboard/두리콜렉션/index.html`

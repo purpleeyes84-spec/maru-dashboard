@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 대시보드검증
 
 역할: 대시보드 **전 칸** 데이터·화면 게이트. 읽기만. 수정·Z배포 안 함.

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # Extract index
 Generated 2026-09-24 (Asia/Seoul)
 

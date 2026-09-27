@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-24 · 대시보드 · NAS INDEX 접속 재게이트2
 
 ## 판결: 승인

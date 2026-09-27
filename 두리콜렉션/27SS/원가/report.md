@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 27SS 기획티셔츠 원가 상세 리포트
 
 - FX: USD/KRW **1366.0**, CNY/KRW **202.6** (2026-09-24 09:20 Asia/Seoul)

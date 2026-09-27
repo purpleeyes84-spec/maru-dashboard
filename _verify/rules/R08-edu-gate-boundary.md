@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R08 교육검증 경계
 - id: R08-edu-gate-boundary
 - when: education/* 본문·팩트·챕터 논리

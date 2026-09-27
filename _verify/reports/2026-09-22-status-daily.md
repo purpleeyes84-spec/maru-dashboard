@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 생산현황 · 일일갱신 게이트
 
 - 오더: `Z:\HDD1\MARU\생산부\대시보드\생산현황\`(정본) + `Z:\HDD1\MARU\dashboard\status\`(R10)

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 SP27_WVPO_RHO
 SP27_WVPO_RHO 여성 요꼬에리 민소매 · 1인 단위 세분
 임봉 마루 · 납기 2026-10-09 · 44공정 · 1공정=1인

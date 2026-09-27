@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 칸봇 → 대시보드검증 오더 (1줄)
 
 형식: `{디스크경로}` · {목표}

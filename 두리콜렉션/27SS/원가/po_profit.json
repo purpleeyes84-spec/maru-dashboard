@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "generated": "2026-09-24T16:31:08+09:00",
   "title": "완사입 발주·예상수익",

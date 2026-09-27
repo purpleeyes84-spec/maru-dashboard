@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 교육자료 오답노트
 
 | 날짜 | 칸 | 증상 | 원인 | 조치 | 재발방지 |

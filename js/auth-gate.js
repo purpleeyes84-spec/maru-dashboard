@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 (function () {
   var HASH = '22d24b3bd500d4cd208ffdc01f1dbba5b4e4e189997ef2d17cdf7cf7eae64e32';
   var KEY = 'maru_pages_gate_v1';

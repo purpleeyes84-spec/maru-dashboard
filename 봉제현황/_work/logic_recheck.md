@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 평균생산수량 논리 재점검 (폐기이력 → 현행)
 
 ## 폐기 (2026-09-18)

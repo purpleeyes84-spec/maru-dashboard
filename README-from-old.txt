@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 이 폴더는 옛 북마크용 안내(자동 이동)만 있습니다.
 정식 화면: ..\dashboard\index.html
 탐색기에서는 dashboard 폴더만 쓰세요.

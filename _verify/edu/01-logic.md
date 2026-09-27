@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 논리 검증
 
 ## 게이트 원칙 (교육검증 이식)

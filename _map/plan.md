@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # Z:\HDD1\MARU 종합판단 계획서
 작성: Air · 2026-09-08 · 샘플 기반(전수 아님)
 

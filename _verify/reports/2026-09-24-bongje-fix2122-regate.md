@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 fix2122 재게이트 2026-09-24
 
 - 오더: `Z:\HDD1\MARU\dashboard\봉제현황\index.html` (+ data.json · `생산평균_*_20260924.xlsx`) · unlock+overwrite 후 fix2122 반영 검수

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 금주_* 잔여 재게이트 2026-09-24
 
 - 오더: `Z:\HDD1\MARU\dashboard\봉제현황\index.html` (+ data.json) · 금주_* 조건부 잔존 수정

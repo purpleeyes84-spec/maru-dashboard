@@ -1,6 +1,7 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "kind": "packing-close-summary",
-  "runAt": "2026-09-24T04:19:39.147Z",
+  "runAt": "2026-09-24T23:19:00.086Z",
   "packingRoot": "Z:/HDD1/MARU/생산부/정산서",
   "scannedFileCount": 10,
   "packingRecordCount": 30,
@@ -204,17 +205,6 @@
       "style": "",
       "total": 129,
       "reason": "no-order"
-    },
-    {
-      "file": "MORNING PEOPLE 2026 PO#0002 260921.xlsx",
-      "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\MORNING PEOPLE 2026 PO#0002 260921.xlsx",
-      "sheet": "PINK PINS SP25 15차",
-      "inboundDate": "2026-09-11",
-      "buyer": "",
-      "po": "LO",
-      "style": "",
-      "total": 54,
-      "reason": "no-order"
     }
   ],
   "matchedPacking": [
@@ -256,6 +246,14 @@
       "style": "SP27",
       "nos": [
         "RH-15"
+      ]
+    },
+    {
+      "file": "MORNING PEOPLE 2026 PO#0002 260921.xlsx",
+      "sheet": "PINK PINS SP25 15차",
+      "style": "",
+      "nos": [
+        "RH-1"
       ]
     },
     {
@@ -355,6 +353,32 @@
     "status": 0
   },
   "embedPatches": 0,
+  "preRestore": {
+    "canon": {
+      "locked": [],
+      "restored": []
+    },
+    "status": {
+      "locked": [],
+      "restored": []
+    }
+  },
+  "locks": {
+    "SM-01": "2026-09-02",
+    "SM-02": "2026-09-02",
+    "SM-03": "2026-09-02",
+    "SM-04": "2026-09-02",
+    "SM-05": "2026-09-02",
+    "SM-06": "2026-09-02",
+    "SM-07": "2026-09-02",
+    "SM-08": "2026-09-02",
+    "SM-09": "2026-09-02",
+    "SM-10": "2026-09-02",
+    "RH-1": "2026-09-11",
+    "DS-01": "2026-08-31",
+    "DS-02": "2026-08-31"
+  },
+  "snapshotN": 27,
   "note": "기존 ship 보존(force 없음). 사용자 확정 납품일 우선.",
   "records": [
     {
@@ -592,8 +616,8 @@
       "path": "Z:\\HDD1\\MARU\\생산부\\정산서\\2026\\굿트러스트\\8월\\PACKINGLIST\\MORNING PEOPLE 2026 PO#0002 260921.xlsx",
       "sheet": "PINK PINS SP25 15차",
       "inboundDate": "2026-09-11",
-      "buyer": "",
-      "po": "LO",
+      "buyer": "MORNING PEOPLE",
+      "po": "PO#0002",
       "style": "",
       "total": 54
     },

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 칸맵 · 정본 경로 (2026-09-17 실측)
 
 ## 화면 정본

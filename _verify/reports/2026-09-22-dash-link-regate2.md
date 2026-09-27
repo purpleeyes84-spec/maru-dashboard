@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 대시보드 · 링크복구 조건부 재게이트
 
 ## 판결: 승인

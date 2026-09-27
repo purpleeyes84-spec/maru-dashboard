@@ -1,30 +1,31 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "meta": {
     "n": 92,
     "qty": 22713,
-    "overdueN": 14,
-    "overdueQ": 4286,
-    "soonN": 8,
-    "soonQ": 5940,
+    "overdueN": 22,
+    "overdueQ": 10226,
+    "soonN": 0,
+    "soonQ": 0,
     "fabMissN": 31,
     "fabMissQ": 6376,
     "fabTodayN": 0,
     "fabTodayQ": 0,
     "fabIssueN": 34,
     "fabIssueQ": 7282,
-    "cutN": 71,
-    "cutQtySum": 19631,
-    "sewN": 44,
-    "sewQ": 15438,
-    "completeN": 20,
-    "completeQ": 7816,
+    "cutN": 79,
+    "cutQtySum": 20269,
+    "sewN": 45,
+    "sewQ": 15650,
+    "completeN": 26,
+    "completeQ": 10396,
     "inboundN": 13,
     "inboundQ": 4235,
     "shipN": 27,
     "shipQ": 11726,
     "unshipOverdueN": 0,
     "unshipOverdueQ": 0,
-    "asOf": "2026-09-24",
+    "asOf": "2026-09-28",
     "source": "생산현황표 9월.xlsx",
     "sourcePath": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\생산현황표 9월.xlsx",
     "teams": {
@@ -59,8 +60,8 @@
         "fabTodayQ": 0,
         "fabIssueN": 28,
         "fabIssueQ": 3336,
-        "cutN": 49,
-        "cutQtySum": 11427,
+        "cutN": 57,
+        "cutQtySum": 12065,
         "sewN": 29,
         "sewQ": 7066,
         "completeN": 8,
@@ -77,8 +78,8 @@
         "qty": 6278,
         "overdueN": 0,
         "overdueQ": 0,
-        "soonN": 0,
-        "soonQ": 0,
+        "soonN": 1,
+        "soonQ": 212,
         "fabMissN": 2,
         "fabMissQ": 2440,
         "fabTodayN": 0,
@@ -154,25 +155,25 @@
     "cal": {
       "재단": 13407,
       "부속": 3845,
-      "합봉": 11621,
+      "합봉": 13153,
       "완성": 5039
     },
     "calN": {
       "재단": 32,
       "부속": 8,
-      "합봉": 34,
+      "합봉": 36,
       "완성": 12
     },
     "calMonth": {
       "재단": 3200,
       "부속": 0,
-      "합봉": 7447,
+      "합봉": 8979,
       "완성": 3037
     },
     "calMonthN": {
       "재단": 5,
       "부속": 0,
-      "합봉": 26,
+      "합봉": 29,
       "완성": 9
     },
     "month": "2026-09",
@@ -190,11 +191,11 @@
       "생산5팀": {
         "재단": 4335,
         "부속": 126,
-        "합봉": 4946,
+        "합봉": 6478,
         "완성": 2986,
         "재단N": 7,
         "부속N": 1,
-        "합봉N": 8,
+        "합봉N": 10,
         "완성N": 6
       },
       "시머트리": {
@@ -240,37 +241,44 @@
     ],
     "imgMapped": 46,
     "imgMissing": 46,
-    "jikjiFiles": 193,
+    "jikjiFiles": 194,
     "jikjiLinked": 89,
     "jikjiUnlinked": 3,
     "matFiles": 114,
     "matLinked": 53,
     "matUnlinked": 39,
-    "dueSyncAt": "2026-09-24T04:20:58.130Z",
-    "dueSyncSource": "9월 4주차 주간회의.xlsx",
-    "dueSyncPath": "Z:\\HDD1\\관리자료\\주간회의\\9월 4주차 주간회의.xlsx",
-    "shipRestoreAt": "2026-09-21T23:15:41.306Z",
-    "shipRestoreNote": "restored ships from status after Air rebuild wiped canon",
-    "packingCloseAt": "2026-09-24T04:19:36.099Z",
+    "packingCloseAt": "2026-09-24T23:12:03.003Z",
+    "dueSyncAt": "2026-09-24T23:37:24.376Z",
+    "dueSyncSource": "9월 5주차 주간회의.xlsx",
+    "dueSyncPath": "Z:\\HDD1\\관리자료\\주간회의\\9월 5주차 주간회의.xlsx",
     "stageSource": "생산현황표 9월.xlsx",
     "stageSourcePath": "Z:\\HDD1\\MARU\\생산부\\생산현황표\\생산현황표 9월.xlsx",
-    "weeklyDueSource": "9월 4주차 주간회의.xlsx",
+    "weeklyDueSource": "9월 5주차 주간회의.xlsx",
     "dueFromWeeklyN": 13,
     "dueFallbackN": 64,
     "stageCounts": {
       "납품완료": 27,
       "완성": 2,
       "봉제": 22,
-      "재단": 26,
+      "재단": 34,
       "대기": 5,
-      "원단": 10
+      "원단": 2
     },
     "ddayCounts": {
       "완료": 27,
       "정상": 50,
       "미정": 15
     },
-    "stageSyncAt": "2026-09-24T04:32:31.377Z"
+    "stageSyncAt": "2026-09-24T23:43:06.834Z",
+    "weeklyLabel": "5주차",
+    "preserveMerge": {
+      "prevKept": 26,
+      "dueKept": 11,
+      "filled": 1435,
+      "locked": 0,
+      "prev": true,
+      "prevOnlyNos": []
+    }
   },
   "orders": [
     {
@@ -299,7 +307,7 @@
       "ppSend": "",
       "note": "메인라벨 끝 사이즈 있음 / 옆트임 앞뒤편차 有 / PP1PCS / 빠른진행 / 단납기 / QC코멘트 / 대기中 / 재단금지 / 바스 기준 / 에리후세 기준",
       "source": "생산3팀",
-      "days": -4,
+      "days": -10,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -331,17 +339,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산3팀/모닝피플/2026%20POLO_PO%230002_모닝피플.pdf",
-      "jikjiName": "2026 POLO_PO#0002_모닝피플.pdf",
-      "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산3팀\\모닝피플\\2026 POLO_PO#0002_모닝피플.pdf",
-      "jikjiScore": 125,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-11",
       "deliveryDue": "2026-09-18",
       "dueSource": "weekly",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산3팀/모닝피플/2026%20POLO_PO%230002_모닝피플.pdf",
+      "jikjiName": "2026 POLO_PO#0002_모닝피플.pdf",
+      "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산3팀\\모닝피플\\2026 POLO_PO#0002_모닝피플.pdf",
+      "jikjiScore": 125
     },
     {
       "no": "RH-2",
@@ -369,7 +378,7 @@
       "ppSend": "",
       "note": "8/28 / 실밥출고 / 사고발생",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -401,6 +410,14 @@
           }
         ]
       },
+      "stage": "완성",
+      "stageLabel": "완성",
+      "stageDate": "2026-09-02",
+      "deliveryDue": "2026-10-08",
+      "dueSource": "weekly",
+      "ddayStatus": "정상",
+      "dday": 13,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -442,14 +459,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "완성",
-      "stageLabel": "완성",
-      "stageDate": "2026-09-02",
-      "deliveryDue": "2026-10-08",
-      "dueSource": "weekly",
-      "ddayStatus": "정상",
-      "dday": 14
+      ]
     },
     {
       "no": "RH-3",
@@ -477,7 +487,7 @@
       "ppSend": "",
       "note": "8/31 / 실밥 출고 / 사고 발생",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -513,6 +523,14 @@
           }
         ]
       },
+      "stage": "완성",
+      "stageLabel": "완성",
+      "stageDate": "2026-09-01",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -554,14 +572,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "완성",
-      "stageLabel": "완성",
-      "stageDate": "2026-09-01",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-4",
@@ -589,7 +600,7 @@
       "ppSend": "",
       "note": "9/2실밥 / 출고",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -619,6 +630,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-24",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -660,14 +679,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-24",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-5",
@@ -695,7 +707,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -721,6 +733,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-24",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -762,14 +782,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-24",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-6",
@@ -797,7 +810,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -823,6 +836,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -870,14 +891,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-21",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "RH-7",
@@ -905,7 +919,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -931,6 +945,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-25",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -978,14 +1000,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-25",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-8",
@@ -1013,7 +1028,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1039,6 +1054,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-26",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1086,14 +1109,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-26",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-9",
@@ -1121,7 +1137,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -1147,6 +1163,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-26",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1194,14 +1218,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-26",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-10",
@@ -1229,7 +1246,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1255,6 +1272,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-26",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1302,14 +1327,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-26",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-11",
@@ -1337,7 +1355,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -1363,6 +1381,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-27",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1410,14 +1436,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-27",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-12",
@@ -1445,7 +1464,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1471,6 +1490,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1512,14 +1539,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL더%20온%20더%20샴-록-화이트,안티구아%20그린.xlsx",
           "score": 105
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-21",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "RH-13",
@@ -1547,7 +1567,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1573,6 +1593,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-27",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1620,14 +1648,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-27",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-14",
@@ -1655,7 +1676,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1675,6 +1696,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-28",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1722,14 +1751,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-28",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-15",
@@ -1757,7 +1779,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1787,6 +1809,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1834,14 +1864,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-21",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "RH-16",
@@ -1869,7 +1892,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1895,6 +1918,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -1942,14 +1973,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-21",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "RH-17",
@@ -1977,7 +2001,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -1997,6 +2021,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-31",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2044,14 +2076,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-31",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-18",
@@ -2079,7 +2104,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -2099,6 +2124,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-31",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2146,14 +2179,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-31",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-19",
@@ -2181,7 +2207,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2201,6 +2227,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-31",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2248,14 +2282,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-31",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-20",
@@ -2283,7 +2310,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2303,6 +2330,14 @@
           }
         ]
       },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-08-31",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2350,14 +2385,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-08-31",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-21",
@@ -2385,7 +2413,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2405,6 +2433,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2452,14 +2488,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-21",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "RH-22",
@@ -2487,7 +2516,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2500,6 +2529,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2523,14 +2560,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-23",
@@ -2558,7 +2588,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2571,6 +2601,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2618,14 +2656,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-24",
@@ -2653,7 +2684,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -2666,6 +2697,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2713,14 +2752,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-25",
@@ -2748,7 +2780,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -2761,6 +2793,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2808,14 +2848,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-26",
@@ -2843,7 +2876,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2856,6 +2889,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2879,14 +2920,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-27",
@@ -2914,7 +2948,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -2927,6 +2961,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -2950,14 +2992,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-28",
@@ -2985,7 +3020,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -2998,6 +3033,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3021,14 +3064,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-29",
@@ -3056,7 +3092,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -3069,6 +3105,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-16",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3116,14 +3160,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-16",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-30",
@@ -3151,7 +3188,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -3164,6 +3201,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 184/175",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3211,14 +3256,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 184/175",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-31",
@@ -3246,7 +3284,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3259,6 +3297,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 184/175",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3306,14 +3352,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 184/175",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-32",
@@ -3341,7 +3380,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3354,6 +3393,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 4/3",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3401,14 +3448,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 4/3",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-33",
@@ -3436,7 +3476,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -3449,6 +3489,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 213/200",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3496,14 +3544,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 213/200",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-34",
@@ -3531,7 +3572,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3544,6 +3585,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 3/3",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3591,14 +3640,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 3/3",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-35",
@@ -3626,7 +3668,7 @@
       "ppSend": "",
       "note": "가슴자수 X",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3639,6 +3681,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 264/250",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3686,14 +3736,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 264/250",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-36",
@@ -3721,7 +3764,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3734,6 +3777,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 4/3",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3781,14 +3832,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 4/3",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-37",
@@ -3816,7 +3860,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -3829,6 +3873,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 263/250",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3876,14 +3928,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 263/250",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-38",
@@ -3911,7 +3956,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -3924,6 +3969,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 263/250",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -3971,14 +4024,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 263/250",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-39",
@@ -4006,7 +4052,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4019,6 +4065,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 3/3",
+      "stageDate": "2026-09-09",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4066,14 +4120,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 3/3",
-      "stageDate": "2026-09-09",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-40",
@@ -4101,7 +4148,7 @@
       "ppSend": "",
       "note": "가슴자수 X",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4114,6 +4161,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 213/200",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4161,14 +4216,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 213/200",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-41",
@@ -4196,7 +4244,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -4209,6 +4257,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 156/150",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4232,14 +4288,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 156/150",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-42",
@@ -4267,7 +4316,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4280,6 +4329,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 156/150",
+      "stageDate": "2026-09-11",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4303,14 +4360,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 156/150",
-      "stageDate": "2026-09-11",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-43",
@@ -4338,7 +4388,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4351,6 +4401,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 163/150",
+      "stageDate": "2026-09-16",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4374,14 +4432,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 163/150",
-      "stageDate": "2026-09-16",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-44",
@@ -4409,7 +4460,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4422,6 +4473,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 163/150",
+      "stageDate": "2026-09-16",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4445,14 +4504,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/CLG/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
           "score": 225
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 163/150",
-      "stageDate": "2026-09-16",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-45",
@@ -4480,7 +4532,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4493,6 +4545,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 264/250",
+      "stageDate": "2026-09-17",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20TPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -4534,14 +4594,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 264/250",
-      "stageDate": "2026-09-17",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-46",
@@ -4569,7 +4622,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4582,6 +4635,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "대기",
+      "stageLabel": "대기",
+      "stageDate": "",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20TPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -4623,14 +4684,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "대기",
-      "stageLabel": "대기",
-      "stageDate": "",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-47",
@@ -4658,7 +4712,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -4671,6 +4725,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 108/100",
+      "stageDate": "2026-09-17",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20TPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -4718,14 +4780,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 108/100",
-      "stageDate": "2026-09-17",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-48",
@@ -4753,7 +4808,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4766,6 +4821,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "대기",
+      "stageLabel": "대기",
+      "stageDate": "",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20TPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ TPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -4813,14 +4876,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "대기",
-      "stageLabel": "대기",
-      "stageDate": "",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-49",
@@ -4848,7 +4904,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -4861,6 +4917,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 102/93",
+      "stageDate": "2026-09-17",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4902,14 +4966,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 102/93",
-      "stageDate": "2026-09-17",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-50",
@@ -4937,7 +4994,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -4950,6 +5007,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "대기",
+      "stageLabel": "대기",
+      "stageDate": "",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -4991,14 +5056,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx",
           "score": 135
         }
-      ],
-      "stage": "대기",
-      "stageLabel": "대기",
-      "stageDate": "",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-51",
@@ -5026,7 +5084,7 @@
       "ppSend": "",
       "note": "초등생 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -5039,6 +5097,14 @@
         "note": "초등생 반팔"
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 85/74",
+      "stageDate": "2026-09-17",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20YPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ YPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ YPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -5086,14 +5152,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 85/74",
-      "stageDate": "2026-09-17",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-52",
@@ -5121,7 +5180,7 @@
       "ppSend": "",
       "note": "초등생 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -5134,6 +5193,14 @@
         "note": "초등생 반팔"
       },
       "schedDaily": {},
+      "stage": "대기",
+      "stageLabel": "대기",
+      "stageDate": "",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/★%20YPOL_RHO%20공통작지%20(DTP,솔리드,스트라이프).pdf",
       "jikjiName": "★ YPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\★ YPOL_RHO 공통작지 (DTP,솔리드,스트라이프).pdf",
@@ -5181,14 +5248,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx",
           "score": 105
         }
-      ],
-      "stage": "대기",
-      "stageLabel": "대기",
-      "stageDate": "",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-53",
@@ -5216,7 +5276,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -5229,6 +5289,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 120/150",
+      "stageDate": "2026-09-17",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -5270,14 +5338,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx",
           "score": 135
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 120/150",
-      "stageDate": "2026-09-17",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-54",
@@ -5305,7 +5366,7 @@
       "ppSend": "",
       "note": "아동용 반팔",
       "source": "생산3팀",
-      "days": 17,
+      "days": 11,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -5318,6 +5379,14 @@
         "note": "아동용 반팔"
       },
       "schedDaily": {},
+      "stage": "대기",
+      "stageLabel": "대기",
+      "stageDate": "",
+      "deliveryDue": "2026-10-09",
+      "dueSource": "fallback",
+      "ddayStatus": "정상",
+      "dday": 14,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
       "jikjiName": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
@@ -5359,14 +5428,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx",
           "score": 135
         }
-      ],
-      "stage": "대기",
-      "stageLabel": "대기",
-      "stageDate": "",
-      "deliveryDue": "2026-10-09",
-      "dueSource": "fallback",
-      "ddayStatus": "정상",
-      "dday": 15
+      ]
     },
     {
       "no": "RH-55",
@@ -5384,7 +5446,7 @@
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-15",
       "cutDate": "2026-09-19",
-      "cutQty": 598,
+      "cutQty": 299,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -5407,6 +5469,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 299/294",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "2026-10-14",
+      "dueSource": "weekly",
+      "ddayStatus": "정상",
+      "dday": 19,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5430,14 +5500,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 598/294",
-      "stageDate": "2026-09-19",
-      "deliveryDue": "2026-10-14",
-      "dueSource": "weekly",
-      "ddayStatus": "정상",
-      "dday": 20
+      ]
     },
     {
       "no": "RH-56",
@@ -5454,7 +5517,79 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-15",
-      "cutDate": "",
+      "cutDate": "2026-09-19",
+      "cutQty": 299,
+      "artwork": "",
+      "sewDate": "",
+      "complete": "",
+      "inbound": "",
+      "ship": "",
+      "ppRecv": "",
+      "ppSend": "",
+      "note": "",
+      "source": "생산3팀",
+      "days": null,
+      "fabricToday": false,
+      "fabricMissing": false,
+      "fabricIssue": false,
+      "sched": {
+        "재단": null,
+        "부속": null,
+        "합봉": null,
+        "완성": null,
+        "shipDate": "",
+        "note": ""
+      },
+      "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 299/294",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
+      "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
+      "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
+      "jikjiScore": 255,
+      "jikjiAlts": [
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
+          "score": 145
+        },
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
+          "score": 145
+        },
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
+          "score": 145
+        }
+      ]
+    },
+    {
+      "no": "RH-57",
+      "team": "생산3팀",
+      "client": "굿트러스트생산3팀",
+      "manager": "임성록 / 주임",
+      "brand": "RHOBACK",
+      "po": "PO0013346",
+      "season": "SP27",
+      "styleCode": "WVPO",
+      "styleName": "SOLID",
+      "color": "MIDNIGHT BLACK / 미드나잇 블랙",
+      "qty": 150,
+      "due": "",
+      "jikjiDate": "2026-09-15",
+      "fabric": "2026-09-15",
+      "cutDate": "2026-09-19",
       "cutQty": null,
       "artwork": "",
       "sewDate": "",
@@ -5478,108 +5613,38 @@
         "note": ""
       },
       "schedDaily": {},
-      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
-      "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
-      "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
-      "jikjiScore": 255,
-      "jikjiAlts": [
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
-          "score": 145
-        },
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
-          "score": 145
-        },
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
-          "score": 145
-        }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
-    },
-    {
-      "no": "RH-57",
-      "team": "생산3팀",
-      "client": "굿트러스트생산3팀",
-      "manager": "임성록 / 주임",
-      "brand": "RHOBACK",
-      "po": "PO0013346",
-      "season": "SP27",
-      "styleCode": "WVPO",
-      "styleName": "SOLID",
-      "color": "MIDNIGHT BLACK / 미드나잇 블랙",
-      "qty": 150,
-      "due": "",
-      "jikjiDate": "2026-09-15",
-      "fabric": "2026-09-15",
-      "cutDate": "2026-09-19",
-      "cutQty": 158,
-      "artwork": "",
-      "sewDate": "",
-      "complete": "",
-      "inbound": "",
-      "ship": "",
-      "ppRecv": "",
-      "ppSend": "",
-      "note": "",
-      "source": "생산3팀",
-      "days": null,
-      "fabricToday": false,
-      "fabricMissing": false,
-      "fabricIssue": false,
-      "sched": {
-        "재단": null,
-        "부속": null,
-        "합봉": null,
-        "완성": null,
-        "shipDate": "",
-        "note": ""
-      },
-      "schedDaily": {},
-      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
-      "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
-      "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
-      "jikjiScore": 255,
-      "jikjiAlts": [
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
-          "score": 145
-        },
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
-          "score": 145
-        },
-        {
-          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
-          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
-          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
-          "score": 145
-        }
-      ],
       "stage": "재단",
-      "stageLabel": "재단 158/150",
+      "stageLabel": "재단",
       "stageDate": "2026-09-19",
       "deliveryDue": "",
       "dueSource": "none",
       "ddayStatus": "미정",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "재단수량칸에 날짜(2026-09-19)",
+      "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
+      "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
+      "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
+      "jikjiScore": 255,
+      "jikjiAlts": [
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 3차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%203차.pdf",
+          "score": 145
+        },
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 2차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%202차.pdf",
+          "score": 145
+        },
+        {
+          "name": "[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
+          "rel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] 로백 SP27_MPOL,TPOL 작업지시서 1차.pdf",
+          "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
+          "score": 145
+        }
+      ]
     },
     {
       "no": "RH-58",
@@ -5620,6 +5685,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 257/250",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5643,14 +5716,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 257/250",
-      "stageDate": "2026-09-19",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-59",
@@ -5691,6 +5757,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 312/299",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5714,14 +5788,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 312/299",
-      "stageDate": "2026-09-19",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-60",
@@ -5762,6 +5829,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "원단",
+      "stageLabel": "원단",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5785,14 +5860,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-61",
@@ -5833,6 +5901,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 116/103",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5856,14 +5932,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 116/103",
-      "stageDate": "2026-09-19",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-62",
@@ -5904,6 +5973,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "원단",
+      "stageLabel": "원단",
+      "stageDate": "2026-09-15",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5927,14 +6004,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-63",
@@ -5975,6 +6045,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 272/266",
+      "stageDate": "2026-09-19",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -5998,14 +6076,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "재단",
-      "stageLabel": "재단 272/266",
-      "stageDate": "2026-09-19",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-64",
@@ -6022,8 +6093,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-22",
+      "cutQty": 200,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6046,6 +6117,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 200/200",
+      "stageDate": "2026-09-22",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6069,14 +6148,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-65",
@@ -6093,8 +6165,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-22",
+      "cutQty": 4,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6117,6 +6189,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 4/4",
+      "stageDate": "2026-09-22",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6140,14 +6220,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-66",
@@ -6164,8 +6237,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-21",
+      "cutQty": 176,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6188,6 +6261,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 176/176",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6211,14 +6292,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-67",
@@ -6235,8 +6309,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-21",
+      "cutQty": 175,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6259,6 +6333,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 175/176",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6282,14 +6364,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-68",
@@ -6306,8 +6381,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-21",
+      "cutQty": 4,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6330,6 +6405,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 4/4",
+      "stageDate": "2026-09-21",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6353,14 +6436,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-69",
@@ -6377,8 +6453,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-14",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-22",
+      "cutQty": 233,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6401,6 +6477,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 233/233",
+      "stageDate": "2026-09-22",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6424,14 +6508,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-14",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "RH-70",
@@ -6448,8 +6525,8 @@
       "due": "",
       "jikjiDate": "2026-09-15",
       "fabric": "2026-09-15",
-      "cutDate": "",
-      "cutQty": null,
+      "cutDate": "2026-09-22",
+      "cutQty": 4,
       "artwork": "",
       "sewDate": "",
       "complete": "",
@@ -6472,6 +6549,14 @@
         "note": ""
       },
       "schedDaily": {},
+      "stage": "재단",
+      "stageLabel": "재단 4/4",
+      "stageDate": "2026-09-22",
+      "deliveryDue": "",
+      "dueSource": "none",
+      "ddayStatus": "미정",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20SP27_WVPO(DTP%203,%20SOLID%206).pdf",
       "jikjiName": "[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산3팀\\ROHBACK\\SP\\RHO\\[마루] SP27_WVPO(DTP 3, SOLID 6).pdf",
@@ -6495,14 +6580,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2027/생산3팀/ROHBACK/SP/RHO/[마루]%20로백%20SP27_MPOL,TPOL%20작업지시서%201차.pdf",
           "score": 145
         }
-      ],
-      "stage": "원단",
-      "stageLabel": "원단",
-      "stageDate": "2026-09-15",
-      "deliveryDue": "",
-      "dueSource": "none",
-      "ddayStatus": "미정",
-      "dday": null
+      ]
     },
     {
       "no": "IO-07",
@@ -6530,7 +6608,7 @@
       "ppSend": "",
       "note": "8/24 / 마이 / 재작업 / 바스 기준 / 에리후세 기준",
       "source": "생산5팀",
-      "days": -1,
+      "days": -7,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -6574,7 +6652,8 @@
       "deliveryDue": "2026-09-21",
       "dueSource": "weekly",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": ""
     },
     {
       "no": "IO-08",
@@ -6602,7 +6681,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -6636,6 +6715,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -6659,14 +6746,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-09",
@@ -6694,7 +6774,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -6734,6 +6814,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -6757,14 +6845,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-10",
@@ -6792,7 +6873,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -6836,6 +6917,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -6859,14 +6948,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-11",
@@ -6894,7 +6976,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -6914,6 +6996,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -6937,14 +7027,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-12",
@@ -6972,7 +7055,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7004,6 +7087,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -7027,14 +7118,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-13",
@@ -7062,19 +7146,38 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
       "sched": {
         "재단": null,
         "부속": null,
-        "합봉": null,
+        "합봉": 1320,
         "완성": null,
         "shipDate": "2026-09-27",
         "note": ""
       },
-      "schedDaily": {},
+      "schedDaily": {
+        "합봉": [
+          {
+            "date": "2026-09-22",
+            "qty": 660
+          },
+          {
+            "date": "2026-09-23",
+            "qty": 660
+          }
+        ]
+      },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -7098,14 +7201,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-14",
@@ -7133,7 +7229,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7165,6 +7261,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -7188,14 +7292,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-15",
@@ -7223,7 +7320,7 @@
       "ppSend": "",
       "note": "",
       "source": "생산5팀",
-      "days": 5,
+      "days": -1,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7255,6 +7352,14 @@
           }
         ]
       },
+      "stage": "납품완료",
+      "stageLabel": "납품완료",
+      "stageDate": "2026-09-18",
+      "deliveryDue": "2026-10-02",
+      "dueSource": "weekly",
+      "ddayStatus": "완료",
+      "dday": null,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IRON%20OAK/아이언오크%20SP26%20메인%2023차%20_0073%20IO-VPL004%20작업지시서_마루.pdf",
       "jikjiName": "아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2026\\생산5팀\\IRON OAK\\아이언오크 SP26 메인 23차 _0073 IO-VPL004 작업지시서_마루.pdf",
@@ -7278,14 +7383,7 @@
           "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx",
           "score": 100
         }
-      ],
-      "stage": "납품완료",
-      "stageLabel": "납품완료",
-      "stageDate": "2026-09-18",
-      "deliveryDue": "2026-10-02",
-      "dueSource": "weekly",
-      "ddayStatus": "완료",
-      "dday": null
+      ]
     },
     {
       "no": "IO-16",
@@ -7320,12 +7418,27 @@
       "sched": {
         "재단": null,
         "부속": null,
-        "합봉": null,
+        "합봉": 212,
         "완성": null,
         "shipDate": "",
         "note": ""
       },
-      "schedDaily": {},
+      "schedDaily": {
+        "합봉": [
+          {
+            "date": "2026-09-23",
+            "qty": 212
+          }
+        ]
+      },
+      "stage": "봉제",
+      "stageLabel": "봉제",
+      "stageDate": "2026-09-22",
+      "deliveryDue": "2026-09-30",
+      "dueSource": "weekly",
+      "ddayStatus": "정상",
+      "dday": 5,
+      "cutQtyIssue": "",
       "jikjiUrl": "../../1.%20GOODTRUST/국내생산/2027/생산5팀/IDAKA/이다카%20FA26%20메인%20작업지시서%20IDKP001(마루).pdf",
       "jikjiName": "이다카 FA26 메인 작업지시서 IDKP001(마루).pdf",
       "jikjiRel": "1. GOODTRUST\\국내생산\\2027\\생산5팀\\IDAKA\\이다카 FA26 메인 작업지시서 IDKP001(마루).pdf",
@@ -7337,14 +7450,7 @@
           "url": "../../1.%20GOODTRUST/국내생산/2026/생산5팀/IDAKA/이다카%20FA26%20메인%20작업지시서%20IDKP001(마루).pdf",
           "score": 222
         }
-      ],
-      "stage": "봉제",
-      "stageLabel": "봉제",
-      "stageDate": "2026-09-22",
-      "deliveryDue": "2026-09-30",
-      "dueSource": "weekly",
-      "ddayStatus": "정상",
-      "dday": 6
+      ]
     },
     {
       "no": "SM-01",
@@ -7372,7 +7478,7 @@
       "ppSend": "",
       "note": "바스 기준 / 에리후세 기준",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7392,17 +7498,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
-      "jikjiName": "MTK1003.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
+      "jikjiName": "MTK1003.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-02",
@@ -7430,7 +7537,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7450,17 +7557,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
-      "jikjiName": "MTK1003.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
+      "jikjiName": "MTK1003.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-03",
@@ -7488,7 +7596,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7508,17 +7616,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
-      "jikjiName": "MTK1003.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1003.pdf",
+      "jikjiName": "MTK1003.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1003.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-04",
@@ -7546,7 +7655,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7566,17 +7675,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
-      "jikjiName": "MTK0992.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
+      "jikjiName": "MTK0992.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-05",
@@ -7604,7 +7714,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7624,17 +7734,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
-      "jikjiName": "MTK0992.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
+      "jikjiName": "MTK0992.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-06",
@@ -7662,7 +7773,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7682,17 +7793,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
-      "jikjiName": "MTK0992.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
+      "jikjiName": "MTK0992.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-07",
@@ -7720,7 +7832,7 @@
       "ppSend": "",
       "note": "",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -7740,17 +7852,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
-      "jikjiName": "MTK0992.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK0992.pdf",
+      "jikjiName": "MTK0992.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK0992.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-08",
@@ -7778,7 +7891,7 @@
       "ppSend": "",
       "note": "원단 재입고 8/14 / 1절 67YD / 반품 8/18",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": true,
@@ -7820,17 +7933,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
-      "jikjiName": "MTK1002.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
+      "jikjiName": "MTK1002.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-09",
@@ -7858,7 +7972,7 @@
       "ppSend": "",
       "note": "원단 재입고 8/14 / 1절 63YD / 반품 8/18 / XL 양쪽팔 사이즈 다름",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": true,
@@ -7900,17 +8014,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
-      "jikjiName": "MTK1002.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
+      "jikjiName": "MTK1002.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "SM-10",
@@ -7938,7 +8053,7 @@
       "ppSend": "",
       "note": "원단 재입고 8/14 / 1절 65YD / 반품 8/18",
       "source": "시머트리",
-      "days": -22,
+      "days": -28,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": true,
@@ -7980,17 +8095,18 @@
           }
         ]
       },
-      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
-      "jikjiName": "MTK1002.pdf",
-      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
-      "jikjiScore": 170,
       "stage": "납품완료",
       "stageLabel": "납품완료",
       "stageDate": "2026-09-02",
       "deliveryDue": "2026-08-31",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": "",
+      "jikjiUrl": "../../3.%20시머트리/국내생산/7월/TERTLESON/작업지시서/MTK1002.pdf",
+      "jikjiName": "MTK1002.pdf",
+      "jikjiRel": "3. 시머트리\\국내생산\\7월\\TERTLESON\\작업지시서\\MTK1002.pdf",
+      "jikjiScore": 170
     },
     {
       "no": "DS-01",
@@ -8018,7 +8134,7 @@
       "ppSend": "",
       "note": "바스 기준 / 에리후세 기준",
       "source": "디즈니",
-      "days": -23,
+      "days": -29,
       "fabricToday": false,
       "fabricMissing": false,
       "fabricIssue": false,
@@ -8056,7 +8172,8 @@
       "deliveryDue": "2026-08-30",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": ""
     },
     {
       "no": "DS-02",
@@ -8084,7 +8201,7 @@
       "ppSend": "",
       "note": "",
       "source": "디즈니",
-      "days": -23,
+      "days": -29,
       "fabricToday": false,
       "fabricMissing": true,
       "fabricIssue": true,
@@ -8122,7 +8239,8 @@
       "deliveryDue": "2026-08-30",
       "dueSource": "fallback",
       "ddayStatus": "완료",
-      "dday": null
+      "dday": null,
+      "cutQtyIssue": ""
     }
   ],
   "imgMap": {
@@ -8440,7 +8558,7 @@
     {
       "id": "risk",
       "name": "납기리스크",
-      "sub": "경과 14 · 임박 8"
+      "sub": "경과 22 · 임박 0"
     },
     {
       "id": "생산3팀",
@@ -8465,7 +8583,7 @@
     {
       "id": "공정",
       "name": "공정",
-      "sub": "2026-09 합봉 7,447"
+      "sub": "2026-09 합봉 8,979"
     },
     {
       "id": "작지",
@@ -8936,6 +9054,20 @@
       "team": "생산5팀"
     },
     {
+      "date": "2026-09-22",
+      "proc": "합봉",
+      "qty": 660,
+      "no": "IO-13",
+      "team": "생산5팀"
+    },
+    {
+      "date": "2026-09-23",
+      "proc": "합봉",
+      "qty": 660,
+      "no": "IO-13",
+      "team": "생산5팀"
+    },
+    {
       "date": "2026-08-25",
       "proc": "재단",
       "qty": 293,
@@ -8975,6 +9107,13 @@
       "proc": "완성",
       "qty": 200,
       "no": "IO-15",
+      "team": "생산5팀"
+    },
+    {
+      "date": "2026-09-23",
+      "proc": "합봉",
+      "qty": 212,
+      "no": "IO-16",
       "team": "생산5팀"
     },
     {
@@ -11253,8 +11392,17 @@
             "daily": []
           },
           "합봉": {
-            "cum": null,
-            "daily": []
+            "cum": 1320,
+            "daily": [
+              {
+                "date": "2026-09-22",
+                "qty": 660
+              },
+              {
+                "date": "2026-09-23",
+                "qty": 660
+              }
+            ]
           },
           "완성": {
             "cum": null,
@@ -11352,8 +11500,13 @@
             "daily": []
           },
           "합봉": {
-            "cum": null,
-            "daily": []
+            "cum": 212,
+            "daily": [
+              {
+                "date": "2026-09-23",
+                "qty": 212
+              }
+            ]
           },
           "완성": {
             "cum": null,
@@ -11782,6 +11935,74 @@
       }
     ]
   },
+  "clientKpis": [
+    {
+      "client": "굿트러스트생산3팀",
+      "n": 70,
+      "qty": 12326,
+      "shipN": 6,
+      "shipQ": 1551
+    },
+    {
+      "client": "굿트러스트 / 생산 5팀",
+      "n": 10,
+      "qty": 6278,
+      "shipN": 9,
+      "shipQ": 6066
+    },
+    {
+      "client": "시머트리",
+      "n": 10,
+      "qty": 3009,
+      "shipN": 10,
+      "shipQ": 3009
+    },
+    {
+      "client": "디즈니",
+      "n": 2,
+      "qty": 1100,
+      "shipN": 2,
+      "shipQ": 1100
+    }
+  ],
+  "teamKpis": [
+    {
+      "team": "생산3팀",
+      "n": 70,
+      "qty": 12326,
+      "shipN": 6,
+      "shipQ": 1551,
+      "overdueN": 0,
+      "overdueQ": 0
+    },
+    {
+      "team": "생산5팀",
+      "n": 10,
+      "qty": 6278,
+      "shipN": 9,
+      "shipQ": 6066,
+      "overdueN": 0,
+      "overdueQ": 0
+    },
+    {
+      "team": "시머트리",
+      "n": 10,
+      "qty": 3009,
+      "shipN": 10,
+      "shipQ": 3009,
+      "overdueN": 0,
+      "overdueQ": 0
+    },
+    {
+      "team": "디즈니",
+      "n": 2,
+      "qty": 1100,
+      "shipN": 2,
+      "shipQ": 1100,
+      "overdueN": 0,
+      "overdueQ": 0
+    }
+  ],
   "jikjiIndex": {
     "byTeam": {
       "(팀미상)": {
@@ -11817,6 +12038,16 @@
             "rel": "1. GOODTRUST\\샘플\\8월\\WVTD P1 SAMPLE 작업지시서.pdf",
             "url": "../../1.%20GOODTRUST/샘플/8월/WVTD%20P1%20SAMPLE%20작업지시서.pdf",
             "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\샘플\\8월\\WVTD P1 SAMPLE 작업지시서.pdf",
+            "year": "",
+            "status": ""
+          }
+        ],
+        "9월": [
+          {
+            "name": "SS27  버드독스 샘플 작업지시서 (마루).pdf",
+            "rel": "1. GOODTRUST\\샘플\\9월\\SS27  버드독스 샘플 작업지시서 (마루).pdf",
+            "url": "../../1.%20GOODTRUST/샘플/9월/SS27%20%20버드독스%20샘플%20작업지시서%20(마루).pdf",
+            "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\샘플\\9월\\SS27  버드독스 샘플 작업지시서 (마루).pdf",
             "year": "",
             "status": ""
           }
@@ -12083,14 +12314,6 @@
       "디즈니": {
         "디즈니": [
           {
-            "name": "DQ1LJB003 작업지시서.pdf",
-            "rel": "2. 디즈니\\27SS\\완사입\\정상\\DQ1LJB003\\DQ1LJB003 작업지시서.pdf",
-            "url": "../../2.%20디즈니/27SS/완사입/정상/DQ1LJB003/DQ1LJB003%20작업지시서.pdf",
-            "path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\정상\\DQ1LJB003\\DQ1LJB003 작업지시서.pdf",
-            "year": "",
-            "status": ""
-          },
-          {
             "name": "DQ1LJV009 작업지시서.pdf",
             "rel": "2. 디즈니\\26FW\\완사입\\DQ1LJV009\\DQ1LJV009 작업지시서.pdf",
             "url": "../../2.%20디즈니/26FW/완사입/DQ1LJV009/DQ1LJV009%20작업지시서.pdf",
@@ -12135,6 +12358,14 @@
             "rel": "2. 디즈니\\26FW\\완사입\\티셔츠\\SQ3-MTS-016\\JF-090-ATY (SQ3-LTS-016) 출고지시서.pdf",
             "url": "../../2.%20디즈니/26FW/완사입/티셔츠/SQ3-MTS-016/JF-090-ATY%20(SQ3-LTS-016)%20출고지시서.pdf",
             "path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\26FW\\완사입\\티셔츠\\SQ3-MTS-016\\JF-090-ATY (SQ3-LTS-016) 출고지시서.pdf",
+            "year": "",
+            "status": ""
+          },
+          {
+            "name": "SM1MTR081 메인작업지시서.pdf",
+            "rel": "2. 디즈니\\27SS\\완사입\\기획\\SR1MTR081\\SM1MTR081 메인작업지시서.pdf",
+            "url": "../../2.%20디즈니/27SS/완사입/기획/SR1MTR081/SM1MTR081%20메인작업지시서.pdf",
+            "path": "Z:\\HDD1\\MARU\\생산부\\2. 디즈니\\27SS\\완사입\\기획\\SR1MTR081\\SM1MTR081 메인작업지시서.pdf",
             "year": "",
             "status": ""
           },
@@ -13407,73 +13638,5 @@
         ]
       }
     }
-  },
-  "teamKpis": [
-    {
-      "team": "생산3팀",
-      "n": 70,
-      "qty": 12326,
-      "shipN": 6,
-      "shipQ": 1551,
-      "overdueN": 0,
-      "overdueQ": 0
-    },
-    {
-      "team": "생산5팀",
-      "n": 10,
-      "qty": 6278,
-      "shipN": 9,
-      "shipQ": 6066,
-      "overdueN": 0,
-      "overdueQ": 0
-    },
-    {
-      "team": "시머트리",
-      "n": 10,
-      "qty": 3009,
-      "shipN": 10,
-      "shipQ": 3009,
-      "overdueN": 0,
-      "overdueQ": 0
-    },
-    {
-      "team": "디즈니",
-      "n": 2,
-      "qty": 1100,
-      "shipN": 2,
-      "shipQ": 1100,
-      "overdueN": 0,
-      "overdueQ": 0
-    }
-  ],
-  "clientKpis": [
-    {
-      "client": "굿트러스트생산3팀",
-      "n": 70,
-      "qty": 12326,
-      "shipN": 6,
-      "shipQ": 1551
-    },
-    {
-      "client": "굿트러스트 / 생산 5팀",
-      "n": 10,
-      "qty": 6278,
-      "shipN": 9,
-      "shipQ": 6066
-    },
-    {
-      "client": "시머트리",
-      "n": 10,
-      "qty": 3009,
-      "shipN": 10,
-      "shipQ": 3009
-    },
-    {
-      "client": "디즈니",
-      "n": 2,
-      "qty": 1100,
-      "shipN": 2,
-      "shipQ": 1100
-    }
-  ]
+  }
 }

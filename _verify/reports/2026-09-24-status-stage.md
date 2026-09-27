@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-24 · 생산현황 · 공정단계(stage) 규칙 정합 gate
 
 ## 판결: 조건부

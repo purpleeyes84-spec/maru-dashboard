@@ -1,0 +1,38 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
+{
+  "asOf": "2026-09-25",
+  "ran_at": "2026-09-25T08:12:56.904872+09:00",
+  "changes": [
+    "SR1MJB080 added to progress/slots/진행문서/진행 (wip PDF only)",
+    "DR1LJB080 bt += DR1-LJB-080(CS3030).xls",
+    "thumbs SR1MJB080 BLOCKED (no color flats)",
+    "나염단가 4파일: 원가보드 기존 반영 → skip"
+  ],
+  "merge": [
+    {
+      "style": "SR1MJB080",
+      "ok": true,
+      "used": [
+        "wip:SR1MJB080_wo.pdf"
+      ],
+      "pages": 1,
+      "path": "/workspace/duri_daily_scan/0925/out/merged/SR1MJB080.pdf"
+    },
+    {
+      "style": "DR1LJB080",
+      "ok": true,
+      "used": [
+        "wip:wip.pdf",
+        "fabric_po:po.jpg",
+        "bt:bt.jpg"
+      ],
+      "pages": 3,
+      "path": "/workspace/duri_daily_scan/0925/out/merged/DR1LJB080.pdf"
+    }
+  ],
+  "thumb_skip": {
+    "SR1MJB080": "no_colorway_flats",
+    "DR1LJB080": "existing BT컨펌 thumb kept; PDF color extract not this run"
+  },
+  "integrate_pdf": "skipped: only 2 styles have merged PDFs this run; full 27SS_진행문서_통합 deferred"
+}

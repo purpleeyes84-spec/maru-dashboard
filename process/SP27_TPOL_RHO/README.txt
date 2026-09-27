@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 SP27_TPOL_RHO
 SP27_TPOL_RHO 아동 반팔 폴로 · 1인 단위 세분
 임봉 마루 · 납기 2026-10-09 · 47공정 · 1공정=1인

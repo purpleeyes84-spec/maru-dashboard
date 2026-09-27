@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 마이바스지연영향 근거그래프·표 보강 재게이트 2026-09-21
 
 ## 판결: 승인

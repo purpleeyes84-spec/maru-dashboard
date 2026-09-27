@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-17 · _검증 · 프로세스 보충
 
 - 오더: 전체 대시보드 살펴보고 검증 프로세서 확립에 필요한 보충 추가

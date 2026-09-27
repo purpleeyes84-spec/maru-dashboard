@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 초단기준 마이바스 전환 게이트 2026-09-21
 
 ## 판결: 조건부 (재발)

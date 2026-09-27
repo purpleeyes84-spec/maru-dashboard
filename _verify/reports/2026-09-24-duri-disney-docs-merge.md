@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 두리콜렉션 디즈니 진행문서 · 유령품번병합·SR1MTR081 게이트 2026-09-24
 
 - 오더: `Z:\HDD1\MARU\dashboard\두리콜렉션\디즈니\진행문서\index.html`

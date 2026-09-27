@@ -24,6 +24,7 @@ header p { margin:2px 0; color:var(--muted); font-size:0.92rem; }
 table.master, table.cmp, table.detail { width:100%; border-collapse:collapse; font-size:14px; margin:16px 0 28px; }
 table.master th, table.master td, table.cmp th, table.cmp td, table.detail th, table.detail td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; }
 td.merged { vertical-align:middle; font-weight:600; }
+td.vmerged { vertical-align:middle; }
 table.master th, table.cmp th { position:sticky; top:0; background:#15202b; color:var(--muted); font-weight:600; }
 td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
 td.est { color:var(--est); } td.file { color:#cfe6f5; } td.total { font-weight:700; color:var(--accent); }
@@ -40,6 +41,7 @@ td.est { color:var(--est); } td.file { color:#cfe6f5; } td.total { font-weight:7
 .note { font-size:0.85rem; color:var(--muted); }
 h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent); padding-left:10px; }
 </style>
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 </head>
 <body>
 <header>
@@ -224,20 +226,16 @@ h2.sec { font-size:1.2rem; margin:28px 0 8px; border-left:3px solid var(--accent
   </section>
 </div>
 <script>
+// 원본 셀 캐시(필터 전환 시 병합 해제·복원용)
+const MASTER_VAL_COLS=[3,4,5,6,7,8,9,10,11]; // 원단·소탕·부자재·나염·공임·원단운송·완제품해상·통관·합계(장당)
+document.querySelectorAll('#master tbody tr').forEach(tr=>{ tr._cells=[...tr.children]; });
 function resetMasterStyleCells(){
   document.querySelectorAll('#master tbody tr').forEach(tr=>{
     const st=tr.dataset.style||'';
-    let sc=tr.querySelector('td.style-col');
-    const color=tr.querySelector('td.color-col');
-    if(!sc){
-      sc=document.createElement('td');
-      sc.className='style-col';
-      tr.insertBefore(sc, color||tr.firstChild);
-    }
-    sc.removeAttribute('rowspan');
-    sc.classList.add('merged');
-    sc.textContent=st;
-    sc.hidden=false;
+    if(tr._cells) tr.replaceChildren(...tr._cells);
+    tr._cells.forEach(td=>{ td.removeAttribute('rowspan'); td.classList.remove('vmerged'); td.hidden=false; });
+    const sc=tr.querySelector('td.style-col');
+    if(sc){ sc.classList.add('merged'); sc.textContent=st; }
   });
 }
 function mergeMasterStyleCol(){
@@ -248,13 +246,25 @@ function mergeMasterStyleCol(){
     const st=visible[i].dataset.style;
     let j=i+1;
     while(j<visible.length && visible[j].dataset.style===st) j++;
+    // 동일 품번 그룹 안에서 같은 값이 연속되는 원가 칸을 하나로 병합
+    MASTER_VAL_COLS.forEach(c=>{
+      let a=i;
+      while(a<j){
+        const v=visible[a]._cells[c].textContent.trim();
+        let b=a+1;
+        while(b<j && visible[b]._cells[c].textContent.trim()===v) b++;
+        if(b-a>1){
+          const top=visible[a]._cells[c];
+          top.rowSpan=b-a; top.classList.add('vmerged');
+          for(let k=a+1;k<b;k++) visible[k]._cells[c].remove();
+        }
+        a=b;
+      }
+    });
     const span=j-i;
-    const first=visible[i].querySelector('td.style-col');
-    if(first && span>1) first.rowSpan=span;
-    for(let k=i+1;k<j;k++){
-      const sc=visible[k].querySelector('td.style-col');
-      if(sc) sc.remove();
-    }
+    const first=visible[i]._cells[0];
+    if(span>1) first.rowSpan=span;
+    for(let k=i+1;k<j;k++) visible[k]._cells[0].remove();
     i=j;
   }
 }

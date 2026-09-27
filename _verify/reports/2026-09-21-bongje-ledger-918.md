@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 누적엑셀 09-18 정합 재게이트
 
 - 일시: 2026-09-21

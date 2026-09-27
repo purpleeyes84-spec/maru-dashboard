@@ -1,5 +1,6 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-25",
   "stages": [
     "원단발주",
     "부자재발주",
@@ -514,6 +515,13 @@
           "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030) BT.xls",
           "mtime": "2026-09-19",
           "rel": "완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030) BT.xls",
+          "missing": false
+        },
+        {
+          "name": "DR1-LJB-080(CS3030).xls",
+          "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030).xls",
+          "mtime": "2026-09-24",
+          "rel": "완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030).xls",
           "missing": false
         }
       ],
@@ -1436,6 +1444,76 @@
       ],
       "color_str": "",
       "thumb_src": "wip_color_diagram"
+    },
+    {
+      "style": "SR1MJB080",
+      "name": "",
+      "brand": "스팍스",
+      "source": "폴더스캔",
+      "category": "완사입",
+      "category_sub": "기획",
+      "qty": 0,
+      "colors": {
+        "L/GREY": null,
+        "D/GREEN": null,
+        "BLACK": null
+      },
+      "vendor": "",
+      "art": "",
+      "due": "",
+      "fabric_order": "",
+      "bt_cfm": [],
+      "bt_links": [],
+      "wip_links": [
+        {
+          "name": "SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+          "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1-MJB-080/SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+          "mtime": "2026-09-23",
+          "rel": "완사입/기획/SR1-MJB-080/SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+          "missing": false
+        }
+      ],
+      "fabric_po_links": [],
+      "trim_po_links": [],
+      "pack_links": [],
+      "trim_orders": [],
+      "nfiles": 1,
+      "flags": {
+        "fabric_po": false,
+        "trim_po": false,
+        "qc": false,
+        "sew": false,
+        "finish": false,
+        "pack": false,
+        "logistics": false
+      },
+      "done": 0,
+      "total": 7,
+      "pct": 0,
+      "complete": false,
+      "oneway": false,
+      "pending_note": "thumbs 보류: 작지에 칼라물 F/B flat 없음(B&W tech flat+수량표만)",
+      "code": {
+        "raw": "SR1MJB080",
+        "code": "SR1MJB080",
+        "brand_code": "S",
+        "brand": "스팍스",
+        "year_code": "R",
+        "year": "2027년",
+        "season_code": "1",
+        "season": "봄",
+        "gender_code": "M",
+        "gender": "남성",
+        "item_code": "JB",
+        "item": "바람막이",
+        "seq": "080",
+        "seq_band": "기획",
+        "ok": true
+      },
+      "thumb": null,
+      "images": [],
+      "color_str": "L/GREY · D/GREEN · BLACK",
+      "thumb_src": null
     },
     {
       "style": "DQ1-MJP-001",
@@ -3914,7 +3992,7 @@
     "완사입기획": 12,
     "완사입정상": 9,
     "원단": 23,
-    "BT미정": 4
+    "BT미정": 21
   },
   "meta": {
     "canonical": "progress.json",
@@ -3926,7 +4004,8 @@
     "style_code_parse": "Brand+Year+Season+Gender+Item2+Seq",
     "href_root": "../../../../생산부/2. 디즈니/27SS/",
     "thumb_note": "jpg/png priority: BT/CFM/컨펌/착장; from style folder or 발주서",
-    "fix_note": "2026-09-24: removed ghost DR2LTR090→merged PO into DR2LTR091; SR1MTR081/MTS081 thumb→thumbs + SM1MTR081 WIP linked; asOf 2026-09-24"
+    "fix_note": "2026-09-24: removed ghost DR2LTR090→merged PO into DR2LTR091; SR1MTR081/MTS081 thumb→thumbs + SM1MTR081 WIP linked; asOf 2026-09-24 | 2026-09-25 daily: +SR1MJB080(wip only, thumb blocked no color flats); DR1LJB080 bt += DR1-LJB-080(CS3030).xls; 나염/원가 파일은 원가보드 기존반영.",
+    "counts_note": "BT미정(counts)=bt_links·bt_cfm 모두 없는 행 수(BT 파일 미확인, 2026-09-25~). category=BT미정 행 수와 다름(현재 4). counts는 키별 독립 집계라 합계≠rows."
   },
   "code_rules": {
     "brand_map": {
@@ -4030,8 +4109,8 @@
     "note": "정상 시트 기준. Q+=2026년 이후 추정 확장."
   },
   "vis": {
-    "with_thumb": 18,
-    "without_thumb": 30,
+    "with_thumb": 17,
+    "without_thumb": 31,
     "link_stats": {
       "depth4": 103,
       "missing": 0,

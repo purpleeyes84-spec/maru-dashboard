@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 사후정산 board rebuild (run on DESKTOP-MV93US1). Do NOT register cron here — Air 08:00 attaches.
 # Usage: powershell -NoProfile -ExecutionPolicy Bypass -File rebuild.ps1
 $ErrorActionPreference = 'Stop'

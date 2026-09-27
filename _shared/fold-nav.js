@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 /*! MARU fold-nav — NAS/file:///mobile safe */
 (function () {
   if (window.__MARU_FOLD_NAV__) return;

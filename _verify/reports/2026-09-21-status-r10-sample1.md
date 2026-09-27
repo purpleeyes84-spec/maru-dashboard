@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 생산현황 R10 시인성 샘플1 게이트 2026-09-21
 
 ## 판결: 승인

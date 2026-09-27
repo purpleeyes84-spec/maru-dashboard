@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 생산현황 · 주간회의 출고마감→due 동기
 
 ## 판결: 조건부

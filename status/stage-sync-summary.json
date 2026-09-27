@@ -1,17 +1,18 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "kind": "stage-sync-from-status",
-  "runAt": "2026-09-24T04:32:36.465Z",
-  "asOf": "2026-09-24",
+  "runAt": "2026-09-24T23:43:11.779Z",
+  "asOf": "2026-09-25",
   "xlsx": "생산현황표 9월.xlsx",
-  "weekly": "9월 4주차 주간회의.xlsx",
+  "weekly": "9월 5주차 주간회의.xlsx",
   "sheetRows": 92,
   "stageCounts": {
     "납품완료": 27,
     "완성": 2,
     "봉제": 22,
-    "재단": 26,
+    "재단": 34,
     "대기": 5,
-    "원단": 10
+    "원단": 2
   },
   "ddayCounts": {
     "완료": 27,
@@ -42,7 +43,7 @@
       "deliveryDue": "2026-10-08",
       "dueSource": "weekly",
       "ddayStatus": "정상",
-      "dday": 14,
+      "dday": 13,
       "ship": ""
     },
     {
@@ -52,7 +53,7 @@
       "deliveryDue": "2026-10-09",
       "dueSource": "fallback",
       "ddayStatus": "정상",
-      "dday": 15,
+      "dday": 14,
       "ship": ""
     },
     {
@@ -62,7 +63,7 @@
       "deliveryDue": "2026-10-09",
       "dueSource": "fallback",
       "ddayStatus": "정상",
-      "dday": 15,
+      "dday": 14,
       "ship": ""
     },
     {
@@ -72,7 +73,7 @@
       "deliveryDue": "2026-10-09",
       "dueSource": "fallback",
       "ddayStatus": "정상",
-      "dday": 15,
+      "dday": 14,
       "ship": ""
     }
   ]

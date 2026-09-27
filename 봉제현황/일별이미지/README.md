@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 일별이미지
 
 갱신: 2026-09-19 12:50

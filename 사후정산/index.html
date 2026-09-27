@@ -30,8 +30,7 @@ a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
 .panel h2{margin:0 0 8px;font-size:13px;color:var(--gold)}
 .panel p{margin:0;font-size:12px;color:var(--muted);line-height:1.55}
-</style><link rel="stylesheet" href="../../_shared/visibility.css">
-<script src="../../_shared/fold-nav.js" defer></script>
+</style><script src="/maru-dashboard/js/auth-gate.js"></script>
 </head><body>
 <div class="wrap">
   <div class="top"><div>
@@ -39,13 +38,13 @@ a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
     <p>원천: 생산부\정산서 · GOODTRUST\정산서 · 누락작지·관리부·ETC 제외 · 종결은 생산현황 meta</p>
   </div>
   <div class="kpis">
-    <div class="kpi"><b id="nAll">32</b><span>정산서</span></div>
-    <div class="kpi ok"><b>9</b><span>패킹관련</span></div>
-    <div class="kpi"><b>20</b><span>완성</span></div>
+    <div class="kpi"><b id="nAll">37</b><span>정산서</span></div>
+    <div class="kpi ok"><b>11</b><span>패킹관련</span></div>
+    <div class="kpi"><b>26</b><span>완성</span></div>
     <div class="kpi"><b>13</b><span>입고</span></div>
     <div class="kpi"><b>27</b><span>출고</span></div>
     <div class="kpi warn"><b>0</b><span>미출고지연</span></div>
-    <div class="kpi"><b>16</b><span>굿트러스트</span></div><div class="kpi"><b>12</b><span>디즈니</span></div><div class="kpi"><b>4</b><span>시머트리</span></div>
+    <div class="kpi"><b>21</b><span>굿트러스트</span></div><div class="kpi"><b>12</b><span>디즈니</span></div><div class="kpi"><b>4</b><span>시머트리</span></div>
   </div></div>
   <div class="grid2"><div>
     <div class="filters">
@@ -56,15 +55,20 @@ a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
     </div>
     <div class="sec">정산서 · 패킹리스트</div>
     <table><thead><tr><th>월</th><th>브랜드</th><th>출처</th><th>유형</th><th>파일</th><th>크기</th><th>수정</th></tr></thead>
-    <tbody id="tb"><tr data-brand="굿트러스트" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/9월/PACKINGLIST/260921 로백 SP27 MPOL.xls">260921 로백 SP27 MPOL.xls</a></td><td class="num">108KB</td><td class="num">2026-09-21</td></tr>
-<tr data-brand="굿트러스트" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/9월/PACKINGLIST/MORNING PEOPLE 2026 PO#0002 260921.xlsx">MORNING PEOPLE 2026 PO#0002 260921.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-21</td></tr>
-<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/9월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.pdf">PINK PINS SP25 15차 PACKINGLIST 260911.pdf</a></td><td class="num">509KB</td><td class="num">2026-09-11</td></tr>
-<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/9월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.xlsx">PINK PINS SP25 15차 PACKINGLIST 260911.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-11</td></tr>
-<tr data-brand="굿트러스트" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/9월/PACKINGLIST/아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx">아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx</a></td><td class="num">18KB</td><td class="num">2026-09-18</td></tr>
-<tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/9월 거래명세표.pdf">9월 거래명세표.pdf</a></td><td class="num">139KB</td><td class="num">2026-09-12</td></tr>
+    <tbody id="tb"><tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/9월 거래명세표.pdf">9월 거래명세표.pdf</a></td><td class="num">139KB</td><td class="num">2026-09-12</td></tr>
 <tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/MTK1003 원단 CLAIM.pdf">MTK1003 원단 CLAIM.pdf</a></td><td class="num">211KB</td><td class="num">2026-09-12</td></tr>
 <tr data-brand="시머트리" data-month="9월" data-pack="0" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/OFFER SHEET 시머트리 2026.09.10.xlsx">OFFER SHEET 시머트리 2026.09.10.xlsx</a></td><td class="num">13KB</td><td class="num">2026-09-11</td></tr>
 <tr data-brand="시머트리" data-month="9월" data-pack="1" data-src="PROD"><td>9월</td><td>시머트리</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/시머트리/9월/SYMMETRY  PACKING LIST 260827.xlsx">SYMMETRY  PACKING LIST 260827.xlsx</a></td><td class="num">33KB</td><td class="num">2026-09-05</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/260921 로백 SP27 MPOL.xls">260921 로백 SP27 MPOL.xls</a></td><td class="num">108KB</td><td class="num">2026-09-23</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/MORNING PEOPLE 2026 PO#0002 260921.xlsx">MORNING PEOPLE 2026 PO#0002 260921.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-21</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.pdf">PINK PINS SP25 15차 PACKINGLIST 260911.pdf</a></td><td class="num">509KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/PINK PINS SP25 15차 PACKINGLIST 260911.xlsx">PINK PINS SP25 15차 PACKINGLIST 260911.xlsx</a></td><td class="num">16KB</td><td class="num">2026-09-11</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/~$아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx">~$아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx</a></td><td class="num">0B</td><td class="num">2026-09-22</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/마루 2공장 8월 생산3팀 정산서 08.20.xlsx">마루 2공장 8월 생산3팀 정산서 08.20.xlsx</a></td><td class="num">42KB</td><td class="num">2026-09-22</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/마루 8월 생산3팀 정산서 08.20.xlsx">마루 8월 생산3팀 정산서 08.20.xlsx</a></td><td class="num">42KB</td><td class="num">2026-09-22</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="0" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag settle">정산</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/마루 샘플  8월 생산3팀 정산서26.09.18.xlsx">마루 샘플  8월 생산3팀 정산서26.09.18.xlsx</a></td><td class="num">41KB</td><td class="num">2026-09-22</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx">아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.18.xlsx</a></td><td class="num">18KB</td><td class="num">2026-09-18</td></tr>
+<tr data-brand="굿트러스트" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>굿트러스트</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/굿트러스트/8월/PACKINGLIST/아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.22.xlsx">아이언호크 SP26 MAIN 23차 PO#0073 패킹리스트  2026.09.22.xlsx</a></td><td class="num">17KB</td><td class="num">2026-09-23</td></tr>
 <tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/8월말 완사입 결제리스트 (두리건).pdf">8월말 완사입 결제리스트 (두리건).pdf</a></td><td class="num">67KB</td><td class="num">2026-09-07</td></tr>
 <tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/8월말 완사입 결제리스트 (승우건).pdf">8월말 완사입 결제리스트 (승우건).pdf</a></td><td class="num">62KB</td><td class="num">2026-09-07</td></tr>
 <tr data-brand="디즈니" data-month="8월" data-pack="1" data-src="PROD"><td>8월</td><td>디즈니</td><td>PROD</td><td><span class="tag pack">패킹</span></td><td><a href="../../생산부/정산서/2026/디즈니/8월/DQ4LTS030 PACKING LIST.xlsx">DQ4LTS030 PACKING LIST.xlsx</a></td><td class="num">21KB</td><td class="num">2026-09-02</td></tr>
@@ -91,15 +95,15 @@ a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
   </div><div>
     <div class="sec">종결 · 출고 요약 (생산현황)</div>
     <div class="panel" style="margin-bottom:12px">
-      <h2>요약 · asOf 2026-09-22</h2>
-      <p>오더 92 · 완성 20 · 입고 13 · 출고 27 · 미출고지연 0<br>
+      <h2>요약 · asOf 2026-09-25</h2>
+      <p>오더 92 · 완성 26 · 입고 13 · 출고 27 · 미출고지연 0<br>
       정산서↔오더 강제조인 없음. 아침 갱신 Air 08:00.</p>
     </div>
     <div class="panel"><h2>원천 경로</h2>
       <p>Z:\HDD1\MARU\생산부\정산서<br>Z:\HDD1\MARU\생산부\GOODTRUST\정산서<br>Z:\HDD1\MARU\dashboard\status\data.json</p>
     </div>
   </div></div>
-  <p class="note">생성 2026-09-22 08:12 · 상대경로 원본 연결 · data.json 동봉</p>
+  <p class="note">생성 2026-09-28 08:14 · 상대경로 원본 연결 · data.json 동봉</p>
 </div>
 <script>
 (function(){

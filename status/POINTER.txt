@@ -1,2 +1,3 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 ROLE=R10-sample-board
 SOURCE=생산부/대시보드/생산현황/data.json

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 봉제현황 9/18 재해석 재게이트
 
 - 일시: 2026-09-21

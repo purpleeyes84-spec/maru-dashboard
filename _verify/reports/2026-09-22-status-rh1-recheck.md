@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # 2026-09-22 · 생산현황 · RH-1 패킹 재확인
 
 ## 판결: 승인 (기승인 동일본)

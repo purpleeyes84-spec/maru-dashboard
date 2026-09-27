@@ -1,0 +1,1147 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
+{
+  "root": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트",
+  "n": 114,
+  "files": [
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\핑크핀\\4월\\핑크핀 SP25 13차, 14차 PO#013 PO#014.xlsx",
+      "brand": "핑크핀",
+      "rel": "핑크핀\\4월\\핑크핀 SP25 13차, 14차 PO#013 PO#014.xlsx",
+      "name": "핑크핀 SP25 13차, 14차 PO#013 PO#014.xlsx",
+      "size": 323475,
+      "mtime": "2026-08-11T16:59:03",
+      "canonBrand": "PINK PIN",
+      "url": "../../1.%20GOODTRUST/자재리스트/핑크핀/4월/핑크핀%20SP25%2013차,%2014차%20PO%23013%20PO%23014.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아비드\\3월\\아비드 SS26 POLO 리오더 PO#23249(오션선적).xlsx",
+      "brand": "아비드",
+      "rel": "아비드\\3월\\아비드 SS26 POLO 리오더 PO#23249(오션선적).xlsx",
+      "name": "아비드 SS26 POLO 리오더 PO#23249(오션선적).xlsx",
+      "size": 6446776,
+      "mtime": "2026-08-11T16:59:00",
+      "canonBrand": "AVID",
+      "url": "../../1.%20GOODTRUST/자재리스트/아비드/3월/아비드%20SS26%20POLO%20리오더%20PO%2323249(오션선적).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아비드\\2월\\아비드 SS26 POLO 리오더 PO#23242.xlsx",
+      "brand": "아비드",
+      "rel": "아비드\\2월\\아비드 SS26 POLO 리오더 PO#23242.xlsx",
+      "name": "아비드 SS26 POLO 리오더 PO#23242.xlsx",
+      "size": 5157050,
+      "mtime": "2026-08-11T16:59:00",
+      "canonBrand": "AVID",
+      "url": "../../1.%20GOODTRUST/자재리스트/아비드/2월/아비드%20SS26%20POLO%20리오더%20PO%2323242.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\링크소울\\1월\\링크소울 자재리스트.xlsx",
+      "brand": "링크소울",
+      "rel": "링크소울\\1월\\링크소울 자재리스트.xlsx",
+      "name": "링크소울 자재리스트.xlsx",
+      "size": 3339848,
+      "mtime": "2026-08-11T16:58:59",
+      "canonBrand": "LINKSOUL",
+      "url": "../../1.%20GOODTRUST/자재리스트/링크소울/1월/링크소울%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\미젠엔메인\\1월\\미젠앤메인 선염 스트라이프 3컬러 자재리스트.xlsx",
+      "brand": "미젠엔메인",
+      "rel": "미젠엔메인\\1월\\미젠앤메인 선염 스트라이프 3컬러 자재리스트.xlsx",
+      "name": "미젠앤메인 선염 스트라이프 3컬러 자재리스트.xlsx",
+      "size": 2878373,
+      "mtime": "2026-08-13T14:00:14",
+      "canonBrand": "MIZZEN&MAIN",
+      "url": "../../1.%20GOODTRUST/자재리스트/미젠엔메인/1월/미젠앤메인%20선염%20스트라이프%203컬러%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\1월\\로백 더 크리스피 , 벨몬트 남성 반팔 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\1월\\로백 더 크리스피 , 벨몬트 남성 반팔 자재리스트.xlsx",
+      "name": "로백 더 크리스피 , 벨몬트 남성 반팔 자재리스트.xlsx",
+      "size": 11582670,
+      "mtime": "2026-08-11T16:58:54",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/1월/로백%20더%20크리스피%20,%20벨몬트%20남성%20반팔%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\3월\\로백 PO#FA26_MPOL_911 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\3월\\로백 PO#FA26_MPOL_911 자재리스트.xlsx",
+      "name": "로백 PO#FA26_MPOL_911 자재리스트.xlsx",
+      "size": 6789311,
+      "mtime": "2026-08-11T16:58:51",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/3월/로백%20PO%23FA26_MPOL_911%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\3월\\WHCD\\로백 WHCD 여성 가디건.xlsx",
+      "brand": "로백",
+      "rel": "로백\\3월\\WHCD\\로백 WHCD 여성 가디건.xlsx",
+      "name": "로백 WHCD 여성 가디건.xlsx",
+      "size": 89048,
+      "mtime": "2026-08-11T16:58:55",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/3월/WHCD/로백%20WHCD%20여성%20가디건.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 MPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 MPOL 자재리스트.xlsx",
+      "name": "로백멀리건 WI26 MPOL 자재리스트.xlsx",
+      "size": 459204,
+      "mtime": "2026-08-13T13:54:23",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/7월/멀리건%20페어웨이%20그린/로백멀리건%20WI26%20MPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 TPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 TPOL 자재리스트.xlsx",
+      "name": "로백멀리건 WI26 TPOL 자재리스트.xlsx",
+      "size": 402941,
+      "mtime": "2026-08-13T13:54:23",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/7월/멀리건%20페어웨이%20그린/로백멀리건%20WI26%20TPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 YPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\7월\\멀리건 페어웨이 그린\\로백멀리건 WI26 YPOL 자재리스트.xlsx",
+      "name": "로백멀리건 WI26 YPOL 자재리스트.xlsx",
+      "size": 210219,
+      "mtime": "2026-08-13T13:54:23",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/7월/멀리건%20페어웨이%20그린/로백멀리건%20WI26%20YPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\2월\\로백 더 허티스트_남성 반팔 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\2월\\로백 더 허티스트_남성 반팔 자재리스트.xlsx",
+      "name": "로백 더 허티스트_남성 반팔 자재리스트.xlsx",
+      "size": 14242512,
+      "mtime": "2026-08-11T16:58:51",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/2월/로백%20더%20허티스트_남성%20반팔%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\2월\\로백 더 에린 힐스_남성 반팔 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\2월\\로백 더 에린 힐스_남성 반팔 자재리스트.xlsx",
+      "name": "로백 더 에린 힐스_남성 반팔 자재리스트.xlsx",
+      "size": 37031080,
+      "mtime": "2026-08-11T16:58:52",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/2월/로백%20더%20에린%20힐스_남성%20반팔%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\2월\\로백 PO#SP26_MPOL_PGA 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\2월\\로백 PO#SP26_MPOL_PGA 자재리스트.xlsx",
+      "name": "로백 PO#SP26_MPOL_PGA 자재리스트.xlsx",
+      "size": 10670665,
+      "mtime": "2026-08-11T16:58:53",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/2월/로백%20PO%23SP26_MPOL_PGA%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "name": "로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "size": 348131,
+      "mtime": "2026-08-11T16:58:58",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20MD-화이트,미드나잇%20블랙-MD.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "name": "로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "size": 377047,
+      "mtime": "2026-08-11T16:58:58",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL,TPOL%20더%20플뢰르%20드리-로백퍼플%20,허니골드.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "name": "로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "size": 203001,
+      "mtime": "2026-08-11T16:58:58",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL더%20온%20더%20샴-록-화이트,안티구아%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "size": 223459,
+      "mtime": "2026-08-11T16:58:57",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "size": 222936,
+      "mtime": "2026-08-28T11:19:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더%20M%20스트릿%20-%20화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "name": "로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "size": 365383,
+      "mtime": "2026-08-11T16:58:58",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/1차/로백%20SP27%20MPOL%20더KC-클래식%20레드,%20화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "size": 216656,
+      "mtime": "2026-08-28T11:21:05",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20씬씨%202.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "name": "로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "size": 221796,
+      "mtime": "2026-08-28T11:21:23",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20카트&클로버%20-%20화이트,레인포레스트%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 456212,
+      "mtime": "2026-08-28T11:21:52",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20TPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "size": 476837,
+      "mtime": "2026-08-28T11:21:31",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20오브%20오악스-코스탈%20블루,퓨어블루,NC.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "size": 232991,
+      "mtime": "2026-08-28T11:22:02",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20온%20어%20힐-플릿네이비,화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 218576,
+      "mtime": "2026-08-28T11:21:13",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "name": "로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "size": 219043,
+      "mtime": "2026-08-28T11:20:56",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20시카고%20스카이라인-화이트,델타%20블루,CHI.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "brand": "로백",
+      "rel": "로백\\8월\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "name": "로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "size": 209969,
+      "mtime": "2026-08-28T11:22:13",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/8월/SP27/2차/로백%20SP27%20MPOL%20더%20샬롯-화이트,바이브%20바이올렛.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\5월\\로백 성인용 긴팔 MLPO 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\5월\\로백 성인용 긴팔 MLPO 자재리스트.xlsx",
+      "name": "로백 성인용 긴팔 MLPO 자재리스트.xlsx",
+      "size": 117675,
+      "mtime": "2026-08-11T16:58:53",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/5월/로백%20성인용%20긴팔%20MLPO%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\5월\\로백 성인용 반팔 MPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\5월\\로백 성인용 반팔 MPOL 자재리스트.xlsx",
+      "name": "로백 성인용 반팔 MPOL 자재리스트.xlsx",
+      "size": 114941,
+      "mtime": "2026-08-11T16:58:55",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/5월/로백%20성인용%20반팔%20MPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\5월\\로백 초등학생용 반팔 YLPO 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\5월\\로백 초등학생용 반팔 YLPO 자재리스트.xlsx",
+      "name": "로백 초등학생용 반팔 YLPO 자재리스트.xlsx",
+      "size": 101853,
+      "mtime": "2026-08-11T16:58:53",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/5월/로백%20초등학생용%20반팔%20YLPO%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\4월\\로백 MPOL_CLG 자재리스트 (version 1).xlsx",
+      "brand": "로백",
+      "rel": "로백\\4월\\로백 MPOL_CLG 자재리스트 (version 1).xlsx",
+      "name": "로백 MPOL_CLG 자재리스트 (version 1).xlsx",
+      "size": 251626,
+      "mtime": "2026-08-11T16:58:53",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/4월/로백%20MPOL_CLG%20자재리스트%20(version%201).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\4월\\로백 MPOL_LLT.xlsx",
+      "brand": "로백",
+      "rel": "로백\\4월\\로백 MPOL_LLT.xlsx",
+      "name": "로백 MPOL_LLT.xlsx",
+      "size": 41592,
+      "mtime": "2026-08-11T16:58:54",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/4월/로백%20MPOL_LLT.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\4월\\로백 MFHH 퀼팅후드 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\4월\\로백 MFHH 퀼팅후드 자재리스트.xlsx",
+      "name": "로백 MFHH 퀼팅후드 자재리스트.xlsx",
+      "size": 8414561,
+      "mtime": "2026-08-11T16:58:54",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/4월/로백%20MFHH%20퀼팅후드%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\4월\\로백 도미 네트워크 모음.xlsx",
+      "brand": "로백",
+      "rel": "로백\\4월\\로백 도미 네트워크 모음.xlsx",
+      "name": "로백 도미 네트워크 모음.xlsx",
+      "size": 453159,
+      "mtime": "2026-08-11T16:58:54",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/4월/로백%20도미%20네트워크%20모음.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\3 COLOR DTP(더 플리트,하와이안 스윙,더 파이어 팀)\\3COLOR DTP WI26 MPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\3 COLOR DTP(더 플리트,하와이안 스윙,더 파이어 팀)\\3COLOR DTP WI26 MPOL 자재리스트.xlsx",
+      "name": "3COLOR DTP WI26 MPOL 자재리스트.xlsx",
+      "size": 801922,
+      "mtime": "2026-08-11T16:58:57",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/3%20COLOR%20DTP(더%20플리트,하와이안%20스윙,더%20파이어%20팀)/3COLOR%20DTP%20WI26%20MPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 MLPO 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 MLPO 자재리스트.xlsx",
+      "name": "로백 WI26 MLPO 자재리스트.xlsx",
+      "size": 112651,
+      "mtime": "2026-08-11T16:58:56",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/블랙%20네이비%20그레이/로백%20WI26%20MLPO%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 YPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 YPOL 자재리스트.xlsx",
+      "name": "로백 WI26 YPOL 자재리스트.xlsx",
+      "size": 114756,
+      "mtime": "2026-08-11T16:58:55",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/블랙%20네이비%20그레이/로백%20WI26%20YPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 MPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 MPOL 자재리스트.xlsx",
+      "name": "로백 WI26 MPOL 자재리스트.xlsx",
+      "size": 115896,
+      "mtime": "2026-08-11T16:58:56",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/블랙%20네이비%20그레이/로백%20WI26%20MPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 TPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\블랙 네이비 그레이\\로백 WI26 TPOL 자재리스트.xlsx",
+      "name": "로백 WI26 TPOL 자재리스트.xlsx",
+      "size": 112643,
+      "mtime": "2026-08-11T16:58:55",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/블랙%20네이비%20그레이/로백%20WI26%20TPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\6월\\WI26\\솔리드 - 멀롯플릿 네이비\\로백 WI26SOLID MERLOT MPOL 자재리스트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\6월\\WI26\\솔리드 - 멀롯플릿 네이비\\로백 WI26SOLID MERLOT MPOL 자재리스트.xlsx",
+      "name": "로백 WI26SOLID MERLOT MPOL 자재리스트.xlsx",
+      "size": 126760,
+      "mtime": "2026-08-11T16:58:57",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/6월/WI26/솔리드%20-%20멀롯플릿%20네이비/로백%20WI26SOLID%20MERLOT%20MPOL%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "name": "로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "size": 391980,
+      "mtime": "2026-09-16T15:16:49",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20화이트,코스탈블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "name": "로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "size": 282197,
+      "mtime": "2026-09-16T15:16:49",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20콜로라단%20-%20오션%20블루화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "size": 250869,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20잭스%20-%20화이트오션%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "name": "로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "size": 439697,
+      "mtime": "2026-09-16T15:16:49",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "size": 215268,
+      "mtime": "2026-09-16T15:16:49",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "name": "로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "size": 236870,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20에이치-타운%202.0%20-%20화이트벙커%20블루%20-%20TX.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "size": 275171,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20데낄라%20올드%20패션드-쇼어%20블루,벙커%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "size": 240628,
+      "mtime": "2026-09-16T15:16:50",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20데낄라%20-%20화이트쇼트%20스탑%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "size": 155785,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20블랙화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "name": "로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "size": 276886,
+      "mtime": "2026-09-16T15:16:47",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20켄터키%20치킨%20-%20화이트클래식%20레드).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "size": 214810,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20하우스%20머니%20-%20화이트쇼어%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "size": 228622,
+      "mtime": "2026-09-16T15:16:49",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20로터스%20핑크벙커%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "size": 221709,
+      "mtime": "2026-09-16T15:16:48",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20더%20멀리건%20-%20화이트코스탈%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "name": "로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "size": 348131,
+      "mtime": "2026-09-16T15:16:44",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL%20더%20MD-화이트,미드나잇%20블랙-MD.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "name": "로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "size": 376962,
+      "mtime": "2026-09-16T15:16:45",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL,TPOL%20더%20플뢰르%20드리-로백퍼플%20,허니골드.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "name": "로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "size": 203016,
+      "mtime": "2026-09-16T15:16:45",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL더%20온%20더%20샴-록-화이트,안티구아%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "size": 223467,
+      "mtime": "2026-09-16T15:16:45",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "size": 222944,
+      "mtime": "2026-09-16T15:16:44",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL%20더%20M%20스트릿%20-%20화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "name": "로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "size": 365383,
+      "mtime": "2026-09-16T15:16:45",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/1차/로백%20SP27%20MPOL%20더KC-클래식%20레드,%20화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\4차 WVPO\\SP27_WVPO_ RHO 모음.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\4차 WVPO\\SP27_WVPO_ RHO 모음.xlsx",
+      "name": "SP27_WVPO_ RHO 모음.xlsx",
+      "size": 129743,
+      "mtime": "2026-09-16T15:16:50",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/4차%20WVPO/SP27_WVPO_%20RHO%20모음.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "size": 216588,
+      "mtime": "2026-09-16T15:16:45",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20씬씨%202.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "name": "로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "size": 221764,
+      "mtime": "2026-09-16T15:16:46",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20카트&클로버%20-%20화이트,레인포레스트%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 456154,
+      "mtime": "2026-09-16T15:16:46",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20TPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "size": 476715,
+      "mtime": "2026-09-16T15:16:47",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20오브%20오악스-코스탈%20블루,퓨어블루,NC.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "size": 232910,
+      "mtime": "2026-09-16T15:16:46",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20온%20어%20힐-플릿네이비,화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 218468,
+      "mtime": "2026-09-16T15:16:47",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "name": "로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "size": 218944,
+      "mtime": "2026-09-16T15:16:47",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20시카고%20스카이라인-화이트,델타%20블루,CHI.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "name": "로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "size": 209986,
+      "mtime": "2026-09-16T15:16:46",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/SP27/2차/로백%20SP27%20MPOL%20더%20샬롯-화이트,바이브%20바이올렛.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\현재 진행건\\WI26 MQZP(폐기)\\MQZP.xlsx",
+      "brand": "로백",
+      "rel": "로백\\현재 진행건\\WI26 MQZP(폐기)\\MQZP.xlsx",
+      "name": "MQZP.xlsx",
+      "size": 116580,
+      "mtime": "2026-08-20T17:57:19",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/현재%20진행건/WI26%20MQZP(폐기)/MQZP.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "name": "로백 SP27 TPOL 더 멀리건 - 화이트,코스탈블루.xlsx",
+      "size": 391980,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20화이트,코스탈블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "name": "로백 SP27 MPOL 더 콜로라단 - 오션 블루화이트.xlsx",
+      "size": 282197,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20콜로라단%20-%20오션%20블루화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 잭스 - 화이트오션 블루).xlsx",
+      "size": 250869,
+      "mtime": "2026-09-16T15:17:11",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20잭스%20-%20화이트오션%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "name": "로백 SP27 TPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "size": 439697,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20TPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 플리트 네이비화이트).xlsx",
+      "size": 215268,
+      "mtime": "2026-09-16T15:17:13",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20플리트%20네이비화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "name": "로백 SP27 MPOL 더 에이치-타운 2.0 - 화이트벙커 블루 - TX.xlsx",
+      "size": 236870,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20에이치-타운%202.0%20-%20화이트벙커%20블루%20-%20TX.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 데낄라 올드 패션드-쇼어 블루,벙커 블루.xlsx",
+      "size": 275171,
+      "mtime": "2026-09-16T15:17:11",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20데낄라%20올드%20패션드-쇼어%20블루,벙커%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 데낄라 - 화이트쇼트 스탑 블루).xlsx",
+      "size": 240628,
+      "mtime": "2026-09-16T15:17:13",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20데낄라%20-%20화이트쇼트%20스탑%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 블랙화이트).xlsx",
+      "size": 155785,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20블랙화이트).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "name": "로백 SP27 MPOL 더 켄터키 치킨 - 화이트클래식 레드).xlsx",
+      "size": 276886,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20켄터키%20치킨%20-%20화이트클래식%20레드).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 하우스 머니 - 화이트쇼어 블루.xlsx",
+      "size": 214810,
+      "mtime": "2026-09-16T15:17:11",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20하우스%20머니%20-%20화이트쇼어%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 로터스 핑크벙커 블루.xlsx",
+      "size": 228622,
+      "mtime": "2026-09-16T15:17:12",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20로터스%20핑크벙커%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\3차\\로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "name": "로백 SP27 MPOL 더 멀리건 - 더 멀리건 - 화이트코스탈 블루).xlsx",
+      "size": 221709,
+      "mtime": "2026-09-16T15:17:11",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/3차/로백%20SP27%20MPOL%20더%20멀리건%20-%20더%20멀리건%20-%20화이트코스탈%20블루).xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "name": "로백 SP27 MPOL 더 MD-화이트,미드나잇 블랙-MD.xlsx",
+      "size": 348131,
+      "mtime": "2026-09-16T15:17:08",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL%20더%20MD-화이트,미드나잇%20블랙-MD.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "name": "로백 SP27 MPOL,TPOL 더 플뢰르 드리-로백퍼플 ,허니골드.xlsx",
+      "size": 376962,
+      "mtime": "2026-09-16T15:17:09",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL,TPOL%20더%20플뢰르%20드리-로백퍼플%20,허니골드.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "name": "로백 SP27 MPOL더 온 더 샴-록-화이트,안티구아 그린.xlsx",
+      "size": 203016,
+      "mtime": "2026-09-16T15:17:09",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL더%20온%20더%20샴-록-화이트,안티구아%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "name": "로백 SP27 MPOL 더 올드 노스 스테이트-화이트,베이비 블루.xlsx",
+      "size": 223467,
+      "mtime": "2026-09-16T15:17:08",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL%20더%20올드%20노스%20스테이트-화이트,베이비%20블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 M 스트릿 - 화이트,벙커블루.xlsx",
+      "size": 222944,
+      "mtime": "2026-09-16T15:17:08",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL%20더%20M%20스트릿%20-%20화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\1차\\로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "name": "로백 SP27 MPOL 더KC-클래식 레드, 화이트.xlsx",
+      "size": 365383,
+      "mtime": "2026-09-16T15:17:08",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/1차/로백%20SP27%20MPOL%20더KC-클래식%20레드,%20화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\4차 WVPO\\SP27_WVPO_ RHO 모음.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\4차 WVPO\\SP27_WVPO_ RHO 모음.xlsx",
+      "name": "SP27_WVPO_ RHO 모음.xlsx",
+      "size": 129743,
+      "mtime": "2026-09-16T15:17:13",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/4차%20WVPO/SP27_WVPO_%20RHO%20모음.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 씬씨 2.0-화이트,벙커블루.xlsx",
+      "size": 216588,
+      "mtime": "2026-09-16T15:17:09",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20씬씨%202.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "name": "로백 SP27 MPOL 더 카트&클로버 - 화이트,레인포레스트 그린.xlsx",
+      "size": 221764,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20카트&클로버%20-%20화이트,레인포레스트%20그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 TPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 456154,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20TPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 오브 오악스-코스탈 블루,퓨어블루,NC.xlsx",
+      "size": 476715,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20오브%20오악스-코스탈%20블루,퓨어블루,NC.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "name": "로백 SP27 MPOL 더 시티 온 어 힐-플릿네이비,화이트.xlsx",
+      "size": 232910,
+      "mtime": "2026-09-16T15:17:09",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20시티%20온%20어%20힐-플릿네이비,화이트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "name": "로백 SP27 MPOL 더 쳐브스3.0-화이트,벙커블루.xlsx",
+      "size": 218468,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20쳐브스3.0-화이트,벙커블루.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "name": "로백 SP27 MPOL 더 시카고 스카이라인-화이트,델타 블루,CHI.xlsx",
+      "size": 218944,
+      "mtime": "2026-09-16T15:17:10",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20시카고%20스카이라인-화이트,델타%20블루,CHI.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "brand": "로백",
+      "rel": "로백\\9월\\SP27\\2차\\로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "name": "로백 SP27 MPOL 더 샬롯-화이트,바이브 바이올렛.xlsx",
+      "size": 209986,
+      "mtime": "2026-09-16T15:17:09",
+      "canonBrand": "RHOBACK",
+      "url": "../../1.%20GOODTRUST/자재리스트/로백/9월/SP27/2차/로백%20SP27%20MPOL%20더%20샬롯-화이트,바이브%20바이올렛.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\플라이팅골프\\2월\\플라이팅골프 PO#2026_003 자재리스트.xlsx",
+      "brand": "플라이팅골프",
+      "rel": "플라이팅골프\\2월\\플라이팅골프 PO#2026_003 자재리스트.xlsx",
+      "name": "플라이팅골프 PO#2026_003 자재리스트.xlsx",
+      "size": 13784831,
+      "mtime": "2026-08-11T16:59:02",
+      "canonBrand": "FLIGHTING GOLF",
+      "url": "../../1.%20GOODTRUST/자재리스트/플라이팅골프/2월/플라이팅골프%20PO%232026_003%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\플라이팅골프\\4월\\플라이팅골프 후드 PO#2026_004 자재리스트.xlsx",
+      "brand": "플라이팅골프",
+      "rel": "플라이팅골프\\4월\\플라이팅골프 후드 PO#2026_004 자재리스트.xlsx",
+      "name": "플라이팅골프 후드 PO#2026_004 자재리스트.xlsx",
+      "size": 134009,
+      "mtime": "2026-08-11T16:59:02",
+      "canonBrand": "FLIGHTING GOLF",
+      "url": "../../1.%20GOODTRUST/자재리스트/플라이팅골프/4월/플라이팅골프%20후드%20PO%232026_004%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\3월\\아이어오크 아동용 #PO0051 총 4개 자재리스트.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\3월\\아이어오크 아동용 #PO0051 총 4개 자재리스트.xlsx",
+      "name": "아이어오크 아동용 #PO0051 총 4개 자재리스트.xlsx",
+      "size": 978642,
+      "mtime": "2026-08-11T16:59:00",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/3월/아이어오크%20아동용%20%23PO0051%20총%204개%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\7월\\아이언오크 PO#0068,0066.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\7월\\아이언오크 PO#0068,0066.xlsx",
+      "name": "아이언오크 PO#0068,0066.xlsx",
+      "size": 2528131,
+      "mtime": "2026-08-11T16:59:02",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/7월/아이언오크%20PO%230068,0066.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\2월\\아이언오크 PO#0049 자재리스트.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\2월\\아이언오크 PO#0049 자재리스트.xlsx",
+      "name": "아이언오크 PO#0049 자재리스트.xlsx",
+      "size": 536799,
+      "mtime": "2026-08-11T16:59:00",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/2월/아이언오크%20PO%230049%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\현재진행건\\아이언오크 PO#0073.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\현재진행건\\아이언오크 PO#0073.xlsx",
+      "name": "아이언오크 PO#0073.xlsx",
+      "size": 1072106,
+      "mtime": "2026-09-16T15:18:31",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/현재진행건/아이언오크%20PO%230073.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\8월\\아이언오크 PO#0068,0066.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\8월\\아이언오크 PO#0068,0066.xlsx",
+      "name": "아이언오크 PO#0068,0066.xlsx",
+      "size": 2528131,
+      "mtime": "2026-09-02T09:27:54",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/8월/아이언오크%20PO%230068,0066.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\5월\\아이언오크 PO#0053오일그린.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\5월\\아이언오크 PO#0053오일그린.xlsx",
+      "name": "아이언오크 PO#0053오일그린.xlsx",
+      "size": 334981,
+      "mtime": "2026-08-11T16:59:01",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/5월/아이언오크%20PO%230053오일그린.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\5월\\아이언오크 PO#0053더 레인.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\5월\\아이언오크 PO#0053더 레인.xlsx",
+      "name": "아이언오크 PO#0053더 레인.xlsx",
+      "size": 435915,
+      "mtime": "2026-08-11T16:59:01",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/5월/아이언오크%20PO%230053더%20레인.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\4월\\아이언오크 PO#0053.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\4월\\아이언오크 PO#0053.xlsx",
+      "name": "아이언오크 PO#0053.xlsx",
+      "size": 569521,
+      "mtime": "2026-08-11T16:59:01",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/4월/아이언오크%20PO%230053.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\4월\\아이언오크 골프잼 PO#0052 자재리스트.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\4월\\아이언오크 골프잼 PO#0052 자재리스트.xlsx",
+      "name": "아이언오크 골프잼 PO#0052 자재리스트.xlsx",
+      "size": 193061,
+      "mtime": "2026-08-11T16:59:00",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/4월/아이언오크%20골프잼%20PO%230052%20자재리스트.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\6월\\아이언오크 PO#0056.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\6월\\아이언오크 PO#0056.xlsx",
+      "name": "아이언오크 PO#0056.xlsx",
+      "size": 335110,
+      "mtime": "2026-08-11T16:59:01",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/6월/아이언오크%20PO%230056.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\아이언오크\\9월\\아이언오크 PO#0073.xlsx",
+      "brand": "아이언오크",
+      "rel": "아이언오크\\9월\\아이언오크 PO#0073.xlsx",
+      "name": "아이언오크 PO#0073.xlsx",
+      "size": 1072106,
+      "mtime": "2026-09-16T15:18:39",
+      "canonBrand": "IRON OAK",
+      "url": "../../1.%20GOODTRUST/자재리스트/아이언오크/9월/아이언오크%20PO%230073.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\굿굿골프\\6월\\굿굿골프 GG3033.xlsx",
+      "brand": "굿굿골프",
+      "rel": "굿굿골프\\6월\\굿굿골프 GG3033.xlsx",
+      "name": "굿굿골프 GG3033.xlsx",
+      "size": 94032,
+      "mtime": "2026-08-11T16:58:51",
+      "canonBrand": "GOOD GOOD GOLF",
+      "url": "../../1.%20GOODTRUST/자재리스트/굿굿골프/6월/굿굿골프%20GG3033.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\알론어페럴\\6월\\알론어페럴 이리스PO#18.xlsx",
+      "brand": "알론어페럴",
+      "rel": "알론어페럴\\6월\\알론어페럴 이리스PO#18.xlsx",
+      "name": "알론어페럴 이리스PO#18.xlsx",
+      "size": 340928,
+      "mtime": "2026-08-11T16:59:02",
+      "canonBrand": "ALON APPAREL",
+      "url": "../../1.%20GOODTRUST/자재리스트/알론어페럴/6월/알론어페럴%20이리스PO%2318.xlsx"
+    },
+    {
+      "path": "Z:\\HDD1\\MARU\\생산부\\1. GOODTRUST\\자재리스트\\버드독스\\1월\\버드독스 남성 반팔 자재리스트.xlsx",
+      "brand": "버드독스",
+      "rel": "버드독스\\1월\\버드독스 남성 반팔 자재리스트.xlsx",
+      "name": "버드독스 남성 반팔 자재리스트.xlsx",
+      "size": 280853,
+      "mtime": "2026-08-11T16:58:59",
+      "canonBrand": "BIRD DOGS",
+      "url": "../../1.%20GOODTRUST/자재리스트/버드독스/1월/버드독스%20남성%20반팔%20자재리스트.xlsx"
+    }
+  ]
+}

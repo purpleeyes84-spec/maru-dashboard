@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R10 시인성 샘플 게이트 (허브+봉제현황) 2026-09-21
 
 ## 판결: 조건부

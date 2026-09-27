@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R02 첨부칩
 - id: R02-attach-chips
 - when: by-po · “첨부만” 명시 뷰

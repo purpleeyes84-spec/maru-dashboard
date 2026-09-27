@@ -1,7 +1,8 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 {
   "meta": {
-    "asOf": "2026-09-24",
-    "n_styles": 47,
+    "asOf": "2026-09-25",
+    "n_styles": 48,
     "slots": [
       {
         "key": "wip",
@@ -39,8 +40,10 @@
         "n": 7
       }
     ],
-    "fill_styles": {
-      "wip": 10,
+    "fill_styles": 38,
+    "fill_files": 107,
+    "counts": {
+      "wip": 11,
       "fabric_po": 22,
       "bt": 25,
       "fabric_qty": 0,
@@ -48,28 +51,13 @@
       "qc": 0,
       "pack": 0
     },
-    "fill_files": {
-      "wip": 15,
-      "fabric_po": 54,
-      "bt": 34,
-      "fabric_qty": 0,
-      "trim_po": 2,
-      "qc": 0,
-      "pack": 0
-    },
-    "counts": {
-      "완사입기획": 11,
-      "완사입정상": 9,
-      "원단": 23,
-      "BT미정": 4
-    },
     "src_rel": "../../../../생산부/2. 디즈니/27SS/",
     "page_path": "dashboard/두리콜렉션/디즈니/진행문서/",
     "original_moved": false,
     "tsv_scanned": 314,
     "tsv_qty_hits": 0,
     "tsv_qc_hits": 0,
-    "fix_note": "2026-09-24: drop ghost DR2LTR091(090 shell); merge 090 PO into 091; sync SR1MTR081/MTS081 thumb+SM1 WIP"
+    "fix_note": "2026-09-24: drop ghost DR2LTR091(090 shell); merge 090 PO into 091; sync SR1MTR081/MTS081 thumb+SM1 WIP | 2026-09-25 fixes: 진행문서 HTML DR2LTR091 alias PO href restored to 디즈니 발주서/DR2LTR090.jpg (LTR→LTS only for DR2-LTS-090 헤리테잎변경 작지 filename); _shared path → ../../../_shared/ (진행문서·진행); 합본 PDF links merged/SR1MJB080.pdf · merged/DR1LJB080.pdf; 진행 stale 9/21 progress-data block removed"
   },
   "rows": [
     {
@@ -360,6 +348,13 @@
             "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030) BT.xls",
             "mtime": "2026-09-19",
             "rel": "완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030) BT.xls",
+            "missing": false
+          },
+          {
+            "name": "DR1-LJB-080(CS3030).xls",
+            "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030).xls",
+            "mtime": "2026-09-24",
+            "rel": "완사입/기획/DR1-LJB-080/DR1-LJB-080(CS3030).xls",
             "missing": false
           }
         ],
@@ -843,6 +838,39 @@
       },
       "filled": 2,
       "thumb_src": "wip_color_diagram"
+    },
+    {
+      "style": "SR1MJB080",
+      "brand": "스팍스",
+      "section": "완사입 기획",
+      "category": "완사입",
+      "category_sub": "기획",
+      "qty": 0,
+      "vendor": "",
+      "due": "",
+      "art": "",
+      "color_str": "L/GREY · D/GREEN · BLACK",
+      "oneway": false,
+      "pending_note": "thumbs 보류: 칼라물 flat 없음",
+      "thumb": null,
+      "slots": {
+        "wip": [
+          {
+            "name": "SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+            "href": "../../../../생산부/2. 디즈니/27SS/완사입/기획/SR1-MJB-080/SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+            "mtime": "2026-09-23",
+            "rel": "완사입/기획/SR1-MJB-080/SR1MJB080 메인작업의뢰서 (아소트수량 0923).pdf",
+            "missing": false
+          }
+        ],
+        "fabric_po": [],
+        "bt": [],
+        "fabric_qty": [],
+        "trim_po": [],
+        "qc": [],
+        "pack": []
+      },
+      "filled": 1
     },
     {
       "style": "DQ1-MJP-001",

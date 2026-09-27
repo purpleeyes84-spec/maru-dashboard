@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # YYYY-MM-DD · {칸} · {대상파일}
 
 - 오더: `{경로}` · {목표1줄}

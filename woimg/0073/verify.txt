@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 po=0073
 cover_exists=1
 body_style_images=8

@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # R06 허브 내비
 - id: R06-hub-nav
 - when: dashboard/index.html 및 칸↔허브 왕복 링크

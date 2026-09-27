@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 마루2011 매출 요약 대시보드 (2026)
 ================================
 

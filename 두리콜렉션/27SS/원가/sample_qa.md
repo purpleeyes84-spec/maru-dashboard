@@ -1,3 +1,4 @@
+<script src="/maru-dashboard/js/auth-gate.js"></script>
 # Sample QA — 3 styles unit cost trace
 FX: USD/KRW=1358.4, CNY/KRW=202.47 (2026-09-23 15:30 Seoul 연합)
 
